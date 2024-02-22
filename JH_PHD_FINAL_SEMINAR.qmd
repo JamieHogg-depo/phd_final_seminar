@@ -1,0 +1,39 @@
+---
+title: "Quarto Presentations"
+subtitle: "Create beautiful interactive slide decks with Reveal.js"
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    logo: images/quarto.png
+    css: styles.css
+    #footer: <https://quarto.org>
+resources:
+  - demo.pdf
+---
+
+# Introduction
+
+## The overall aim
+
+::: {.incremental}
+
+- Eat spaghetti
+- Drink wine
+- See @fig-pillars for an illustration.
+
+:::
+
+## Images
+
+![This is a pillars.](imgs/pillars.png){#fig-pillars}
+
+## Maths
+
+$$
+y_i \sim \text{N}\left( \boldsymbol{\mu}, \sigma^2 \right)
+$$
+
+
