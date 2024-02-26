@@ -1,20 +1,77 @@
 ---
-title: "Quarto Presentations"
-subtitle: "Create beautiful interactive slide decks with Reveal.js"
+title: "Enhancing Bayesian small area level methods with applications in health"
+subtitle: "James Hogg - PhD Final Seminar"
+date_field: 8th April, 2024
+supervisors: "Supervisors: Kerrie Mengersen, Susanna Cramb, Peter Baade and Jessica Cameron"
 format:
   revealjs: 
+    theme: [simple, custom.scss]
     slide-number: true
     chalkboard: 
       buttons: false
     preview-links: auto
-    logo: images/quarto.png
+    #logo: imgs/CDS-Logo-Blue.png
     css: styles.css
+    template-partials:
+      - title-slide.html
     #footer: <https://quarto.org>
 resources:
   - demo.pdf
 ---
 
-# Introduction
+# title
+- name
+- supervisors
+- date
+
+# acknowledge traditional owners
+
+# Background
+
+- small area analysis
+- issues in Australia
+- Katie introduced some maths and defined the core problem statement
+- case study
+- setup problem
+
+## Aims and Objectives
+
+- define the key objectives
+
+## Objectives vs. PhD Outputs
+
+- put my figure here
+
+## Research Contributions vs. Thesis Chapters
+
+- could use figure here too
+
+# Paper 1: Novel Contributions
+
+- reference for paper - status (submitted vs accepted)
+- main aim/contribution
+- summarise
+
+## Brief description of paper 1
+
+# Paper 2
+
+# Paper 3
+
+# Paper 4
+
+# Research Outputs
+
+# Professional Engagements and Activities
+ - talks/conferences
+ - internships
+ - co-chair of BRAG
+
+# Thank you - acknowledgements
+
+# References
+
+# Some Quarto hacks
 
 ## The overall aim
 
@@ -36,4 +93,11 @@ $$
 y_i \sim \text{N}\left( \boldsymbol{\mu}, \sigma^2 \right)
 $$
 
+## Slide with notes
+
+On slide
+
+::: {.notes}
+Speaker notes go here.
+:::
 

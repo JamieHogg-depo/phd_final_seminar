@@ -1,0 +1,17 @@
+<section id="$idprefix$title-slide"$for(title-slide-attributes/pairs)$ $it.key$="$it.value$"$endfor$>
+  <h2 class="title" style="margin-bottom:50px;">$title$</h2>
+$if(subtitle)$
+  <p class="subtitle" style="margin-bottom:150px;">$subtitle$</p>
+$endif$
+$for(supervisors)$
+  <p class="supervisors" style="margin-bottom:50px;">$supervisors$</p>
+$endfor$
+$for(date_field)$
+	<p class="date_field">$date_field$</p>
+$endfor$
+<!-- Logos at the bottom -->
+<div class="logos">
+	<img src="imgs/CDS-Logo-Blue.png" alt="First Logo" style="width:300px; height:auto; margin-right:50px;">
+	<img src="imgs/ccq_rgb.png" alt="Second Logo" style="width:300px; height:auto;">
+</div>
+</section>

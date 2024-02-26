@@ -7,3 +7,18 @@
 .border-thick {
   border-width: 3px;
 }
+
+.title {
+  color: black;
+  font-family: 'Open Sans';
+}
+
+.supervisors, .date_field {
+  font-size: 0.75em; /* Adjust the size as needed */
+  font-family: 'Open Sans', ans-serif, Arial;
+}
+
+.subtitle {
+  font-size: 0.75em;
+  color: blue; /* You can use a hex code or RGB value for a specific shade of blue */
+}
