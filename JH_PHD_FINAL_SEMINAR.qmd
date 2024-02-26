@@ -10,13 +10,15 @@ format:
     chalkboard: 
       buttons: false
     preview-links: auto
-    #logo: imgs/CDS-Logo-Blue.png
     css: styles.css
     template-partials:
       - title-slide.html
     #footer: <https://quarto.org>
 resources:
   - demo.pdf
+bibliography: bib.bib
+csl: vancouver.csl
+#csl: apa.csl
 ---
 
 # title
@@ -28,11 +30,11 @@ resources:
 
 # Background
 
-- small area analysis
-- issues in Australia
+- small area <span class="blB">estimation</span>.
+- <span class="blR">issues</span> in Australia
 - Katie introduced some maths and defined the core problem statement
 - case study
-- setup problem
+- setup problem [@RN471]
 
 ## Aims and Objectives
 
@@ -70,6 +72,9 @@ resources:
 # Thank you - acknowledgements
 
 # References
+
+::: {#refs}
+:::
 
 # Some Quarto hacks
 

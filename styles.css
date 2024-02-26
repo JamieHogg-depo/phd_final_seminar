@@ -22,3 +22,13 @@
   font-size: 0.75em;
   color: blue; /* You can use a hex code or RGB value for a specific shade of blue */
 }
+
+.blB { 
+	font-weight: bold; 
+	color: blue; 
+}
+
+.blR { 
+	font-weight: bold; 
+	color: red; 
+}
