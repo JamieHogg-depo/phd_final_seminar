@@ -1,7 +1,14 @@
+<!-- ----------------------------------------------------------------- -->
 # Chapter 5/Paper 3
-<br>
 Creating area level indices of behaviours impacting cancer in Australia with a Bayesian generalised shared component model
-![](imgs/pillars_p3.png){#fig-p3}
+<br>
+![](imgs/pillars.png){width=80%}
+
+<!-- ----------------------------------------------------------------- -->
+# Chapter 5/Paper 3
+Creating area level indices of behaviours impacting cancer in Australia with a Bayesian generalised shared component model
+<br>
+![](imgs/pillars_p3.png){width=80%}
 
 <!-- ----------------------------------------------------------------- -->
 ## Under review at *Health & Place*
@@ -27,7 +34,7 @@ Creating area level indices of behaviours impacting cancer in Australia with a B
 ![](imgs/chp5/chp5_index_flowchart.png)
 
 <!-- ----------------------------------------------------------------- -->
-## Motivation
+## Generalised Shared Component Model (GSCM) {.scrollable}
 
 $$
 \begin{eqnarray}
@@ -36,3 +43,14 @@ $$
     \boldsymbol{\mu}_{k} & = & \mathbf{z} \lb{ \boldsymbol{\Lambda}_k }^T + \boldsymbol{\epsilon}_{k}
 \end{eqnarray}
 $$
+
+Where:
+
+:::{.incremental}
+- $\mathbf{Y}_{k}$ is $N$-dimensional vector of estimates for the $k$th risk factor
+- $\boldsymbol{\sigma}_k$ is $N$-dimensional vector of standard deviations for the $k$th risk factor
+- $\boldsymbol{\mu}_{k}$ is $N$-dimensional vectors of true values for the $k$th risk factor
+- $\mathbf{z}$ is a $N \times L$ matrix of shared factor scores, with independent columns
+- $\boldsymbol{\epsilon}_{k}$ a $N$-dimensional vector of feature-specific residual errors for the $k$th feature with associated variance $\tau_k^2$. 
+- $\boldsymbol{\Lambda}_k$ is the $k$th row of the $K$ by $L$ matrix of factor loadings
+:::

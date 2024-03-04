@@ -1,9 +1,16 @@
+<!-- ----------------------------------------------------------------- -->
 # Chapter 4/Paper 2
 <br> 
 Mapping the prevalence of cancer risk factors at the small area level in Australia
 <br>
+![](imgs/pillars.png){width=80%}
+
+<!-- ----------------------------------------------------------------- -->
+# Chapter 4/Paper 2
+<br> 
+Mapping the prevalence of cancer risk factors at the small area level in Australia
 <br>
-![](imgs/pillars_p2.png){#fig-p2}
+![](imgs/pillars_p2.png){width=80%}
 
 <!-- ----------------------------------------------------------------- -->
 ## Paper published
