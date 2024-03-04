@@ -6,21 +6,29 @@ supervisors: "Supervisors: Kerrie Mengersen, Susanna Cramb, Peter Baade and Jess
 from: markdown+emoji
 format:
   revealjs: 
-    theme: [simple, custom.scss]
+    theme: [simple, settings/custom.scss]
     slide-number: true
     chalkboard: 
       buttons: false
     preview-links: auto
-    css: styles.css
+    css: settings/styles.css
     template-partials:
-      - title-slide.html
+      - settings/title-slide.html
+    number-depth: 1
     #footer: <https://quarto.org>
 resources:
   - demo.pdf
-bibliography: bib.bib
-csl: vancouver.csl
+logo: imgs/qutlogo.png
+#smaller: true
+progress: true
+bibliography: settings/bib.bib
+csl: settings/vancouver.csl
 #csl: apa.csl
 ---
+
+\newcommand{\lb}[1]{\left( #1 \right)}
+\newcommand{\jdist}[2]{\text{#1}\left( #2 \right)}
+\newcommand{\jdistu}[3]{\text{#1}_{#2}\left( #3 \right)}
 
 ---
 
@@ -32,18 +40,28 @@ QUT acknowledges the important role Aboriginal and Torres Strait Islander people
 # Introduction
 
 <!-- ----------------------------------------------------------------- -->
-## Motivation
+## Motivation {.smaller}
+
+:::{.incremental}
 - Precise small area estimates critical for effective health policy and interventions.
 - Small area analysis: Descriptive, exploratory, and causal methods to improve resource allocation and decision-making.
 - Focus on Australia: Challenges due to population density and geographic disparities
+:::
+
+<!-- presentation slides is 1050 x 700 -->
+
+![](imgs/ACA_oesophagealcancer.png){.absolute bottom=0 right=0 height="275"}
+
+![](imgs/SHA.png){.absolute bottom=0 left=0 height="275"}
 
 <!-- ----------------------------------------------------------------- -->
----
+## {.smaller}
 
+:::{.incremental}
 - Bayesian inference for disease mapping and small area estimation enhances decision-making and addresses data sparsity.
 - Addressing limitations in current Bayesian small-area modelling to overcome sparsity and improve accuracy.
-
-- Aim: Develop statistical approaches for better health data resolution and targeted interventions.
+- Aim - Develop statistical approaches for better health data resolution and targeted interventions.
+:::
 
 <!-- ----------------------------------------------------------------- -->
 ## Research Problem
@@ -79,7 +97,7 @@ The overarching research problem in this project is to develop and apply Bayesia
 <!-- ----------------------------------------------------------------- -->
 ## Objectives vs. PhD Outputs
 
-![Schematic illustrating the relationship between the two pillars, three objectives (abbreviated as ``Obj''), and four research papers) constituting this thesis.](imgs/pillars.png){#fig-pillars}
+![Schematic illustrating the relationship between the two pillars, three objectives (abbreviated as ``Obj''), and four research papers constituting this thesis.](imgs/pillars.png){#fig-pillars}
 
 <!-- ----------------------------------------------------------------- -->
 ## Research Contributions vs. Thesis Chapters
@@ -87,140 +105,24 @@ The overarching research problem in this project is to develop and apply Bayesia
 - could use figure here too
 
 <!-- ----------------------------------------------------------------- -->
-# Chapter 3/Paper 1 {auto-animate="true" auto-animate-easing="ease-in-out"}
-<br>
-A two-stage Bayesian small area estimation approach for proportions
-![](imgs/pillars.png)
+<!-- CHAPTER 3 -->
+<!-- ----------------------------------------------------------------- -->
+{{< include chp_qmds/chp3.qmd >}}
 
 <!-- ----------------------------------------------------------------- -->
-# Chapter 3/Paper 1 {auto-animate="true" auto-animate-easing="ease-in-out"}
-<br>
-A two-stage Bayesian small area estimation approach for proportions
-![](imgs/pillars_p1.png)
+<!-- CHAPTER 4 -->
+<!-- ----------------------------------------------------------------- -->
+{{< include chp_qmds/chp4.qmd >}}
 
 <!-- ----------------------------------------------------------------- -->
-## Paper submitted to *International Statistical Review*
-<br>
-**James Hogg**, Jessica Cameron, Susanna Cramb, Peter Baade, Kerrie Mengersen. A two-stage Bayesian small area estimation approach for proportions. 
-<br>
-<br>
-<div class="small-text">**Status**: Third round of revisions</div>
+<!-- CHAPTER 5 -->
+<!-- ----------------------------------------------------------------- -->
+{{< include chp_qmds/chp5.qmd >}}
 
 <!-- ----------------------------------------------------------------- -->
-## Background
-- Increasing demand $\to$ robust small area estimates from survey data
-- Model-based SAE methods pushed to extent
-- Data sparsity is key challenge
-  -  current individual and area level models can be limiting
-
+<!-- Chapter 6 -->
 <!-- ----------------------------------------------------------------- -->
----
-
-::: {.quote-box}
-**Contribution** 🎉
-<br>
-<br>
-A Bayesian two-stage method for proportions that tackles data sparsity challenges in SAE.
-:::
-
-<!-- ----------------------------------------------------------------- -->
-## Proposed approach {.scrollable}
-
-:::: {.columns}
-
-::: {.column width="48%"}
-
-- Stage 1 (TSLN-S1)
-  - Fit a **individual-level** <span class="blB">logistic model</span> to the survey data
-- Stage 1 (S1) estimates
-  - Using fitted values calculate area-level <span class="blB">S1 estimates</span> and sampling variances
-- Stage 2 (TSLN-S2)
-  - **Smooth** <span class="blB">S1 estimates</span> and **impute** estimates for non-sampled areas using an **area-level** <span class="blB">FH model</span>
-:::
-
-::: {.column width="48%"}
-![](imgs/TSLN_model_flowchart.png){width=210%}
-
-:::
-
-::::
-
-<!-- ----------------------------------------------------------------- -->
-## Simulation study {.center}
-
-![](imgs/sparse_MRRMSE.png){width=500%}
-
-<!-- ----------------------------------------------------------------- -->
-# Chapter 4/Paper 2
-<br> 
-Mapping the prevalence of cancer risk factors at the small area level in Australia
-<br>
-<br>
-![](imgs/pillars_p2.png){#fig-p2}
-
-<!-- ----------------------------------------------------------------- -->
-## Paper published
-<br>
-**James Hogg**, Jessica Cameron, Susanna Cramb, Peter Baade, Kerrie Mengersen. Mapping the prevalence of cancer risk factors at the small area level in Australia. *International Journal of Health Geographics* 22, 37 (2023). https://doi.org/10.1186/s12942-023-00352-5
-
-<!-- ----------------------------------------------------------------- -->
----
-
-::: {.quote-box}
-**Contribution** 🎉
-<br>
-<br>
-The first Australia-wide prevalence estimates for eight cancer risk factors. Estimates and measures of uncertainty are available for 2221 SA2s. 
-:::
-
-
-<!-- ----------------------------------------------------------------- -->
-# Chapter 5/Paper 3
-<br>
-Creating area level indices of behaviours impacting cancer in Australia with a Bayesian generalised shared component model
-![](imgs/pillars_p3.png){#fig-p3}
-
-<!-- ----------------------------------------------------------------- -->
-## Under review at *Health & Place*
-<br>
-**James Hogg**, Susanna Cramb, Jessica Cameron, Peter Baade, Kerrie Mengersen. Creating area level indices of behaviours impacting cancer in Australia with a Bayesian generalised shared component model.
-<br>
-<br>
-<div class="small-text">**Status**: Submitted</div>
-
-<!-- ----------------------------------------------------------------- -->
----
-
-::: {.quote-box}
-**Contribution** 🎉
-
-- A Bayesian model-based method for index creation that can accommodate spatial autocorrelation and known heteroscedastic measurement error.
-- The first Australia-wide area level cancer risk factor indices. Unlike previous indices, like the SEIFA, the developed indices also have appropriate measures of uncertainty. 
-:::
-
-<!-- ----------------------------------------------------------------- -->
-# Chapter 6/Paper 4
-<br>
-Improving the spatial and temporal resolution of burden of disease measures with Bayesian models
-![](imgs/pillars.png){#fig-p4}
-
-<!-- ----------------------------------------------------------------- -->
-## Under review at *Spatial and Spatio-temporal Epidemiology*
-<br>
-**James Hogg**, K. Staples, A. Davis, S. Cramb, C. Patterson, L. Kirkland, M. Gourley, J. Xiao, W. Sun. Improving the spatial and temporal resolution of burden of disease measures with Bayesian models.
-<br>
-<br>
-<div class="small-text">**Status**: Second round of revisions</div>
-
-<!-- ----------------------------------------------------------------- -->
----
-
-::: {.quote-box}
-**Contribution** 🎉
-
-- A principled set of Bayesian spatiotemporal methods for modelling the wide range of mortality and prevalence data necessary for full BOD studies.
-- The first high-resolution set of spatiotemporal BOD estimates for CHD and asthma in Western Australia.
-:::
+{{< include chp_qmds/chp6.qmd >}}
 
 <!-- ----------------------------------------------------------------- -->
 # Summary

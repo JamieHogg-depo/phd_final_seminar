@@ -1,0 +1,110 @@
+# Chapter 3/Paper 1
+<br>
+A two-stage Bayesian small area estimation approach for proportions
+![](imgs/pillars.png){width=80%}
+
+<!-- ----------------------------------------------------------------- -->
+# Chapter 3/Paper 1
+<br>
+A two-stage Bayesian small area estimation approach for proportions
+![](imgs/pillars_p1.png){width=80%}
+
+<!-- ----------------------------------------------------------------- -->
+## Paper submitted to *International Statistical Review*
+<br>
+**James Hogg**, Jessica Cameron, Susanna Cramb, Peter Baade, Kerrie Mengersen. A two-stage Bayesian small area estimation approach for proportions. 
+<br>
+<br>
+<div class="small-text">**Status**: Third round of revisions</div>
+
+<!-- ----------------------------------------------------------------- -->
+## Background
+- Increasing demand $\to$ robust small area estimates from survey data
+- Model-based SAE methods pushed to extent
+- Data sparsity is key challenge
+  -  current individual and area level models can be limiting
+
+<!-- ----------------------------------------------------------------- -->
+---
+
+::: {.quote-box}
+**Contribution** 🎉
+<br>
+<br>
+A Bayesian two-stage method for proportions that tackles data sparsity challenges in SAE.
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## Proposed approach {.scrollable}
+
+:::: {.columns}
+
+::: {.column width="48%"}
+
+- Stage 1 (TSLN-S1)
+  - Fit a **individual-level** <span class="blB">logistic model</span> to the survey data
+- Stage 1 (S1) estimates
+  - Using fitted values calculate area-level <span class="blB">S1 estimates</span> and sampling variances
+- Stage 2 (TSLN-S2)
+  - **Smooth** <span class="blB">S1 estimates</span> and **impute** estimates for non-sampled areas using an **area-level** <span class="blB">FH model</span>
+:::
+
+::: {.column width="48%"}
+![](imgs/TSLN_model_flowchart.png){width=210%}
+
+:::
+
+::::
+
+<!-- ----------------------------------------------------------------- -->
+## Model details {.scrollable .smaller}
+
+### Stage 1
+$$
+\begin{eqnarray}
+    y_{ij} &\sim& \text{Bernoulli}(p_{ij})^{\tilde{w}_{ij}}
+    \\
+    \text{logit}(p_{ij}) &=& \mathbf{x}_{ij} \boldsymbol{\beta} + e_i
+    \\
+    e_i &\sim& N(0, \sigma_e^2)
+\end{eqnarray}
+$$
+
+### Stage 1 (S1) estimates
+The S1 estimate[^1] for area $i$ is,  
+$$
+\hat{\theta}_i^{\text{S1}} = \text{logit}\left( \frac{\sum_{j \in r_i} w_{ij} p_{ij}}{n_i} \right)
+$$
+with $\gamma_i^{\text{S1}}$ the corresponding sample variance. 
+
+### Stage 2
+Composed of: a measurement error model, 
+$$
+\hat{\theta}_i^{\text{S1}} \sim N\lb{ \hat{\bar{\theta}}_i, \widehat{\text{v}}\lb{\hat{\theta}_i^{\text{S1}}} }, 
+$$
+
+which accommodates some of the uncertainty of the stage 1 model; a sampling model,  
+
+$$
+\hat{\bar{\theta}}_i \sim N\lb{ \hat{\theta}_i, \gamma_i^{\text{S1}} },
+$$
+
+which accommodates the sampling variance; and a linking model, 
+
+$$
+\begin{eqnarray}
+    \hat{\theta}_i & = & \mathbf{Z}_{i} \boldsymbol{\lambda} + v_i
+    \\
+    v_i & \sim & N(0, \sigma_v^2), \nonumber
+\end{eqnarray}
+$$
+
+The parameter of interest (i.e. proportion) is the posterior distribution of $\hat{\mu}_i = \text{logit}^{-1}( \hat{\theta}_i)$.
+<br>
+
+[^1]: The posterior draws from stage 1 are fed as input to the stage 2 model.
+
+<!-- ----------------------------------------------------------------- -->
+## Simulation study {.center}
+
+![](imgs/chp3/sparse_MRRMSE.png){.r-stretch}

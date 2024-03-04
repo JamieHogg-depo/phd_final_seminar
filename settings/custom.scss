@@ -11,6 +11,11 @@ $link-color: #42affa;
   padding-left: 0.5em;
 }
 
+// Custom global margin adjustments
+.reveal .slides {
+  margin: 10px; // Adjust the value to your preference
+}
+
 .reveal section h2 {
   color: #490707;
 }

@@ -1,0 +1,178 @@
+# Chapter 6/Paper 4
+<br>
+Improving the spatial and temporal resolution of burden of disease measures with Bayesian models
+![](imgs/pillars.png){#fig-p4}
+
+<!-- ----------------------------------------------------------------- -->
+## Under review at *Spatial and Spatio-temporal Epidemiology*
+<br>
+**James Hogg**, K. Staples, A. Davis, S. Cramb, C. Patterson, L. Kirkland, M. Gourley, J. Xiao, W. Sun. Improving the spatial and temporal resolution of burden of disease measures with Bayesian models.
+<br>
+<br>
+<div class="small-text">**Status**: Second round of revisions</div>
+
+<!-- ----------------------------------------------------------------- -->
+---
+
+::: {.quote-box}
+**Contribution** 🎉
+
+- A principled set of Bayesian spatiotemporal methods for modelling the wide range of mortality and prevalence data necessary for full BOD studies.
+- The first high-resolution set of spatiotemporal BOD estimates for CHD and asthma in Western Australia.
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## Background
+
+**Burden of disease (BOD)**
+
+::: {.incremental}
+- BOD estimates are widely used to identify diseases causing excess burden [@Murray1997; @GBD2016;@Schmidt2020; @RN121; @Steel2018]
+- Reported using disability-adjusted life years (DALY)
+  - Linear and non-linear combinations of fatal (e.g., mortality) and non-fatal (e.g., prevalence) burden
+  - Fatal component $=$ ‘years of life lost’ (YLL)
+  - Non-fatal component $=$ ‘years lived with disability’ (YLD)
+:::
+
+<!-- ----------------------------------------------------------------- -->
+---
+
+**Bayesian modelling in BOD**
+
+::: {.incremental}
+- Countless studies use Bayesian models in disease mapping
+- Few studies use Bayesian models in BOD studies
+- Examples
+  - Bayesian meta-regression tool, DisMod-MR 2.1 [@Steel2018; @GBD2015]
+  - The Cause of Death Ensemble model (CODEm) [@CODEm]
+  - Shared component models of MacNab [@RN652; @RN653]
+:::
+
+<!-- ----------------------------------------------------------------- -->
+---
+
+**Full BOD studies**
+
+::: {.incremental}
+- Aim to calculate DALYs for all causes (typically over 200)
+- Prioritise healthcare resources ranking diseases
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## {auto-animate=true}
+
+::: {style="margin-top: 100px;"}
+**No** BOD studies
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 3em; color: red;"}
+**No** BOD studies 
+:::
+- use fully Bayesian models to estimate for small areas
+- use SAE models for survey microdata
+- consider models applicable to the full scope of data in full BOD studies
+- in Australia, use Bayesian models
+- in Australia, provide estimates for small areas
+- have explored practical models for government agencies
+
+<!-- ----------------------------------------------------------------- -->
+---
+
+::: {.quote-box}
+**Study objectives** 
+
+- Apply Bayesian spatio-temporal models to the field of BOD, demonstrating the benefits
+- Assess the feasibility of adopting these Bayesian models in full BOD studies 
+- Conducting a case study using annual mortality and prevalence data on coronary heart disease (CHD) and asthma for Local Government Areas in Western Australia.
+:::
+
+<!-- ----------------------------------------------------------------- -->
+# Methods
+
+<!-- ----------------------------------------------------------------- -->
+## Standard age-year-time (SAYT) model {.scrollable}
+
+Let:
+
+:::{.incremental}
+- $y_{ita}$ be the raw mortality counts in age group $a = 1, \dots, A$, area $i = 1, \dots, M$ and time $t = 1, \dots, T$
+- $\xi_{it}$ be the random effect for the $i$th area and $t$th year
+  - $\theta_i$, the spatial random effect, is modeled using a BYM2 spatial prior [@riebler2016bym2];
+  - $\gamma_t$, the temporal random effect, is modeled using an intrinsic conditional autoregressive prior [@RN365]; and 
+  - $\delta_{it}$, the space-time random effect, is modeled using a standard normal distribution (Type I interaction) which assumes independent variation 
+- $\alpha$ be an intercept
+- $N_{ita}$ be the population.
+:::
+
+Model
+$$
+\begin{align}
+y_{ita} & \sim \jdist{Poisson}{\mu_{ita}}
+\\
+\log\left( \mu_{ita} \right) & = \log\left( N_{ita} \right) + \alpha + \beta_a + \xi_{it}
+\end{align}
+$$
+
+<!-- ----------------------------------------------------------------- -->
+## Weighted Multilevel Regression and poststratification (MrP) {.scrollable}
+$$
+\begin{eqnarray}
+    z_{itaf} & \sim & \jdist{Bernoulli}{\pi_{itaf}}^{\tilde{w}_{itaf}} \label{eq:wmrp}
+    \\
+    \jdist{logit}{\pi_{itaf}} & = & \alpha_{af} + \mathbf{x}_{it} \boldsymbol{\beta} + \theta_i + \gamma_t, \nonumber
+    \\
+    \alpha_{af} & \sim & \jdist{N}{0, 1000^2} \nonumber
+    \\
+    \boldsymbol{\theta} & \sim & \jdist{BYM2}{ \mathbf{W}^{\text{S}}, \rho, \kappa, \sigma_\theta^2 } \nonumber
+    \\
+    \boldsymbol{\gamma} & \sim & \jdist{ICAR}{ \mathbf{W}^{\text{T}}, \sigma_\gamma^2 } \nonumber
+\end{eqnarray}
+$$
+
+*Prediction*
+$$
+YLD^{(d)}_{it} = \sum_{f,a,h} \pi^{(d)}_{itaf} N_{itaf} \psi_h e_h
+$$
+
+
+
+<!-- ----------------------------------------------------------------- -->
+## Results {.center}
+![](imgs/chp6/results.png){.r-stretch}
+
+<!-- ----------------------------------------------------------------- -->
+## Discussion {.scrollable}
+
+**Contributions**
+
+::: {.incremental}
+
+- Bayesian models $\to$ increased the reliability, certainty and reportability of estimates
+- Demonstrated feasibility of incorporating spatio-temporal models into full BOD studies
+  - Provide ranks for disease burden from all causes by small areas
+- Bayesian and basic stratification: agreed (mostly!)
+  - discrepancies due to age-standardisation OR paradigm differences
+:::
+
+**Limitations**
+
+::: {.incremental}
+
+- Relative simplicity of models
+
+:::
+
+**Future work**
+
+::: {.incremental}
+
+- Computation time
+  - Explore faster alternatives to Bayesian inference such as integrated nested Laplace approximation (INLA) [@Rue2009] or variational inference [@fox_2012].
+- Model complexity
+  - deeper interactions
+  - more individual level covariates
+
+:::

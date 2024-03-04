@@ -1,0 +1,32 @@
+# Chapter 4/Paper 2
+<br> 
+Mapping the prevalence of cancer risk factors at the small area level in Australia
+<br>
+<br>
+![](imgs/pillars_p2.png){#fig-p2}
+
+<!-- ----------------------------------------------------------------- -->
+## Paper published
+<br>
+**James Hogg**, Jessica Cameron, Susanna Cramb, Peter Baade, Kerrie Mengersen. Mapping the prevalence of cancer risk factors at the small area level in Australia. *International Journal of Health Geographics* 22, 37 (2023). https://doi.org/10.1186/s12942-023-00352-5
+
+<!-- ----------------------------------------------------------------- -->
+---
+
+::: {.quote-box}
+**Contribution** 🎉
+<br>
+<br>
+The first Australia-wide prevalence estimates for eight cancer risk factors. Estimates and measures of uncertainty are available for 2221 SA2s. 
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## Data
+
+:::{.incremental}
+- 2017-18 National Health Survey
+  - Conducted by the Australian Bureau of Statistics (ABS)
+  - 2221 small areas (SAs)
+  - 1694 (76%) of SAs had survey data
+  - Median SA2 sample size: 8
+:::

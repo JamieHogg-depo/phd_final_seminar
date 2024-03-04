@@ -1,0 +1,38 @@
+# Chapter 5/Paper 3
+<br>
+Creating area level indices of behaviours impacting cancer in Australia with a Bayesian generalised shared component model
+![](imgs/pillars_p3.png){#fig-p3}
+
+<!-- ----------------------------------------------------------------- -->
+## Under review at *Health & Place*
+<br>
+**James Hogg**, Susanna Cramb, Jessica Cameron, Peter Baade, Kerrie Mengersen. Creating area level indices of behaviours impacting cancer in Australia with a Bayesian generalised shared component model.
+<br>
+<br>
+<div class="small-text">**Status**: Submitted</div>
+
+<!-- ----------------------------------------------------------------- -->
+---
+
+::: {.quote-box}
+**Contribution** 🎉
+
+- A Bayesian model-based method for index creation that can accommodate spatial autocorrelation and known heteroscedastic measurement error.
+- The first Australia-wide area level cancer risk factor indices. Unlike previous indices, like the SEIFA, the developed indices also have appropriate measures of uncertainty. 
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## Motivation
+
+![](imgs/chp5/chp5_index_flowchart.png)
+
+<!-- ----------------------------------------------------------------- -->
+## Motivation
+
+$$
+\begin{eqnarray}
+    \mathbf{Y}_{k} & \sim & \jdistu{MVN}{N}{\boldsymbol{\mu}_{k}, \jdist{diag}{\boldsymbol{\sigma}_k}}
+    \\
+    \boldsymbol{\mu}_{k} & = & \mathbf{z} \lb{ \boldsymbol{\Lambda}_k }^T + \boldsymbol{\epsilon}_{k}
+\end{eqnarray}
+$$
