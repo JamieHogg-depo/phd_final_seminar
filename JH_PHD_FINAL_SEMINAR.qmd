@@ -2,12 +2,12 @@
 title: "Enhancing Bayesian small area level methods with applications in health"
 subtitle: "James Hogg - PhD Final Seminar"
 date_field: 8th April, 2024
-supervisors: "Supervisors: Kerrie Mengersen, Susanna Cramb, Peter Baade and Jessica Cameron"
+supervisors: "Supervisors: Kerrie Mengersen (QUT), Susanna Cramb (QUT), Peter Baade (CCQ)and Jessica Cameron (CCQ)"
 from: markdown+emoji
 format:
   revealjs: 
     theme: [simple, settings/custom.scss]
-    slide-number: true
+    slide-number: false
     chalkboard: 
       buttons: false
     preview-links: auto
@@ -15,7 +15,7 @@ format:
     template-partials:
       - settings/title-slide.html
     number-depth: 1
-    #footer: <https://quarto.org>
+    footer: James Hogg #<https://quarto.org>
 resources:
   - demo.pdf
 logo: imgs/qutlogo.png
@@ -29,8 +29,6 @@ csl: settings/vancouver.csl
 \newcommand{\lb}[1]{\left( #1 \right)}
 \newcommand{\jdist}[2]{\text{#1}\left( #2 \right)}
 \newcommand{\jdistu}[3]{\text{#1}_{#2}\left( #3 \right)}
-
----
 
 ## Acknowledgement of Traditional Owners
 QUT acknowledges the Turrbal and Yugara, as the First Nations owners of the lands where QUT now stands. We pay respect to their Elders, lores, customs and creation spirits. We recognize that these lands have always been places of teaching, research and learning.

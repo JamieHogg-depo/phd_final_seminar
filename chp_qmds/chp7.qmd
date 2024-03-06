@@ -2,19 +2,203 @@
 # Summary
 
 <!-- ----------------------------------------------------------------- -->
-## Contributions
+## Contributions {.smaller}
+
+::::: {.columns}
+
+:::: {.column width="68%"}
+::: {.incremental}
+- Fully Bayesian TSLN approach for proportions was developed (Chapter 3)
+- Enhance both the reach and resolution of cancer risk factor estimates for the 2221 small areas across Australia (Chapter 4)
+- Generalises the shared component model by accommodating known model-based area-specific error, multiple shared factors, and spatial dependence (Chapter 5)
+- Area Indices of Behaviors Impacting Cancer (AIBIC) product (Chapter 5)
+- Bayesian spatiotemporal models from disease mapping and SAE are integrated to augment the resolution of reportable estimates in Australia (Chapter 6)
+:::
+::::
+
+:::: {.column width="28%"}
+![](imgs/contributions.webp){width=100% .soft-edges}
+
+::::
+
+:::::
 
 <!-- ----------------------------------------------------------------- -->
-## Limitations/reflection
+## Impact {.smaller}
+
+::::: {.columns}
+
+:::: {.column width="68%"}
+::: {.incremental}
+- Modelled risk factors $\to$ <span class="blB">Australian Cancer Atlas</span> platform.
+- Epidemiologists from the <span class="blB">West Moreton Public Health Unit</span> $\to$ interest in utilising estimates for reporting.
+- <span class="blB">Department of Health Western Australia (DOHWA)</span> applied methods (Chapter 6) $\to$ generate new estimates for internal Public Health Atlas. 
+- Interest in adopting Bayesian modelling
+	- The Burden of Disease and Mortality specialist group (<span class="blB">Australian Institute of Health and Welfare</span>)
+- Efficient \texttt{stan} [@RN452] implementation of the <span class="blB">Leroux prior</span> [@RN366]. 
+- Novel Bayesian models <span class="blB">push boundary</span> of previously achievable $\to$ *spatial and temporal resolution and reach* in Australia
+:::
+::::
+
+:::: {.column width="28%"}
+![](imgs/impact.webp){width=100% .soft-edges}
+
+::::
+
+:::::
 
 <!-- ----------------------------------------------------------------- -->
-## Future directions
+## Efficient LCAR {.scrollable .smaller}
+
+```{r}
+#| eval: false
+#| echo: true
+
+/**
+* Log probability density of the leroux conditional autoregressive (LCAR) model
+* @param x vector of random effects
+* @param rho spatial dependence parameter
+*           MUST be strictly smaller than 1, use:
+*           `real<lower=0,upper=0.99> rho;`
+* @param sigma standard deviation - often set to 1
+* @param C_w Sparse representation of C
+* @param C_v Column indices for values in C
+* @param C_u Row starting indices for values in C
+* @param offD_id_C_w indices for off diagonal terms
+* @param D_id_C_w indices for diagonal terms - length M
+* @param C_eigenvalues eigenvalues for C
+* @param N number of areas
+**
+@return Log probability density
+**
+To use: LCAR_lpdf( x | rho, sigma, C_w, C_v, C_u, offD_id_C_w, D_id_C_w, C_eigenvalues, N );
+*/
+real LCAR_lpdf(
+    vector x,               
+    real rho,                   
+    real sigma,              
+    vector C_w , 
+    int [] C_v , 
+    int [] C_u , 
+    int [] offD_id_C_w ,        
+    int [] D_id_C_w ,       
+    vector C_eigenvalues,       
+    int N                   
+    ) {                 
+        vector[N] ldet_C;
+        vector [ num_elements(C_w) ] ImrhoC;
+        vector[N] A_S;
+        // Multiple off-diagonal elements by rho
+        ImrhoC [ offD_id_C_w ] = - rho * C_w[ offD_id_C_w ];
+        // Calculate diagonal elements of ImrhoC
+        ImrhoC [ D_id_C_w ] = 1 - rho * C_w[ D_id_C_w ];
+        A_S = csr_matrix_times_vector( N, N, ImrhoC, C_v, C_u, x );
+        ldet_C = log1m( rho * C_eigenvalues );
+        return -0.5 * ( 
+        N*log( 2 * pi() ) 
+        - ( N * log(1/square(sigma)) + sum( ldet_C ) ) 
+        + 1/square(sigma) * dot_product(x, A_S) 
+        );
+}
+```
 
 <!-- ----------------------------------------------------------------- -->
-## Project outputs
+## Limitations/reflection {.smaller}
+
+::::: {.columns}
+
+:::: {.column width="58%"}
+::: {.incremental}
+ - <span class="blB">Improving</span> spatial resolution: <span class="blB">double edged sword</span>
+ - **Reliability** of small area level estimates $\to$ contingent on quality of validation data.
+:::
+::::
+
+:::: {.column width="38%"}
+![](imgs/limitations.webp){width=100% .soft-edges}
+
+::::
+
+:::::
+
+::: {.notes}
+Improving spatial resolution
+ - better models $=$ more high-resolution estimates of health (atlas platforms).
+ - introduces the challenge of navigating decision making with multidimensional health information (with uncertainty)
+ - given that decision paralysis can impede effective policy, only present essential information in an easily understandable manner
+ - Australian Cancer Atlas great example of this
+ - Chapter 5 presents our solution. 
+Reliability
+- health departments (report to policymakers) proving validity becomes increasingly important and complex; possibly made more difficult with the adoption of Bayesian models. 
+- Chapter 6 compares estimates from Bayesian models with those from previous approaches: solid agreement. 
+- Not always possible
+- survey data, for example, the ultimate, but impractical, validation dataset would be health data for the entire population. 
+- indices 
+:::
 
 <!-- ----------------------------------------------------------------- -->
-## Professional engagements and activities
- - talks/conferences
- - internships
- - co-chair of BRAG
+## Future directions {.smaller}
+
+::::: {.columns}
+
+:::: {.column width="58%"}
+::: {.incremental}
+ - Theory/model expansion
+ - Validation for SAE
+ - Validation for burden of disease methods and models
+	- Accommodate unique types of measurement error
+ - Consider temporal dimension into the TSLN approach (Chapters 3 and 4) and the GSCM (Chapter 5)
+ - Indices
+	- Temporal consistency
+	- Robustness
+	- Aggregation
+:::
+::::
+
+:::: {.column width="38%"}
+![](imgs/future_directions.webp){width=100% .soft-edges}
+
+::::
+
+:::::
+
+::: {.notes}
+Theory/model
+
+ - more rigorous theoretical foundation for two-stage approaches
+ - include multivariate variations or including non-linear components such as splines and Gaussian processes. 
+ 
+Validation for SAE
+
+ - although new methodologies improve the reliability of small area estimates best approach - acquiring more survey data.
+ - Three ways
+	- expand the nationwide surveys conducted by the ABS. 
+	- leveraging the existing health information collected annually and independently by each state and territory of Australia.
+	- include questions about health behaviours in the census
+	
+Validation for burden of disease methods and models
+
+ - the prevalence of disease states is simplistically assumed to be constant across time, areas, age, and sex
+ - the definition of disease states in discrete terms fails to capture the nuanced dynamics of disease progression or regression.
+ - accommodate the unique types of measurement error.
+ 
+Indices
+
+ - particularly if the modelled estimates or indices are intended to track the impact of health interventions. 
+ - Temporal consistency requires consistency in the: survey design, questions and scope; region boundaries; and populations across time, which can be difficult to verify. 
+ - temporal consistency must first be backed by a consistent, reproducible and robust methodology
+ - This entails the selection of methods that are easy to use, validate and understand
+ - Indices are extremely sensitive to the order, number and selection of features, the nature of the transformations used, and whether errors and spatial dependence are accommodated. 
+ - the pervasive issue of the modifiable areal unit problem presents challenges in releasing indices at a variety of geographical levels 
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## Professional engagements, activities and awards {.smaller}
+
+ - Many conferences $+$ posters (including 2x **international conferences**)
+ - Internship and statistical consulting for <span class="blB">Department of Health Western Australia (DOHWA)</span>
+ - Casual statistical consulting for <span class="blB">Environmental Protection Authority (EPA) Victoria</span>
+ - Co-chair of the <span class="blB">Bayesian Research and Applications Group (BRAG)</span>
+ - Organised and hosted virtual <span class="blB">*StanConnect* conference</span>
+ - Worked with BioGro as part of <span class="blB">Good Data Institute</span>
+ - Team award **second place** in <span class="blB">2023 United Nations Datathon</span>

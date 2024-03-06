@@ -28,6 +28,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     /* CSS for citations */
     div.csl-bib-body { }
     div.csl-entry {
@@ -349,7 +414,7 @@
 <section id="title-slide" class="center">
   <h2 class="title" style="margin-bottom:50px;">Enhancing Bayesian small area level methods with applications in health</h2>
   <p class="subtitle" style="margin-bottom:150px;">James Hogg - PhD Final Seminar</p>
-  <p class="supervisors" style="margin-bottom:50px;">Supervisors: Kerrie Mengersen, Susanna Cramb, Peter Baade and Jessica Cameron</p>
+  <p class="supervisors" style="margin-bottom:50px;">Supervisors: Kerrie Mengersen (QUT), Susanna Cramb (QUT), Peter Baade (CCQ)and Jessica Cameron (CCQ)</p>
 	<p class="date_field">8th April, 2024</p>
 <!-- Logos at the bottom -->
 <div class="logos">
@@ -1156,28 +1221,208 @@ YLD^{(d)}_{it} = \sum_{f,a,h} \pi^{(d)}_{itaf} N_{itaf} \psi_h e_h
 <h1>Summary</h1>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="contributions" class="slide level2">
+<section id="contributions" class="slide level2 smaller">
 <h2>Contributions</h2>
-<!-- ----------------------------------------------------------------- -->
-</section>
-<section id="limitationsreflection" class="slide level2">
-<h2>Limitations/reflection</h2>
-<!-- ----------------------------------------------------------------- -->
-</section>
-<section id="future-directions" class="slide level2">
-<h2>Future directions</h2>
-<!-- ----------------------------------------------------------------- -->
-</section>
-<section id="project-outputs" class="slide level2">
-<h2>Project outputs</h2>
-<!-- ----------------------------------------------------------------- -->
-</section>
-<section id="professional-engagements-and-activities" class="slide level2">
-<h2>Professional engagements and activities</h2>
+<div class="columns">
+<div class="column" style="width:68%;">
+<div>
 <ul>
-<li>talks/conferences</li>
-<li>internships</li>
-<li>co-chair of BRAG</li>
+<li class="fragment">Fully Bayesian TSLN approach for proportions was developed (Chapter 3)</li>
+<li class="fragment">Enhance both the reach and resolution of cancer risk factor estimates for the 2221 small areas across Australia (Chapter 4)</li>
+<li class="fragment">Generalises the shared component model by accommodating known model-based area-specific error, multiple shared factors, and spatial dependence (Chapter 5)</li>
+<li class="fragment">Area Indices of Behaviors Impacting Cancer (AIBIC) product (Chapter 5)</li>
+<li class="fragment">Bayesian spatiotemporal models from disease mapping and SAE are integrated to augment the resolution of reportable estimates in Australia (Chapter 6)</li>
+</ul>
+</div>
+</div><div class="column" style="width:28%;">
+<p><img data-src="imgs/contributions.webp" class="soft-edges" style="width:100.0%"></p>
+</div>
+</div>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="impact" class="slide level2 smaller">
+<h2>Impact</h2>
+<div class="columns">
+<div class="column" style="width:68%;">
+<div>
+<ul>
+<li class="fragment">Modelled risk factors <span class="math inline">\(\to\)</span> <span class="blB">Australian Cancer Atlas</span> platform.</li>
+<li class="fragment">Epidemiologists from the <span class="blB">West Moreton Public Health Unit</span> <span class="math inline">\(\to\)</span> interest in utilising estimates for reporting.</li>
+<li class="fragment"><span class="blB">Department of Health Western Australia (DOHWA)</span> applied methods (Chapter 6) <span class="math inline">\(\to\)</span> generate new estimates for internal Public Health Atlas.</li>
+<li class="fragment">Interest in adopting Bayesian modelling
+<ul>
+<li class="fragment">The Burden of Disease and Mortality specialist group (<span class="blB">Australian Institute of Health and Welfare</span>)</li>
+</ul></li>
+<li class="fragment">Efficient <span class="citation" data-cites="RN452">[<a href="#/references" role="doc-biblioref" onclick="">34</a>]</span> implementation of the <span class="blB">Leroux prior</span> <span class="citation" data-cites="RN366">[<a href="#/references" role="doc-biblioref" onclick="">35</a>]</span>.</li>
+<li class="fragment">Novel Bayesian models <span class="blB">push boundary</span> of previously achievable <span class="math inline">\(\to\)</span> <em>spatial and temporal resolution and reach</em> in Australia</li>
+</ul>
+</div>
+</div><div class="column" style="width:28%;">
+<p><img data-src="imgs/impact.webp" class="soft-edges" style="width:100.0%"></p>
+</div>
+</div>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="efficient-lcar" class="slide level2 scrollable smaller">
+<h2>Efficient LCAR</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="sc">/</span><span class="er">**</span></span>
+<span id="cb1-2"><a href=""></a><span class="er">*</span> Log probability density of the leroux conditional <span class="fu">autoregressive</span> (LCAR) model</span>
+<span id="cb1-3"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param x vector of random effects</span>
+<span id="cb1-4"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param rho spatial dependence parameter</span>
+<span id="cb1-5"><a href=""></a><span class="sc">*</span>           MUST be strictly smaller than <span class="dv">1</span>, use<span class="sc">:</span></span>
+<span id="cb1-6"><a href=""></a><span class="er">*</span>           <span class="st">`</span><span class="at">real&lt;lower=0,upper=0.99&gt; rho;</span><span class="st">`</span></span>
+<span id="cb1-7"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param sigma standard deviation <span class="sc">-</span> often set to <span class="dv">1</span></span>
+<span id="cb1-8"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param C_w Sparse representation of C</span>
+<span id="cb1-9"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param C_v Column indices <span class="cf">for</span> values <span class="cf">in</span> C</span>
+<span id="cb1-10"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param C_u Row starting indices <span class="cf">for</span> values <span class="cf">in</span> C</span>
+<span id="cb1-11"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param offD_id_C_w indices <span class="cf">for</span> off diagonal terms</span>
+<span id="cb1-12"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param D_id_C_w indices <span class="cf">for</span> diagonal terms <span class="sc">-</span> length M</span>
+<span id="cb1-13"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param C_eigenvalues eigenvalues <span class="cf">for</span> C</span>
+<span id="cb1-14"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param N number of areas</span>
+<span id="cb1-15"><a href=""></a><span class="sc">**</span></span>
+<span id="cb1-16"><a href=""></a><span class="er">@</span>return Log probability density</span>
+<span id="cb1-17"><a href=""></a><span class="sc">**</span></span>
+<span id="cb1-18"><a href=""></a>To use<span class="sc">:</span> <span class="fu">LCAR_lpdf</span>( x <span class="sc">|</span> rho, sigma, C_w, C_v, C_u, offD_id_C_w, D_id_C_w, C_eigenvalues, N );</span>
+<span id="cb1-19"><a href=""></a><span class="sc">*</span><span class="er">/</span></span>
+<span id="cb1-20"><a href=""></a>real <span class="fu">LCAR_lpdf</span>(</span>
+<span id="cb1-21"><a href=""></a>    vector x,               </span>
+<span id="cb1-22"><a href=""></a>    real rho,                   </span>
+<span id="cb1-23"><a href=""></a>    real sigma,              </span>
+<span id="cb1-24"><a href=""></a>    vector C_w , </span>
+<span id="cb1-25"><a href=""></a>    int [] C_v , </span>
+<span id="cb1-26"><a href=""></a>    int [] C_u , </span>
+<span id="cb1-27"><a href=""></a>    int [] offD_id_C_w ,        </span>
+<span id="cb1-28"><a href=""></a>    int [] D_id_C_w ,       </span>
+<span id="cb1-29"><a href=""></a>    vector C_eigenvalues,       </span>
+<span id="cb1-30"><a href=""></a>    int N                   </span>
+<span id="cb1-31"><a href=""></a>    ) {                 </span>
+<span id="cb1-32"><a href=""></a>        vector[N] ldet_C;</span>
+<span id="cb1-33"><a href=""></a>        vector [ <span class="fu">num_elements</span>(C_w) ] ImrhoC;</span>
+<span id="cb1-34"><a href=""></a>        vector[N] A_S;</span>
+<span id="cb1-35"><a href=""></a>        <span class="sc">/</span><span class="er">/</span> Multiple off<span class="sc">-</span>diagonal elements by rho</span>
+<span id="cb1-36"><a href=""></a>        ImrhoC [ offD_id_C_w ] <span class="ot">=</span> <span class="sc">-</span> rho <span class="sc">*</span> C_w[ offD_id_C_w ];</span>
+<span id="cb1-37"><a href=""></a>        <span class="sc">/</span><span class="er">/</span> Calculate diagonal elements of ImrhoC</span>
+<span id="cb1-38"><a href=""></a>        ImrhoC [ D_id_C_w ] <span class="ot">=</span> <span class="dv">1</span> <span class="sc">-</span> rho <span class="sc">*</span> C_w[ D_id_C_w ];</span>
+<span id="cb1-39"><a href=""></a>        A_S <span class="ot">=</span> <span class="fu">csr_matrix_times_vector</span>( N, N, ImrhoC, C_v, C_u, x );</span>
+<span id="cb1-40"><a href=""></a>        ldet_C <span class="ot">=</span> <span class="fu">log1m</span>( rho <span class="sc">*</span> C_eigenvalues );</span>
+<span id="cb1-41"><a href=""></a>        return <span class="sc">-</span><span class="fl">0.5</span> <span class="sc">*</span> ( </span>
+<span id="cb1-42"><a href=""></a>        N<span class="sc">*</span><span class="fu">log</span>( <span class="dv">2</span> <span class="sc">*</span> <span class="fu">pi</span>() ) </span>
+<span id="cb1-43"><a href=""></a>        <span class="sc">-</span> ( N <span class="sc">*</span> <span class="fu">log</span>(<span class="dv">1</span><span class="sc">/</span><span class="fu">square</span>(sigma)) <span class="sc">+</span> <span class="fu">sum</span>( ldet_C ) ) </span>
+<span id="cb1-44"><a href=""></a>        <span class="sc">+</span> <span class="dv">1</span><span class="sc">/</span><span class="fu">square</span>(sigma) <span class="sc">*</span> <span class="fu">dot_product</span>(x, A_S) </span>
+<span id="cb1-45"><a href=""></a>        );</span>
+<span id="cb1-46"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="limitationsreflection" class="slide level2 smaller">
+<h2>Limitations/reflection</h2>
+<div class="columns">
+<div class="column" style="width:58%;">
+<div>
+<ul>
+<li class="fragment"><span class="blB">Improving</span> spatial resolution: <span class="blB">double edged sword</span></li>
+<li class="fragment"><strong>Reliability</strong> of small area level estimates <span class="math inline">\(\to\)</span> contingent on quality of validation data.</li>
+</ul>
+</div>
+</div><div class="column" style="width:38%;">
+<p><img data-src="imgs/limitations.webp" class="soft-edges" style="width:100.0%"></p>
+</div>
+</div>
+<aside class="notes">
+<p>Improving spatial resolution - better models <span class="math inline">\(=\)</span> more high-resolution estimates of health (atlas platforms). - introduces the challenge of navigating decision making with multidimensional health information (with uncertainty) - given that decision paralysis can impede effective policy, only present essential information in an easily understandable manner - Australian Cancer Atlas great example of this - Chapter 5 presents our solution. Reliability - health departments (report to policymakers) proving validity becomes increasingly important and complex; possibly made more difficult with the adoption of Bayesian models. - Chapter 6 compares estimates from Bayesian models with those from previous approaches: solid agreement. - Not always possible - survey data, for example, the ultimate, but impractical, validation dataset would be health data for the entire population. - indices</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="future-directions" class="slide level2 smaller">
+<h2>Future directions</h2>
+<div class="columns">
+<div class="column" style="width:58%;">
+<div>
+<ul>
+<li class="fragment">Theory/model expansion</li>
+<li class="fragment">Validation for SAE</li>
+<li class="fragment">Validation for burden of disease methods and models
+<ul>
+<li class="fragment">Accommodate unique types of measurement error</li>
+</ul></li>
+<li class="fragment">Consider temporal dimension into the TSLN approach (Chapters 3 and 4) and the GSCM (Chapter 5)</li>
+<li class="fragment">Indices
+<ul>
+<li class="fragment">Temporal consistency</li>
+<li class="fragment">Robustness</li>
+<li class="fragment">Aggregation</li>
+</ul></li>
+</ul>
+</div>
+</div><div class="column" style="width:38%;">
+<p><img data-src="imgs/future_directions.webp" class="soft-edges" style="width:100.0%"></p>
+</div>
+</div>
+<aside class="notes">
+<p>Theory/model</p>
+<ul>
+<li>more rigorous theoretical foundation for two-stage approaches</li>
+<li>include multivariate variations or including non-linear components such as splines and Gaussian processes.</li>
+</ul>
+<p>Validation for SAE</p>
+<ul>
+<li>although new methodologies improve the reliability of small area estimates best approach - acquiring more survey data.</li>
+<li>Three ways
+<ul>
+<li>expand the nationwide surveys conducted by the ABS.</li>
+<li>leveraging the existing health information collected annually and independently by each state and territory of Australia.</li>
+<li>include questions about health behaviours in the census</li>
+</ul></li>
+</ul>
+<p>Validation for burden of disease methods and models</p>
+<ul>
+<li>the prevalence of disease states is simplistically assumed to be constant across time, areas, age, and sex</li>
+<li>the definition of disease states in discrete terms fails to capture the nuanced dynamics of disease progression or regression.</li>
+<li>accommodate the unique types of measurement error.</li>
+</ul>
+<p>Indices</p>
+<ul>
+<li>particularly if the modelled estimates or indices are intended to track the impact of health interventions.</li>
+<li>Temporal consistency requires consistency in the: survey design, questions and scope; region boundaries; and populations across time, which can be difficult to verify.</li>
+<li>temporal consistency must first be backed by a consistent, reproducible and robust methodology</li>
+<li>This entails the selection of methods that are easy to use, validate and understand</li>
+<li>Indices are extremely sensitive to the order, number and selection of features, the nature of the transformations used, and whether errors and spatial dependence are accommodated.</li>
+<li>the pervasive issue of the modifiable areal unit problem presents challenges in releasing indices at a variety of geographical levels</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="professional-engagements-activities-and-awards" class="slide level2 smaller">
+<h2>Professional engagements, activities and awards</h2>
+<ul>
+<li>Many conferences <span class="math inline">\(+\)</span> posters (including 2x <strong>international conferences</strong>)</li>
+<li>Internship and statistical consulting for <span class="blB">Department of Health Western Australia (DOHWA)</span></li>
+<li>Casual statistical consulting for <span class="blB">Environmental Protection Authority (EPA) Victoria</span></li>
+<li>Co-chair of the <span class="blB">Bayesian Research and Applications Group (BRAG)</span></li>
+<li>Organised and hosted virtual <span class="blB"><em>StanConnect</em> conference</span></li>
+<li>Worked with BioGro as part of <span class="blB">Good Data Institute</span></li>
+<li>Team award <strong>second place</strong> in <span class="blB">2023 United Nations Datathon</span></li>
 </ul>
 </section></section>
 <section id="references" class="title-slide slide level1 smaller scrollable">
@@ -1282,11 +1527,17 @@ YLD^{(d)}_{it} = \sum_{f,a,h} \pi^{(d)}_{itaf} N_{itaf} \psi_h e_h
 <div id="ref-fox_2012" class="csl-entry" role="listitem">
 <div class="csl-left-margin">33. </div><div class="csl-right-inline">Fox CW, Roberts SJ. A tutorial on variational <span>B</span>ayesian inference. Artificial Intelligence Review 2012;38:85–95. </div>
 </div>
+<div id="ref-RN452" class="csl-entry" role="listitem">
+<div class="csl-left-margin">34. </div><div class="csl-right-inline">Stan Development Team. <span>Stan</span> [Internet]. 2023;Available from: <a href="https://mc-stan.org">https://mc-stan.org</a></div>
+</div>
+<div id="ref-RN366" class="csl-entry" role="listitem">
+<div class="csl-left-margin">35. </div><div class="csl-right-inline">Leroux B, Lei X, Breslow N. Estimation of disease rates in small areas: A new mixed model for spatial dependence. In: Statistical models in epidemiology, the environment, and clinical trials. Springer; 2000. page 179–91.</div>
+</div>
 </div>
 <div class="quarto-auto-generated-content">
 <p><img src="imgs/qutlogo.png" class="slide-logo"></p>
 <div class="footer footer-default">
-
+<p>James Hogg</p>
 </div>
 </div>
 </section>
@@ -1345,7 +1596,7 @@ YLD^{(d)}_{it} = \sum_{f,a,h} \pi^{(d)}_{itaf} N_{itaf} \psi_h e_h
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: 'c/t',
+        slideNumber: false,
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',
@@ -1504,6 +1755,44 @@ YLD^{(d)}_{it} = \sum_{f,a,h} \pi^{(d)}_{itaf} N_{itaf} \psi_h e_h
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
