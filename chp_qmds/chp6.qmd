@@ -1,11 +1,6 @@
 <!-- ----------------------------------------------------------------- -->
 # Chapter 6/Paper 4
 Improving the spatial and temporal resolution of burden of disease measures with Bayesian models
-![](imgs/pillars.png){width=80%}
-
-<!-- ----------------------------------------------------------------- -->
-# Chapter 6/Paper 4
-Improving the spatial and temporal resolution of burden of disease measures with Bayesian models
 ![](imgs/pillars_p4.png){width=80%}
 
 <!-- ----------------------------------------------------------------- -->

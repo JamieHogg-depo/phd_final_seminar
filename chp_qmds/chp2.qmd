@@ -1,0 +1,358 @@
+<!-- ----------------------------------------------------------------- -->
+# Introduction
+
+<!-- ----------------------------------------------------------------- -->
+##
+
+<!-- presentation slides is 1050 x 700 -->
+
+:::: {.columns}
+
+::: {.column width="38%"}
+A single value representing all Australia ⛔
+:::
+
+::: {.column width="58%"}
+![](imgs/allAUS.png){width="820"}
+:::
+
+::::
+
+<!-- ----------------------------------------------------------------- -->
+##
+
+:::: {.columns}
+
+::: {.column width="38%"}
+Many estimates representing communities ✅
+:::
+
+::: {.column width="58%"}
+![](imgs/allSA2s.png){width="820"}
+:::
+
+::::
+
+<!-- ----------------------------------------------------------------- -->
+## Motivation {.smaller}
+
+:::{.incremental}
+- Small area estimates $\to$ more effective health policy
+- **Small area analysis**
+  - Analyses of individual level data that have been aggregated into meaningful groups
+  - Often involves <span class="blB">modelling</span>.
+:::
+
+::: {.notes}
+- Without such estimates, community health interventions may lack the necessary evidence to effectively target their efforts. 
+- aggregated into meaningful groups such as age, sex, or most commonly, geographic area
+:::
+
+<!-- ----------------------------------------------------------------- -->
+##
+
+::: {.fragment .fade-in-then-semi-out}
+<span class="blB">Small area modelling</span>
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+- **Disease mapping** [@RN8]
+  - Generate smoothed maps of registry or administrative data, like cancer incidence and mortality
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+- **Small area estimation** (SAE) [@RN28]
+  - primarily used for survey data
+  - produce reliable estimates for aggregated data when sample sizes are small
+:::
+
+::: {.fragment .fade-in}
+- <span class="blB">Bayesian inference</span> is **ubiquitous** with both
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## Small area modelling in Australia {.smaller}
+
+Increasingly <span class="blB">relevant</span> in Australia
+
+Health outcomes exhibit <span class="blR">variations</span> based on geography (e.g., remoteness and socioeconomic status [@RN26; @RN113; @RN204; @RN338; @RN121])
+
+![](imgs/aihw_remoteness.png){.r-stretch}
+
+<!-- ----------------------------------------------------------------- -->
+## {auto-animate=true}
+
+::: {style="margin-top: 100px; font-size: 1em;"}
+Modelling is tricky in Australia!
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 1.6em; color: red;"}
+Modelling is tricky in Australia! 
+:::
+
+:::{.incremental}
+- Highly <span class="blR">decentralised population</span> distribution
+- **Sparsity** issues... which *varies* across the country due to remoteness
+  - Sparsity denotes very small samples sizes or disease counts
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## {auto-animate=true}
+
+::: {style="margin-top: 100px; font-size: 1em;"}
+Sparsity
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 1.5em; color: red;"}
+Sparsity 
+:::
+
+:::{.incremental}
+- Major cities have <span class="blB">reliable estimates</span>
+- Remote areas typically have <span class="blR">poor</span> or nonexistent estimates
+- Health information only reliable or available $\to$ <span class="blR">large geographical regions</span> (e.g., states)
+:::
+
+::: {.notes}
+- Without such estimates, community health interventionsmay lack the necessary evidence to effectively target their efforts. 
+- aggregated into meaningful groups such as age, sex, or most commonly, geographic area
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## Sparsity, survey data and Australia
+
+::: {.incremental}
+- Challenge of population density $\to$ <span class="blR">worse</span> with survey data
+  - Many areas outside the major cities are <span class="blR">excluded</span>
+- International studies $\to$ area sample sizes <span class="blB">greater than 50</span> [@RN147, @RN44]
+- Current Australian surveys (e.g., 2017-2018 National Health Survey (NHS)) have area level sample sizes ranging from <span class="blR">5 to 13</span>. 
+- <span class="blR">Dearth of literature</span> describing these sparsity issues in SAE. 
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## Despite these challenges...
+
+Australian Cancer Atlas [@RN26], the Social Health Atlas of Australia (SHAA) [@RN113], the Queensland Injury Atlas [@RN619], the Injury Atlas of Victoria [@RN620] and the AusEnHealth platform [@RN621].
+
+  <!-- presentation slides is 1050 x 700 -->
+
+![](imgs/ACA_oesophagealcancer.png){.absolute bottom=0 left=0 height="275"}
+
+![](imgs/SHA.png){.absolute bottom=0 right=0 height="275"}
+
+<!-- ----------------------------------------------------------------- -->
+## Thesis aim {.center}
+
+::: {style="font-size: 1.5em"}
+<span class="blB">Develop</span> and <span class="blB">apply</span> **Bayesian small area methods** to health data in Australia
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## Pillars of public health
+
+::: {.incremental}
+- Cancer
+- Burden of disease
+:::
+
+<!-- ----------------------------------------------------------------- -->
+# Pillar I: cancer
+
+<!-- ----------------------------------------------------------------- -->
+## Background
+
+::: {.incremental}
+- Cancer accounts for 19% of Australia’s total health burden[^1] [@RN121]
+- Earlier diagnosis and better treatment are effective — <span class="blB">prevention</span> is key
+:::
+
+[^1]: Health burden: the impact of living with illness and injury and dying prematurely
+
+<!-- ----------------------------------------------------------------- -->
+## Background
+
+::: {.incremental}
+- Prevention strategy $\to$ <span class="blB">reducing prevalence</span> of behaviours known to increase the risk of cancer (i.e., cancer risk factors).
+  - Smoking, obesity, poor diet, insufficient physical activity, excessive sun exposure, alcohol
+- Evidence of <span class="blR">spatial variation</span> in cancer risk factors [@RN423;@RN426;@RN113;@RN1;@RN395; @RN2,@RN338]
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## Social Health Atlas {.smaller}
+
+:::: {.columns}
+
+::: {.column width="48%"}
+- Developed by Public Health Information Development Unit (PHIDU) and Australian Bureau of Statistics (ABS)
+- Present small-area level prevalence estimates of cancer risk factors
+- Estimates suffer from <span class="blR">resolution</span> and <span class="blR">coverage issues</span>
+:::
+
+::: {.column width="48%"}
+![](imgs/SHA%20-%20landing%20page.png){width=210%}
+
+:::
+
+::::
+
+<!-- ----------------------------------------------------------------- -->
+## {auto-animate=true}
+
+::: {style="margin-top: 100px; font-size: 1em;"}
+Resolution
+:::
+
+::: {style="margin-top: 150px; font-size: 1em;"}
+Reach
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## {auto-animate=true}
+
+::: {style="margin-top: 100px; font-size: 1.5em; color: blue;"}
+Resolution 
+:::
+Refers to the geographical and population size of the small areas
+
+::: {style="margin-top: 150px; font-size: 1.5em; color: blue;"}
+Reach 
+:::
+Refers to the number of the small areas of interest for which estimates are availab
+
+<!-- ----------------------------------------------------------------- -->
+## Social Health Atlas {.smaller}
+
+:::: {.columns}
+
+::: {.column width="48%"}
+**Resolution**
+
+- Optimal resolution is the statistical area level 2 (SA2)
+- Presents estimates at the population health area (PHA) level[^2]
+- 165 PHAs and 2,310 SA2s across Australia
+:::
+
+::: {.column width="48%"}
+![](imgs/sa2_vs_pha.png){width=210%}
+
+:::
+
+::::
+
+[^2]: PHAs are individual and aggregated SA2s
+
+<!-- ----------------------------------------------------------------- -->
+## Social Health Atlas {.smaller}
+
+:::: {.columns}
+
+::: {.column width="48%"}
+**Reach**
+
+- does not provide estimates for very remote regions
+- Health disparities widen with increasing remoteness [@RN581;@RN338;@RN608]
+:::
+
+::: {.column width="48%"}
+![](imgs/remoteness.png){width=210%}
+
+:::
+
+::::
+
+<!-- ----------------------------------------------------------------- -->
+##
+
+::: {.rp-box}
+**Research Problem**
+<br>
+<br>
+The need to improve the spatial resolution and reach of small area level cancer risk factor estimates in Australia to enable more targeted cancer prevention strategies. 
+:::
+
+<!-- ----------------------------------------------------------------- -->
+##
+
+::: {.rp-box}
+**Research Problem**
+<br>
+<br>
+Lack of small area estimation methods for sparse survey data.
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## Tangent Alert
+
+- Social Health Atlas reports age-standardised <span class="blR">rates</span>.
+- Common and intuitive for risk factors to be mapped as proportions [@RN28;@RN625;@RN607;@RN426].
+- We will estimate prevalence using <span class="blR">proportions</span>.
+
+<!-- ----------------------------------------------------------------- -->
+## Indices
+
+::: {.incremental}
+Recent years have witnessed a surge in research focused on developing indices \autocite{RN359, RN671,RN687,RN360,RN674, RN670}. Such indices are instrumental in reducing the dimensionality and complexity of data, thereby addressing some of the questions posed above \cite{RN613}. Moreover, coupled with the increasing popularity of Atlas platforms, there is an emerging need to develop methods that transform Atlas estimates, like those in the Australian Cancer Atlas, into indices.
+:::
+
+<!-- ----------------------------------------------------------------- -->
+##
+
+::: {.rp-box}
+**Research Problem**
+<br>
+<br>
+
+- Lack of development into index creation methods that can effectively account for the spatial autocorrelation and the known heteroscedastic modelling errors inherent in downloaded Atlas data
+- No area level cancer risk factor index for Australia
+:::
+
+<!-- ----------------------------------------------------------------- -->
+# Pillar II: burden of disease
+
+<!-- ----------------------------------------------------------------- -->
+## Background
+
+<!-- ----------------------------------------------------------------- -->
+##
+
+::: {.rp-box}
+**Research Problem**
+<br>
+<br>
+Absence of advanced Bayesian small areamodels in BOD research, resulting in estimates with no uncertainty measures and with low resolution and reach
+:::
+
+<!-- ----------------------------------------------------------------- -->
+# Aims and Objectives
+
+<!-- ----------------------------------------------------------------- -->
+---
+
+- **1.0:** <span class="blB">Small area estimation</span>
+  - **1.1 Method:** Develop a Bayesian SAE method for proportions, which specifically tackles data sparsity for improved resolution and reach.
+  - **1.2 Application:** Generate SA2-level prevalence estimates for several cancer risk factors across Australia with appropriate measures of uncertainty.
+
+<!-- ----------------------------------------------------------------- -->
+---
+
+- **2.0:** <span class="blB">Index creation</span>
+  - **2.1 Method:** Develop a Bayesian model-based approach to index creation that can accommodate spatial autocorrelation and known heteroscedastic measurement error.
+  - **2.2 Application:** Using cancer risk factor data, create the first area-level cancer risk factor indices for Australia. The indices will have appropriate measures of uncertainty.
+
+<!-- ----------------------------------------------------------------- -->
+---
+
+- **3.0:**  <span class="blB">Burden of disease</span>
+  - **3.1 Method:** Drawing from the SAE and disease mapping literature, explore and develop appropriate Bayesian spatiotemporal methods to model the wide range of health data used in full BOD studies.
+  - **3.2 Application:** Using two very different diseases (coronary heart disease (CHD) and asthma in Western Australia), generate and map the first small area level BOD estimates in Australia.
+
+<!-- ----------------------------------------------------------------- -->
+## Objectives vs. Chapters vs. Outputs
+
+![Schematic illustrating the relationship between the two pillars, three objectives (abbreviated as ``Obj''), four chapters and four research papers constituting this thesis.](imgs/pillars.png){#fig-pillars}

@@ -52,6 +52,20 @@
   /*text-align: center;*/
 }
 
+.rp-box {
+  padding: 20px;
+  border-radius: 0px;
+  margin-top: 10px; /* Large top margin */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F47273; /* Light red*/
+  border-left: 5px solid #F47273; /* Light red border, change as desired */
+  max-width: 80%;
+  font-style: italic;
+  color: white;
+  text-align: center;
+}
+
 /* Add QUT logo to bottom of all slides*/
 /* .reveal .slides {
   background-image: url('imgs/qutlogo.png');

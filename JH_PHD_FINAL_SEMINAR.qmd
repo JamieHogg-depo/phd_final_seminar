@@ -37,72 +37,10 @@ QUT acknowledges the Turrbal and Yugara, as the First Nations owners of the land
 
 QUT acknowledges the important role Aboriginal and Torres Strait Islander people play within the QUT community.
 
-# Introduction
-
 <!-- ----------------------------------------------------------------- -->
-## Motivation {.smaller}
-
-:::{.incremental}
-- Precise small area estimates critical for effective health policy and interventions.
-- Small area analysis: Descriptive, exploratory, and causal methods to improve resource allocation and decision-making.
-- Focus on Australia: Challenges due to population density and geographic disparities
-:::
-
-<!-- presentation slides is 1050 x 700 -->
-
-![](imgs/ACA_oesophagealcancer.png){.absolute bottom=0 right=0 height="275"}
-
-![](imgs/SHA.png){.absolute bottom=0 left=0 height="275"}
-
+<!-- CHAPTER 2 -->
 <!-- ----------------------------------------------------------------- -->
-## {.smaller}
-
-:::{.incremental}
-- Bayesian inference for disease mapping and small area estimation enhances decision-making and addresses data sparsity.
-- Addressing limitations in current Bayesian small-area modelling to overcome sparsity and improve accuracy.
-- Aim - Develop statistical approaches for better health data resolution and targeted interventions.
-:::
-
-<!-- ----------------------------------------------------------------- -->
-## Research Problem
-
-The overarching research problem in this project is to develop and apply Bayesian small area methods to health data in Australia.
-
-<!-- ----------------------------------------------------------------- -->
-## Aims and Objectives
-:::{.incremental}
-- **1.0:** <span class="blB">Small area estimation</span>
-  - **1.1 Method:** Develop a Bayesian SAE method for proportions, which specifically tackles data sparsity for improved resolution and reach.
-  - **1.2 Application:** Generate SA2-level prevalence estimates for several cancer risk factors across Australia with appropriate measures of uncertainty.
-:::
-
-<!-- ----------------------------------------------------------------- -->
----
-
-:::{.incremental}
-- **2.0:** <span class="blB">Index creation</span>
-  - **2.1 Method:** Develop a Bayesian model-based approach to index creation that can accommodate spatial autocorrelation and known heteroscedastic measurement error.
-  - **2.2 Application:** Using cancer risk factor data, create the first area-level cancer risk factor indices for Australia. The indices will have appropriate measures of uncertainty.
-:::
-
-<!-- ----------------------------------------------------------------- -->
----
-
-:::{.incremental}
-- **3.0:**  <span class="blB">Burden of disease</span>
-  - **3.1 Method:** Drawing from the SAE and disease mapping literature, explore and develop appropriate Bayesian spatiotemporal methods to model the wide range of health data used in full BOD studies.
-  - **3.2 Application:** Using two very different diseases (coronary heart disease (CHD) and asthma in Western Australia), generate and map the first small area level BOD estimates in Australia.
-:::
-
-<!-- ----------------------------------------------------------------- -->
-## Objectives vs. PhD Outputs
-
-![Schematic illustrating the relationship between the two pillars, three objectives (abbreviated as ``Obj''), and four research papers constituting this thesis.](imgs/pillars.png){#fig-pillars}
-
-<!-- ----------------------------------------------------------------- -->
-## Research Contributions vs. Thesis Chapters
-
-- could use figure here too
+{{< include chp_qmds/chp2.qmd >}}
 
 <!-- ----------------------------------------------------------------- -->
 <!-- CHAPTER 3 -->
@@ -125,66 +63,12 @@ The overarching research problem in this project is to develop and apply Bayesia
 {{< include chp_qmds/chp6.qmd >}}
 
 <!-- ----------------------------------------------------------------- -->
-# Summary
-
+<!-- Chapter 7 -->
 <!-- ----------------------------------------------------------------- -->
-## Contributions
-
-<!-- ----------------------------------------------------------------- -->
-## Limitations/reflection
-
-<!-- ----------------------------------------------------------------- -->
-## Future directions
-
-<!-- ----------------------------------------------------------------- -->
-## Project outputs
-
-<!-- ----------------------------------------------------------------- -->
-## Professional engagements and activities
- - talks/conferences
- - internships
- - co-chair of BRAG
+{{< include chp_qmds/chp7.qmd >}}
 
 # References
 
 ::: {#refs}
-:::
-
-# Some Quarto hacks
-
-# Background
-
-- small area <span class="blB">estimation</span>.
-- <span class="blR">issues</span> in Australia
-- Katie introduced some maths and defined the core problem statement
-- case study
-- setup problem [@RN471]
-
-## The overall aim
-
-::: {.incremental}
-
-- Eat spaghetti
-- Drink wine
-- See @fig-pillars for an illustration.
-
-:::
-
-## Images
-
-![This is a pillars.](imgs/pillars.png){#fig-pillars}
-
-## Maths
-
-$$
-y_i \sim \text{N}\left( \boldsymbol{\mu}, \sigma^2 \right)
-$$
-
-## Slide with notes
-
-On slide
-
-::: {.notes}
-Speaker notes go here.
 :::
 

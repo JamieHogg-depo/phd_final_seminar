@@ -2,12 +2,6 @@
 # Chapter 5/Paper 3
 Creating area level indices of behaviours impacting cancer in Australia with a Bayesian generalised shared component model
 <br>
-![](imgs/pillars.png){width=80%}
-
-<!-- ----------------------------------------------------------------- -->
-# Chapter 5/Paper 3
-Creating area level indices of behaviours impacting cancer in Australia with a Bayesian generalised shared component model
-<br>
 ![](imgs/pillars_p3.png){width=80%}
 
 <!-- ----------------------------------------------------------------- -->
