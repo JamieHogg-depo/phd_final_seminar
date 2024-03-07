@@ -847,14 +847,33 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 <h2>Background</h2>
 <ul>
 <li>Increasing demand <span class="math inline">\(\to\)</span> robust small area estimates from survey data</li>
-<li>Model-based SAE methods pushed to extent</li>
-<li>Data sparsity is key challenge
+<li>Model-based SAE methods pushed to <span class="blR">extent</span></li>
+<li>Data sparsity is key <span class="blR">challenge</span>
 <ul>
-<li>current individual and area level models can be limiting</li>
+<li>Individual level or area level models <span class="blR">cannot address</span></li>
 </ul></li>
 </ul>
+<!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-14" class="slide level2">
+<section id="section-14" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<div style="margin-top: 100px;">
+<p>Use both?</p>
+</div>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="section-15" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
+<div style="margin-top: 200px; font-size: 3em;">
+<p>Use <strong>both?</strong></p>
+</div>
+<ul>
+<li>Two-stage approaches have <span class="blB">emerged</span> <span class="citation" data-cites="gao2023_sma Das2022">[<a href="#/references" role="doc-biblioref" onclick="">22</a>,<a href="#/references" role="doc-biblioref" onclick="">23</a>]</span></li>
+<li>Recent work hints at <span class="blB">benefits</span> <span class="math inline">\(\to\)</span> no full investigation</li>
+<li><span class="blB">Mitigate</span> weakness of either model and <span class="blB">leverage</span> their strengths</li>
+</ul>
+</section>
+<section id="section-16" class="slide level2">
 <h2><!-- ----------------------------------------------------------------- --></h2>
 <div class="quote-box">
 <p><strong>Contribution</strong> 🎉 <br> <br> A Bayesian two-stage method for proportions that tackles data sparsity challenges in SAE.</p>
@@ -897,11 +916,22 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
     e_i &amp;\sim&amp; N(0, \sigma_e^2)
 \end{eqnarray}
 \]</span></p>
+<p>where:</p>
+<ul>
+<li><span class="math inline">\(y_{ij}\)</span> is the binary response for sampled individual <span class="math inline">\(j\)</span> in small area <span class="math inline">\(i\)</span></li>
+<li><span class="math inline">\(p_{ij}\)</span> is the probabilitiy for <span class="math inline">\(\dots\)</span></li>
+<li><span class="math inline">\(\tilde{w}_{ij}\)</span> is the sampled scaled weight for <span class="math inline">\(\dots\)</span></li>
+</ul>
 <h3 id="stage-1-s1-estimates">Stage 1 (S1) estimates</h3>
 <p>The S1 estimate<sup>1</sup> for area <span class="math inline">\(i\)</span> is,<br>
 <span class="math display">\[
-\hat{\theta}_i^{\text{S1}} = \text{logit}\left( \frac{\sum_{j \in r_i} w_{ij} p_{ij}}{n_i} \right)
+\hat{\theta}_i^{\text{S1}} = \text{logit}\left( \frac{\sum_{j=1}^{n_i} w_{ij} p_{ij}}{n_i} \right)
 \]</span> with <span class="math inline">\(\gamma_i^{\text{S1}}\)</span> the corresponding sample variance.</p>
+<p>where:</p>
+<ul>
+<li><span class="math inline">\(w_{ij}\)</span> is the sample weight for sampled individual <span class="math inline">\(j\)</span> in small area <span class="math inline">\(i\)</span></li>
+<li>Sample weights in small area <span class="math inline">\(i\)</span> sum to <span class="math inline">\(n_i\)</span> (the area sample size)</li>
+</ul>
 <h3 id="stage-2">Stage 2</h3>
 <p>Composed of: a measurement error model, <span class="math display">\[
 \hat{\theta}_i^{\text{S1}} \sim N\left(  \hat{\bar{\theta}}_i, \widehat{\text{v}}\left( \hat{\theta}_i^{\text{S1}} \right)  \right),
@@ -919,6 +949,10 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 \end{eqnarray}
 \]</span></p>
 <p>The parameter of interest (i.e.&nbsp;proportion) is the posterior distribution of <span class="math inline">\(\hat{\mu}_i = \text{logit}^{-1}( \hat{\theta}_i)\)</span>. <br></p>
+<h3 id="details">Details</h3>
+<ul>
+<li>Generalized variance functions (GVF) for some of <span class="math inline">\(\gamma_i^{\text{S1}}\)</span></li>
+</ul>
 <!-- ----------------------------------------------------------------- -->
 <aside><ol class="aside-footnotes"><li id="fn3"><p>The posterior draws from stage 1 are fed as input to the stage 2 model.</p></li></ol></aside></section>
 <section id="simulation-study" class="slide level2 center">
@@ -978,7 +1012,7 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 <strong>Status</strong>: Submitted
 </div>
 </section>
-<section id="section-15" class="slide level2">
+<section id="section-17" class="slide level2">
 <h2><!-- ----------------------------------------------------------------- --></h2>
 <div class="quote-box">
 <p><strong>Contribution</strong> 🎉</p>
@@ -1049,7 +1083,7 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 <p><strong>Burden of disease (BOD)</strong></p>
 <div>
 <ul>
-<li class="fragment">BOD estimates are widely used to identify diseases causing excess burden <span class="citation" data-cites="Murray1997 GBD2016 Schmidt2020 RN121 Steel2018">[<a href="#/references" role="doc-biblioref" onclick="">7</a>,<a href="#/references" role="doc-biblioref" onclick="">22</a>–<a href="#/references" role="doc-biblioref" onclick="">25</a>]</span></li>
+<li class="fragment">BOD estimates are widely used to identify diseases causing excess burden <span class="citation" data-cites="Murray1997 GBD2016 Schmidt2020 RN121 Steel2018">[<a href="#/references" role="doc-biblioref" onclick="">7</a>,<a href="#/references" role="doc-biblioref" onclick="">24</a>–<a href="#/references" role="doc-biblioref" onclick="">27</a>]</span></li>
 <li class="fragment">Reported using disability-adjusted life years (DALY)
 <ul>
 <li class="fragment">Linear and non-linear combinations of fatal (e.g., mortality) and non-fatal (e.g., prevalence) burden</li>
@@ -1059,7 +1093,7 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 </ul>
 </div>
 </section>
-<section id="section-16" class="slide level2">
+<section id="section-18" class="slide level2">
 <h2><!-- ----------------------------------------------------------------- --></h2>
 <p><strong>Bayesian modelling in BOD</strong></p>
 <div>
@@ -1068,9 +1102,9 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 <li class="fragment">Few studies use Bayesian models in BOD studies</li>
 <li class="fragment">Examples
 <ul>
-<li class="fragment">Bayesian meta-regression tool, DisMod-MR 2.1 <span class="citation" data-cites="Steel2018 GBD2015">[<a href="#/references" role="doc-biblioref" onclick="">25</a>,<a href="#/references" role="doc-biblioref" onclick="">26</a>]</span></li>
-<li class="fragment">The Cause of Death Ensemble model (CODEm) <span class="citation" data-cites="CODEm">[<a href="#/references" role="doc-biblioref" onclick="">27</a>]</span></li>
-<li class="fragment">Shared component models of MacNab <span class="citation" data-cites="RN652 RN653">[<a href="#/references" role="doc-biblioref" onclick="">28</a>,<a href="#/references" role="doc-biblioref" onclick="">29</a>]</span></li>
+<li class="fragment">Bayesian meta-regression tool, DisMod-MR 2.1 <span class="citation" data-cites="Steel2018 GBD2015">[<a href="#/references" role="doc-biblioref" onclick="">27</a>,<a href="#/references" role="doc-biblioref" onclick="">28</a>]</span></li>
+<li class="fragment">The Cause of Death Ensemble model (CODEm) <span class="citation" data-cites="CODEm">[<a href="#/references" role="doc-biblioref" onclick="">29</a>]</span></li>
+<li class="fragment">Shared component models of MacNab <span class="citation" data-cites="RN652 RN653">[<a href="#/references" role="doc-biblioref" onclick="">30</a>,<a href="#/references" role="doc-biblioref" onclick="">31</a>]</span></li>
 </ul></li>
 </ul>
 </div>
@@ -1087,14 +1121,14 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-17" class="slide level2" data-auto-animate="true">
+<section id="section-19" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 100px;">
 <p><strong>No</strong> BOD studies</p>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-18" class="slide level2" data-auto-animate="true">
+<section id="section-20" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 200px; font-size: 3em; color: red;">
 <p><strong>No</strong> BOD studies</p>
@@ -1108,7 +1142,7 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 <li>have explored practical models for government agencies</li>
 </ul>
 </section>
-<section id="section-19" class="slide level2">
+<section id="section-21" class="slide level2">
 <h2><!-- ----------------------------------------------------------------- --></h2>
 <div class="quote-box">
 <p><strong>Study objectives</strong></p>
@@ -1133,8 +1167,8 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 <li class="fragment"><span class="math inline">\(y_{ita}\)</span> be the raw mortality counts in age group <span class="math inline">\(a = 1, \dots, A\)</span>, area <span class="math inline">\(i = 1, \dots, M\)</span> and time <span class="math inline">\(t = 1, \dots, T\)</span></li>
 <li class="fragment"><span class="math inline">\(\xi_{it}\)</span> be the random effect for the <span class="math inline">\(i\)</span>th area and <span class="math inline">\(t\)</span>th year
 <ul>
-<li class="fragment"><span class="math inline">\(\theta_i\)</span>, the spatial random effect, is modeled using a BYM2 spatial prior <span class="citation" data-cites="riebler2016bym2">[<a href="#/references" role="doc-biblioref" onclick="">30</a>]</span>;</li>
-<li class="fragment"><span class="math inline">\(\gamma_t\)</span>, the temporal random effect, is modeled using an intrinsic conditional autoregressive prior <span class="citation" data-cites="RN365">[<a href="#/references" role="doc-biblioref" onclick="">31</a>]</span>; and</li>
+<li class="fragment"><span class="math inline">\(\theta_i\)</span>, the spatial random effect, is modeled using a BYM2 spatial prior <span class="citation" data-cites="riebler2016bym2">[<a href="#/references" role="doc-biblioref" onclick="">32</a>]</span>;</li>
+<li class="fragment"><span class="math inline">\(\gamma_t\)</span>, the temporal random effect, is modeled using an intrinsic conditional autoregressive prior <span class="citation" data-cites="RN365">[<a href="#/references" role="doc-biblioref" onclick="">33</a>]</span>; and</li>
 <li class="fragment"><span class="math inline">\(\delta_{it}\)</span>, the space-time random effect, is modeled using a standard normal distribution (Type I interaction) which assumes independent variation</li>
 </ul></li>
 <li class="fragment"><span class="math inline">\(\alpha\)</span> be an intercept</li>
@@ -1202,7 +1236,7 @@ YLD^{(d)}_{it} = \sum_{f,a,h} \pi^{(d)}_{itaf} N_{itaf} \psi_h e_h
 <ul>
 <li class="fragment">Computation time
 <ul>
-<li class="fragment">Explore faster alternatives to Bayesian inference such as integrated nested Laplace approximation (INLA) <span class="citation" data-cites="Rue2009">[<a href="#/references" role="doc-biblioref" onclick="">32</a>]</span> or variational inference <span class="citation" data-cites="fox_2012">[<a href="#/references" role="doc-biblioref" onclick="">33</a>]</span>.</li>
+<li class="fragment">Explore faster alternatives to Bayesian inference such as integrated nested Laplace approximation (INLA) <span class="citation" data-cites="Rue2009">[<a href="#/references" role="doc-biblioref" onclick="">34</a>]</span> or variational inference <span class="citation" data-cites="fox_2012">[<a href="#/references" role="doc-biblioref" onclick="">35</a>]</span>.</li>
 </ul></li>
 <li class="fragment">Model complexity
 <ul>
@@ -1253,7 +1287,7 @@ YLD^{(d)}_{it} = \sum_{f,a,h} \pi^{(d)}_{itaf} N_{itaf} \psi_h e_h
 <ul>
 <li class="fragment">The Burden of Disease and Mortality specialist group (<span class="blB">Australian Institute of Health and Welfare</span>)</li>
 </ul></li>
-<li class="fragment">Efficient <span class="citation" data-cites="RN452">[<a href="#/references" role="doc-biblioref" onclick="">34</a>]</span> implementation of the <span class="blB">Leroux prior</span> <span class="citation" data-cites="RN366">[<a href="#/references" role="doc-biblioref" onclick="">35</a>]</span>.</li>
+<li class="fragment">Efficient <span class="citation" data-cites="RN452">[<a href="#/references" role="doc-biblioref" onclick="">36</a>]</span> implementation of the <span class="blB">Leroux prior</span> <span class="citation" data-cites="RN366">[<a href="#/references" role="doc-biblioref" onclick="">37</a>]</span>.</li>
 <li class="fragment">Novel Bayesian models <span class="blB">push boundary</span> of previously achievable <span class="math inline">\(\to\)</span> <em>spatial and temporal resolution and reach</em> in Australia</li>
 </ul>
 </div>
@@ -1491,47 +1525,53 @@ YLD^{(d)}_{it} = \sum_{f,a,h} \pi^{(d)}_{itaf} N_{itaf} \psi_h e_h
 <div id="ref-RN607" class="csl-entry" role="listitem">
 <div class="csl-left-margin">21. </div><div class="csl-right-inline">Das S, Baffour B, Richardson A, Cramb S, Haslett S. <a href="https://doi.org/10.21203/rs.3.rs-2829471/v1">Daily smoking prevalence for small domains in australia</a>. Research Square preprint 2023;</div>
 </div>
+<div id="ref-gao2023_sma" class="csl-entry" role="listitem">
+<div class="csl-left-margin">22. </div><div class="csl-right-inline">Gao PA, Wakefield J. <a href="https://doi.org/10.1002/cjs.11787">Smoothed model-assisted small area estimation of proportions</a>. Canadian Journal of Statistics 2023;</div>
+</div>
+<div id="ref-Das2022" class="csl-entry" role="listitem">
+<div class="csl-left-margin">23. </div><div class="csl-right-inline">Das S, Brakel J van den, Boonstra HJ, Haslett S. Multilevel time series modelling of antenatal care coverage in bangladesh at disaggregated administrative levels. Survey Methodology [Internet] 2022;48. Available from: <a href="http://www.statcan.gc.ca/pub/12-001-x/2022002/article/00010-eng.htm">http://www.statcan.gc.ca/pub/12-001-x/2022002/article/00010-eng.htm</a></div>
+</div>
 <div id="ref-Murray1997" class="csl-entry" role="listitem">
-<div class="csl-left-margin">22. </div><div class="csl-right-inline">Murray C, Acharya A. <a href="https://doi.org/10.1016/s0167-6296(97)00004-0">Understanding DALYs</a>. Journal of Health Economics 1997;16:703–30. </div>
+<div class="csl-left-margin">24. </div><div class="csl-right-inline">Murray C, Acharya A. <a href="https://doi.org/10.1016/s0167-6296(97)00004-0">Understanding DALYs</a>. Journal of Health Economics 1997;16:703–30. </div>
 </div>
 <div id="ref-GBD2016" class="csl-entry" role="listitem">
-<div class="csl-left-margin">23. </div><div class="csl-right-inline">Naghavi M, Abajobir AA, Abbafati C, Abbas KM, Abd-Allah F, Abera SF, et al. <a href="https://doi.org/10.1016/S0140-6736(17)32152-9">Global, regional, and national age-sex specific mortality for 264 causes of death, 1980–2016: A systematic analysis for the <span class="nocase">Global Burden of Disease Study 2016</span></a>. The Lancet 2017;390:1151–210. </div>
+<div class="csl-left-margin">25. </div><div class="csl-right-inline">Naghavi M, Abajobir AA, Abbafati C, Abbas KM, Abd-Allah F, Abera SF, et al. <a href="https://doi.org/10.1016/S0140-6736(17)32152-9">Global, regional, and national age-sex specific mortality for 264 causes of death, 1980–2016: A systematic analysis for the <span class="nocase">Global Burden of Disease Study 2016</span></a>. The Lancet 2017;390:1151–210. </div>
 </div>
 <div id="ref-Schmidt2020" class="csl-entry" role="listitem">
-<div class="csl-left-margin">24. </div><div class="csl-right-inline">Schmidt J, Fox S, Hughes A, Betts A, Flowers J, Newton J, et al. The <span class="nocase">Burden of Disease in England</span> compared with 22 peer countries: A report for <span>NHS England</span> [Internet]. 2020;Available from: <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/856938/GBD_NHS_England_report.pdf">https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/856938/GBD_NHS_England_report.pdf</a></div>
+<div class="csl-left-margin">26. </div><div class="csl-right-inline">Schmidt J, Fox S, Hughes A, Betts A, Flowers J, Newton J, et al. The <span class="nocase">Burden of Disease in England</span> compared with 22 peer countries: A report for <span>NHS England</span> [Internet]. 2020;Available from: <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/856938/GBD_NHS_England_report.pdf">https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/856938/GBD_NHS_England_report.pdf</a></div>
 </div>
 <div id="ref-Steel2018" class="csl-entry" role="listitem">
-<div class="csl-left-margin">25. </div><div class="csl-right-inline">Steel N, Ford JA, Newton JN, Davis ACJ, Vos T, Naghavi M, et al. <a href="https://doi.org/10.1016/S0140-6736(18)32207-4">Changes in health in the countries of the UK and 150 english local authority areas 1990–2016: A systematic analysis for the global burden of disease study 2016</a>. The Lancet 2018;392:1647–61. </div>
+<div class="csl-left-margin">27. </div><div class="csl-right-inline">Steel N, Ford JA, Newton JN, Davis ACJ, Vos T, Naghavi M, et al. <a href="https://doi.org/10.1016/S0140-6736(18)32207-4">Changes in health in the countries of the UK and 150 english local authority areas 1990–2016: A systematic analysis for the global burden of disease study 2016</a>. The Lancet 2018;392:1647–61. </div>
 </div>
 <div id="ref-GBD2015" class="csl-entry" role="listitem">
-<div class="csl-left-margin">26. </div><div class="csl-right-inline">GBD 2015 Chronic Respiratory Disease Collaborators. <a href="https://doi.org/10.1016/S2213-2600(17)30293-X">Global, regional, and national deaths, prevalence, disability-adjusted life years, and years lived with disability for chronic obstructive pulmonary disease and asthma, 1990–2015: A systematic analysis for the global burden of disease study 2015</a>. Lancet Respiratory Medicine 2017;5. </div>
+<div class="csl-left-margin">28. </div><div class="csl-right-inline">GBD 2015 Chronic Respiratory Disease Collaborators. <a href="https://doi.org/10.1016/S2213-2600(17)30293-X">Global, regional, and national deaths, prevalence, disability-adjusted life years, and years lived with disability for chronic obstructive pulmonary disease and asthma, 1990–2015: A systematic analysis for the global burden of disease study 2015</a>. Lancet Respiratory Medicine 2017;5. </div>
 </div>
 <div id="ref-CODEm" class="csl-entry" role="listitem">
-<div class="csl-left-margin">27. </div><div class="csl-right-inline">Foreman KJ, Lozano R, Lopez AD, Murray CJ. <a href="https://doi.org/10.1186/1478-7954-10-1">Modeling causes of death: An integrated approach using <span>CODEm</span></a>. Population Health Metrics 2012;10:1. </div>
+<div class="csl-left-margin">29. </div><div class="csl-right-inline">Foreman KJ, Lozano R, Lopez AD, Murray CJ. <a href="https://doi.org/10.1186/1478-7954-10-1">Modeling causes of death: An integrated approach using <span>CODEm</span></a>. Population Health Metrics 2012;10:1. </div>
 </div>
 <div id="ref-RN652" class="csl-entry" role="listitem">
-<div class="csl-left-margin">28. </div><div class="csl-right-inline">MacNab YC. <a href="https://doi.org/10.1002/sim.3547"><span>B</span>ayesian multivariate disease mapping and ecological regression with errors in covariates: <span>B</span>ayesian estimation of DALYs and <span>“preventable”</span> DALYs</a>. Statistics in Medicine 2009;28:1369–85. </div>
+<div class="csl-left-margin">30. </div><div class="csl-right-inline">MacNab YC. <a href="https://doi.org/10.1002/sim.3547"><span>B</span>ayesian multivariate disease mapping and ecological regression with errors in covariates: <span>B</span>ayesian estimation of DALYs and <span>“preventable”</span> DALYs</a>. Statistics in Medicine 2009;28:1369–85. </div>
 </div>
 <div id="ref-RN653" class="csl-entry" role="listitem">
-<div class="csl-left-margin">29. </div><div class="csl-right-inline">MacNab YC. <a href="https://doi.org/10.1002/sim.2890">Mapping disability-adjusted life years: A <span>B</span>ayesian hierarchical model framework for burden of disease and injury assessment</a>. Statistics in Medicine 2007;26:4746–69. </div>
+<div class="csl-left-margin">31. </div><div class="csl-right-inline">MacNab YC. <a href="https://doi.org/10.1002/sim.2890">Mapping disability-adjusted life years: A <span>B</span>ayesian hierarchical model framework for burden of disease and injury assessment</a>. Statistics in Medicine 2007;26:4746–69. </div>
 </div>
 <div id="ref-riebler2016bym2" class="csl-entry" role="listitem">
-<div class="csl-left-margin">30. </div><div class="csl-right-inline">Riebler A, Sørbye SH, Simpson D, Rue H. <a href="https://doi.org/10.1177/0962280216660421">An intuitive <span>B</span>ayesian spatial model for disease mapping that accounts for scaling</a>. Statistical Methods in Medical Research 2016;25:1145–65. </div>
+<div class="csl-left-margin">32. </div><div class="csl-right-inline">Riebler A, Sørbye SH, Simpson D, Rue H. <a href="https://doi.org/10.1177/0962280216660421">An intuitive <span>B</span>ayesian spatial model for disease mapping that accounts for scaling</a>. Statistical Methods in Medical Research 2016;25:1145–65. </div>
 </div>
 <div id="ref-RN365" class="csl-entry" role="listitem">
-<div class="csl-left-margin">31. </div><div class="csl-right-inline">Lee D. <a href="https://doi.org/10.1016/j.sste.2011.03.001">A comparison of conditional autoregressive models used in <span>B</span>ayesian disease mapping</a>. Spatial and spatio-temporal epidemiology 2011;2:79–89. </div>
+<div class="csl-left-margin">33. </div><div class="csl-right-inline">Lee D. <a href="https://doi.org/10.1016/j.sste.2011.03.001">A comparison of conditional autoregressive models used in <span>B</span>ayesian disease mapping</a>. Spatial and spatio-temporal epidemiology 2011;2:79–89. </div>
 </div>
 <div id="ref-Rue2009" class="csl-entry" role="listitem">
-<div class="csl-left-margin">32. </div><div class="csl-right-inline">Rue H, Martino S, Chopin N. Approximate <span>B</span>ayesian inference for latent gaussian models using integrated nested laplace approximations (with discussion). Journal of the Royal Statistical Society, Series B 2009;71:319–92. </div>
+<div class="csl-left-margin">34. </div><div class="csl-right-inline">Rue H, Martino S, Chopin N. Approximate <span>B</span>ayesian inference for latent gaussian models using integrated nested laplace approximations (with discussion). Journal of the Royal Statistical Society, Series B 2009;71:319–92. </div>
 </div>
 <div id="ref-fox_2012" class="csl-entry" role="listitem">
-<div class="csl-left-margin">33. </div><div class="csl-right-inline">Fox CW, Roberts SJ. A tutorial on variational <span>B</span>ayesian inference. Artificial Intelligence Review 2012;38:85–95. </div>
+<div class="csl-left-margin">35. </div><div class="csl-right-inline">Fox CW, Roberts SJ. A tutorial on variational <span>B</span>ayesian inference. Artificial Intelligence Review 2012;38:85–95. </div>
 </div>
 <div id="ref-RN452" class="csl-entry" role="listitem">
-<div class="csl-left-margin">34. </div><div class="csl-right-inline">Stan Development Team. <span>Stan</span> [Internet]. 2023;Available from: <a href="https://mc-stan.org">https://mc-stan.org</a></div>
+<div class="csl-left-margin">36. </div><div class="csl-right-inline">Stan Development Team. <span>Stan</span> [Internet]. 2023;Available from: <a href="https://mc-stan.org">https://mc-stan.org</a></div>
 </div>
 <div id="ref-RN366" class="csl-entry" role="listitem">
-<div class="csl-left-margin">35. </div><div class="csl-right-inline">Leroux B, Lei X, Breslow N. Estimation of disease rates in small areas: A new mixed model for spatial dependence. In: Statistical models in epidemiology, the environment, and clinical trials. Springer; 2000. page 179–91.</div>
+<div class="csl-left-margin">37. </div><div class="csl-right-inline">Leroux B, Lei X, Breslow N. Estimation of disease rates in small areas: A new mixed model for spatial dependence. In: Statistical models in epidemiology, the environment, and clinical trials. Springer; 2000. page 179–91.</div>
 </div>
 </div>
 <div class="quarto-auto-generated-content">

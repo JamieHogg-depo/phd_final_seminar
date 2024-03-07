@@ -14,10 +14,29 @@ A two-stage Bayesian small area estimation approach for proportions
 
 <!-- ----------------------------------------------------------------- -->
 ## Background
+
 - Increasing demand $\to$ robust small area estimates from survey data
-- Model-based SAE methods pushed to extent
-- Data sparsity is key challenge
-  -  current individual and area level models can be limiting
+- Model-based SAE methods pushed to <span class="blR">extent</span>
+- Data sparsity is key <span class="blR">challenge</span> when working with **proportions**
+  -  Individual level or area level models <span class="blR">cannot address</span>
+  
+<!-- ----------------------------------------------------------------- -->
+## {auto-animate=true}
+
+::: {style="margin-top: 100px;"}
+Use both?
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 3em;"}
+Use **both?**
+:::
+- Two-stage approaches have <span class="blB">emerged</span> [@gao2023_sma;@Das2022]
+- Recent work hints at <span class="blB">benefits</span> $\to$ no full investigation
+- <span class="blB">Mitigate</span> weakness of either model and <span class="blB">leverage</span> their strengths
+
 
 <!-- ----------------------------------------------------------------- -->
 ---
@@ -26,7 +45,7 @@ A two-stage Bayesian small area estimation approach for proportions
 **Contribution** 🎉
 <br>
 <br>
-A Bayesian two-stage method for proportions that tackles data sparsity challenges in SAE.
+A Bayesian two-stage method for proportions that tackles data sparsity challenges in small area estimation.
 :::
 
 <!-- ----------------------------------------------------------------- -->
@@ -41,7 +60,7 @@ A Bayesian two-stage method for proportions that tackles data sparsity challenge
 - Stage 1 (S1) estimates
   - Using fitted values calculate area-level <span class="blB">S1 estimates</span> and sampling variances
 - Stage 2 (TSLN-S2)
-  - **Smooth** <span class="blB">S1 estimates</span> and **impute** estimates for non-sampled areas using an **area-level** <span class="blB">FH model</span>
+  - **Smooth** <span class="blB">S1 estimates</span> and **impute** estimates for non-sampled areas using an **area-level** <span class="blB">Fay-Herriot [@RN54] model</span>
 :::
 
 ::: {.column width="48%"}
@@ -65,12 +84,23 @@ $$
 \end{eqnarray}
 $$
 
+where:
+
+- $y_{ij}$ is the binary response for sampled individual $j$ in small area $i$
+- $p_{ij}$ is the probabilitiy for $\dots$
+- $\tilde{w}_{ij}$ is the sampled scaled weight for $\dots$
+
 ### Stage 1 (S1) estimates
 The S1 estimate[^3] for area $i$ is,  
 $$
-\hat{\theta}_i^{\text{S1}} = \text{logit}\left( \frac{\sum_{j \in r_i} w_{ij} p_{ij}}{n_i} \right)
+\hat{\theta}_i^{\text{S1}} = \text{logit}\left( \frac{\sum_{j=1}^{n_i} w_{ij} p_{ij}}{n_i} \right)
 $$
-with $\gamma_i^{\text{S1}}$ the corresponding sample variance. 
+with $\gamma_i^{\text{S1}}$ the corresponding sample variance.
+
+where: 
+
+- $w_{ij}$ is the sample weight for sampled individual $j$ in small area $i$
+- Sample weights in small area $i$ sum to $n_i$ (the area sample size)
 
 ### Stage 2
 Composed of: a measurement error model, 
@@ -97,9 +127,30 @@ $$
 The parameter of interest (i.e. proportion) is the posterior distribution of $\hat{\mu}_i = \text{logit}^{-1}( \hat{\theta}_i)$.
 <br>
 
+### Other considerations and additions
+
+- Stability gained from smoothing (at individual level data) balanced with aggreement with direct estimates
+- Generalized variance functions (GVF) for some of $\gamma_i^{\text{S1}}$
+
 [^3]: The posterior draws from stage 1 are fed as input to the stage 2 model.
 
 <!-- ----------------------------------------------------------------- -->
 ## Simulation study {.center}
+
+Area level
+:::{.incremental}
+- **BETA**: an Beta model
+- **ELN**: an empirical-logistic normal model
+	- similar to stage 2 of our approach
+- **BIN**: a generic binomial model
+	- ignores the sample design
+:::
+
+Individual level
+- **LOG**: an pseudo-lielihood logistic model
+
+
+<!-- ----------------------------------------------------------------- -->
+### {.center}
 
 ![](imgs/chp3/sparse_MRRMSE.png){.r-stretch}
