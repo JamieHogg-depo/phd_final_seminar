@@ -154,15 +154,20 @@ Australian Cancer Atlas [@RN26], the Social Health Atlas of Australia (SHAA) [@R
 :::
 
 <!-- ----------------------------------------------------------------- -->
-## Pillars of public health
+## Pillars of public health {auto-animate=true}
 
-::: {.incremental}
-- Cancer
-- Burden of disease
+::: {style="font-size: 1em;"}
+Cancer (Pillar I)
 :::
+Burden of disease (Pillar II)
 
 <!-- ----------------------------------------------------------------- -->
-# Pillar I: cancer
+## Pillars of public health {auto-animate=true}
+
+::: {style="font-size: 2em; color: blue;"}
+Cancer (Pillar I)
+:::
+Burden of disease (Pillar II)
 
 <!-- ----------------------------------------------------------------- -->
 ## Background
@@ -297,7 +302,10 @@ Lack of small area estimation methods for sparse survey data.
 ## Indices
 
 ::: {.incremental}
-Recent years have witnessed a surge in research focused on developing indices \autocite{RN359, RN671,RN687,RN360,RN674, RN670}. Such indices are instrumental in reducing the dimensionality and complexity of data, thereby addressing some of the questions posed above \cite{RN613}. Moreover, coupled with the increasing popularity of Atlas platforms, there is an emerging need to develop methods that transform Atlas estimates, like those in the Australian Cancer Atlas, into indices.
+- Interest in indices [@RN359; @RN671; @RN687; @RN360; @RN674; @RN670]
+	- Instrumental in reducing the dimensionality and complexity of data
+- Need to develop methods that:
+	- Atlas estimates $\to$ Index
 :::
 
 <!-- ----------------------------------------------------------------- -->
@@ -313,7 +321,22 @@ Recent years have witnessed a surge in research focused on developing indices \a
 :::
 
 <!-- ----------------------------------------------------------------- -->
-# Pillar II: burden of disease
+## Pillars of public health {auto-animate=true}
+
+Cancer (Pillar I)
+
+::: {style="font-size: 1em;"}
+Burden of disease (Pillar II)
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## Pillars of public health {auto-animate=true}
+
+Cancer (Pillar I)
+
+::: {style="font-size: 2em; color: blue;"}
+Burden of disease (Pillar II)
+:::
 
 <!-- ----------------------------------------------------------------- -->
 ## Background

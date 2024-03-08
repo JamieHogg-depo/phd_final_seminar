@@ -619,19 +619,20 @@
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="pillars-of-public-health" class="slide level2">
-<h2>Pillars of public health</h2>
-<div>
-<ul>
-<li class="fragment">Cancer</li>
-<li class="fragment">Burden of disease</li>
-</ul>
+<section id="pillars-of-public-health" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Pillars of public health</h2>
+<div style="font-size: 1em;">
+<p>Cancer (Pillar I)</p>
 </div>
+<p>Burden of disease (Pillar II)</p>
 <!-- ----------------------------------------------------------------- -->
-</section></section>
-<section>
-<section id="pillar-i-cancer" class="title-slide slide level1 center">
-<h1>Pillar I: cancer</h1>
+</section>
+<section id="pillars-of-public-health-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Pillars of public health</h2>
+<div style="font-size: 2em; color: blue;">
+<p>Cancer (Pillar I)</p>
+</div>
+<p>Burden of disease (Pillar II)</p>
 <!-- ----------------------------------------------------------------- -->
 </section>
 <section id="background" class="slide level2">
@@ -751,7 +752,16 @@
 <section id="indices" class="slide level2">
 <h2>Indices</h2>
 <div>
-<p>Recent years have witnessed a surge in research focused on developing indices . Such indices are instrumental in reducing the dimensionality and complexity of data, thereby addressing some of the questions posed above . Moreover, coupled with the increasing popularity of Atlas platforms, there is an emerging need to develop methods that transform Atlas estimates, like those in the Australian Cancer Atlas, into indices.</p>
+<ul>
+<li class="fragment">Interest in indices <span class="citation" data-cites="RN359 RN671 RN687 RN360 RN674 RN670">[<a href="#/references" role="doc-biblioref" onclick="">22</a>–<a href="#/references" role="doc-biblioref" onclick="">27</a>]</span>
+<ul>
+<li class="fragment">Instrumental in reducing the dimensionality and complexity of data</li>
+</ul></li>
+<li class="fragment">Need to develop methods that:
+<ul>
+<li class="fragment">Atlas estimates <span class="math inline">\(\to\)</span> Index</li>
+</ul></li>
+</ul>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
@@ -765,10 +775,21 @@
 </ul>
 </div>
 <!-- ----------------------------------------------------------------- -->
-</section></section>
-<section>
-<section id="pillar-ii-burden-of-disease" class="title-slide slide level1 center">
-<h1>Pillar II: burden of disease</h1>
+</section>
+<section id="pillars-of-public-health-2" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Pillars of public health</h2>
+<p>Cancer (Pillar I)</p>
+<div style="font-size: 1em;">
+<p>Burden of disease (Pillar II)</p>
+</div>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="pillars-of-public-health-3" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Pillars of public health</h2>
+<p>Cancer (Pillar I)</p>
+<div style="font-size: 2em; color: blue;">
+<p>Burden of disease (Pillar II)</p>
+</div>
 <!-- ----------------------------------------------------------------- -->
 </section>
 <section id="background-2" class="slide level2">
@@ -848,7 +869,7 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 <ul>
 <li>Increasing demand <span class="math inline">\(\to\)</span> robust small area estimates from survey data</li>
 <li>Model-based SAE methods pushed to <span class="blR">extent</span></li>
-<li>Data sparsity is key <span class="blR">challenge</span>
+<li>Data sparsity is key <span class="blR">challenge</span> when working with <strong>proportions</strong>
 <ul>
 <li>Individual level or area level models <span class="blR">cannot address</span></li>
 </ul></li>
@@ -868,7 +889,7 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 <p>Use <strong>both?</strong></p>
 </div>
 <ul>
-<li>Two-stage approaches have <span class="blB">emerged</span> <span class="citation" data-cites="gao2023_sma Das2022">[<a href="#/references" role="doc-biblioref" onclick="">22</a>,<a href="#/references" role="doc-biblioref" onclick="">23</a>]</span></li>
+<li>Two-stage approaches have <span class="blB">emerged</span> <span class="citation" data-cites="gao2023_sma Das2022">[<a href="#/references" role="doc-biblioref" onclick="">28</a>,<a href="#/references" role="doc-biblioref" onclick="">29</a>]</span></li>
 <li>Recent work hints at <span class="blB">benefits</span> <span class="math inline">\(\to\)</span> no full investigation</li>
 <li><span class="blB">Mitigate</span> weakness of either model and <span class="blB">leverage</span> their strengths</li>
 </ul>
@@ -876,7 +897,7 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 <section id="section-16" class="slide level2">
 <h2><!-- ----------------------------------------------------------------- --></h2>
 <div class="quote-box">
-<p><strong>Contribution</strong> 🎉 <br> <br> A Bayesian two-stage method for proportions that tackles data sparsity challenges in SAE.</p>
+<p><strong>Contribution</strong> 🎉 <br> <br> A Bayesian two-stage method for proportions that tackles data sparsity challenges in small area estimation.</p>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
@@ -895,7 +916,7 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 </ul></li>
 <li>Stage 2 (TSLN-S2)
 <ul>
-<li><strong>Smooth</strong> <span class="blB">S1 estimates</span> and <strong>impute</strong> estimates for non-sampled areas using an <strong>area-level</strong> <span class="blB">FH model</span></li>
+<li><strong>Smooth</strong> <span class="blB">S1 estimates</span> and <strong>impute</strong> estimates for non-sampled areas using an <strong>area-level</strong> <span class="blB">Fay-Herriot <span class="citation" data-cites="RN54">[<a href="#/references" role="doc-biblioref" onclick="">30</a>]</span> model</span></li>
 </ul></li>
 </ul>
 </div><div class="column" style="width:48%;">
@@ -949,14 +970,263 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 \end{eqnarray}
 \]</span></p>
 <p>The parameter of interest (i.e.&nbsp;proportion) is the posterior distribution of <span class="math inline">\(\hat{\mu}_i = \text{logit}^{-1}( \hat{\theta}_i)\)</span>. <br></p>
-<h3 id="details">Details</h3>
+<h3 id="other-considerations-and-additions">Other considerations and additions</h3>
 <ul>
+<li>Stability gained from smoothing (at individual level data) balanced with aggreement with direct estimates</li>
 <li>Generalized variance functions (GVF) for some of <span class="math inline">\(\gamma_i^{\text{S1}}\)</span></li>
 </ul>
 <!-- ----------------------------------------------------------------- -->
 <aside><ol class="aside-footnotes"><li id="fn3"><p>The posterior draws from stage 1 are fed as input to the stage 2 model.</p></li></ol></aside></section>
 <section id="simulation-study" class="slide level2 center">
 <h2>Simulation study</h2>
+<p>Area level</p>
+<ul>
+<li><strong>BETA</strong>: an Beta model</li>
+<li><strong>ELN</strong>: an empirical-logistic normal model
+<ul>
+<li>similar to stage 2 of our approach</li>
+</ul></li>
+<li><strong>BIN</strong>: a generic binomial model
+<ul>
+<li>ignores the sample design</li>
+</ul></li>
+</ul>
+<p>Individual level</p>
+<ul>
+<li><strong>LOG</strong>: an pseudo-likelihood logistic model</li>
+</ul>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="section-17" class="slide level2 center">
+<h2></h2>
+<div class="striped hover" style="font-size: 0.5em;">
+<table>
+<colgroup>
+<col style="width: 5%">
+<col style="width: 3%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 8%">
+<col style="width: 8%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Sampled areas</th>
+<th style="text-align: left;"></th>
+<th style="text-align: left;"></th>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Nonsampled areas</th>
+<th style="text-align: left;"></th>
+<th style="text-align: left;"></th>
+<th style="text-align: left;"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">MRRMSE</td>
+<td style="text-align: left;">MARB</td>
+<td style="text-align: left;">CI width</td>
+<td style="text-align: left;">Coverage</td>
+<td style="text-align: left;">MRRMSE</td>
+<td style="text-align: left;">MARB</td>
+<td style="text-align: left;">CI width</td>
+<td style="text-align: left;">Coverage</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">50-50</td>
+<td style="text-align: left;">BETA</td>
+<td style="text-align: left;">0.36 (2.17)</td>
+<td style="text-align: left;">0.22 (1.96)</td>
+<td style="text-align: left;">0.46</td>
+<td style="text-align: left;">0.80</td>
+<td style="text-align: left;">0.40 (2.29)</td>
+<td style="text-align: left;">0.16 (1.35)</td>
+<td style="text-align: left;">0.61</td>
+<td style="text-align: left;">1.00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">BIN</td>
+<td style="text-align: left;">0.39 (2.38)</td>
+<td style="text-align: left;">0.38 (3.35)</td>
+<td style="text-align: left;"><strong>0.18</strong></td>
+<td style="text-align: left;">0.03</td>
+<td style="text-align: left;">0.40 (2.30)</td>
+<td style="text-align: left;">0.38 (3.29)</td>
+<td style="text-align: left;">0.20</td>
+<td style="text-align: left;">0.03</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">ELN</td>
+<td style="text-align: left;">0.34 (2.08)</td>
+<td style="text-align: left;">0.21 (1.84)</td>
+<td style="text-align: left;">0.43</td>
+<td style="text-align: left;">0.91</td>
+<td style="text-align: left;">0.40 (2.32)</td>
+<td style="text-align: left;">0.15 (1.32)</td>
+<td style="text-align: left;">0.64</td>
+<td style="text-align: left;">1.00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">LOG</td>
+<td style="text-align: left;">0.25 (1.52)</td>
+<td style="text-align: left;">0.16 (1.41)</td>
+<td style="text-align: left;">0.32</td>
+<td style="text-align: left;">0.90</td>
+<td style="text-align: left;">0.28 (1.61)</td>
+<td style="text-align: left;"><strong>0.10 (0.83)</strong></td>
+<td style="text-align: left;">0.47</td>
+<td style="text-align: left;">1.00</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">TSLN</td>
+<td style="text-align: left;"><strong>0.17 (1.00)</strong></td>
+<td style="text-align: left;"><strong>0.11 (1.00)</strong></td>
+<td style="text-align: left;">0.22</td>
+<td style="text-align: left;"><strong>0.94</strong></td>
+<td style="text-align: left;"><strong>0.17 (1.00)</strong></td>
+<td style="text-align: left;">0.12 (1.00)</td>
+<td style="text-align: left;">0.23</td>
+<td style="text-align: left;"><strong>0.95</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Rare</td>
+<td style="text-align: left;">BETA</td>
+<td style="text-align: left;">0.47 (1.46)</td>
+<td style="text-align: left;">0.31 (1.39)</td>
+<td style="text-align: left;">0.21</td>
+<td style="text-align: left;">0.66</td>
+<td style="text-align: left;">0.51 (1.57)</td>
+<td style="text-align: left;">0.22 (1.08)</td>
+<td style="text-align: left;">0.34</td>
+<td style="text-align: left;"><strong>0.97</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">BIN</td>
+<td style="text-align: left;">0.50 (1.54)</td>
+<td style="text-align: left;">0.48 (2.16)</td>
+<td style="text-align: left;"><strong>0.12</strong></td>
+<td style="text-align: left;">0.08</td>
+<td style="text-align: left;">0.50 (1.54)</td>
+<td style="text-align: left;">0.47 (2.29)</td>
+<td style="text-align: left;"><strong>0.13</strong></td>
+<td style="text-align: left;">0.08</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">ELN</td>
+<td style="text-align: left;">0.78 (2.42)</td>
+<td style="text-align: left;">0.55 (2.52)</td>
+<td style="text-align: left;">0.39</td>
+<td style="text-align: left;">0.68</td>
+<td style="text-align: left;">1.03 (3.17)</td>
+<td style="text-align: left;">0.20 (0.96)</td>
+<td style="text-align: left;">0.77</td>
+<td style="text-align: left;">1.00</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">LOG</td>
+<td style="text-align: left;">0.50 (1.55)</td>
+<td style="text-align: left;">0.35 (1.60)</td>
+<td style="text-align: left;">0.28</td>
+<td style="text-align: left;">0.82</td>
+<td style="text-align: left;">0.55 (1.68)</td>
+<td style="text-align: left;"><strong>0.15 (0.73)</strong></td>
+<td style="text-align: left;">0.43</td>
+<td style="text-align: left;">1.00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">TSLN</td>
+<td style="text-align: left;"><strong>0.32 (1.00)</strong></td>
+<td style="text-align: left;"><strong>0.22 (1.00)</strong></td>
+<td style="text-align: left;">0.19</td>
+<td style="text-align: left;"><strong>0.86</strong></td>
+<td style="text-align: left;"><strong>0.32 (1.00)</strong></td>
+<td style="text-align: left;">0.21 (1.00)</td>
+<td style="text-align: left;">0.20</td>
+<td style="text-align: left;">0.88</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Common</td>
+<td style="text-align: left;">BETA</td>
+<td style="text-align: left;">0.16 (2.01)</td>
+<td style="text-align: left;">0.09 (1.76)</td>
+<td style="text-align: left;">0.31</td>
+<td style="text-align: left;">0.89</td>
+<td style="text-align: left;">0.18 (2.25)</td>
+<td style="text-align: left;">0.04 (0.87)</td>
+<td style="text-align: left;">0.43</td>
+<td style="text-align: left;">1.00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">BIN</td>
+<td style="text-align: left;">0.25 (3.13)</td>
+<td style="text-align: left;">0.24 (4.80)</td>
+<td style="text-align: left;">0.19</td>
+<td style="text-align: left;">0.05</td>
+<td style="text-align: left;">0.25 (3.04)</td>
+<td style="text-align: left;">0.23 (4.64)</td>
+<td style="text-align: left;">0.21</td>
+<td style="text-align: left;">0.08</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">ELN</td>
+<td style="text-align: left;">0.12 (1.52)</td>
+<td style="text-align: left;">0.07 (1.37)</td>
+<td style="text-align: left;">0.26</td>
+<td style="text-align: left;">0.98</td>
+<td style="text-align: left;">0.13 (1.58)</td>
+<td style="text-align: left;">0.06 (1.18)</td>
+<td style="text-align: left;">0.31</td>
+<td style="text-align: left;">1.00</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">LOG</td>
+<td style="text-align: left;">0.11 (1.40)</td>
+<td style="text-align: left;">0.06 (1.28)</td>
+<td style="text-align: left;">0.24</td>
+<td style="text-align: left;"><strong>0.97</strong></td>
+<td style="text-align: left;">0.12 (1.45)</td>
+<td style="text-align: left;"><strong>0.05 (0.99)</strong></td>
+<td style="text-align: left;">0.29</td>
+<td style="text-align: left;">1.00</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">TSLN</td>
+<td style="text-align: left;"><strong>0.08 (1.00)</strong></td>
+<td style="text-align: left;"><strong>0.05 (1.00)</strong></td>
+<td style="text-align: left;"><strong>0.16</strong></td>
+<td style="text-align: left;">0.98</td>
+<td style="text-align: left;"><strong>0.08 (1.00)</strong></td>
+<td style="text-align: left;">0.05 (1.00)</td>
+<td style="text-align: left;">0.17</td>
+<td style="text-align: left;"><strong>0.99</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="section-18" class="slide level2 center">
+<h2></h2>
 <img data-src="imgs/chp3/sparse_MRRMSE.png" class="r-stretch">
 <!-- ----------------------------------------------------------------- -->
 <!-- CHAPTER 4 -->
@@ -981,24 +1251,117 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="data" class="slide level2">
-<h2>Data</h2>
-<div>
+<section id="section-19" class="slide level2 center">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><strong>Current</strong></p>
+<p>🛑 Population health areas (n = 1654)</p>
+<p>🛑 Missing estimates for very remote areas</p>
+</div><div class="column" style="width:40%;">
+
+</div>
+</div>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="section-20" class="slide level2 center">
+<h2></h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><strong>Current</strong></p>
+<p>🛑 Population health areas (n = 1654)</p>
+<p>🛑 Missing estimates for very remote areas</p>
+</div><div class="column" style="width:40%;">
+<p><strong>This work</strong></p>
+<p>✅ Statistical areas level 2 (n = 2221)</p>
+<p>✅ Estimates for very remote areas</p>
+</div>
+</div>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="survey-data" class="slide level2 smaller">
+<h2>Survey data</h2>
+<div class="columns">
+<div class="column" style="width:68%;">
 <ul>
-<li class="fragment">2017-18 National Health Survey
+<li>2017-18 National Health Survey
 <ul>
-<li class="fragment">Conducted by the Australian Bureau of Statistics (ABS)</li>
-<li class="fragment">2221 small areas (SAs)</li>
-<li class="fragment">1694 (76%) of SAs had survey data</li>
-<li class="fragment">Median SA2 sample size: 8</li>
+<li>Conducted by the Australian Bureau of Statistics (ABS)</li>
+<li><span class="blB">1694 (76%)</span> of SAs had survey data</li>
+<li>Median SA2 sample size: <span class="blB">8</span></li>
 </ul></li>
 </ul>
+</div><div class="column" style="width:28%;">
+<p><img data-src="imgs/chp4/survey_data.webp" class="soft-edges" style="width:100.0%"></p>
 </div>
+</div>
+<!-- ----------------------------------------------------------------- -->
+</section></section>
+<section>
+<section id="section-21" class="title-slide slide level1 center">
+<h1></h1>
+
+<!-- ----------------------------------------------------------------- -->
+<img data-src="imgs/chp4/sampled.png" class="r-stretch"></section>
+<section id="auxiliary-data" class="slide level2 smaller">
+<h2>Auxiliary data</h2>
+<div class="columns">
+<div class="column" style="width:68%;">
+<ul>
+<li>2016 Australian <strong>census</strong> data — collapsed to six principal components for analysis[27]</li>
+<li>Average Estimated Resident <strong>Population</strong> between 2017 and 2018</li>
+<li>Index of Relative <strong>Socio-Economic Disadvantage</strong> (IRSD) from Socio-Economic Indexes for Areas by the ABS</li>
+<li><strong>Remoteness</strong> (ARIA+)
+<ul>
+<li>Classed as major cities, inner regional and outer regional to very remote</li>
+</ul></li>
+<li><strong>Social Health Atlas of Australia</strong> estimates at Primary Health Network (n = 31) and Population Health Area level (n = 1165)</li>
+</ul>
+</div><div class="column" style="width:28%;">
+<p><img data-src="imgs/chp4/aux_data.webp" class="soft-edges" style="width:100.0%"></p>
+</div>
+</div>
+<!-- ----------------------------------------------------------------- -->
+</section></section>
+<section id="section-22" class="title-slide slide level1 center">
+<h1></h1>
+
+<!-- ----------------------------------------------------------------- -->
+<img data-src="imgs/chp4/summary_violin.png" class="r-stretch"></section>
+
+<section id="section-23" class="title-slide slide level1 center">
+<h1></h1>
+
+<!-- ----------------------------------------------------------------- -->
+<img data-src="imgs/chp4/scattersha_smokingobesity_pha.png" class="r-stretch"></section>
+
+<section id="section-24" class="title-slide slide level1 center">
+<h1></h1>
+
+<!-- ----------------------------------------------------------------- -->
+<img data-src="imgs/chp4/rr_alcohol.png" class="r-stretch"></section>
+
+<section id="section-25" class="title-slide slide level1 center">
+<h1></h1>
+
+<!-- ----------------------------------------------------------------- -->
+<img data-src="imgs/chp4/rrcisize_alcohol.png" class="r-stretch"></section>
+
+<section id="section-26" class="title-slide slide level1 center">
+<h1></h1>
+
+<!-- ----------------------------------------------------------------- -->
+<img data-src="imgs/chp4/orep_alcohol.png" class="r-stretch"></section>
+
+<section id="section-27" class="title-slide slide level1 center">
+<h1></h1>
+
 <!-- ----------------------------------------------------------------- -->
 <!-- CHAPTER 5 -->
 <!-- ----------------------------------------------------------------- -->
 <!-- ----------------------------------------------------------------- -->
-</section></section>
+<img data-src="imgs/chp4/lisa_s_alcohol.png" class="r-stretch"></section>
+
 <section>
 <section id="chapter-5paper-3" class="title-slide slide level1 center">
 <h1>Chapter 5/Paper 3</h1>
@@ -1012,7 +1375,7 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 <strong>Status</strong>: Submitted
 </div>
 </section>
-<section id="section-17" class="slide level2">
+<section id="section-28" class="slide level2">
 <h2><!-- ----------------------------------------------------------------- --></h2>
 <div class="quote-box">
 <p><strong>Contribution</strong> 🎉</p>
@@ -1028,7 +1391,7 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 
 <!-- ----------------------------------------------------------------- -->
 <img data-src="imgs/chp5/chp5_index_flowchart.png" class="r-stretch"></section>
-<section id="generalised-shared-component-model-gscm" class="slide level2 scrollable">
+<section id="generalised-shared-component-model-gscm" class="slide level2 scrollable smaller">
 <h2>Generalised Shared Component Model (GSCM)</h2>
 <p><span class="math display">\[
 \begin{eqnarray}
@@ -1083,7 +1446,7 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 <p><strong>Burden of disease (BOD)</strong></p>
 <div>
 <ul>
-<li class="fragment">BOD estimates are widely used to identify diseases causing excess burden <span class="citation" data-cites="Murray1997 GBD2016 Schmidt2020 RN121 Steel2018">[<a href="#/references" role="doc-biblioref" onclick="">7</a>,<a href="#/references" role="doc-biblioref" onclick="">24</a>–<a href="#/references" role="doc-biblioref" onclick="">27</a>]</span></li>
+<li class="fragment">BOD estimates are widely used to identify diseases causing excess burden <span class="citation" data-cites="Murray1997 GBD2016 Schmidt2020 RN121 Steel2018">[<a href="#/references" role="doc-biblioref" onclick="">7</a>,<a href="#/references" role="doc-biblioref" onclick="">31</a>–<a href="#/references" role="doc-biblioref" onclick="">34</a>]</span></li>
 <li class="fragment">Reported using disability-adjusted life years (DALY)
 <ul>
 <li class="fragment">Linear and non-linear combinations of fatal (e.g., mortality) and non-fatal (e.g., prevalence) burden</li>
@@ -1093,7 +1456,7 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 </ul>
 </div>
 </section>
-<section id="section-18" class="slide level2">
+<section id="section-29" class="slide level2">
 <h2><!-- ----------------------------------------------------------------- --></h2>
 <p><strong>Bayesian modelling in BOD</strong></p>
 <div>
@@ -1102,9 +1465,9 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 <li class="fragment">Few studies use Bayesian models in BOD studies</li>
 <li class="fragment">Examples
 <ul>
-<li class="fragment">Bayesian meta-regression tool, DisMod-MR 2.1 <span class="citation" data-cites="Steel2018 GBD2015">[<a href="#/references" role="doc-biblioref" onclick="">27</a>,<a href="#/references" role="doc-biblioref" onclick="">28</a>]</span></li>
-<li class="fragment">The Cause of Death Ensemble model (CODEm) <span class="citation" data-cites="CODEm">[<a href="#/references" role="doc-biblioref" onclick="">29</a>]</span></li>
-<li class="fragment">Shared component models of MacNab <span class="citation" data-cites="RN652 RN653">[<a href="#/references" role="doc-biblioref" onclick="">30</a>,<a href="#/references" role="doc-biblioref" onclick="">31</a>]</span></li>
+<li class="fragment">Bayesian meta-regression tool, DisMod-MR 2.1 <span class="citation" data-cites="Steel2018 GBD2015">[<a href="#/references" role="doc-biblioref" onclick="">34</a>,<a href="#/references" role="doc-biblioref" onclick="">35</a>]</span></li>
+<li class="fragment">The Cause of Death Ensemble model (CODEm) <span class="citation" data-cites="CODEm">[<a href="#/references" role="doc-biblioref" onclick="">36</a>]</span></li>
+<li class="fragment">Shared component models of MacNab <span class="citation" data-cites="RN652 RN653">[<a href="#/references" role="doc-biblioref" onclick="">37</a>,<a href="#/references" role="doc-biblioref" onclick="">38</a>]</span></li>
 </ul></li>
 </ul>
 </div>
@@ -1121,14 +1484,14 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-19" class="slide level2" data-auto-animate="true">
+<section id="section-30" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 100px;">
 <p><strong>No</strong> BOD studies</p>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-20" class="slide level2" data-auto-animate="true">
+<section id="section-31" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 200px; font-size: 3em; color: red;">
 <p><strong>No</strong> BOD studies</p>
@@ -1142,7 +1505,7 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 <li>have explored practical models for government agencies</li>
 </ul>
 </section>
-<section id="section-21" class="slide level2">
+<section id="section-32" class="slide level2">
 <h2><!-- ----------------------------------------------------------------- --></h2>
 <div class="quote-box">
 <p><strong>Study objectives</strong></p>
@@ -1159,7 +1522,7 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 <h1>Methods</h1>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="standard-age-year-time-sayt-model" class="slide level2 scrollable">
+<section id="standard-age-year-time-sayt-model" class="slide level2 scrollable smaller">
 <h2>Standard age-year-time (SAYT) model</h2>
 <p>Let:</p>
 <div>
@@ -1167,8 +1530,8 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 <li class="fragment"><span class="math inline">\(y_{ita}\)</span> be the raw mortality counts in age group <span class="math inline">\(a = 1, \dots, A\)</span>, area <span class="math inline">\(i = 1, \dots, M\)</span> and time <span class="math inline">\(t = 1, \dots, T\)</span></li>
 <li class="fragment"><span class="math inline">\(\xi_{it}\)</span> be the random effect for the <span class="math inline">\(i\)</span>th area and <span class="math inline">\(t\)</span>th year
 <ul>
-<li class="fragment"><span class="math inline">\(\theta_i\)</span>, the spatial random effect, is modeled using a BYM2 spatial prior <span class="citation" data-cites="riebler2016bym2">[<a href="#/references" role="doc-biblioref" onclick="">32</a>]</span>;</li>
-<li class="fragment"><span class="math inline">\(\gamma_t\)</span>, the temporal random effect, is modeled using an intrinsic conditional autoregressive prior <span class="citation" data-cites="RN365">[<a href="#/references" role="doc-biblioref" onclick="">33</a>]</span>; and</li>
+<li class="fragment"><span class="math inline">\(\theta_i\)</span>, the spatial random effect, is modeled using a BYM2 spatial prior <span class="citation" data-cites="riebler2016bym2">[<a href="#/references" role="doc-biblioref" onclick="">39</a>]</span>;</li>
+<li class="fragment"><span class="math inline">\(\gamma_t\)</span>, the temporal random effect, is modeled using an intrinsic conditional autoregressive prior <span class="citation" data-cites="RN365">[<a href="#/references" role="doc-biblioref" onclick="">40</a>]</span>; and</li>
 <li class="fragment"><span class="math inline">\(\delta_{it}\)</span>, the space-time random effect, is modeled using a standard normal distribution (Type I interaction) which assumes independent variation</li>
 </ul></li>
 <li class="fragment"><span class="math inline">\(\alpha\)</span> be an intercept</li>
@@ -1184,7 +1547,7 @@ y_{ita} &amp; \sim \text{Poisson}\left( \mu_{ita} \right)
 \]</span></p>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="weighted-multilevel-regression-and-poststratification-mrp" class="slide level2 scrollable">
+<section id="weighted-multilevel-regression-and-poststratification-mrp" class="slide level2 scrollable smaller">
 <h2>Weighted Multilevel Regression and poststratification (MrP)</h2>
 <p><span class="math display">\[
 \begin{eqnarray}
@@ -1236,7 +1599,7 @@ YLD^{(d)}_{it} = \sum_{f,a,h} \pi^{(d)}_{itaf} N_{itaf} \psi_h e_h
 <ul>
 <li class="fragment">Computation time
 <ul>
-<li class="fragment">Explore faster alternatives to Bayesian inference such as integrated nested Laplace approximation (INLA) <span class="citation" data-cites="Rue2009">[<a href="#/references" role="doc-biblioref" onclick="">34</a>]</span> or variational inference <span class="citation" data-cites="fox_2012">[<a href="#/references" role="doc-biblioref" onclick="">35</a>]</span>.</li>
+<li class="fragment">Explore faster alternatives to Bayesian inference such as integrated nested Laplace approximation (INLA) <span class="citation" data-cites="Rue2009">[<a href="#/references" role="doc-biblioref" onclick="">41</a>]</span> or variational inference <span class="citation" data-cites="fox_2012">[<a href="#/references" role="doc-biblioref" onclick="">42</a>]</span>.</li>
 </ul></li>
 <li class="fragment">Model complexity
 <ul>
@@ -1287,7 +1650,7 @@ YLD^{(d)}_{it} = \sum_{f,a,h} \pi^{(d)}_{itaf} N_{itaf} \psi_h e_h
 <ul>
 <li class="fragment">The Burden of Disease and Mortality specialist group (<span class="blB">Australian Institute of Health and Welfare</span>)</li>
 </ul></li>
-<li class="fragment">Efficient <span class="citation" data-cites="RN452">[<a href="#/references" role="doc-biblioref" onclick="">36</a>]</span> implementation of the <span class="blB">Leroux prior</span> <span class="citation" data-cites="RN366">[<a href="#/references" role="doc-biblioref" onclick="">37</a>]</span>.</li>
+<li class="fragment">Efficient <span class="citation" data-cites="RN452">[<a href="#/references" role="doc-biblioref" onclick="">43</a>]</span> implementation of the <span class="blB">Leroux prior</span> <span class="citation" data-cites="RN366">[<a href="#/references" role="doc-biblioref" onclick="">44</a>]</span>.</li>
 <li class="fragment">Novel Bayesian models <span class="blB">push boundary</span> of previously achievable <span class="math inline">\(\to\)</span> <em>spatial and temporal resolution and reach</em> in Australia</li>
 </ul>
 </div>
@@ -1525,53 +1888,74 @@ YLD^{(d)}_{it} = \sum_{f,a,h} \pi^{(d)}_{itaf} N_{itaf} \psi_h e_h
 <div id="ref-RN607" class="csl-entry" role="listitem">
 <div class="csl-left-margin">21. </div><div class="csl-right-inline">Das S, Baffour B, Richardson A, Cramb S, Haslett S. <a href="https://doi.org/10.21203/rs.3.rs-2829471/v1">Daily smoking prevalence for small domains in australia</a>. Research Square preprint 2023;</div>
 </div>
+<div id="ref-RN359" class="csl-entry" role="listitem">
+<div class="csl-left-margin">22. </div><div class="csl-right-inline">Ceely G. Methods used to develop the <span class="nocase">Health Index for England</span>: 2015 to 2018 [Internet]. Office for National Statistics, United Kingdom; 2020. Available from: <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandwellbeing/methodologies/methodsusedtodevelopthehealthindexforengland2015to2018#developing-the-health-index">https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandwellbeing/methodologies/methodsusedtodevelopthehealthindexforengland2015to2018#developing-the-health-index</a></div>
+</div>
+<div id="ref-RN671" class="csl-entry" role="listitem">
+<div class="csl-left-margin">23. </div><div class="csl-right-inline">Hogan JW, Tchernis R. <a href="https://doi.org/10.1198/016214504000000296"><span>B</span>ayesian factor analysis for spatially correlated data, with application to summarizing area-level material deprivation from census data</a>. Journal of the American Statistical Association 2004;99:314–24. </div>
+</div>
+<div id="ref-RN687" class="csl-entry" role="listitem">
+<div class="csl-left-margin">24. </div><div class="csl-right-inline">Hedibert FL, Alexandra MS, Esther S, Mariana G, Marcel A. <a href="https://doi.org/10.1214/11-AOAS497">Measuring the vulnerability of the uruguayan population to vector-borne diseases via spatially hierarchical factor models</a>. The Annals of Applied Statistics 2012;6:284–303. </div>
+</div>
+<div id="ref-RN360" class="csl-entry" role="listitem">
+<div class="csl-left-margin">25. </div><div class="csl-right-inline">Nardo M, Saisana M, Saltelli A, Tarantola S, Hoffmann A, Giovannini E, et al. Handbook on constructing composite indicators [Internet]. European Commission; 2008. Available from: <a href="https://www.oecd.org/els/soc/handbookonconstructingcompositeindicatorsmethodologyanduserguide.htm">https://www.oecd.org/els/soc/handbookonconstructingcompositeindicatorsmethodologyanduserguide.htm</a></div>
+</div>
+<div id="ref-RN674" class="csl-entry" role="listitem">
+<div class="csl-left-margin">26. </div><div class="csl-right-inline">Nethery RC, Warren JL, Herring AH, Moore KA, Evenson KR, Diez-Roux AV. <a href="https://doi.org/10.1016/j.healthplace.2015.08.009">A common spatial factor analysis model for measured neighborhood-level characteristics: The multi-ethnic study of atherosclerosis</a>. Health Place 2015;36:35–46. </div>
+</div>
+<div id="ref-RN670" class="csl-entry" role="listitem">
+<div class="csl-left-margin">27. </div><div class="csl-right-inline">Norwood TA, Encisa C, Wang X, Seliske L, Cunningham J, De P. <a href="https://doi.org/10.17269/s41997-020-00321-6">A <span>B</span>ayesian shared components modeling approach to develop small area indicators of social determinants of health with measures of uncertainty</a>. Canadian Journal of Public Health 2020;111:342–57. </div>
+</div>
 <div id="ref-gao2023_sma" class="csl-entry" role="listitem">
-<div class="csl-left-margin">22. </div><div class="csl-right-inline">Gao PA, Wakefield J. <a href="https://doi.org/10.1002/cjs.11787">Smoothed model-assisted small area estimation of proportions</a>. Canadian Journal of Statistics 2023;</div>
+<div class="csl-left-margin">28. </div><div class="csl-right-inline">Gao PA, Wakefield J. <a href="https://doi.org/10.1002/cjs.11787">Smoothed model-assisted small area estimation of proportions</a>. Canadian Journal of Statistics 2023;</div>
 </div>
 <div id="ref-Das2022" class="csl-entry" role="listitem">
-<div class="csl-left-margin">23. </div><div class="csl-right-inline">Das S, Brakel J van den, Boonstra HJ, Haslett S. Multilevel time series modelling of antenatal care coverage in bangladesh at disaggregated administrative levels. Survey Methodology [Internet] 2022;48. Available from: <a href="http://www.statcan.gc.ca/pub/12-001-x/2022002/article/00010-eng.htm">http://www.statcan.gc.ca/pub/12-001-x/2022002/article/00010-eng.htm</a></div>
+<div class="csl-left-margin">29. </div><div class="csl-right-inline">Das S, Brakel J van den, Boonstra HJ, Haslett S. Multilevel time series modelling of antenatal care coverage in bangladesh at disaggregated administrative levels. Survey Methodology [Internet] 2022;48. Available from: <a href="http://www.statcan.gc.ca/pub/12-001-x/2022002/article/00010-eng.htm">http://www.statcan.gc.ca/pub/12-001-x/2022002/article/00010-eng.htm</a></div>
+</div>
+<div id="ref-RN54" class="csl-entry" role="listitem">
+<div class="csl-left-margin">30. </div><div class="csl-right-inline">Fay RE, Herriot RA. <a href="https://doi.org/10.2307/2286322">Estimates of income for small places: An application of james-stein procedures to census data</a>. Journal of the American Statistical Association 1979;74:269–77. </div>
 </div>
 <div id="ref-Murray1997" class="csl-entry" role="listitem">
-<div class="csl-left-margin">24. </div><div class="csl-right-inline">Murray C, Acharya A. <a href="https://doi.org/10.1016/s0167-6296(97)00004-0">Understanding DALYs</a>. Journal of Health Economics 1997;16:703–30. </div>
+<div class="csl-left-margin">31. </div><div class="csl-right-inline">Murray C, Acharya A. <a href="https://doi.org/10.1016/s0167-6296(97)00004-0">Understanding DALYs</a>. Journal of Health Economics 1997;16:703–30. </div>
 </div>
 <div id="ref-GBD2016" class="csl-entry" role="listitem">
-<div class="csl-left-margin">25. </div><div class="csl-right-inline">Naghavi M, Abajobir AA, Abbafati C, Abbas KM, Abd-Allah F, Abera SF, et al. <a href="https://doi.org/10.1016/S0140-6736(17)32152-9">Global, regional, and national age-sex specific mortality for 264 causes of death, 1980–2016: A systematic analysis for the <span class="nocase">Global Burden of Disease Study 2016</span></a>. The Lancet 2017;390:1151–210. </div>
+<div class="csl-left-margin">32. </div><div class="csl-right-inline">Naghavi M, Abajobir AA, Abbafati C, Abbas KM, Abd-Allah F, Abera SF, et al. <a href="https://doi.org/10.1016/S0140-6736(17)32152-9">Global, regional, and national age-sex specific mortality for 264 causes of death, 1980–2016: A systematic analysis for the <span class="nocase">Global Burden of Disease Study 2016</span></a>. The Lancet 2017;390:1151–210. </div>
 </div>
 <div id="ref-Schmidt2020" class="csl-entry" role="listitem">
-<div class="csl-left-margin">26. </div><div class="csl-right-inline">Schmidt J, Fox S, Hughes A, Betts A, Flowers J, Newton J, et al. The <span class="nocase">Burden of Disease in England</span> compared with 22 peer countries: A report for <span>NHS England</span> [Internet]. 2020;Available from: <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/856938/GBD_NHS_England_report.pdf">https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/856938/GBD_NHS_England_report.pdf</a></div>
+<div class="csl-left-margin">33. </div><div class="csl-right-inline">Schmidt J, Fox S, Hughes A, Betts A, Flowers J, Newton J, et al. The <span class="nocase">Burden of Disease in England</span> compared with 22 peer countries: A report for <span>NHS England</span> [Internet]. 2020;Available from: <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/856938/GBD_NHS_England_report.pdf">https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/856938/GBD_NHS_England_report.pdf</a></div>
 </div>
 <div id="ref-Steel2018" class="csl-entry" role="listitem">
-<div class="csl-left-margin">27. </div><div class="csl-right-inline">Steel N, Ford JA, Newton JN, Davis ACJ, Vos T, Naghavi M, et al. <a href="https://doi.org/10.1016/S0140-6736(18)32207-4">Changes in health in the countries of the UK and 150 english local authority areas 1990–2016: A systematic analysis for the global burden of disease study 2016</a>. The Lancet 2018;392:1647–61. </div>
+<div class="csl-left-margin">34. </div><div class="csl-right-inline">Steel N, Ford JA, Newton JN, Davis ACJ, Vos T, Naghavi M, et al. <a href="https://doi.org/10.1016/S0140-6736(18)32207-4">Changes in health in the countries of the UK and 150 english local authority areas 1990–2016: A systematic analysis for the global burden of disease study 2016</a>. The Lancet 2018;392:1647–61. </div>
 </div>
 <div id="ref-GBD2015" class="csl-entry" role="listitem">
-<div class="csl-left-margin">28. </div><div class="csl-right-inline">GBD 2015 Chronic Respiratory Disease Collaborators. <a href="https://doi.org/10.1016/S2213-2600(17)30293-X">Global, regional, and national deaths, prevalence, disability-adjusted life years, and years lived with disability for chronic obstructive pulmonary disease and asthma, 1990–2015: A systematic analysis for the global burden of disease study 2015</a>. Lancet Respiratory Medicine 2017;5. </div>
+<div class="csl-left-margin">35. </div><div class="csl-right-inline">GBD 2015 Chronic Respiratory Disease Collaborators. <a href="https://doi.org/10.1016/S2213-2600(17)30293-X">Global, regional, and national deaths, prevalence, disability-adjusted life years, and years lived with disability for chronic obstructive pulmonary disease and asthma, 1990–2015: A systematic analysis for the global burden of disease study 2015</a>. Lancet Respiratory Medicine 2017;5. </div>
 </div>
 <div id="ref-CODEm" class="csl-entry" role="listitem">
-<div class="csl-left-margin">29. </div><div class="csl-right-inline">Foreman KJ, Lozano R, Lopez AD, Murray CJ. <a href="https://doi.org/10.1186/1478-7954-10-1">Modeling causes of death: An integrated approach using <span>CODEm</span></a>. Population Health Metrics 2012;10:1. </div>
+<div class="csl-left-margin">36. </div><div class="csl-right-inline">Foreman KJ, Lozano R, Lopez AD, Murray CJ. <a href="https://doi.org/10.1186/1478-7954-10-1">Modeling causes of death: An integrated approach using <span>CODEm</span></a>. Population Health Metrics 2012;10:1. </div>
 </div>
 <div id="ref-RN652" class="csl-entry" role="listitem">
-<div class="csl-left-margin">30. </div><div class="csl-right-inline">MacNab YC. <a href="https://doi.org/10.1002/sim.3547"><span>B</span>ayesian multivariate disease mapping and ecological regression with errors in covariates: <span>B</span>ayesian estimation of DALYs and <span>“preventable”</span> DALYs</a>. Statistics in Medicine 2009;28:1369–85. </div>
+<div class="csl-left-margin">37. </div><div class="csl-right-inline">MacNab YC. <a href="https://doi.org/10.1002/sim.3547"><span>B</span>ayesian multivariate disease mapping and ecological regression with errors in covariates: <span>B</span>ayesian estimation of DALYs and <span>“preventable”</span> DALYs</a>. Statistics in Medicine 2009;28:1369–85. </div>
 </div>
 <div id="ref-RN653" class="csl-entry" role="listitem">
-<div class="csl-left-margin">31. </div><div class="csl-right-inline">MacNab YC. <a href="https://doi.org/10.1002/sim.2890">Mapping disability-adjusted life years: A <span>B</span>ayesian hierarchical model framework for burden of disease and injury assessment</a>. Statistics in Medicine 2007;26:4746–69. </div>
+<div class="csl-left-margin">38. </div><div class="csl-right-inline">MacNab YC. <a href="https://doi.org/10.1002/sim.2890">Mapping disability-adjusted life years: A <span>B</span>ayesian hierarchical model framework for burden of disease and injury assessment</a>. Statistics in Medicine 2007;26:4746–69. </div>
 </div>
 <div id="ref-riebler2016bym2" class="csl-entry" role="listitem">
-<div class="csl-left-margin">32. </div><div class="csl-right-inline">Riebler A, Sørbye SH, Simpson D, Rue H. <a href="https://doi.org/10.1177/0962280216660421">An intuitive <span>B</span>ayesian spatial model for disease mapping that accounts for scaling</a>. Statistical Methods in Medical Research 2016;25:1145–65. </div>
+<div class="csl-left-margin">39. </div><div class="csl-right-inline">Riebler A, Sørbye SH, Simpson D, Rue H. <a href="https://doi.org/10.1177/0962280216660421">An intuitive <span>B</span>ayesian spatial model for disease mapping that accounts for scaling</a>. Statistical Methods in Medical Research 2016;25:1145–65. </div>
 </div>
 <div id="ref-RN365" class="csl-entry" role="listitem">
-<div class="csl-left-margin">33. </div><div class="csl-right-inline">Lee D. <a href="https://doi.org/10.1016/j.sste.2011.03.001">A comparison of conditional autoregressive models used in <span>B</span>ayesian disease mapping</a>. Spatial and spatio-temporal epidemiology 2011;2:79–89. </div>
+<div class="csl-left-margin">40. </div><div class="csl-right-inline">Lee D. <a href="https://doi.org/10.1016/j.sste.2011.03.001">A comparison of conditional autoregressive models used in <span>B</span>ayesian disease mapping</a>. Spatial and spatio-temporal epidemiology 2011;2:79–89. </div>
 </div>
 <div id="ref-Rue2009" class="csl-entry" role="listitem">
-<div class="csl-left-margin">34. </div><div class="csl-right-inline">Rue H, Martino S, Chopin N. Approximate <span>B</span>ayesian inference for latent gaussian models using integrated nested laplace approximations (with discussion). Journal of the Royal Statistical Society, Series B 2009;71:319–92. </div>
+<div class="csl-left-margin">41. </div><div class="csl-right-inline">Rue H, Martino S, Chopin N. Approximate <span>B</span>ayesian inference for latent gaussian models using integrated nested laplace approximations (with discussion). Journal of the Royal Statistical Society, Series B 2009;71:319–92. </div>
 </div>
 <div id="ref-fox_2012" class="csl-entry" role="listitem">
-<div class="csl-left-margin">35. </div><div class="csl-right-inline">Fox CW, Roberts SJ. A tutorial on variational <span>B</span>ayesian inference. Artificial Intelligence Review 2012;38:85–95. </div>
+<div class="csl-left-margin">42. </div><div class="csl-right-inline">Fox CW, Roberts SJ. A tutorial on variational <span>B</span>ayesian inference. Artificial Intelligence Review 2012;38:85–95. </div>
 </div>
 <div id="ref-RN452" class="csl-entry" role="listitem">
-<div class="csl-left-margin">36. </div><div class="csl-right-inline">Stan Development Team. <span>Stan</span> [Internet]. 2023;Available from: <a href="https://mc-stan.org">https://mc-stan.org</a></div>
+<div class="csl-left-margin">43. </div><div class="csl-right-inline">Stan Development Team. <span>Stan</span> [Internet]. 2023;Available from: <a href="https://mc-stan.org">https://mc-stan.org</a></div>
 </div>
 <div id="ref-RN366" class="csl-entry" role="listitem">
-<div class="csl-left-margin">37. </div><div class="csl-right-inline">Leroux B, Lei X, Breslow N. Estimation of disease rates in small areas: A new mixed model for spatial dependence. In: Statistical models in epidemiology, the environment, and clinical trials. Springer; 2000. page 179–91.</div>
+<div class="csl-left-margin">44. </div><div class="csl-right-inline">Leroux B, Lei X, Breslow N. Estimation of disease rates in small areas: A new mixed model for spatial dependence. In: Statistical models in epidemiology, the environment, and clinical trials. Springer; 2000. page 179–91.</div>
 </div>
 </div>
 <div class="quarto-auto-generated-content">

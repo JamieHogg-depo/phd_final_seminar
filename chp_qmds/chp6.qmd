@@ -93,7 +93,7 @@ Improving the spatial and temporal resolution of burden of disease measures with
 # Methods
 
 <!-- ----------------------------------------------------------------- -->
-## Standard age-year-time (SAYT) model {.scrollable}
+## Standard age-year-time (SAYT) model {.scrollable .smaller}
 
 Let:
 
@@ -117,7 +117,7 @@ y_{ita} & \sim \jdist{Poisson}{\mu_{ita}}
 $$
 
 <!-- ----------------------------------------------------------------- -->
-## Weighted Multilevel Regression and poststratification (MrP) {.scrollable}
+## Weighted Multilevel Regression and poststratification (MrP) {.scrollable .smaller}
 $$
 \begin{eqnarray}
     z_{itaf} & \sim & \jdist{Bernoulli}{\pi_{itaf}}^{\tilde{w}_{itaf}} \label{eq:wmrp}

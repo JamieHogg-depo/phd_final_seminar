@@ -21,12 +21,121 @@ The first Australia-wide prevalence estimates for eight cancer risk factors. Est
 :::
 
 <!-- ----------------------------------------------------------------- -->
-## Data
+## {.center}
 
-:::{.incremental}
+:::: {.columns}
+
+::: {.column width="40%"}
+**Current**
+
+🛑 Population health areas (n = 1654)
+
+🛑 Missing estimates for very remote areas 
+:::
+
+::: {.column width="40%"}
+:::
+
+::::
+
+<!-- ----------------------------------------------------------------- -->
+## {.center}
+
+:::: {.columns}
+
+::: {.column width="40%"}
+**Current**
+
+🛑 Population health areas (n = 1654)
+
+🛑 Missing estimates for very remote areas 
+:::
+
+::: {.column width="40%"}
+**This work**
+
+✅ Statistical areas level 2 (n = 2221)
+
+✅ Estimates for very remote areas
+:::
+
+::::
+
+
+<!-- ----------------------------------------------------------------- -->
+## Survey data {.smaller}
+
+:::: {.columns}
+
+::: {.column width="68%"}
 - 2017-18 National Health Survey
   - Conducted by the Australian Bureau of Statistics (ABS)
-  - 2221 small areas (SAs)
-  - 1694 (76%) of SAs had survey data
-  - Median SA2 sample size: 8
+  - <span class="blB">1694 (76%)</span> of SAs had survey data
+  - Median SA2 sample size: <span class="blB">8</span>
 :::
+
+::: {.column width="28%"}
+![](imgs/chp4/survey_data.webp){width=100% .soft-edges}
+
+:::
+
+::::
+
+<!-- ----------------------------------------------------------------- -->
+# {.center}
+
+![](imgs/chp4/sampled.png)
+
+<!-- ----------------------------------------------------------------- -->
+## Auxiliary data {.smaller}
+
+:::: {.columns}
+
+::: {.column width="68%"}
+- 2016 Australian **census** data — collapsed to six principal components for analysis[27]
+- Average Estimated Resident **Population** between 2017 and 2018
+- Index of Relative **Socio-Economic Disadvantage** (IRSD) from Socio-Economic Indexes for Areas by the ABS 
+- **Remoteness** (ARIA+)
+	- Classed as major cities, inner regional and outer regional to very remote
+- **Social Health Atlas of Australia** estimates at Primary Health Network (n = 31) and Population Health Area level (n = 1165)
+:::
+
+::: {.column width="28%"}
+![](imgs/chp4/aux_data.webp){width=100% .soft-edges}
+
+:::
+
+::::
+
+<!-- ----------------------------------------------------------------- -->
+# {.center}
+
+![](imgs/chp4/summary_violin.png)
+
+<!-- ----------------------------------------------------------------- -->
+# {.center}
+
+![](imgs/chp4/scattersha_smokingobesity_pha.png)
+
+<!-- ----------------------------------------------------------------- -->
+# {.center}
+
+![](imgs/chp4/rr_alcohol.png)
+
+<!-- ----------------------------------------------------------------- -->
+# {.center}
+
+![](imgs/chp4/rrcisize_alcohol.png)
+
+<!-- ----------------------------------------------------------------- -->
+# {.center}
+
+![](imgs/chp4/orep_alcohol.png)
+
+
+<!-- ----------------------------------------------------------------- -->
+# {.center}
+
+![](imgs/chp4/lisa_s_alcohol.png)
+
+

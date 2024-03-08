@@ -28,7 +28,7 @@ Creating area level indices of behaviours impacting cancer in Australia with a B
 ![](imgs/chp5/chp5_index_flowchart.png)
 
 <!-- ----------------------------------------------------------------- -->
-## Generalised Shared Component Model (GSCM) {.scrollable}
+## Generalised Shared Component Model (GSCM) {.scrollable .smaller}
 
 $$
 \begin{eqnarray}
