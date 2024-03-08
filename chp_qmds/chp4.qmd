@@ -82,7 +82,7 @@ The first Australia-wide prevalence estimates for eight cancer risk factors. Est
 ::::
 
 <!-- ----------------------------------------------------------------- -->
-# {.center}
+## {.center}
 
 ![](imgs/chp4/sampled.png)
 
@@ -108,34 +108,76 @@ The first Australia-wide prevalence estimates for eight cancer risk factors. Est
 ::::
 
 <!-- ----------------------------------------------------------------- -->
-# {.center}
+## {.center}
 
 ![](imgs/chp4/summary_violin.png)
 
 <!-- ----------------------------------------------------------------- -->
-# {.center}
+## Validation {.smaller}
 
+How to <span class="blB">check</span> our estimates?
+
+:::: {.columns}
+
+::: {.column width="42%"}
+
+:::
+
+::: {.column width="48%"}
 ![](imgs/chp4/scattersha_smokingobesity_pha.png)
+:::
+
+::::
 
 <!-- ----------------------------------------------------------------- -->
-# {.center}
+## Validation {.smaller}
+
+How to <span class="blB">check</span> our estimates?
+
+:::: {.columns}
+
+::: {.column width="42%"}
+- Internal: <span class="blB">Fully Bayesian benchmarking</span> [@RN30]
+	- State benchmark (n = 7)
+	- Major-by-state benchmark (n = 12)
+- External: Comparing our broad results to <span class="blB">other Australian surveys</span> and the <span class="blB">Social Health Atlas</span>
+:::
+
+::: {.column width="48%"}
+![](imgs/chp4/scattersha_smokingobesity_pha.png)
+:::
+
+::::
+
+<!-- ----------------------------------------------------------------- -->
+## {.center}
 
 ![](imgs/chp4/rr_alcohol.png)
 
 <!-- ----------------------------------------------------------------- -->
-# {.center}
+## {.center}
 
 ![](imgs/chp4/rrcisize_alcohol.png)
 
 <!-- ----------------------------------------------------------------- -->
-# {.center}
+## {.center}
 
 ![](imgs/chp4/orep_alcohol.png)
 
 
 <!-- ----------------------------------------------------------------- -->
-# {.center}
+## {.center}
 
 ![](imgs/chp4/lisa_s_alcohol.png)
+
+<!-- ----------------------------------------------------------------- -->
+## {.center .smaller}
+
+::: {.finding-box}
+**Key findings**
+
+- Prevalence of cancer risk factors $\to$ <span class="blB">considerable spatial disparities</span> across Australia
+- <span class="blB">High spatial resolution</span> estimates $\to$ detailed understanding of spatial variation 
+:::
 
 
