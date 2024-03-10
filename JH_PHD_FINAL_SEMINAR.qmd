@@ -2,7 +2,7 @@
 title: "Enhancing Bayesian small area level methods with applications in health"
 subtitle: "James Hogg - PhD Final Seminar"
 date_field: 8th April, 2024
-supervisors: "Supervisors: Kerrie Mengersen (QUT), Susanna Cramb (QUT), Peter Baade (CCQ)and Jessica Cameron (CCQ)"
+supervisors: "Supervisors: Kerrie Mengersen (QUT), Susanna Cramb (QUT), Peter Baade (CCQ) and Jessica Cameron (CCQ)"
 from: markdown+emoji
 format:
   revealjs: 
