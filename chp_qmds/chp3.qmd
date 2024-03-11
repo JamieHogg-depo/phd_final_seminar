@@ -10,15 +10,28 @@ A two-stage Bayesian small area estimation approach for proportions
 **James Hogg**, Jessica Cameron, Susanna Cramb, Peter Baade, Kerrie Mengersen. A two-stage Bayesian small area estimation approach for proportions. 
 <br>
 <br>
-<div class="small-text">**Status**: Third round of revisions</div>
+<div class="small-text">**Status**: <span class="blB">Third</span> round of revisions</div>
 
 <!-- ----------------------------------------------------------------- -->
-## Background
+## Background {.smaller}
 
-- Increasing demand $\to$ robust small area estimates from survey data
-- Model-based SAE methods pushed to <span class="blR">extent</span>
-- Data sparsity is key <span class="blR">challenge</span> when working with **proportions**
+::::: {.columns}
+
+:::: {.column width="58%"}
+::: {.incremental}
+- Increasing demand $\to$ *robust* small area estimates from <span class="blB">smaller</span> surveys
+- **Sparsity** is key <span class="blR">challenge</span> when working with **proportions**
+  - Model-based SAE methods pushed to <span class="blR">extent</span>
   -  Individual level or area level models <span class="blR">cannot address</span>
+:::
+::::
+
+:::: {.column width="38%"}
+![](imgs/background.webp){.center}
+
+::::
+
+:::::
   
 <!-- ----------------------------------------------------------------- -->
 ## {auto-animate=true}
@@ -33,13 +46,16 @@ Use both?
 ::: {style="margin-top: 200px; font-size: 3em;"}
 Use **both?**
 :::
+
+:::{.incremental}
 - Two-stage approaches have <span class="blB">emerged</span> [@gao2023_sma;@Das2022]
-- Recent work hints at <span class="blB">benefits</span> $\to$ no full investigation
+- Recent work hints at <span class="blB">benefits</span> $\to$ <span class="blR">no full</span> investigation
 - <span class="blB">Mitigate</span> weakness of either model and <span class="blB">leverage</span> their strengths
+:::
 
 
 <!-- ----------------------------------------------------------------- -->
----
+## {.center}
 
 ::: {.quote-box}
 **Contribution** 🎉
@@ -49,12 +65,12 @@ A Bayesian two-stage method for proportions that tackles data sparsity challenge
 :::
 
 <!-- ----------------------------------------------------------------- -->
-## Proposed approach {.scrollable}
+## The two-stage logistic normal (TSLN) approach {.scrollable .smaller}
 
-:::: {.columns}
+::::: {.columns}
 
-::: {.column width="48%"}
-
+:::: {.column width="48%"}
+::: {.incremental}
 - Stage 1 (TSLN-S1)
   - Fit a **individual-level** <span class="blB">logistic model</span> to the survey data
 - Stage 1 (S1) estimates
@@ -62,18 +78,20 @@ A Bayesian two-stage method for proportions that tackles data sparsity challenge
 - Stage 2 (TSLN-S2)
   - **Smooth** <span class="blB">S1 estimates</span> and **impute** estimates for non-sampled areas using an **area-level** <span class="blB">Fay-Herriot [@RN54] model</span>
 :::
+::::
 
-::: {.column width="48%"}
+:::: {.column width="48%"}
 ![](imgs/TSLN_model_flowchart.png){width=210%}
-
-:::
 
 ::::
 
+:::::
+
 <!-- ----------------------------------------------------------------- -->
-## Model details {.scrollable .smaller}
+## The TSLN approach {.scrollable .smaller}
 
 ### Stage 1
+Individual level logistic model
 $$
 \begin{eqnarray}
     y_{ij} &\sim& \text{Bernoulli}(p_{ij})^{\tilde{w}_{ij}}
@@ -86,35 +104,41 @@ $$
 
 where:
 
-- $y_{ij}$ is the binary response for sampled individual $j$ in small area $i$
-- $p_{ij}$ is the probabilitiy for $\dots$
-- $\tilde{w}_{ij}$ is the sampled scaled weight for $\dots$
+- $y_{ij}$ is the **binary response** for sampled individual $j$ in small area $i$
+- $p_{ij}$ is the **probabilitiy** for $\dots$
+- $\tilde{w}_{ij}$ is the sampled scaled **weight** for $\dots$
 
 ### Stage 1 (S1) estimates
 The S1 estimate[^3] for area $i$ is,  
 $$
 \hat{\theta}_i^{\text{S1}} = \text{logit}\left( \frac{\sum_{j=1}^{n_i} w_{ij} p_{ij}}{n_i} \right)
 $$
-with $\gamma_i^{\text{S1}}$ the corresponding sample variance.
+with $\gamma_i^{\text{S1}}$ is the corresponding sample variance.
 
 where: 
 
-- $w_{ij}$ is the sample weight for sampled individual $j$ in small area $i$
+- $w_{ij}$ is the sample **weight** for sampled individual $j$ in small area $i$
 - Sample weights in small area $i$ sum to $n_i$ (the area sample size)
 
 ### Stage 2
-Composed of: a measurement error model, 
+The area level FH model is composed of: a
+<br>
+**measurement error** model, 
 $$
 \hat{\theta}_i^{\text{S1}} \sim N\lb{ \hat{\bar{\theta}}_i, \widehat{\text{v}}\lb{\hat{\theta}_i^{\text{S1}}} }, 
 $$
 
-which accommodates some of the uncertainty of the stage 1 model; a sampling model,  
+which accommodates some of the uncertainty of the stage 1 model; a
+<br>
+**sampling model**,  
 
 $$
 \hat{\bar{\theta}}_i \sim N\lb{ \hat{\theta}_i, \gamma_i^{\text{S1}} },
 $$
 
-which accommodates the sampling variance; and a linking model, 
+which accommodates the sampling variance; and a
+<br>
+**linking** model, 
 
 $$
 \begin{eqnarray}
@@ -129,25 +153,31 @@ The parameter of interest (i.e. proportion) is the posterior distribution of $\h
 
 ### Other considerations and additions
 
-- Stability gained from smoothing (at individual level data) balanced with aggreement with direct estimates
+- Stability gained from smoothing (at individual level) balanced with aggreement with the direct estimates
 - Generalized variance functions (GVF) for some of $\gamma_i^{\text{S1}}$
 
 [^3]: The posterior draws from stage 1 are fed as input to the stage 2 model.
 
 <!-- ----------------------------------------------------------------- -->
-## Simulation study {.center}
+## Simulation study {.center .smaller}
 
 Area level
 
-- **BETA**: an Beta model
-- **ELN**: an empirical-logistic normal model
-	- similar to stage 2 of our approach
-- **BIN**: a generic binomial model
-	- ignores the sample design
+- **BETA**: Beta model
+- **ELN**: Empirical-logistic normal model
+	- Similar to <span class="blB">stage 2</span> of the TSLN approach
+- **BIN**: Binomial model
+	- <span class="blR">Ignores</span> sample design
 
 Individual level
 
-- **LOG**: an pseudo-likelihood logistic model
+- **LOG**: Pseudo-likelihood logistic model
+	- Similar to <span class="blB">stage 1</span> of the TSLN approach
+	
+<!-- ----------------------------------------------------------------- -->
+## Results
+
+![](imgs/chp3/sparse_MRRMSE.png){.r-stretch}
 
 <!-- ----------------------------------------------------------------- -->
 ## {.center}
@@ -174,6 +204,20 @@ Individual level
 :::
 
 <!-- ----------------------------------------------------------------- -->
-## {.center}
+## {.center .smaller}
 
-![](imgs/chp3/sparse_MRRMSE.png){.r-stretch}
+:::: {.finding-box}
+**Key findings** 📢
+
+::: {.incremental}
+- TSLN approach provides <span class="blB">superior</span> proportion estimates.
+	- Similar bias but much <span class="blB">smaller variance</span>.
+	- Consistently <span class="blB">smaller MSEs</span> and credible intervals.
+	- The TSLN approach coverage more stable and closer to the nominal level. 
+- Appears to be the <span class="blB">best option</span> in sparse settings, such as when using the **NHS in Australia**
+- Demonstrated benefits of <span class="blB">multi-stage smoothing</span> with the use of individual *and* area level models
+:::
+
+::::
+
+
