@@ -13,22 +13,115 @@ Creating area level indices of behaviours impacting cancer in Australia with a B
 <div class="small-text">**Status**: Submitted</div>
 
 <!-- ----------------------------------------------------------------- -->
+## Motivation {.smaller}
+
+::: {.incremental}
+- Resolution and accessibility of health data for small areas have <span class="blB">improved considerably</span>
+- <span class="blR">BUT</span>... 
+- Increasing quantity and complexity of such data can make it more <span class="blR">challenging</span> to:
+	- Collate
+	- Draw meaningful conclusions
+	- Formulate effective policy decisions 
+:::
+
+<!-- ----------------------------------------------------------------- -->
+##
+
+::: {.r-fit-text}
+**Indices**
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## Indices
+
+::: {.incremental}
+- Measures a **multifaceted concept** that cannot be captured by a single feature. 
+- Often can help:
+	- Determine <span class="blB">policy priorities</span>
+	- Benchmark or <span class="blB">monitor the performance</span> of current policies
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## Creating indices with models
+
+::: {.incremental}
+- Increasingly <span class="blB">popular</span> [@RN674; @RN671; @RN670; @RN687]
+- **Shared component models (SCM)**
+	- Linear combination of a shared factor (the INDEX) $+$ residual errors
+	- <span class="blR">No</span> measurement errors
+	- <span class="blR">Single</span> shared factor
+:::
+
+
+<!-- ----------------------------------------------------------------- -->
+## {auto-animate=true}
+
+::: {style="margin-top: 100px; font-size: 1em;"}
+Generalised shared component model
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## {auto-animate=true}
+
+::: {style="margin-top: 100px; font-size: 1.5em; color: blue;"}
+Generalised shared component model
+:::
+
+Accommodates:
+
+- **Multiple** shared factors
+- Heteroscedastic **measurement error**
+- Provides indices with **uncertainty measures**
+- Represents several generic Bayesian factor models as **special cases**
+
+<!-- ----------------------------------------------------------------- -->
+## {.center}
+
+![](imgs/chp5/chp5_index_flowchart.png)
+
+<!-- ----------------------------------------------------------------- -->
+## 
+
+::: {.r-fit-text}
+Area Indices of 
+<br>
+Behaviors Impacting 
+<br>
+Cancer (<span class="blB">AIBIC</span>) product
+:::
+
+<!-- ----------------------------------------------------------------- -->
 ---
 
 ::: {.quote-box}
 **Contribution** 🎉
 
-- A Bayesian model-based method for index creation that can accommodate spatial autocorrelation and known heteroscedastic measurement error.
-- The first Australia-wide area level cancer risk factor indices. Unlike previous indices, like the SEIFA, the developed indices also have appropriate measures of uncertainty. 
+- A Bayesian <span class="blB">model-based method</span> for **index creation** that can accommodate <span class="blB">spatial autocorrelation</span> and known heteroscedastic <span class="blB">measurement error</span>.
+- The <span class="blB">first</span> Australia-wide **area level** <span class="blB">cancer risk factor indices</span>.
 :::
 
 <!-- ----------------------------------------------------------------- -->
-## Motivation
+## Input data {.smaller}
 
-![](imgs/chp5/chp5_index_flowchart.png)
+::: {.incremental}
+- Small area estimates of five features (cancer risk factor OR **unhealthy behaviors**) from <span class="blB">previous chapter</span>
+	- Current smokers, risky alcohol consumption, overweight/obese, inadequate diet and inadequate physical
+- Available as **point estimates** and **standard deviations** of proportions (inverse logit transformed)
+- Details
+	- Number of features **$K = 5$**
+	- Number of small areas $N = 2221$
+	- Number of shared factors $L = 2$
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## {.center}
+
+![](imgs/chp5/cor_observed.png)
 
 <!-- ----------------------------------------------------------------- -->
 ## Generalised Shared Component Model (GSCM) {.scrollable .smaller}
+
+$N$-dimensional multivariate normal distribution for the $k$th feature
 
 $$
 \begin{eqnarray}
@@ -45,6 +138,93 @@ Where:
 - $\boldsymbol{\sigma}_k$ is $N$-dimensional vector of standard deviations for the $k$th risk factor
 - $\boldsymbol{\mu}_{k}$ is $N$-dimensional vectors of true values for the $k$th risk factor
 - $\mathbf{z}$ is a $N \times L$ matrix of shared factor scores, with independent columns
-- $\boldsymbol{\epsilon}_{k}$ a $N$-dimensional vector of feature-specific residual errors for the $k$th feature with associated variance $\tau_k^2$. 
+	- Leroux CAR priors [@RN366]
+- $\boldsymbol{\epsilon}_{k}$ a $N$-dimensional vector of feature-specific residual errors for the $k$th feature with associated variance $\tau_k^2$
+	- Leroux CAR priors
 - $\boldsymbol{\Lambda}_k$ is the $k$th row of the $K$ by $L$ matrix of factor loadings
 :::
+
+Identifiability is enforced by:
+
+:::{.incremental}
+- Shared factors are homoscedastic (variances $=1$) [@RN674; @RN562]
+- Hierarchical structural constraint [@RN679]
+	- Factor loading matrix, $\boldsymbol{\Lambda}$, is constrained to be lower triangular with strictly positive diagonal entries [@RN674]
+:::
+
+Special cases:
+
+:::{.incremental}
+- Traditional shared component model
+- Bayesian spatial factor models of [@RN674; @RN564]
+- Generic Bayesian factor model
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## Results {.center}
+
+![Posterior medians (and 95% highest posterior density intervals) of the factor loadings.](imgs/chp5/factor_loadings.png)
+
+<!-- ----------------------------------------------------------------- -->
+## The four indices {.center}
+
+- Factor 1: $z_{n1}$
+- Factor 2: $z_{n2}$
+- Health Behavior Index (HBI): $w_1 z_{n1} + w_2 z_{n2}$
+- Population Adjusted Health Behaviors Index (PAHBI): $P_n \lb{ w_1 z_{n1} + w_2 z_{n2} }$
+
+<!-- ----------------------------------------------------------------- -->
+## {.r-stretch}
+
+![](imgs/chp5/map_perc_capital_Perth.png)
+
+<!-- ----------------------------------------------------------------- -->
+## {.r-stretch}
+
+![](imgs/chp5/map_perc3.png)
+
+<!-- ----------------------------------------------------------------- -->
+## {.r-stretch}
+
+![](imgs/chp5/map_perc4.png)
+
+<!-- ----------------------------------------------------------------- -->
+## {.center .smaller}
+
+:::: {.finding-box}
+**Key findings** 📢
+
+::: {.incremental}
+- <span class="blR">Incomplete or inefficient</span> policy decisions <div class="small-text">(if using a single shared factor or simplified spatial structure)</div>
+	- <span class="blB">Motivates</span> use of GSCM
+- The AIBIC reveals a <span class="blR">pronounced spatial autocorrelation</span> in unhealthy behaviors
+	- Patterns reflect **remoteness** and **socioeconomic patterns** 
+- Comparison empirical methods and the GSCM 
+	- <span class="blR">Very different</span> policy decisions
+:::
+
+::::
+
+<!-- ----------------------------------------------------------------- -->
+##
+
+::: {.r-fit-text}
+Exciting...
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## The indices (AIBIC) are on Github {.smaller}
+
+:::: {.columns}
+
+::: {.column width="32%"}
+- <span class="blB">Point estimates</span>, <span class="blB">intervals</span>, and posterior <span class="blB">probabilities</span>
+- **Percentiles** and **ranks** computed both <span class="blB">nationally</span> and for each of the eight <span class="blB">states and territories</span> of Australia.
+:::
+
+::: {.column width="58%"}
+![](imgs/chp5/github.png)
+:::
+
+::::
+

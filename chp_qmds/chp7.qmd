@@ -1,5 +1,7 @@
 <!-- ----------------------------------------------------------------- -->
-# Summary
+# Thesis summary
+
+<div class="small-text">We made <span class="blB">it</span>. 🎉 Take a breath. </div>
 
 <!-- ----------------------------------------------------------------- -->
 ## Contributions {.smaller}
