@@ -18,7 +18,7 @@ Mapping the prevalence of cancer risk factors at the small area level in Austral
 ::: {.column width="40%"}
 **Current**
 
-🛑 Population health areas (n = 1654)
+🛑 Population health areas (n = 1,165)
 
 🛑 Missing estimates for very remote areas 
 :::
@@ -36,7 +36,7 @@ Mapping the prevalence of cancer risk factors at the small area level in Austral
 ::: {.column width="40%"}
 **Current**
 
-🛑 Population health areas (n = 1654)
+🛑 Population health areas (n = 1,165)
 
 🛑 Missing estimates for very remote areas 
 :::
@@ -44,12 +44,21 @@ Mapping the prevalence of cancer risk factors at the small area level in Austral
 ::: {.column width="40%"}
 **This work**
 
-✅ Statistical areas level 2 (n = 2221)
+✅ Statistical areas level 2 (n = 2,221)
 
 ✅ Estimates for very remote areas
 :::
 
 ::::
+
+<!-- ----------------------------------------------------------------- -->
+---
+
+<!-- presentation slides is 1050 x 700 -->
+
+![](imgs/chp4/phamu_obesity.png){.absolute bottom=182.5 left=0 height="335"}
+
+![](imgs/chp4/mu_obesity.png){.absolute bottom=182.5 right=0 height="335"}
 
 <!-- ----------------------------------------------------------------- -->
 ## {.center}
@@ -58,7 +67,7 @@ Mapping the prevalence of cancer risk factors at the small area level in Austral
 **Contribution** 🎉
 <br>
 <br>
-The <span class="blB">first Australia-wide</span> prevalence estimates for **eight** <span class="blB">cancer risk factors</span> at the <span class="blB">statistical areas level 2 (SA2) level</span>. Estimates and measures of uncertainty are available for 2221 SA2s. 
+The <span class="blB">first Australia-wide</span> prevalence estimates for **eight** <span class="blB">cancer risk factors</span> at the <span class="blB">statistical areas level 2 (SA2) level</span>.
 :::
 
 
@@ -186,15 +195,6 @@ How to <span class="blB">check</span> our estimates?
 ![](imgs/chp4/lisa_s_alcohol.png)
 
 <!-- ----------------------------------------------------------------- -->
----
-
-<!-- presentation slides is 1050 x 700 -->
-
-![](imgs/chp4/mu_obesity.png){.absolute bottom=182.5 left=0 height="335"}
-
-![](imgs/chp4/phamu_obesity.png){.absolute bottom=182.5 right=0 height="335"}
-
-<!-- ----------------------------------------------------------------- -->
 ## {.center}
 
 :::: {.finding-box}
@@ -217,7 +217,7 @@ Exciting...
 <!-- ----------------------------------------------------------------- -->
 ## {.center}
 
-These modelled estimates will be available in the **Australian Cancer Atlas**
+These modelled estimates will be available in the **Australian Cancer Atlas 2.0**
 
 ![](imgs/ACA_oesophagealcancer.png){.r-stretch}
 

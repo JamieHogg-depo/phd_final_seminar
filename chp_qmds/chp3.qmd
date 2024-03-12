@@ -213,7 +213,7 @@ Individual level
 - TSLN approach provides <span class="blB">superior</span> proportion estimates.
 	- Similar bias but much <span class="blB">smaller variance</span>.
 	- Consistently <span class="blB">smaller MSEs</span> and credible intervals.
-	- The TSLN approach coverage more stable and closer to the nominal level. 
+	- Interval <span class="blB">coverage more stable</span> and closer to the nominal level. 
 - Appears to be the <span class="blB">best option</span> in sparse settings, such as when using the **NHS in Australia**
 - Demonstrated benefits of <span class="blB">multi-stage smoothing</span> with the use of individual *and* area level models
 :::

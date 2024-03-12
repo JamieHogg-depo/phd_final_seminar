@@ -9,7 +9,7 @@ Improving the spatial and temporal resolution of burden of disease measures with
 **James Hogg**, K. Staples, A. Davis, S. Cramb, C. Patterson, L. Kirkland, M. Gourley, J. Xiao, W. Sun. Improving the spatial and temporal resolution of burden of disease measures with Bayesian models.
 <br>
 <br>
-<div class="small-text">**Status**: Second round of revisions</div>
+<div class="small-text">**Status**: <span class="blB">Second round</span> of revisions</div>
 
 <!-- ----------------------------------------------------------------- -->
 ---
@@ -66,7 +66,7 @@ Improving the spatial and temporal resolution of burden of disease measures with
 :::
 
 <!-- ----------------------------------------------------------------- -->
-## {auto-animate=true}
+## {.smaller auto-animate=true}
 
 ::: {style="margin-top: 200px; font-size: 3em; color: red;"}
 **No** BOD studies 
