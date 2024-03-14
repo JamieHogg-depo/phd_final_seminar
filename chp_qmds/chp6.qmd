@@ -9,53 +9,54 @@ Improving the spatial and temporal resolution of burden of disease measures with
 **James Hogg**, K. Staples, A. Davis, S. Cramb, C. Patterson, L. Kirkland, M. Gourley, J. Xiao, W. Sun. Improving the spatial and temporal resolution of burden of disease measures with Bayesian models.
 <br>
 <br>
-<div class="small-text">**Status**: <span class="blB">Second round</span> of revisions</div>
+<div class="small-text">**Status**: <span class="blB">Second round</span> of revisions</div
 
 <!-- ----------------------------------------------------------------- -->
----
+## Background {.smaller}
 
-::: {.quote-box}
-**Contribution** 🎉
+### Burden of disease (BOD)
 
-- A principled set of Bayesian spatiotemporal methods for modelling the wide range of mortality and prevalence data necessary for full BOD studies.
-- The first high-resolution set of spatiotemporal BOD estimates for CHD and asthma in Western Australia.
-:::
+::::: {.columns}
 
-<!-- ----------------------------------------------------------------- -->
-## Background
-
-**Burden of disease (BOD)**
+:::: {.column width="68%"}
 
 ::: {.incremental}
-- BOD estimates are widely used to identify diseases causing excess burden [@Murray1997; @GBD2016;@Schmidt2020; @RN121; @Steel2018]
-- Reported using disability-adjusted life years (DALY)
-  - Linear and non-linear combinations of fatal (e.g., mortality) and non-fatal (e.g., prevalence) burden
-  - Fatal component $=$ ‘years of life lost’ (YLL)
-  - Non-fatal component $=$ ‘years lived with disability’ (YLD)
+- BOD estimates $\to$ identify diseases causing excess burden [@Murray1997; @GBD2016;@Schmidt2020; @RN121; @Steel2018]
+- Disability-adjusted life years (<span class="blB">DALY</span>)
+  - Linear and non-linear combinations of <span class="blB">fatal</span> (e.g., mortality) and <span class="blB">non-fatal</span> (e.g., prevalence) burden
+  - Fatal component $=$ ‘years of life lost’ (<span class="blB">YLL</span>)
+  - Non-fatal component $=$ ‘years lived with disability’ (<span class="blB">YLD</span>)
 :::
+::::
+
+:::: {.column width="28%"}
+![](imgs/chp6/bod.webp){width=100% .soft-edges}
+
+::::
+
+:::::
 
 <!-- ----------------------------------------------------------------- -->
----
+## {.smaller}
 
-**Bayesian modelling in BOD**
+### Full BOD studies
 
 ::: {.incremental}
-- Countless studies use Bayesian models in disease mapping
-- Few studies use Bayesian models in BOD studies
-- Examples
-  - Bayesian meta-regression tool, DisMod-MR 2.1 [@Steel2018; @GBD2015]
-  - The Cause of Death Ensemble model (CODEm) [@CODEm]
-  - Shared component models of MacNab [@RN652; @RN653]
+- Aim to calculate DALYs for <span class="blB">all</span> causes (typically over 200)
+- Prioritise healthcare resources by <span class="blB">ranking diseases</span>
+![](imgs/chp6/gbd.png){width=100% .soft-edges}
 :::
 
-<!-- ----------------------------------------------------------------- -->
----
-
-**Full BOD studies**
+### Bayesian modelling
 
 ::: {.incremental}
-- Aim to calculate DALYs for all causes (typically over 200)
-- Prioritise healthcare resources ranking diseases
+- <span class="blB">Countless</span> studies use Bayesian models in **disease mapping**
+- <span class="blR">Few</span>       studies use Bayesian models in **BOD studies** [@Steel2018; @GBD2015; @CODEm; @RN652; @RN653]
+:::
+
+::: {.notes}
+not fully Bayesian, fail to acknowledge relevant applied literature or enforce strict data requirements
+Too complex (i.e., not practical)
 :::
 
 <!-- ----------------------------------------------------------------- -->
@@ -71,108 +72,152 @@ Improving the spatial and temporal resolution of burden of disease measures with
 ::: {style="margin-top: 200px; font-size: 3em; color: red;"}
 **No** BOD studies 
 :::
-- use fully Bayesian models to estimate for small areas
-- use SAE models for survey microdata
-- consider models applicable to the full scope of data in full BOD studies
-- in Australia, use Bayesian models
-- in Australia, provide estimates for small areas
-- have explored practical models for government agencies
-
-<!-- ----------------------------------------------------------------- -->
----
-
-::: {.quote-box}
-**Study objectives** 
-
-- Apply Bayesian spatio-temporal models to the field of BOD, demonstrating the benefits
-- Assess the feasibility of adopting these Bayesian models in full BOD studies 
-- Conducting a case study using annual mortality and prevalence data on coronary heart disease (CHD) and asthma for Local Government Areas in Western Australia.
-:::
-
-<!-- ----------------------------------------------------------------- -->
-# Methods
-
-<!-- ----------------------------------------------------------------- -->
-## Standard age-year-time (SAYT) model {.scrollable .smaller}
-
-Let:
-
-:::{.incremental}
-- $y_{ita}$ be the raw mortality counts in age group $a = 1, \dots, A$, area $i = 1, \dots, M$ and time $t = 1, \dots, T$
-- $\xi_{it}$ be the random effect for the $i$th area and $t$th year
-  - $\theta_i$, the spatial random effect, is modeled using a BYM2 spatial prior [@riebler2016bym2];
-  - $\gamma_t$, the temporal random effect, is modeled using an intrinsic conditional autoregressive prior [@RN365]; and 
-  - $\delta_{it}$, the space-time random effect, is modeled using a standard normal distribution (Type I interaction) which assumes independent variation 
-- $\alpha$ be an intercept
-- $N_{ita}$ be the population.
-:::
-
-Model
-$$
-\begin{align}
-y_{ita} & \sim \jdist{Poisson}{\mu_{ita}}
-\\
-\log\left( \mu_{ita} \right) & = \log\left( N_{ita} \right) + \alpha + \beta_a + \xi_{it}
-\end{align}
-$$
-
-<!-- ----------------------------------------------------------------- -->
-## Weighted Multilevel Regression and poststratification (MrP) {.scrollable .smaller}
-$$
-\begin{eqnarray}
-    z_{itaf} & \sim & \jdist{Bernoulli}{\pi_{itaf}}^{\tilde{w}_{itaf}} \label{eq:wmrp}
-    \\
-    \jdist{logit}{\pi_{itaf}} & = & \alpha_{af} + \mathbf{x}_{it} \boldsymbol{\beta} + \theta_i + \gamma_t, \nonumber
-    \\
-    \alpha_{af} & \sim & \jdist{N}{0, 1000^2} \nonumber
-    \\
-    \boldsymbol{\theta} & \sim & \jdist{BYM2}{ \mathbf{W}^{\text{S}}, \rho, \kappa, \sigma_\theta^2 } \nonumber
-    \\
-    \boldsymbol{\gamma} & \sim & \jdist{ICAR}{ \mathbf{W}^{\text{T}}, \sigma_\gamma^2 } \nonumber
-\end{eqnarray}
-$$
-
-*Prediction*
-$$
-YLD^{(d)}_{it} = \sum_{f,a,h} \pi^{(d)}_{itaf} N_{itaf} \psi_h e_h
-$$
-
-
-
-<!-- ----------------------------------------------------------------- -->
-## Results {.center}
-![](imgs/chp6/results.png){.r-stretch}
-
-<!-- ----------------------------------------------------------------- -->
-## Discussion {.scrollable}
-
-**Contributions**
 
 ::: {.incremental}
-
-- Bayesian models $\to$ increased the reliability, certainty and reportability of estimates
-- Demonstrated feasibility of incorporating spatio-temporal models into full BOD studies
-  - Provide ranks for disease burden from all causes by small areas
-- Bayesian and basic stratification: agreed (mostly!)
-  - discrepancies due to age-standardisation OR paradigm differences
+- Use SAE models for survey microdata
+- Consider models applicable to the full scope of data in full BOD studies
+- **Australia**
+	- <span class="blR">Use</span> fully Bayesian models
+	- <span class="blR">No</span> small area estimates
 :::
 
-**Limitations**
+<!-- ----------------------------------------------------------------- -->
+## {.center}
+
+::: {.quote-box}
+**Contribution** 🎉
+
+A principled and practical set of Bayesian spatiotemporal methods for modelling the wide range of mortality and prevalence data necessary for full BOD studies.
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## Methods {.smaller}
+
+<span class="blB">Standard age-year-time (SAYT) model</span> 
+
+::::: {.columns}
+
+:::: {.column width="28%"}
+![](imgs/chp6/disease.webp){width=100% .soft-edges}
+
+::::
+
+:::: {.column width="68%"}
+
+::: {.incremental}
+- Input data: 
+	- **Aggregated counts** by area, year, age, and sex
+- Output data: 
+	- **Smoothed counts** for each area, year, age, and sex
+- Model details:
+	- **Poisson model**
+	- Population as offset
+	- Spatial, temporal and space-time **random effects**
+- Applicable to:
+	- **Mortality** or **prevalence** counts
+:::
+::::
+
+:::::
+
+<!-- ----------------------------------------------------------------- -->
+## Methods {.smaller}
+
+<span class="blB">Weighted multilevel regression and poststratification (MrP)</span>
+<br>
+**First use** of small area estimation in BOD
+
+::::: {.columns}
+
+:::: {.column width="28%"}
+
+![](imgs/chp6/mrp.webp){width=100% .soft-edges}
+::::
+
+:::: {.column width="68%"}
+
+::: {.incremental}
+- Input data: 
+	- **Individual level data**
+- Output data: 
+	- **Probabilities** for all combinations of area, year, age, and sex
+- Model details:
+	- **Logistic model** with poststratification step [@Park2004]
+	- Likelihood is weighted using **pseudo-likelihood** [@Savitsky2016]
+	- Spatial and temporal **random effects**
+- Applicable to:
+	- **Survey microdata**
+:::
+::::
+
+:::::
+
+<!-- ----------------------------------------------------------------- -->
+## Case study {.smaller}
+
+::: {.incremental}
+- Data was supplied by Department of Health Western Australia (<span class="blB">DOHWA</span>)
+- Two conditions: <span class="blB">Asthma</span> and coronary heart disease (<span class="blB">CHD</span>)
+- Geographic: <span class="blB">Local Government Areas</span> (n = 137) in Western Australia
+- Time: <span class="blB">2015 to 2020</span> inclusive
+- Used <span class="blB">fully Bayesian methods</span> with $\texttt{nimble}$
+:::
+
+### Objective
+
+::: {.incremental}
+1. Produce <span class="blB">modelled estimates</span> of:
+	i) Mortality and age-standardised YLLs (ASYLLs)
+	ii) Prevalence/proportions and ASYLDs
+2. <span class="blB">Compare</span> to raw results (i.e., no modelling)
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## {.center}
+
+![Comparison of the 822 annual LGA point estimates and their reliability (% of RSEs less than 50%) for modeled and raw BOD measures by condition.](imgs/chp6/results.png){.r-stretch}
+
+<!-- ----------------------------------------------------------------- -->
+## {.center}
+
+![Comparison of the distribution of the point estimates from the Bayesian models and basic stratification (i.e., raw).](imgs/chp6/compraw_ALL.jpeg){.r-stretch}
+
+<!-- ----------------------------------------------------------------- -->
+## {.center .smaller}
+
+:::: {.finding-box}
+**Key findings** 📢
+
+::: {.incremental}
+- <span class="blB">Bayesian models</span> $\to$ increased the *reliability, certainty and reportability* of estimates
+- Demonstrated **feasibility** of incorporating spatio-temporal models into <span class="blB">full BOD studies</span>
+  - Provide **ranks** for disease burden from **all** causes by **small areas**
+- Bayesian and basic stratification: 
+	- <span class="blB">Agreed</span> (mostly!)
+  - Discrepancies due to <span class="blB">age-standardisation</span> OR <span class="blB">paradigm differences</span>
+:::
+
+::::
+
+<!-- ----------------------------------------------------------------- 
+## Discussion {.scrollable .smaller}
+
+### Limitations 
 
 ::: {.incremental}
 
 - Relative simplicity of models
-
+- Validation
 :::
 
-**Future work**
+### Future work
 
 ::: {.incremental}
 
 - Computation time
   - Explore faster alternatives to Bayesian inference such as integrated nested Laplace approximation (INLA) [@Rue2009] or variational inference [@fox_2012].
 - Model complexity
-  - deeper interactions
-  - more individual level covariates
+  - Deeper interactions
+  - More individual level covariates
 
-:::
+:::-->

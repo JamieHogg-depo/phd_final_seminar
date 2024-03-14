@@ -1813,60 +1813,58 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 <div class="small-text">
 <strong>Status</strong>: <span class="blB">Second round</span> of revisions
 </div>
-<!-- ----------------------------------------------------------------- -->
 </section>
-<section class="slide level2">
-
-<div class="quote-box">
-<p><strong>Contribution</strong> 🎉</p>
-<ul>
-<li>A principled set of Bayesian spatiotemporal methods for modelling the wide range of mortality and prevalence data necessary for full BOD studies.</li>
-<li>The first high-resolution set of spatiotemporal BOD estimates for CHD and asthma in Western Australia.</li>
-</ul>
-</div>
-<!-- ----------------------------------------------------------------- -->
-</section>
-<section id="background-3" class="slide level2">
+<section id="background-3" class="slide level2 smaller">
 <h2>Background</h2>
-<p><strong>Burden of disease (BOD)</strong></p>
+<h3 id="burden-of-disease-bod">Burden of disease (BOD)</h3>
+<div class="columns">
+<div class="column" style="width:68%;">
 <div>
 <ul>
-<li class="fragment">BOD estimates are widely used to identify diseases causing excess burden <span class="citation" data-cites="Murray1997 GBD2016 Schmidt2020 RN121 Steel2018">[<a href="#/references" role="doc-biblioref" onclick="">7</a>,<a href="#/references" role="doc-biblioref" onclick="">28</a>,<a href="#/references" role="doc-biblioref" onclick="">45</a>–<a href="#/references" role="doc-biblioref" onclick="">47</a>]</span></li>
-<li class="fragment">Reported using disability-adjusted life years (DALY)
+<li class="fragment">BOD estimates <span class="math inline">\(\to\)</span> identify diseases causing excess burden <span class="citation" data-cites="Murray1997 GBD2016 Schmidt2020 RN121 Steel2018">[<a href="#/references" role="doc-biblioref" onclick="">7</a>,<a href="#/references" role="doc-biblioref" onclick="">28</a>,<a href="#/references" role="doc-biblioref" onclick="">45</a>–<a href="#/references" role="doc-biblioref" onclick="">47</a>]</span></li>
+<li class="fragment">Disability-adjusted life years (<span class="blB">DALY</span>)
 <ul>
-<li class="fragment">Linear and non-linear combinations of fatal (e.g., mortality) and non-fatal (e.g., prevalence) burden</li>
-<li class="fragment">Fatal component <span class="math inline">\(=\)</span> ‘years of life lost’ (YLL)</li>
-<li class="fragment">Non-fatal component <span class="math inline">\(=\)</span> ‘years lived with disability’ (YLD)</li>
+<li class="fragment">Linear and non-linear combinations of <span class="blB">fatal</span> (e.g., mortality) and <span class="blB">non-fatal</span> (e.g., prevalence) burden</li>
+<li class="fragment">Fatal component <span class="math inline">\(=\)</span> ‘years of life lost’ (<span class="blB">YLL</span>)</li>
+<li class="fragment">Non-fatal component <span class="math inline">\(=\)</span> ‘years lived with disability’ (<span class="blB">YLD</span>)</li>
 </ul></li>
 </ul>
 </div>
-</section>
-<section id="section-40" class="slide level2">
-<h2><!-- ----------------------------------------------------------------- --></h2>
-<p><strong>Bayesian modelling in BOD</strong></p>
-<div>
-<ul>
-<li class="fragment">Countless studies use Bayesian models in disease mapping</li>
-<li class="fragment">Few studies use Bayesian models in BOD studies</li>
-<li class="fragment">Examples
-<ul>
-<li class="fragment">Bayesian meta-regression tool, DisMod-MR 2.1 <span class="citation" data-cites="Steel2018 GBD2015">[<a href="#/references" role="doc-biblioref" onclick="">28</a>,<a href="#/references" role="doc-biblioref" onclick="">29</a>]</span></li>
-<li class="fragment">The Cause of Death Ensemble model (CODEm) <span class="citation" data-cites="CODEm">[<a href="#/references" role="doc-biblioref" onclick="">30</a>]</span></li>
-<li class="fragment">Shared component models of MacNab <span class="citation" data-cites="RN652 RN653">[<a href="#/references" role="doc-biblioref" onclick="">26</a>,<a href="#/references" role="doc-biblioref" onclick="">27</a>]</span></li>
-</ul></li>
-</ul>
+</div><div class="column" style="width:28%;">
+<p><img data-src="imgs/chp6/bod.webp" class="soft-edges" style="width:100.0%"></p>
+</div>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section class="slide level2">
-
-<p><strong>Full BOD studies</strong></p>
+<section id="section-40" class="slide level2 smaller">
+<h2></h2>
+<h3 id="full-bod-studies">Full BOD studies</h3>
 <div>
 <ul>
-<li class="fragment">Aim to calculate DALYs for all causes (typically over 200)</li>
-<li class="fragment">Prioritise healthcare resources ranking diseases</li>
+<li class="fragment">Aim to calculate DALYs for <span class="blB">all</span> causes (typically over 200)</li>
+<li class="fragment">Prioritise healthcare resources by <span class="blB">ranking diseases</span> <img data-src="imgs/chp6/gbd.png" class="soft-edges" style="width:100.0%"></li>
 </ul>
 </div>
+<h3 id="bayesian-modelling">Bayesian modelling</h3>
+<div>
+<ul>
+<li class="fragment"><span class="blB">Countless</span> studies use Bayesian models in <strong>disease mapping</strong></li>
+<li class="fragment"><span class="blR">Few</span> studies use Bayesian models in <strong>BOD studies</strong> <span class="citation" data-cites="Steel2018 GBD2015 CODEm RN652 RN653">[<a href="#/references" role="doc-biblioref" onclick="">26</a>–<a href="#/references" role="doc-biblioref" onclick="">30</a>]</span></li>
+</ul>
+</div>
+<aside class="notes">
+<p>not fully Bayesian, fail to acknowledge relevant applied literature or enforce strict data requirements Too complex (i.e., not practical)</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 <!-- ----------------------------------------------------------------- -->
 </section>
 <section id="section-41" class="slide level2" data-auto-animate="true">
@@ -1881,118 +1879,168 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 <div style="margin-top: 200px; font-size: 3em; color: red;">
 <p><strong>No</strong> BOD studies</p>
 </div>
+<div>
 <ul>
-<li>use fully Bayesian models to estimate for small areas</li>
-<li>use SAE models for survey microdata</li>
-<li>consider models applicable to the full scope of data in full BOD studies</li>
-<li>in Australia, use Bayesian models</li>
-<li>in Australia, provide estimates for small areas</li>
-<li>have explored practical models for government agencies</li>
+<li class="fragment">Use SAE models for survey microdata</li>
+<li class="fragment">Consider models applicable to the full scope of data in full BOD studies</li>
+<li class="fragment"><strong>Australia</strong>
+<ul>
+<li class="fragment"><span class="blR">Use</span> fully Bayesian models</li>
+<li class="fragment"><span class="blR">No</span> small area estimates</li>
+</ul></li>
 </ul>
+</div>
+<!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-43" class="slide level2">
-<h2><!-- ----------------------------------------------------------------- --></h2>
+<section id="section-43" class="slide level2 center">
+<h2></h2>
 <div class="quote-box">
-<p><strong>Study objectives</strong></p>
-<ul>
-<li>Apply Bayesian spatio-temporal models to the field of BOD, demonstrating the benefits</li>
-<li>Assess the feasibility of adopting these Bayesian models in full BOD studies</li>
-<li>Conducting a case study using annual mortality and prevalence data on coronary heart disease (CHD) and asthma for Local Government Areas in Western Australia.</li>
-</ul>
+<p><strong>Contribution</strong> 🎉</p>
+<p>A principled and practical set of Bayesian spatiotemporal methods for modelling the wide range of mortality and prevalence data necessary for full BOD studies.</p>
 </div>
-<!-- ----------------------------------------------------------------- -->
-</section></section>
-<section>
-<section id="methods" class="title-slide slide level1 center">
-<h1>Methods</h1>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="standard-age-year-time-sayt-model" class="slide level2 scrollable smaller">
-<h2>Standard age-year-time (SAYT) model</h2>
-<p>Let:</p>
+<section id="methods" class="slide level2 smaller">
+<h2>Methods</h2>
+<p><span class="blB">Standard age-year-time (SAYT) model</span></p>
+<div class="columns">
+<div class="column" style="width:28%;">
+<p><img data-src="imgs/chp6/disease.webp" class="soft-edges" style="width:100.0%"></p>
+</div><div class="column" style="width:68%;">
 <div>
 <ul>
-<li class="fragment"><span class="math inline">\(y_{ita}\)</span> be the raw mortality counts in age group <span class="math inline">\(a = 1, \dots, A\)</span>, area <span class="math inline">\(i = 1, \dots, M\)</span> and time <span class="math inline">\(t = 1, \dots, T\)</span></li>
-<li class="fragment"><span class="math inline">\(\xi_{it}\)</span> be the random effect for the <span class="math inline">\(i\)</span>th area and <span class="math inline">\(t\)</span>th year
+<li class="fragment">Input data:
 <ul>
-<li class="fragment"><span class="math inline">\(\theta_i\)</span>, the spatial random effect, is modeled using a BYM2 spatial prior <span class="citation" data-cites="riebler2016bym2">[<a href="#/references" role="doc-biblioref" onclick="">48</a>]</span>;</li>
-<li class="fragment"><span class="math inline">\(\gamma_t\)</span>, the temporal random effect, is modeled using an intrinsic conditional autoregressive prior <span class="citation" data-cites="RN365">[<a href="#/references" role="doc-biblioref" onclick="">49</a>]</span>; and</li>
-<li class="fragment"><span class="math inline">\(\delta_{it}\)</span>, the space-time random effect, is modeled using a standard normal distribution (Type I interaction) which assumes independent variation</li>
+<li class="fragment"><strong>Aggregated counts</strong> by area, year, age, and sex</li>
 </ul></li>
-<li class="fragment"><span class="math inline">\(\alpha\)</span> be an intercept</li>
-<li class="fragment"><span class="math inline">\(N_{ita}\)</span> be the population.</li>
+<li class="fragment">Output data:
+<ul>
+<li class="fragment"><strong>Smoothed counts</strong> for each area, year, age, and sex</li>
+</ul></li>
+<li class="fragment">Model details:
+<ul>
+<li class="fragment"><strong>Poisson model</strong></li>
+<li class="fragment">Population as offset</li>
+<li class="fragment">Spatial, temporal and space-time <strong>random effects</strong></li>
+</ul></li>
+<li class="fragment">Applicable to:
+<ul>
+<li class="fragment"><strong>Mortality</strong> or <strong>prevalence</strong> counts</li>
+</ul></li>
 </ul>
 </div>
-<p>Model <span class="math display">\[
-\begin{align}
-y_{ita} &amp; \sim \text{Poisson}\left( \mu_{ita} \right)
-\\
-\log\left( \mu_{ita} \right) &amp; = \log\left( N_{ita} \right) + \alpha + \beta_a + \xi_{it}
-\end{align}
-\]</span></p>
+</div>
+</div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="weighted-multilevel-regression-and-poststratification-mrp" class="slide level2 scrollable smaller">
-<h2>Weighted Multilevel Regression and poststratification (MrP)</h2>
-<p><span class="math display">\[
-\begin{eqnarray}
-    z_{itaf} &amp; \sim &amp; \text{Bernoulli}\left( \pi_{itaf} \right)^{\tilde{w}_{itaf}} \label{eq:wmrp}
-    \\
-    \text{logit}\left( \pi_{itaf} \right) &amp; = &amp; \alpha_{af} + \mathbf{x}_{it} \boldsymbol{\beta} + \theta_i + \gamma_t, \nonumber
-    \\
-    \alpha_{af} &amp; \sim &amp; \text{N}\left( 0, 1000^2 \right) \nonumber
-    \\
-    \boldsymbol{\theta} &amp; \sim &amp; \text{BYM2}\left(  \mathbf{W}^{\text{S}}, \rho, \kappa, \sigma_\theta^2  \right) \nonumber
-    \\
-    \boldsymbol{\gamma} &amp; \sim &amp; \text{ICAR}\left(  \mathbf{W}^{\text{T}}, \sigma_\gamma^2  \right) \nonumber
-\end{eqnarray}
-\]</span></p>
-<p><em>Prediction</em> <span class="math display">\[
-YLD^{(d)}_{it} = \sum_{f,a,h} \pi^{(d)}_{itaf} N_{itaf} \psi_h e_h
-\]</span></p>
+<section id="methods-1" class="slide level2 smaller">
+<h2>Methods</h2>
+<p><span class="blB">Weighted multilevel regression and poststratification (MrP)</span> <br> <strong>First use</strong> of small area estimation in BOD</p>
+<div class="columns">
+<div class="column" style="width:28%;">
+<p><img data-src="imgs/chp6/mrp.webp" class="soft-edges" style="width:100.0%"></p>
+</div><div class="column" style="width:68%;">
+<div>
+<ul>
+<li class="fragment">Input data:
+<ul>
+<li class="fragment"><strong>Individual level data</strong></li>
+</ul></li>
+<li class="fragment">Output data:
+<ul>
+<li class="fragment"><strong>Probabilities</strong> for all combinations of area, year, age, and sex</li>
+</ul></li>
+<li class="fragment">Model details:
+<ul>
+<li class="fragment"><strong>Logistic model</strong> with poststratification step <span class="citation" data-cites="Park2004">[<a href="#/references" role="doc-biblioref" onclick="">48</a>]</span></li>
+<li class="fragment">Likelihood is weighted using <strong>pseudo-likelihood</strong> <span class="citation" data-cites="Savitsky2016">[<a href="#/references" role="doc-biblioref" onclick="">49</a>]</span></li>
+<li class="fragment">Spatial and temporal <strong>random effects</strong></li>
+</ul></li>
+<li class="fragment">Applicable to:
+<ul>
+<li class="fragment"><strong>Survey microdata</strong></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="results-3" class="slide level2 center">
-<h2>Results</h2>
-<img data-src="imgs/chp6/results.png" class="r-stretch">
+<section id="case-study" class="slide level2 smaller">
+<h2>Case study</h2>
+<div>
+<ul>
+<li class="fragment">Data was supplied by Department of Health Western Australia (<span class="blB">DOHWA</span>)</li>
+<li class="fragment">Two conditions: <span class="blB">Asthma</span> and coronary heart disease (<span class="blB">CHD</span>)</li>
+<li class="fragment">Geographic: <span class="blB">Local Government Areas</span> (n = 137) in Western Australia</li>
+<li class="fragment">Time: <span class="blB">2015 to 2020</span> inclusive</li>
+<li class="fragment">Used <span class="blB">fully Bayesian methods</span> with <span class="math inline">\(\texttt{nimble}\)</span></li>
+</ul>
+</div>
+<h3 id="objective">Objective</h3>
+<div>
+<ol type="1">
+<li class="fragment">Produce <span class="blB">modelled estimates</span> of:
+<ol type="i">
+<li class="fragment">Mortality and age-standardised YLLs (ASYLLs)</li>
+<li class="fragment">Prevalence/proportions and ASYLDs</li>
+</ol></li>
+<li class="fragment"><span class="blB">Compare</span> to raw results (i.e., no modelling)</li>
+</ol>
+</div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="discussion" class="slide level2 scrollable">
-<h2>Discussion</h2>
-<p><strong>Contributions</strong></p>
+<section id="section-44" class="slide level2 center">
+<h2></h2>
+
+<!-- ----------------------------------------------------------------- -->
+<img data-src="imgs/chp6/results.png" class="r-stretch quarto-figure-center"><p class="caption">Comparison of the 822 annual LGA point estimates and their reliability (% of RSEs less than 50%) for modeled and raw BOD measures by condition.</p></section>
+<section id="section-45" class="slide level2 center">
+<h2></h2>
+
+<!-- ----------------------------------------------------------------- -->
+<img data-src="imgs/chp6/compraw_ALL.jpeg" class="r-stretch quarto-figure-center"><p class="caption">Comparison of the distribution of the point estimates from the Bayesian models and basic stratification (i.e., raw).</p></section>
+<section id="section-46" class="slide level2 center smaller">
+<h2></h2>
+<div class="finding-box">
+<p><strong>Key findings</strong> 📢</p>
 <div>
 <ul>
-<li class="fragment">Bayesian models <span class="math inline">\(\to\)</span> increased the reliability, certainty and reportability of estimates</li>
-<li class="fragment">Demonstrated feasibility of incorporating spatio-temporal models into full BOD studies
+<li class="fragment"><span class="blB">Bayesian models</span> <span class="math inline">\(\to\)</span> increased the <em>reliability, certainty and reportability</em> of estimates</li>
+<li class="fragment">Demonstrated <strong>feasibility</strong> of incorporating spatio-temporal models into <span class="blB">full BOD studies</span>
 <ul>
-<li class="fragment">Provide ranks for disease burden from all causes by small areas</li>
+<li class="fragment">Provide <strong>ranks</strong> for disease burden from <strong>all</strong> causes by <strong>small areas</strong></li>
 </ul></li>
-<li class="fragment">Bayesian and basic stratification: agreed (mostly!)
+<li class="fragment">Bayesian and basic stratification:
 <ul>
-<li class="fragment">discrepancies due to age-standardisation OR paradigm differences</li>
+<li class="fragment"><span class="blB">Agreed</span> (mostly!)</li>
+<li class="fragment">Discrepancies due to <span class="blB">age-standardisation</span> OR <span class="blB">paradigm differences</span></li>
 </ul></li>
 </ul>
 </div>
-<p><strong>Limitations</strong></p>
-<div>
-<ul>
-<li class="fragment">Relative simplicity of models</li>
-</ul>
 </div>
-<p><strong>Future work</strong></p>
-<div>
-<ul>
-<li class="fragment">Computation time
-<ul>
-<li class="fragment">Explore faster alternatives to Bayesian inference such as integrated nested Laplace approximation (INLA) <span class="citation" data-cites="Rue2009">[<a href="#/references" role="doc-biblioref" onclick="">50</a>]</span> or variational inference <span class="citation" data-cites="fox_2012">[<a href="#/references" role="doc-biblioref" onclick="">51</a>]</span>.</li>
-</ul></li>
-<li class="fragment">Model complexity
-<ul>
-<li class="fragment">deeper interactions</li>
-<li class="fragment">more individual level covariates</li>
-</ul></li>
-</ul>
-</div>
+<!-- ----------------------------------------------------------------- 
+## Discussion {.scrollable .smaller}
+
+### Limitations 
+
+::: {.incremental}
+
+- Relative simplicity of models
+- Validation
+:::
+
+### Future work
+
+::: {.incremental}
+
+- Computation time
+  - Explore faster alternatives to Bayesian inference such as integrated nested Laplace approximation (INLA) [@Rue2009] or variational inference [@fox_2012].
+- Model complexity
+  - Deeper interactions
+  - More individual level covariates
+
+:::-->
 <!-- ----------------------------------------------------------------- -->
 <!-- Chapter 7 -->
 <!-- ----------------------------------------------------------------- -->
@@ -2012,11 +2060,11 @@ We made <span class="blB">it</span>. 🎉 Take a breath.
 <div class="column" style="width:68%;">
 <div>
 <ul>
-<li class="fragment">Fully Bayesian TSLN approach for proportions was developed (Chapter 3)</li>
-<li class="fragment">Enhance both the reach and resolution of cancer risk factor estimates for the 2221 small areas across Australia (Chapter 4)</li>
-<li class="fragment">Generalises the shared component model by accommodating known model-based area-specific error, multiple shared factors, and spatial dependence (Chapter 5)</li>
-<li class="fragment">Area Indices of Behaviors Impacting Cancer (AIBIC) product (Chapter 5)</li>
-<li class="fragment">Bayesian spatiotemporal models from disease mapping and SAE are integrated to augment the resolution of reportable estimates in Australia (Chapter 6)</li>
+<li class="fragment">Fully Bayesian TSLN approach for proportions was developed (<strong>Chapter 3</strong>)</li>
+<li class="fragment">Enhance both the reach and resolution of cancer risk factor estimates for the 2221 small areas across Australia (<strong>Chapter 4</strong>)</li>
+<li class="fragment">Generalises the shared component model by accommodating known model-based area-specific error, multiple shared factors, and spatial dependence (<strong>Chapter 5</strong>)</li>
+<li class="fragment">Area Indices of Behaviors Impacting Cancer (AIBIC) product (<strong>Chapter 5</strong>)</li>
+<li class="fragment">Bayesian spatiotemporal models from disease mapping and SAE are integrated to augment the resolution of reportable estimates in Australia (<strong>Chapter 6</strong>)</li>
 </ul>
 </div>
 </div><div class="column" style="width:28%;">
@@ -2033,12 +2081,12 @@ We made <span class="blB">it</span>. 🎉 Take a breath.
 <ul>
 <li class="fragment">Modelled risk factors <span class="math inline">\(\to\)</span> <span class="blB">Australian Cancer Atlas</span> platform.</li>
 <li class="fragment">Epidemiologists from the <span class="blB">West Moreton Public Health Unit</span> <span class="math inline">\(\to\)</span> interest in utilising estimates for reporting.</li>
-<li class="fragment"><span class="blB">Department of Health Western Australia (DOHWA)</span> applied methods (Chapter 6) <span class="math inline">\(\to\)</span> generate new estimates for internal Public Health Atlas.</li>
+<li class="fragment"><span class="blB">Department of Health Western Australia (DOHWA)</span> applied methods (<strong>Chapter 6</strong>) <span class="math inline">\(\to\)</span> generate new estimates for internal Public Health Atlas.</li>
 <li class="fragment">Interest in adopting Bayesian modelling
 <ul>
 <li class="fragment">The Burden of Disease and Mortality specialist group (<span class="blB">Australian Institute of Health and Welfare</span>)</li>
 </ul></li>
-<li class="fragment">Efficient <span class="citation" data-cites="RN452">[<a href="#/references" role="doc-biblioref" onclick="">52</a>]</span> implementation of the <span class="blB">Leroux prior</span> <span class="citation" data-cites="RN366">[<a href="#/references" role="doc-biblioref" onclick="">41</a>]</span>.</li>
+<li class="fragment">Efficient <span class="citation" data-cites="RN452">[<a href="#/references" role="doc-biblioref" onclick="">50</a>]</span> implementation of the <span class="blB">Leroux prior</span> <span class="citation" data-cites="RN366">[<a href="#/references" role="doc-biblioref" onclick="">41</a>]</span>.</li>
 <li class="fragment">Novel Bayesian models <span class="blB">push boundary</span> of previously achievable <span class="math inline">\(\to\)</span> <em>spatial and temporal resolution and reach</em> in Australia</li>
 </ul>
 </div>
@@ -2141,7 +2189,7 @@ We made <span class="blB">it</span>. 🎉 Take a breath.
 <ul>
 <li class="fragment">Accommodate unique types of measurement error</li>
 </ul></li>
-<li class="fragment">Consider temporal dimension into the TSLN approach (Chapters 3 and 4) and the GSCM (Chapter 5)</li>
+<li class="fragment">Consider temporal dimension into the TSLN approach (<strong>Chapters 3</strong> and <strong>4</strong>) and the GSCM (<strong>Chapter 5</strong>)</li>
 <li class="fragment">Indices
 <ul>
 <li class="fragment">Temporal consistency</li>
@@ -2206,7 +2254,10 @@ We made <span class="blB">it</span>. 🎉 Take a breath.
 <li>Casual statistical consulting for <span class="blB">Environmental Protection Authority (EPA) Victoria</span></li>
 <li>Co-chair of the <span class="blB">Bayesian Research and Applications Group (BRAG)</span></li>
 <li>Organised and hosted virtual <span class="blB"><em>StanConnect</em> conference</span></li>
-<li>Worked with BioGro as part of <span class="blB">Good Data Institute</span></li>
+<li>Worked with BioGro as part of <span class="blB">Good Data Institute</span> hackathon
+<ul>
+<li>Team awarded <strong>first place</strong></li>
+</ul></li>
 <li>Team award <strong>second place</strong> in <span class="blB">2023 United Nations Datathon</span></li>
 </ul>
 </section></section>
@@ -2354,30 +2405,87 @@ We made <span class="blB">it</span>. 🎉 Take a breath.
 <div id="ref-Schmidt2020" class="csl-entry" role="listitem">
 <div class="csl-left-margin">47. </div><div class="csl-right-inline">Schmidt J, Fox S, Hughes A, Betts A, Flowers J, Newton J, et al. The <span class="nocase">Burden of Disease in England</span> compared with 22 peer countries: A report for <span>NHS England</span> [Internet]. 2020;Available from: <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/856938/GBD_NHS_England_report.pdf">https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/856938/GBD_NHS_England_report.pdf</a></div>
 </div>
-<div id="ref-riebler2016bym2" class="csl-entry" role="listitem">
-<div class="csl-left-margin">48. </div><div class="csl-right-inline">Riebler A, Sørbye SH, Simpson D, Rue H. <a href="https://doi.org/10.1177/0962280216660421">An intuitive <span>B</span>ayesian spatial model for disease mapping that accounts for scaling</a>. Statistical Methods in Medical Research 2016;25:1145–65. </div>
+<div id="ref-Park2004" class="csl-entry" role="listitem">
+<div class="csl-left-margin">48. </div><div class="csl-right-inline">Park DK, Gelman A, Bafumi J. <span class="nocase"><span>B</span>ayesian multilevel estimation with poststratification: State-level estimates from national polls</span>. Political Analysis 2004;12:375–85. </div>
 </div>
-<div id="ref-RN365" class="csl-entry" role="listitem">
-<div class="csl-left-margin">49. </div><div class="csl-right-inline">Lee D. <a href="https://doi.org/10.1016/j.sste.2011.03.001">A comparison of conditional autoregressive models used in <span>B</span>ayesian disease mapping</a>. Spatial and spatio-temporal epidemiology 2011;2:79–89. </div>
-</div>
-<div id="ref-Rue2009" class="csl-entry" role="listitem">
-<div class="csl-left-margin">50. </div><div class="csl-right-inline">Rue H, Martino S, Chopin N. Approximate <span>B</span>ayesian inference for latent gaussian models using integrated nested laplace approximations (with discussion). Journal of the Royal Statistical Society, Series B 2009;71:319–92. </div>
-</div>
-<div id="ref-fox_2012" class="csl-entry" role="listitem">
-<div class="csl-left-margin">51. </div><div class="csl-right-inline">Fox CW, Roberts SJ. A tutorial on variational <span>B</span>ayesian inference. Artificial Intelligence Review 2012;38:85–95. </div>
+<div id="ref-Savitsky2016" class="csl-entry" role="listitem">
+<div class="csl-left-margin">49. </div><div class="csl-right-inline">Savitsky TD, Toth D. <span class="nocase"><span>B</span>ayesian estimation under informative sampling</span>. Electronic Journal of Statistics 2016;10:1677–708. </div>
 </div>
 <div id="ref-RN452" class="csl-entry" role="listitem">
-<div class="csl-left-margin">52. </div><div class="csl-right-inline">Stan Development Team. <span>Stan</span> [Internet]. 2023;Available from: <a href="https://mc-stan.org">https://mc-stan.org</a></div>
+<div class="csl-left-margin">50. </div><div class="csl-right-inline">Stan Development Team. <span>Stan</span> [Internet]. 2023;Available from: <a href="https://mc-stan.org">https://mc-stan.org</a></div>
+</div>
+<div id="ref-riebler2016bym2" class="csl-entry" role="listitem">
+<div class="csl-left-margin">51. </div><div class="csl-right-inline">Riebler A, Sørbye SH, Simpson D, Rue H. <a href="https://doi.org/10.1177/0962280216660421">An intuitive <span>B</span>ayesian spatial model for disease mapping that accounts for scaling</a>. Statistical Methods in Medical Research 2016;25:1145–65. </div>
+</div>
+<div id="ref-RN365" class="csl-entry" role="listitem">
+<div class="csl-left-margin">52. </div><div class="csl-right-inline">Lee D. <a href="https://doi.org/10.1016/j.sste.2011.03.001">A comparison of conditional autoregressive models used in <span>B</span>ayesian disease mapping</a>. Spatial and spatio-temporal epidemiology 2011;2:79–89. </div>
 </div>
 </div>
+<!-- ----------------------------------------------------------------- -->
+<!-- Supplementary -->
+<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
+</section>
+
+<section>
+<section id="chapter-6paper-4-1" class="title-slide slide level1 center">
+<h1>Chapter 6/Paper 4</h1>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="methods-2" class="slide level2">
+<h2>Methods</h2>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="standard-age-year-time-sayt-model" class="slide level2 scrollable smaller">
+<h2>Standard age-year-time (SAYT) model</h2>
+<p>Let:</p>
+<div>
+<ul>
+<li class="fragment"><span class="math inline">\(y_{ita}\)</span> be the raw mortality counts in age group <span class="math inline">\(a = 1, \dots, A\)</span>, area <span class="math inline">\(i = 1, \dots, M\)</span> and time <span class="math inline">\(t = 1, \dots, T\)</span></li>
+<li class="fragment"><span class="math inline">\(\xi_{it}\)</span> be the random effect for the <span class="math inline">\(i\)</span>th area and <span class="math inline">\(t\)</span>th year
+<ul>
+<li class="fragment"><span class="math inline">\(\theta_i\)</span>, the spatial random effect, is modeled using a BYM2 spatial prior <span class="citation" data-cites="riebler2016bym2">[<a href="#/references" role="doc-biblioref" onclick="">51</a>]</span>;</li>
+<li class="fragment"><span class="math inline">\(\gamma_t\)</span>, the temporal random effect, is modeled using an intrinsic conditional autoregressive prior <span class="citation" data-cites="RN365">[<a href="#/references" role="doc-biblioref" onclick="">52</a>]</span>; and</li>
+<li class="fragment"><span class="math inline">\(\delta_{it}\)</span>, the space-time random effect, is modeled using a standard normal distribution (Type I interaction) which assumes independent variation</li>
+</ul></li>
+<li class="fragment"><span class="math inline">\(\alpha\)</span> be an intercept</li>
+<li class="fragment"><span class="math inline">\(N_{ita}\)</span> be the population.</li>
+</ul>
+</div>
+<p>Model <span class="math display">\[
+\begin{align}
+y_{ita} &amp; \sim \text{Poisson}\left( \mu_{ita} \right)
+\\
+\log\left( \mu_{ita} \right) &amp; = \log\left( N_{ita} \right) + \alpha + \beta_a + \xi_{it}
+\end{align}
+\]</span></p>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="weighted-multilevel-regression-and-poststratification-mrp" class="slide level2 scrollable smaller">
+<h2>Weighted Multilevel Regression and poststratification (MrP)</h2>
+<p><span class="math display">\[
+\begin{eqnarray}
+    z_{itaf} &amp; \sim &amp; \text{Bernoulli}\left( \pi_{itaf} \right)^{\tilde{w}_{itaf}} \label{eq:wmrp}
+    \\
+    \text{logit}\left( \pi_{itaf} \right) &amp; = &amp; \alpha_{af} + \mathbf{x}_{it} \boldsymbol{\beta} + \theta_i + \gamma_t, \nonumber
+    \\
+    \alpha_{af} &amp; \sim &amp; \text{N}\left( 0, 1000^2 \right) \nonumber
+    \\
+    \boldsymbol{\theta} &amp; \sim &amp; \text{BYM2}\left(  \mathbf{W}^{\text{S}}, \rho, \kappa, \sigma_\theta^2  \right) \nonumber
+    \\
+    \boldsymbol{\gamma} &amp; \sim &amp; \text{ICAR}\left(  \mathbf{W}^{\text{T}}, \sigma_\gamma^2  \right) \nonumber
+\end{eqnarray}
+\]</span></p>
+<p><em>Prediction</em> <span class="math display">\[
+YLD^{(d)}_{it} = \sum_{f,a,h} \pi^{(d)}_{itaf} N_{itaf} \psi_h e_h
+\]</span></p>
 <div class="quarto-auto-generated-content">
 <p><img src="imgs/qutlogo.png" class="slide-logo"></p>
 <div class="footer footer-default">
 <p>James Hogg</p>
 </div>
 </div>
-</section>
-
+</section></section>
 
     </div>
   </div>

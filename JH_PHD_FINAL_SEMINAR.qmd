@@ -70,3 +70,8 @@ QUT acknowledges the important role Aboriginal and Torres Strait Islander people
 ::: {#refs}
 :::
 
+<!-- ----------------------------------------------------------------- -->
+<!-- Supplementary -->
+<!-- ----------------------------------------------------------------- -->
+{{< include chp_qmds/supp.qmd >}}
+

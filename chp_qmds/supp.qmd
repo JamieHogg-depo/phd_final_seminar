@@ -1,0 +1,50 @@
+<!-- ----------------------------------------------------------------- -->
+# Chapter 6/Paper 4
+
+<!-- ----------------------------------------------------------------- -->
+## Methods
+
+<!-- ----------------------------------------------------------------- -->
+## Standard age-year-time (SAYT) model {.scrollable .smaller}
+
+Let:
+
+:::{.incremental}
+- $y_{ita}$ be the raw mortality counts in age group $a = 1, \dots, A$, area $i = 1, \dots, M$ and time $t = 1, \dots, T$
+- $\xi_{it}$ be the random effect for the $i$th area and $t$th year
+  - $\theta_i$, the spatial random effect, is modeled using a BYM2 spatial prior [@riebler2016bym2];
+  - $\gamma_t$, the temporal random effect, is modeled using an intrinsic conditional autoregressive prior [@RN365]; and 
+  - $\delta_{it}$, the space-time random effect, is modeled using a standard normal distribution (Type I interaction) which assumes independent variation 
+- $\alpha$ be an intercept
+- $N_{ita}$ be the population.
+:::
+
+Model
+$$
+\begin{align}
+y_{ita} & \sim \jdist{Poisson}{\mu_{ita}}
+\\
+\log\left( \mu_{ita} \right) & = \log\left( N_{ita} \right) + \alpha + \beta_a + \xi_{it}
+\end{align}
+$$
+
+<!-- ----------------------------------------------------------------- -->
+## Weighted Multilevel Regression and poststratification (MrP) {.scrollable .smaller}
+$$
+\begin{eqnarray}
+    z_{itaf} & \sim & \jdist{Bernoulli}{\pi_{itaf}}^{\tilde{w}_{itaf}} \label{eq:wmrp}
+    \\
+    \jdist{logit}{\pi_{itaf}} & = & \alpha_{af} + \mathbf{x}_{it} \boldsymbol{\beta} + \theta_i + \gamma_t, \nonumber
+    \\
+    \alpha_{af} & \sim & \jdist{N}{0, 1000^2} \nonumber
+    \\
+    \boldsymbol{\theta} & \sim & \jdist{BYM2}{ \mathbf{W}^{\text{S}}, \rho, \kappa, \sigma_\theta^2 } \nonumber
+    \\
+    \boldsymbol{\gamma} & \sim & \jdist{ICAR}{ \mathbf{W}^{\text{T}}, \sigma_\gamma^2 } \nonumber
+\end{eqnarray}
+$$
+
+*Prediction*
+$$
+YLD^{(d)}_{it} = \sum_{f,a,h} \pi^{(d)}_{itaf} N_{itaf} \psi_h e_h
+$$

@@ -10,11 +10,11 @@
 
 :::: {.column width="68%"}
 ::: {.incremental}
-- Fully Bayesian TSLN approach for proportions was developed (Chapter 3)
-- Enhance both the reach and resolution of cancer risk factor estimates for the 2221 small areas across Australia (Chapter 4)
-- Generalises the shared component model by accommodating known model-based area-specific error, multiple shared factors, and spatial dependence (Chapter 5)
-- Area Indices of Behaviors Impacting Cancer (AIBIC) product (Chapter 5)
-- Bayesian spatiotemporal models from disease mapping and SAE are integrated to augment the resolution of reportable estimates in Australia (Chapter 6)
+- Fully Bayesian TSLN approach for proportions was developed (**Chapter 3**)
+- Enhance both the reach and resolution of cancer risk factor estimates for the 2221 small areas across Australia (**Chapter 4**)
+- Generalises the shared component model by accommodating known model-based area-specific error, multiple shared factors, and spatial dependence (**Chapter 5**)
+- Area Indices of Behaviors Impacting Cancer (AIBIC) product (**Chapter 5**)
+- Bayesian spatiotemporal models from disease mapping and SAE are integrated to augment the resolution of reportable estimates in Australia (**Chapter 6**)
 :::
 ::::
 
@@ -34,7 +34,7 @@
 ::: {.incremental}
 - Modelled risk factors $\to$ <span class="blB">Australian Cancer Atlas</span> platform.
 - Epidemiologists from the <span class="blB">West Moreton Public Health Unit</span> $\to$ interest in utilising estimates for reporting.
-- <span class="blB">Department of Health Western Australia (DOHWA)</span> applied methods (Chapter 6) $\to$ generate new estimates for internal Public Health Atlas. 
+- <span class="blB">Department of Health Western Australia (DOHWA)</span> applied methods (**Chapter 6**) $\to$ generate new estimates for internal Public Health Atlas. 
 - Interest in adopting Bayesian modelling
 	- The Burden of Disease and Mortality specialist group (<span class="blB">Australian Institute of Health and Welfare</span>)
 - Efficient \texttt{stan} [@RN452] implementation of the <span class="blB">Leroux prior</span> [@RN366]. 
@@ -149,7 +149,7 @@ Reliability
  - Validation for SAE
  - Validation for burden of disease methods and models
 	- Accommodate unique types of measurement error
- - Consider temporal dimension into the TSLN approach (Chapters 3 and 4) and the GSCM (Chapter 5)
+ - Consider temporal dimension into the TSLN approach (**Chapters 3** and **4**) and the GSCM (**Chapter 5**)
  - Indices
 	- Temporal consistency
 	- Robustness
@@ -202,5 +202,6 @@ Indices
  - Casual statistical consulting for <span class="blB">Environmental Protection Authority (EPA) Victoria</span>
  - Co-chair of the <span class="blB">Bayesian Research and Applications Group (BRAG)</span>
  - Organised and hosted virtual <span class="blB">*StanConnect* conference</span>
- - Worked with BioGro as part of <span class="blB">Good Data Institute</span>
+ - Worked with BioGro as part of <span class="blB">Good Data Institute</span> hackathon
+	- Team awarded **first place**
  - Team award **second place** in <span class="blB">2023 United Nations Datathon</span>
