@@ -30,6 +30,8 @@ csl: settings/vancouver.csl
 \newcommand{\jdist}[2]{\text{#1}\left( #2 \right)}
 \newcommand{\jdistu}[3]{\text{#1}_{#2}\left( #3 \right)}
 
+<!-- presentation slides is 1050 x 700 -->
+
 ## Acknowledgement of Traditional Owners
 QUT acknowledges the Turrbal and Yugara, as the First Nations owners of the lands where QUT now stands. We pay respect to their Elders, lores, customs and creation spirits. We recognize that these lands have always been places of teaching, research and learning.
 

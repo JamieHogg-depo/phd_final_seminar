@@ -100,7 +100,9 @@ Modelling is tricky in Australia!
 :::
 
 <!-- ----------------------------------------------------------------- -->
-## Sparsity leads to...
+## Sparsity
+
+Leads to ...
 
 :::{.incremental}
 - <span class="blB">Reliable estimates</span> in major cities
@@ -111,38 +113,52 @@ Modelling is tricky in Australia!
 ::: {.notes}
 - Without such estimates, community health interventionsmay lack the necessary evidence to effectively target their efforts. 
 - aggregated into meaningful groups such as age, sex, or most commonly, geographic area
+- Many areas outside the major cities are excluded
+- Remote areas typically have poor or nonexistent small area estimates
 :::
 
 <!-- ----------------------------------------------------------------- -->
-## Sparsity and surveys (in Australia) {.smaller}
+## Sparsity
 
-::: {.incremental}
-- Challenge of sparsity $\to$ <span class="blR">worse</span> with survey data
-  - Many areas outside the major cities are <span class="blR">excluded</span>
-  - Remote areas typically have <span class="blR">poor</span> or nonexistent small area estimates
-- International studies $\to$ area sample sizes <span class="blB">greater than 50</span> [@RN147, @RN44]
-- Current Australian surveys (e.g., 2017-2018 National Health Survey (NHS)) have area level sample sizes ranging from <span class="blR">5 to 13</span>. 
-- <span class="blR">Dearth of literature</span> describing these sparsity issues in SAE. 
+<span class="blR">Worse</span> with survey data
+
+:::{.incremental}
+- International studies:
+	- Area sample sizes <span class="blB">greater than 50</span> [@RN147, @RN44]
+- Current Australian surveys:
+	- Area sample sizes <span class="blR">5 to 13</span>.
+![](imgs/sideways_look.png){width=30%}
 :::
 
+
+
 <!-- ----------------------------------------------------------------- -->
-## Despite these challenges... {.smaller}
+<!-- ## Despite these challenges... {.smaller}
 
 ... large number of interactive platforms (e.g., Atlases) that display health information for small areas
 
 - Examples: Australian Cancer Atlas [@RN26], the Social Health Atlas of Australia (SHAA) [@RN113], the Queensland Injury Atlas [@RN619], the Injury Atlas of Victoria [@RN620] and the AusEnHealth platform [@RN621].
 
-  <!-- presentation slides is 1050 x 700 -->
-
 ![](imgs/ACA_oesophagealcancer.png){.absolute bottom=0 left=0 height="275"}
 
-![](imgs/SHA.png){.absolute bottom=0 right=0 height="275"}
+![](imgs/SHA.png){.absolute bottom=0 right=0 height="275"} -->
 
 <!-- ----------------------------------------------------------------- -->
-## Thesis aim {.center}
+## {.center}
 
-::: {style="font-size: 1.5em"}
+::: {.center style="font-size: 1.5em"}
 <span class="blB">Develop</span> and <span class="blB">apply</span> **Bayesian small area methods** to health data in Australia
+:::
+
+<br>
+<br>
+
+::: {.center style="font-size: 0.7em"}
+🏹 <span class="blR">sparsity issues</span>
+:::
+
+::: {.center style="font-size: 0.7em"}
+📈 <span class="blB">improve</span> spatial resolution
 :::
 
 <!-- ----------------------------------------------------------------- -->
@@ -279,11 +295,11 @@ But wait...
 ::: {.incremental}
 - The Social Health Atlas estimates from...
 	- Most appropriate survey data available at the time: **2017-2018 National Health Survey (NHS)**
-- For SA2 modelling $\to$ NHS is <span class="blR">highly sparse</span> survey data
-- Modelling **proportions**[^3] with such sparse data gives rise to <span class="blR">unique methodological challenges</span>
+- For small area modelling $\to$ NHS is <span class="blR">highly sparse</span> survey data
+- Modelling **proportions**[^1] with such sparse data gives rise to unique <span class="blR">methodological challenges</span>
 :::
 
-[^3]: We will return to proportions soon!
+[^1]: We will return to proportions soon!
 
 <!-- ----------------------------------------------------------------- --> 
 ##
@@ -293,13 +309,6 @@ But wait...
 
 - Lack of small area estimation methods for sparse survey data.
 :::
-
-<!-- ----------------------------------------------------------------- -->
-## Tangent Alert
-
-- Social Health Atlas reports age-standardised <span class="blR">rates</span>.
-- We will estimate prevalence using <span class="blR">proportions</span>.
-	- Proportions are more common and intuitive [@RN28;@RN625;@RN607;@RN426].
 
 <!-- ----------------------------------------------------------------- -->
 ## Objective 1 {.smaller}
@@ -401,8 +410,6 @@ Burden of disease (Pillar II)
 	- Existing research has <span class="blR">limitations</span> [@RN653; @RN652; @Steel2018; @GBD2015; @CODEm; @Marlena2019]
 - Many Australian full BOD studies [@bodaihw; @wabod2015]
 	- <span class="blR">Not</span> Bayesian
-	- Few have considered <span class="blR">smaller regions</span> than states
-	- <span class="blR">Lack</span> of uncertainty measures
 :::
 
 [^4]: Calculate DALYs for all causes, which is typically over 200 diseases.
