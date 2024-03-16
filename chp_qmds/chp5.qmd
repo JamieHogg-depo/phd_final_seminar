@@ -1,5 +1,5 @@
 <!-- ----------------------------------------------------------------- -->
-# Chapter 5/Paper 3
+# Chapter 5/Paper 3 {background-color="#fff0a2"}
 Creating area level indices of behaviours impacting cancer in Australia with a Bayesian generalised shared component model
 <br>
 ![](imgs/pillars_p3.png){width=80%}
@@ -104,7 +104,7 @@ Cancer (<span class="blB">AIBIC</span>) product
 ## Input data {.smaller}
 
 ::: {.incremental}
-- Small area estimates of five features (cancer risk factor OR **unhealthy behaviors**) from <span class="blB">previous chapter</span>
+- Small area estimates of five features (cancer risk factor OR **unhealthy behaviors**) from **Chapter 4**
 	- Current smokers, risky alcohol consumption, overweight/obese, inadequate diet and inadequate physical
 - Available as **point estimates** and **standard deviations** of proportions (inverse logit transformed)
 - Details
@@ -134,14 +134,14 @@ $$
 Where:
 
 :::{.incremental}
-- $\mathbf{Y}_{k}$ is $N$-dimensional vector of estimates for the $k$th risk factor
-- $\boldsymbol{\sigma}_k$ is $N$-dimensional vector of standard deviations for the $k$th risk factor
-- $\boldsymbol{\mu}_{k}$ is $N$-dimensional vectors of true values for the $k$th risk factor
-- $\mathbf{z}$ is a $N \times L$ matrix of shared factor scores, with independent columns
+- $\mathbf{Y}_{k}$ is $N$-dimensional vector of **estimates** for the $k$th risk factor
+- $\boldsymbol{\sigma}_k$ is $N$-dimensional vector of **standard deviations** for the $k$th risk factor
+- $\boldsymbol{\mu}_{k}$ is $N$-dimensional vectors of **true values** for the $k$th risk factor
+- $\mathbf{z}$ is a $N \times L$ matrix of **shared factor scores**, with independent columns
 	- Leroux CAR priors [@RN366]
-- $\boldsymbol{\epsilon}_{k}$ a $N$-dimensional vector of feature-specific residual errors for the $k$th feature with associated variance $\tau_k^2$
+- $\boldsymbol{\epsilon}_{k}$ a $N$-dimensional vector of **feature-specific residual errors** for the $k$th feature with associated variance $\tau_k^2$
 	- Leroux CAR priors
-- $\boldsymbol{\Lambda}_k$ is the $k$th row of the $K$ by $L$ matrix of factor loadings
+- $\boldsymbol{\Lambda}_k$ is the $k$th row of the $K$ by $L$ matrix of **factor loadings**
 :::
 
 Identifiability is enforced by:
@@ -166,12 +166,26 @@ Special cases:
 ![Posterior medians (and 95% highest posterior density intervals) of the factor loadings.](imgs/chp5/factor_loadings.png)
 
 <!-- ----------------------------------------------------------------- -->
-## The four indices {.center}
+## The four indices
 
-- Factor 1: $z_{n1}$
-- Factor 2: $z_{n2}$
-- Health Behavior Index (HBI): $w_1 z_{n1} + w_2 z_{n2}$
-- Population Adjusted Health Behaviors Index (PAHBI): $P_n \lb{ w_1 z_{n1} + w_2 z_{n2} }$
+Factor 1: $z_{n1}$
+
+Factor 2: $z_{n2}$
+
+Health Behavior Index (HBI): $w_1 z_{n1} + w_2 z_{n2}$
+
+Population Adjusted Health Behaviors Index (PAHBI): $P_n \lb{ w_1 z_{n1} + w_2 z_{n2} }$
+
+<!-- ----------------------------------------------------------------- -->
+## Interpretation 
+
+Point estimates: 
+
+- <span class="blR">Higher</span> values of the index $\approx$ <span class="blR">higher</span> prevalence of **unhealthy behaviours**
+
+Uncertainty: 
+
+- Probabilistic statements about the indices (e.g., <span class="blB">exceedance probabilities</span>)
 
 <!-- ----------------------------------------------------------------- -->
 ## {.r-stretch}
@@ -223,8 +237,26 @@ Exciting...
 :::
 
 ::: {.column width="58%"}
-![](imgs/chp5/github.png)
+![](imgs/chp5/github.png){width=80%}
 :::
 
 ::::
+
+<!-- ----------------------------------------------------------------- -->
+## Objective 2 {.smaller}
+
+<span class="blB">Index creation</span>
+
+❕ **2.1 Method:** Develop a Bayesian model-based approach to index creation.
+
+❕ **2.2 Application:** Using cancer risk factor data, create the first area-level cancer risk factor indices for Australia.
+
+<!-- ----------------------------------------------------------------- -->
+## Objective 2 {.smaller}
+
+<span class="blB">Index creation</span>
+
+✅ **2.1 Method:** 
+
+✅ **2.2 Application:** 
 

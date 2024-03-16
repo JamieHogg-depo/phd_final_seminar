@@ -445,7 +445,10 @@
 <!-- presentation slides is 1050 x 700 -->
 <div class="columns">
 <div class="column" style="width:38%;">
-<p>A single value representing all Australia ⛔</p>
+<p>A single estimate representing all Australia ⛔</p>
+<div class="small-text">
+Smoking prevalence
+</div>
 </div><div class="column" style="width:58%;">
 <p><img data-src="imgs/allAUS.png" width="820"></p>
 </div>
@@ -456,7 +459,10 @@
 <h2></h2>
 <div class="columns">
 <div class="column" style="width:38%;">
-<p>Many estimates representing communities ✅</p>
+<p>Many estimates representing all communities ✅</p>
+<div class="small-text">
+<span class="math inline">\(=\)</span> small area estimates
+</div>
 </div><div class="column" style="width:58%;">
 <p><img data-src="imgs/allSA2s.png" width="820"></p>
 </div>
@@ -467,7 +473,7 @@
 <h2>Motivation</h2>
 <div>
 <ul>
-<li class="fragment">Small area estimates <span class="math inline">\(\to\)</span> more effective health policy</li>
+<li class="fragment">Small area estimates <span class="math inline">\(\to\)</span> more <span class="blB">effective health policy</span></li>
 <li class="fragment"><strong>Small area analysis</strong>
 <ul>
 <li class="fragment">Analyses of individual level data that have been aggregated into meaningful groups</li>
@@ -502,7 +508,8 @@
 <ul>
 <li><strong>Disease mapping</strong> <span class="citation" data-cites="RN8">[<a href="#/references" role="doc-biblioref" onclick="">1</a>]</span>
 <ul>
-<li>Generate smoothed maps of registry or administrative data, like cancer incidence and mortality</li>
+<li>Registry or administrative data</li>
+<li>Generates smoothed maps of risk for diseases</li>
 </ul></li>
 </ul>
 </div>
@@ -510,26 +517,30 @@
 <ul>
 <li><strong>Small area estimation</strong> (SAE) <span class="citation" data-cites="RN28">[<a href="#/references" role="doc-biblioref" onclick="">2</a>]</span>
 <ul>
-<li>Primarily used for survey data</li>
-<li>Produce reliable estimates for aggregated data when sample sizes are small</li>
+<li>Survey data</li>
+<li>Produce reliable estimates when sample sizes are small</li>
 </ul></li>
 </ul>
 </div>
 <div class="fragment fade-in">
 <ul>
-<li><span class="blB">Bayesian inference</span> is <strong>ubiquitous</strong> with both
-<ul>
-<li>Used in this thesis</li>
-</ul></li>
+<li><span class="blB">Bayesian inference</span> is <strong>ubiquitous</strong> with both</li>
 </ul>
+<p><img data-src="imgs/bayes.jfif"></p>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
 <section id="small-area-modelling-in-australia" class="slide level2 smaller">
 <h2>Small area modelling in Australia</h2>
+<div class="fragment">
 <p>Increasingly <span class="blB">relevant</span></p>
+</div>
+<div class="fragment">
 <p>Health outcomes exhibit <span class="blR">variations</span> based on geography (e.g., remoteness and socioeconomic status <span class="citation" data-cites="RN26 RN113 RN204 RN338 RN121">[<a href="#/references" role="doc-biblioref" onclick="">3</a>–<a href="#/references" role="doc-biblioref" onclick="">7</a>]</span>)</p>
+</div>
+<div class="fragment">
 <img data-src="imgs/aihw_remoteness.png" class="r-stretch">
+</div>
 <!-- ----------------------------------------------------------------- -->
 </section>
 <section id="section-3" class="slide level2" data-auto-animate="true">
@@ -584,6 +595,7 @@
 <section id="sparsity-1" class="slide level2">
 <h2>Sparsity</h2>
 <p><span class="blR">Worse</span> with survey data</p>
+<div class="fragment">
 <div>
 <ul>
 <li class="fragment">International studies:
@@ -592,9 +604,13 @@
 </ul></li>
 <li class="fragment">Current Australian surveys:
 <ul>
-<li class="fragment">Area sample sizes <span class="blR">5 to 13</span>. <img data-src="imgs/sideways_look.png" style="width:30.0%"></li>
+<li class="fragment">Area sample sizes <span class="blR">5 to 13</span></li>
 </ul></li>
 </ul>
+</div>
+</div>
+<div class="fragment">
+<p><img data-src="imgs/sideways_look.png" style="width:30.0%"></p>
 </div>
 <!-- ----------------------------------------------------------------- -->
 <!-- ## Despite these challenges... {.smaller}
@@ -608,7 +624,7 @@
 ![](imgs/SHA.png){.absolute bottom=0 right=0 height="275"} -->
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-5" class="slide level2 center">
+<section id="section-5" class="slide level2 center" data-background-color="#fff0a2">
 <h2></h2>
 <div class="center" style="font-size: 1.5em">
 <p><span class="blB">Develop</span> and <span class="blB">apply</span> <strong>Bayesian small area methods</strong> to health data in Australia</p>
@@ -622,53 +638,60 @@
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="pillars-of-public-health" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Pillars of public health</h2>
+<section id="section-6" class="slide level2 center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
 <div style="font-size: 1em;">
 <p>Cancer (Pillar I)</p>
 </div>
 <p>Burden of disease (Pillar II)</p>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="pillars-of-public-health-1" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Pillars of public health</h2>
+<section id="section-7" class="slide level2 center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
 <div style="font-size: 2em; color: blue;">
 <p>Cancer (Pillar I)</p>
 </div>
 <p>Burden of disease (Pillar II)</p>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="background" class="slide level2 scrollable smaller">
+<section id="background" class="slide level2 smaller">
 <h2>Background</h2>
+<div class="columns">
+<div class="column" style="width:58%;">
 <div>
 <ul>
-<li class="fragment">Cancer accounts for 19% of Australia’s total health burden<sup>1</sup> <span class="citation" data-cites="RN121">[<a href="#/references" role="doc-biblioref" onclick="">7</a>]</span></li>
-<li class="fragment">Earlier diagnosis and better treatment are effective — <span class="blB">prevention</span> is key</li>
-<li class="fragment">Prevention strategy <span class="math inline">\(\to\)</span> <span class="blB">reducing prevalence</span> of behaviours known to increase the risk of cancer (i.e., cancer risk factors).
+<li class="fragment">Cancer accounts for 19% of Australia’s total health burden <sup>1</sup> <span class="citation" data-cites="RN121">[<a href="#/references" role="doc-biblioref" onclick="">7</a>]</span> <!-- Earlier diagnosis and better treatment are effective — <span class="blB">prevention</span> is key --></li>
+<li class="fragment">Prevention strategy
 <ul>
-<li class="fragment">Smoking, obesity, poor diet, insufficient physical activity, excessive sun exposure, alcohol</li>
+<li class="fragment"><span class="blB">Reduce prevalence</span> of behaviours known to increase the risk of cancer (i.e., <strong>cancer risk factors</strong>).
+<ul>
+<li class="fragment"><div class="small-text">
+Smoking, obesity, poor diet, insufficient physical activity, excessive sun exposure, alcohol, etc
+</div></li>
 </ul></li>
-<li class="fragment">Evidence of <span class="blR">spatial variation</span> in cancer risk factors <span class="citation" data-cites="RN423 RN426 RN113 RN1 RN395 RN2">[<a href="#/references" role="doc-biblioref" onclick="">6</a>]</span></li>
+</ul></li>
+<li class="fragment">Prevalence of cancer risk factors <span class="blR">varies geographically</span> <span class="citation" data-cites="RN423 RN426 RN113 RN1 RN395 RN2">[<a href="#/references" role="doc-biblioref" onclick="">6</a>]</span></li>
 </ul>
 </div>
+</div><div class="column" style="width:38%;">
+<p><img data-src="imgs/background.webp" class="center soft-edges"></p>
+</div>
+</div>
 <!-- ----------------------------------------------------------------- -->
-<aside><ol class="aside-footnotes"><li id="fn1"><p>We will return to proportions soon!</p></li></ol></aside></section>
-<section id="social-health-atlas" class="slide level2 smaller">
-<h2>Social Health Atlas</h2>
+<aside><ol class="aside-footnotes"><li id="fn1"><p>Health burden: the impact of living with illness and injury and dying prematurely</p></li></ol></aside></section>
+<section id="social-health-atlas-of-australia" class="slide level2 smaller">
+<h2>Social Health Atlas of Australia <sup>1</sup></h2>
 <div class="columns">
 <div class="column" style="width:48%;">
-<ul>
-<li>Developed by Public Health Information Development Unit (PHIDU) and Australian Bureau of Statistics (ABS)</li>
-<li>Present small-area level prevalence estimates of cancer risk factors</li>
-<li>Estimates suffer from <span class="blR">resolution</span> and <span class="blR">reach</span> issues</li>
-</ul>
+<!-- Developed by Public Health Information Development Unit (PHIDU) and Australian Bureau of Statistics (ABS) -->
+<p>😊 Prevalence estimates of cancer risk factors for <span class="blB">small areas</span> <br> <br> 😨 Estimates suffer from <span class="blR">resolution</span> and <span class="blR">reach</span> issues</p>
 </div><div class="column" style="width:48%;">
 <p><img data-src="imgs/SHA%20-%20landing%20page.png" style="width:210.0%"></p>
 </div>
 </div>
 <!-- ----------------------------------------------------------------- -->
-</section>
-<section id="section-6" class="slide level2" data-auto-animate="true">
+<aside><ol class="aside-footnotes"><li id="fn2"><p>Developed by Public Health Information Development Unit (PHIDU) and Australian Bureau of Statistics (ABS)</p></li></ol></aside></section>
+<section id="section-8" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 100px; font-size: 1em;">
 <p>Resolution</p>
@@ -678,7 +701,7 @@
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-7" class="slide level2" data-auto-animate="true">
+<section id="section-9" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 100px; font-size: 1.5em; color: blue;">
 <p>Resolution</p>
@@ -730,21 +753,21 @@
 ::::-->
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-8" class="slide level2">
+<section id="section-10" class="slide level2 center">
 <h2></h2>
 <div class="rp-box">
 <p><strong>Research Problem</strong> <br> <br> The need to improve the spatial resolution and reach of small area level cancer risk factor estimates in Australia to enable more targeted cancer prevention strategies.</p>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-9" class="slide level2">
+<section id="section-11" class="slide level2">
 <h2></h2>
 <div class="r-fit-text">
 <p>But wait…</p>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-10" class="slide level2">
+<section id="section-12" class="slide level2">
 <h2></h2>
 <div>
 <ul>
@@ -753,18 +776,15 @@
 <li class="fragment">Most appropriate survey data available at the time: <strong>2017-2018 National Health Survey (NHS)</strong></li>
 </ul></li>
 <li class="fragment">For small area modelling <span class="math inline">\(\to\)</span> NHS is <span class="blR">highly sparse</span> survey data</li>
-<li class="fragment">Modelling <strong>proportions</strong><sup>1</sup> with such sparse data gives rise to unique <span class="blR">methodological challenges</span></li>
+<li class="fragment">Modelling <strong>proportions</strong> <sup>1</sup> with such sparse data gives rise to unique <span class="blR">methodological challenges</span></li>
 </ul>
 </div>
 <!-- ----------------------------------------------------------------- -->
-<aside><ol class="aside-footnotes"><li id="fn2"><p>We will return to proportions soon!</p></li></ol></aside></section>
-<section id="section-11" class="slide level2">
+<aside><ol class="aside-footnotes"><li id="fn3"><p>We will return to proportions soon!</p></li></ol></aside></section>
+<section id="section-13" class="slide level2 center">
 <h2></h2>
 <div class="rp-box">
-<p><strong>Research Problem</strong></p>
-<ul>
-<li>Lack of small area estimation methods for sparse survey data.</li>
-</ul>
+<p><strong>Research Problem</strong> <br> <br> Lack of small area estimation methods for sparse survey data.</p>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
@@ -773,8 +793,8 @@
 <div class="columns">
 <p><span class="blB">Small area estimation</span></p><div class="column" style="width:70%;">
 <ul>
-<li><strong>1.1 Method:</strong> Develop a Bayesian SAE method for proportions, which specifically tackles data sparsity for improved resolution and reach.</li>
-<li><strong>1.2 Application:</strong> Generate SA2-level prevalence estimates for several cancer risk factors across Australia with appropriate measures of uncertainty.</li>
+<li><strong>1.1 Method:</strong> Develop a Bayesian SAE method for proportions, which specifically tackles data sparsity.</li>
+<li><strong>1.2 Application:</strong> Generate small area level prevalence estimates for several cancer risk factors across Australia.</li>
 </ul>
 </div><div class="column" style="width:30%;">
 <p><img data-src="imgs/obj.webp" class="soft-edges" style="width:100.0%"></p>
@@ -782,7 +802,7 @@
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-12" class="slide level2">
+<section id="section-14" class="slide level2">
 <h2></h2>
 <div>
 <ul>
@@ -802,21 +822,19 @@
 <li class="fragment">Interest in <span class="blB">indices</span> <span class="citation" data-cites="RN359 RN671 RN687 RN360 RN674 RN670">[<a href="#/references" role="doc-biblioref" onclick="">15</a>–<a href="#/references" role="doc-biblioref" onclick="">20</a>]</span>
 <ul>
 <li class="fragment">Reduce the <strong>dimensionality</strong> and <strong>complexity</strong> of data</li>
+</ul></li>
 <li class="fragment">Current empirical methods ⛔
 <ul>
 <li class="fragment"><span class="blR">Not flexible</span></li>
 </ul></li>
 <li class="fragment">Model-based methods ✅
 <ul>
-<li class="fragment"><span class="blB">Complex</span> data characteristics</li>
-</ul></li>
-</ul></li>
-<li class="fragment"><span class="blB">Develop</span> model-based methods that:
-<ul>
-<li class="fragment">Numerous cancer risk factors <span class="math inline">\(\to\)</span> Index</li>
+<li class="fragment"><span class="blB">Complex</span> data characteristics <!-- <span class="blB">Develop</span> model-based methods that:
+  - Numerous cancer risk factors $\to$ Index --></li>
 </ul></li>
 </ul>
 </div>
+
 <!-- ----------------------------------------------------------------- 
 ##
 
@@ -829,14 +847,14 @@
 - No area level cancer risk factor index for Australia
 :::-->
 <!-- ----------------------------------------------------------------- -->
-</section>
+<img data-src="imgs/seifa.png" class="soft-edges r-stretch"></section>
 <section id="objective-2" class="slide level2 smaller">
 <h2>Objective 2</h2>
 <div class="columns">
 <p><span class="blB">Index creation</span></p><div class="column" style="width:70%;">
 <ul>
-<li><strong>2.1 Method:</strong> Develop a Bayesian model-based approach to index creation that can accommodate spatial autocorrelation and known heteroscedastic measurement error.</li>
-<li><strong>2.2 Application:</strong> Using cancer risk factor data, create the first area-level cancer risk factor indices for Australia. The indices will have appropriate measures of uncertainty.</li>
+<li><strong>2.1 Method:</strong> Develop a Bayesian model-based approach to index creation.</li>
+<li><strong>2.2 Application:</strong> Using cancer risk factor data, create the first area-level cancer risk factor indices for Australia.</li>
 </ul>
 </div><div class="column" style="width:30%;">
 <p><img data-src="imgs/obj.webp" class="soft-edges" style="width:100.0%"></p>
@@ -844,16 +862,16 @@
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="pillars-of-public-health-2" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Pillars of public health</h2>
+<section id="section-15" class="slide level2 center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
 <p>Cancer (Pillar I)</p>
 <div style="font-size: 1em;">
 <p>Burden of disease (Pillar II)</p>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="pillars-of-public-health-3" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Pillars of public health</h2>
+<section id="section-16" class="slide level2 center" data-auto-animate="true">
+<h2 data-id="quarto-animate-title"></h2>
 <p>Cancer (Pillar I)</p>
 <div style="font-size: 2em; color: blue;">
 <p>Burden of disease (Pillar II)</p>
@@ -862,21 +880,27 @@
 </section>
 <section id="background-1" class="slide level2 smaller">
 <h2>Background</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
 <div>
 <ul>
-<li class="fragment">BOD estimates inform health policy; measured by disability-adjusted life years (DALY).</li>
-<li class="fragment">Fully Bayesian models are underused in <em>full BOD studies</em><sup>1</sup>
+<li class="fragment">Burden of disease (BOD) estimates inform health policy</li>
+<li class="fragment">Fully Bayesian models are underused in <em>full BOD studies</em> <sup>1</sup>
 <ul>
 <li class="fragment">Existing research has <span class="blR">limitations</span> <span class="citation" data-cites="RN653 RN652 Steel2018 GBD2015 CODEm Marlena2019">[<a href="#/references" role="doc-biblioref" onclick="">21</a>–<a href="#/references" role="doc-biblioref" onclick="">26</a>]</span></li>
 </ul></li>
-<li class="fragment">Many Australian full BOD studies <span class="citation" data-cites="bodaihw wabod2015">[<a href="#/references" role="doc-biblioref" onclick="">27</a>,<a href="#/references" role="doc-biblioref" onclick="">28</a>]</span>
+<li class="fragment">Full BOD studies in Australia <span class="citation" data-cites="bodaihw wabod2015">[<a href="#/references" role="doc-biblioref" onclick="">27</a>,<a href="#/references" role="doc-biblioref" onclick="">28</a>]</span>
 <ul>
-<li class="fragment"><span class="blR">Not</span> Bayesian</li>
+<li class="fragment"><span class="blR">No</span> Bayesian and <span class="blR">no</span> small area estimates</li>
 </ul></li>
 </ul>
 </div>
+</div><div class="column" style="width:30%;">
+<p><img data-src="imgs/background.webp" class="center soft-edges"></p>
+</div>
+</div>
 <aside class="notes">
-<p>Not fully Bayesian, fail to acknowledge relevant applied literature or enforce strict data requirements. Moreover, the particularly relevant work byMacNab does not consider how Bayesian methodology could be employed in full BOD studies</p>
+<p>Not fully Bayesian, fail to acknowledge relevant applied literature or enforce strict data requirements. Moreover, the particularly relevant work by MacNab does not consider how Bayesian methodology could be employed in full BOD studies</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -889,7 +913,7 @@
           display:block!important;
       }</style></aside>
 <!-- ----------------------------------------------------------------- 
-##
+## {.center}
 
 ::: {.rp-box}
 **Research Problem**
@@ -898,33 +922,35 @@
 Absence of advanced Bayesian small area models in BOD research, resulting in estimates with no uncertainty measures and with low resolution and reach
 :::-->
 <!-- ----------------------------------------------------------------- -->
-<aside><ol class="aside-footnotes"><li id="fn3"><p>Calculate DALYs for all causes, which is typically over 200 diseases.</p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn4"><p>Calculate burden from all disease (n &gt; 200).</p></li></ol></aside></section>
 <section id="objective-3" class="slide level2 smaller">
 <h2>Objective 3</h2>
 <div class="columns">
 <p><span class="blB">Burden of disease</span></p><div class="column" style="width:70%;">
 <ul>
 <li><strong>3.1 Method:</strong> Explore and develop appropriate Bayesian spatiotemporal methods to model the wide range of health data used in full BOD studies.</li>
-<li><strong>3.2 Application:</strong> Using two very different diseases<sup>1</sup>, generate and map the first small area level BOD estimates in Australia.</li>
+<li><strong>3.2 Application:</strong> Using two very different diseases <sup>1</sup>, generate and map the first small area level BOD estimates in Australia.</li>
 </ul>
 </div><div class="column" style="width:30%;">
 <p><img data-src="imgs/obj.webp" class="soft-edges" style="width:100.0%"></p>
 </div>
 </div>
 <!-- ----------------------------------------------------------------- -->
-<aside><ol class="aside-footnotes"><li id="fn4"><p>coronary heart disease (CHD) and asthma in Western Australia</p></li></ol></aside></section>
-<section id="objectives-vs.-chapters-vs.-outputs" class="slide level2">
-<h2>Objectives vs.&nbsp;Chapters vs.&nbsp;Outputs</h2>
+<aside><ol class="aside-footnotes"><li id="fn5"><p>Coronary heart disease (CHD) and asthma in Western Australia</p></li></ol></aside></section>
+<section id="objectives-chapters-papers-outputs" class="slide level2">
+<h2>Objectives, Chapters, Papers (Outputs)</h2>
+<div class="small-text">
+Thesis format: <span class="blB">Publication</span> 📃
+</div>
 
+<!-- Schematic illustrating the relationship between the two pillars, three objectives (abbreviated as ``Obj''), four chapters and four research papers constituting this thesis. -->
 <!-- ----------------------------------------------------------------- -->
 <!-- CHAPTER 3 -->
 <!-- ----------------------------------------------------------------- -->
 <!-- ----------------------------------------------------------------- -->
-<img data-src="imgs/pillars.png" class="r-stretch quarto-figure-center"><p class="caption">
-Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, three objectives (abbreviated as ``Obj’’), four chapters and four research papers constituting this thesis.
-</p></section></section>
+<img data-src="imgs/pillars.png" class="r-stretch"></section></section>
 <section>
-<section id="chapter-3paper-1" class="title-slide slide level1 center">
+<section id="chapter-3paper-1" class="title-slide slide level1 center" data-background-color="#fff0a2">
 <h1>Chapter 3/Paper 1</h1>
 <p><br> A two-stage Bayesian small area estimation approach for proportions <img data-src="imgs/pillars_p1.png" style="width:80.0%"></p>
 <!-- ----------------------------------------------------------------- -->
@@ -968,14 +994,14 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-13" class="slide level2" data-auto-animate="true">
+<section id="section-17" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 100px;">
 <p>Use both?</p>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-14" class="slide level2" data-auto-animate="true">
+<section id="section-18" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 200px; font-size: 3em;">
 <p>Use <strong>both?</strong></p>
@@ -989,14 +1015,14 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-15" class="slide level2 center">
+<section id="section-19" class="slide level2 center">
 <h2></h2>
 <div class="quote-box">
 <p><strong>Contribution</strong> 🎉 <br> <br> A Bayesian two-stage method for proportions that tackles data sparsity challenges in small area estimation.</p>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="the-two-stage-logistic-normal-tsln-approach" class="slide level2 scrollable smaller">
+<section id="the-two-stage-logistic-normal-tsln-approach" class="slide level2 smaller">
 <h2>The two-stage logistic normal (TSLN) approach</h2>
 <div class="columns">
 <div class="column" style="width:48%;">
@@ -1017,13 +1043,15 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 </ul>
 </div>
 </div><div class="column" style="width:48%;">
-<p><img data-src="imgs/TSLN_model_flowchart.png" style="width:210.0%"></p>
+<p><img data-src="imgs/TSLN_model_flowchart.png" style="width:70.0%"></p>
 </div>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
 <section id="the-tsln-approach" class="slide level2 scrollable smaller">
 <h2>The TSLN approach</h2>
+<div class="fragment">
+<!-- -->
 <h3 id="stage-1">Stage 1</h3>
 <p>Individual level logistic model <span class="math display">\[
 \begin{eqnarray}
@@ -1040,8 +1068,11 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 <li><span class="math inline">\(p_{ij}\)</span> is the <strong>probabilitiy</strong> for <span class="math inline">\(\dots\)</span></li>
 <li><span class="math inline">\(\tilde{w}_{ij}\)</span> is the sampled scaled <strong>weight</strong> for <span class="math inline">\(\dots\)</span></li>
 </ul>
+</div>
+<div class="fragment">
+<!-- -->
 <h3 id="stage-1-s1-estimates">Stage 1 (S1) estimates</h3>
-<p>The S1 estimate<sup>1</sup> for area <span class="math inline">\(i\)</span> is,<br>
+<p>The S1 estimate <sup>1</sup> for area <span class="math inline">\(i\)</span> is,<br>
 <span class="math display">\[
 \hat{\theta}_i^{\text{S1}} = \text{logit}\left( \frac{\sum_{j=1}^{n_i} w_{ij} p_{ij}}{n_i} \right)
 \]</span> with <span class="math inline">\(\gamma_i^{\text{S1}}\)</span> is the corresponding sample variance.</p>
@@ -1050,6 +1081,9 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 <li><span class="math inline">\(w_{ij}\)</span> is the sample <strong>weight</strong> for sampled individual <span class="math inline">\(j\)</span> in small area <span class="math inline">\(i\)</span></li>
 <li>Sample weights in small area <span class="math inline">\(i\)</span> sum to <span class="math inline">\(n_i\)</span> (the area sample size)</li>
 </ul>
+</div>
+<div class="fragment">
+<!-- -->
 <h3 id="stage-2">Stage 2</h3>
 <p>The area level FH model is composed of: a <br> <strong>measurement error</strong> model, <span class="math display">\[
 \hat{\theta}_i^{\text{S1}} \sim N\left(  \hat{\bar{\theta}}_i, \widehat{\text{v}}\left( \hat{\theta}_i^{\text{S1}} \right)  \right),
@@ -1067,15 +1101,28 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 \end{eqnarray}
 \]</span></p>
 <p>The parameter of interest (i.e.&nbsp;proportion) is the posterior distribution of <span class="math inline">\(\hat{\mu}_i = \text{logit}^{-1}( \hat{\theta}_i)\)</span>. <br></p>
+</div>
+<div class="fragment">
+<!-- -->
 <h3 id="other-considerations-and-additions">Other considerations and additions</h3>
 <ul>
 <li>Stability gained from smoothing (at individual level) balanced with aggreement with the direct estimates</li>
 <li>Generalized variance functions (GVF) for some of <span class="math inline">\(\gamma_i^{\text{S1}}\)</span></li>
 </ul>
+</div>
 <!-- ----------------------------------------------------------------- -->
-<aside><ol class="aside-footnotes"><li id="fn5"><p>The posterior draws from stage 1 are fed as input to the stage 2 model.</p></li></ol></aside></section>
-<section id="simulation-study" class="slide level2 center smaller">
+<aside><ol class="aside-footnotes"><li id="fn6"><p>The posterior draws from stage 1 are fed as input to the stage 2 model.</p></li></ol></aside></section>
+<section id="simulation-study" class="slide level2 smaller">
 <h2>Simulation study</h2>
+<div class="columns">
+<div class="column" style="width:58%;">
+<p>Individual level</p>
+<ul>
+<li><strong>LOG</strong>: Pseudo-likelihood logistic model
+<ul>
+<li>Similar to <span class="blB">stage 1</span> of the TSLN approach</li>
+</ul></li>
+</ul>
 <p>Area level</p>
 <ul>
 <li><strong>BETA</strong>: Beta model</li>
@@ -1088,13 +1135,15 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 <li><span class="blR">Ignores</span> sample design</li>
 </ul></li>
 </ul>
-<p>Individual level</p>
-<ul>
-<li><strong>LOG</strong>: Pseudo-likelihood logistic model
-<ul>
-<li>Similar to <span class="blB">stage 1</span> of the TSLN approach</li>
-</ul></li>
-</ul>
+</div><div class="column" style="width:38%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="imgs/chp3/sim.webp" class="center soft-edges"></p>
+<figcaption>ChatGPT4 nailed this!</figcaption>
+</figure>
+</div>
+</div>
+</div>
 <!-- ----------------------------------------------------------------- -->
 </section>
 <section id="results" class="slide level2">
@@ -1102,7 +1151,7 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 <img data-src="imgs/chp3/sparse_MRRMSE.png" class="r-stretch">
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-16" class="slide level2 center">
+<section id="section-20" class="slide level2 center">
 <h2></h2>
 <div class="striped hover" style="font-size: 0.5em;">
 <table>
@@ -1330,7 +1379,7 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-17" class="slide level2 center smaller">
+<section id="section-21" class="slide level2 center smaller">
 <h2></h2>
 <div class="finding-box">
 <p><strong>Key findings</strong> 📢</p>
@@ -1340,20 +1389,34 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 <ul>
 <li class="fragment">Similar bias but much <span class="blB">smaller variance</span>.</li>
 <li class="fragment">Consistently <span class="blB">smaller MSEs</span> and credible intervals.</li>
-<li class="fragment">Interval <span class="blB">coverage more stable</span> and closer to the nominal level.</li>
+<li class="fragment">Interval <span class="blB">coverage more stable</span>.</li>
 </ul></li>
-<li class="fragment">Appears to be the <span class="blB">best option</span> in sparse settings, such as when using the <strong>NHS in Australia</strong></li>
-<li class="fragment">Demonstrated benefits of <span class="blB">multi-stage smoothing</span> with the use of individual <em>and</em> area level models</li>
+<li class="fragment">Appears to be the <span class="blB">best option</span> in sparse settings (<strong>NHS in Australia</strong>)</li>
+<li class="fragment">Benefits of <span class="blB">multi-stage smoothing</span></li>
 </ul>
 </div>
 </div>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="objective-1-1" class="slide level2 smaller">
+<h2>Objective 1</h2>
+<p><span class="blB">Small area estimation</span></p>
+<p>❕ <strong>1.1 Method:</strong> Develop a Bayesian SAE method for proportions, which specifically tackles data sparsity.</p>
+<p>❕ <strong>1.2 Application:</strong> Generate small area level prevalence estimates for several cancer risk factors across Australia.</p>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="objective-1-2" class="slide level2 smaller">
+<h2>Objective 1</h2>
+<p><span class="blB">Small area estimation</span></p>
+<p>✅ <strong>1.1 Method:</strong></p>
+<p>❕ <strong>1.2 Application:</strong> Generate small area level prevalence estimates for several cancer risk factors across Australia.</p>
 <!-- ----------------------------------------------------------------- -->
 <!-- CHAPTER 4 -->
 <!-- ----------------------------------------------------------------- -->
 <!-- ----------------------------------------------------------------- -->
 </section></section>
 <section>
-<section id="chapter-4paper-2" class="title-slide slide level1 center">
+<section id="chapter-4paper-2" class="title-slide slide level1 center" data-background-color="#fff0a2">
 <h1>Chapter 4/Paper 2</h1>
 <p><br> Mapping the prevalence of cancer risk factors at the small area level in Australia <br> <img data-src="imgs/pillars_p2.png" style="width:80.0%"></p>
 <!-- ----------------------------------------------------------------- -->
@@ -1363,11 +1426,11 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 <p><br> <strong>James Hogg</strong>, Jessica Cameron, Susanna Cramb, Peter Baade, Kerrie Mengersen. Mapping the prevalence of cancer risk factors at the small area level in Australia. <em>International Journal of Health Geographics</em> 22, 37 (2023). https://doi.org/10.1186/s12942-023-00352-5</p>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-18" class="slide level2 center">
+<section id="section-22" class="slide level2 center">
 <h2></h2>
 <div class="columns">
 <div class="column" style="width:40%;">
-<p><strong>Current</strong></p>
+<p><strong>Previously</strong> (SHA)</p>
 <p>🛑 Population health areas (n = 1,165)</p>
 <p>🛑 Missing estimates for very remote areas</p>
 </div><div class="column" style="width:40%;">
@@ -1376,32 +1439,42 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-19" class="slide level2 center">
+<section id="section-23" class="slide level2 center">
 <h2></h2>
 <div class="columns">
 <div class="column" style="width:40%;">
-<p><strong>Current</strong></p>
+<p><strong>Previously</strong> (SHA)</p>
 <p>🛑 Population health areas (n = 1,165)</p>
 <p>🛑 Missing estimates for very remote areas</p>
 </div><div class="column" style="width:40%;">
-<p><strong>This work</strong></p>
+<p><strong>Now</strong> (this work!)</p>
 <p>✅ Statistical areas level 2 (n = 2,221)</p>
 <p>✅ Estimates for very remote areas</p>
 </div>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section class="slide level2">
-
+<section id="section-24" class="slide level2">
+<h2></h2>
 <!-- presentation slides is 1050 x 700 -->
-<p><img data-src="imgs/chp4/phamu_obesity.png" class="absolute" style="left: 0px; bottom: 182.5px; height: 335px; "></p>
-<p><img data-src="imgs/chp4/mu_obesity.png" class="absolute" style="bottom: 182.5px; right: 0px; height: 335px; "></p>
+<div class="columns">
+<div class="column" style="width:48%;">
+<p><strong>Previously</strong> (SHA)</p>
+<p><img data-src="imgs/chp4/phamu_obesity.png"></p>
+</div><div class="column" style="width:48%;">
+<p><strong>Now</strong> (this work!)</p>
+<p><img data-src="imgs/chp4/mu_obesity.png"></p>
+</div>
+</div>
+<!-- ![](imgs/chp4/phamu_obesity.png){.absolute bottom=182.5 left=0 height="335"}
+
+![](imgs/chp4/mu_obesity.png){.absolute bottom=182.5 right=0 height="335"} -->
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-20" class="slide level2 center">
+<section id="section-25" class="slide level2 center">
 <h2></h2>
 <div class="quote-box">
-<p><strong>Contribution</strong> 🎉 <br> <br> The <span class="blB">first Australia-wide</span> prevalence estimates for <strong>eight</strong> <span class="blB">cancer risk factors</span> at the <span class="blB">statistical areas level 2 (SA2) level</span>.</p>
+<p><strong>Contribution</strong> 🎉 <br> <br> The <span class="blB">first Australia-wide</span> prevalence estimates for <strong>eight</strong> <span class="blB">cancer risk factors</span> at the statistical areas level 2 (<span class="blB">SA2</span>) level.</p>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
@@ -1424,7 +1497,7 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-21" class="slide level2 center">
+<section id="section-26" class="slide level2 center">
 <h2></h2>
 
 <!-- ----------------------------------------------------------------- -->
@@ -1442,7 +1515,7 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 <ul>
 <li class="fragment">Classed as major cities, inner regional and outer regional to very remote</li>
 </ul></li>
-<li class="fragment"><strong>Social Health Atlas of Australia</strong> estimates <span class="citation" data-cites="RN113">[<a href="#/references" role="doc-biblioref" onclick="">4</a>]</span> at Primary Health Network (n = 31) and Population Health Area level (n = 1165)</li>
+<li class="fragment"><strong>Social Health Atlas</strong> estimates <span class="citation" data-cites="RN113">[<a href="#/references" role="doc-biblioref" onclick="">4</a>]</span> at Primary Health Network (n = 31) and Population Health Area level (n = 1,165)</li>
 </ul>
 </div>
 </div><div class="column" style="width:28%;">
@@ -1451,10 +1524,14 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="models" class="slide level2">
-<h2>Models</h2>
+<section id="model" class="slide level2">
+<h2>Model</h2>
 <div>
 <ul>
+<li class="fragment">TSLN approach
+<div class="small-text">
+(<strong>Chapter 3</strong> of this thesis)
+</div></li>
 <li class="fragment"><span class="blB">Single TSLN</span> specification for <span class="blB">all</span> risk factors</li>
 <li class="fragment">Model selection was conducted using a variety of <em>frequentist</em> and <em>Bayesian</em> metrics
 <ul>
@@ -1476,12 +1553,30 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 <div class="column" style="width:42%;">
 
 </div><div class="column" style="width:48%;">
-<p><img data-src="imgs/chp4/scattersha_smokingobesity_pha.png"></p>
+
 </div>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
 <section id="validation-1" class="slide level2 smaller">
+<h2>Validation</h2>
+<p>How to <span class="blB">check</span> our estimates?</p>
+<div class="columns">
+<div class="column" style="width:42%;">
+<ul>
+<li><strong>Internal</strong>: <span class="blB">Fully Bayesian benchmarking</span> <span class="citation" data-cites="RN30">[<a href="#/references" role="doc-biblioref" onclick="">37</a>]</span>
+<ul>
+<li>State benchmark (n = 7)</li>
+<li>Major-by-state benchmark (n = 12)</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:48%;">
+
+</div>
+</div>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="validation-2" class="slide level2 smaller">
 <h2>Validation</h2>
 <p>How to <span class="blB">check</span> our estimates?</p>
 <div class="columns">
@@ -1500,27 +1595,27 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-22" class="slide level2 center">
+<section id="section-27" class="slide level2 center">
 <h2></h2>
 
 <!-- ----------------------------------------------------------------- -->
 <img data-src="imgs/chp4/rr_alcohol.png" class="r-stretch"></section>
-<section id="section-23" class="slide level2 center">
+<section id="section-28" class="slide level2 center">
 <h2></h2>
 
 <!-- ----------------------------------------------------------------- -->
 <img data-src="imgs/chp4/rrcisize_alcohol.png" class="r-stretch"></section>
-<section id="section-24" class="slide level2 center">
+<section id="section-29" class="slide level2 center">
 <h2></h2>
 
 <!-- ----------------------------------------------------------------- -->
 <img data-src="imgs/chp4/orep_alcohol.png" class="r-stretch"></section>
-<section id="section-25" class="slide level2 center">
+<section id="section-30" class="slide level2 center">
 <h2></h2>
 
 <!-- ----------------------------------------------------------------- -->
 <img data-src="imgs/chp4/lisa_s_alcohol.png" class="r-stretch"></section>
-<section id="section-26" class="slide level2 center">
+<section id="section-31" class="slide level2 center">
 <h2></h2>
 <div class="finding-box">
 <p><strong>Key findings</strong> 📢</p>
@@ -1533,24 +1628,38 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-27" class="slide level2">
+<section id="section-32" class="slide level2">
 <h2></h2>
 <div class="r-fit-text">
 <p>Exciting…</p>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-28" class="slide level2 center">
+<section id="section-33" class="slide level2 center">
 <h2></h2>
 <p>These modelled estimates will be available in the <strong>Australian Cancer Atlas 2.0</strong></p>
 <img data-src="imgs/ACA_oesophagealcancer.png" class="r-stretch">
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="objective-1-3" class="slide level2 smaller">
+<h2>Objective 1</h2>
+<p><span class="blB">Small area estimation</span></p>
+<p>✅ <strong>1.1 Method:</strong></p>
+<p>❕ <strong>1.2 Application:</strong> Generate small area level prevalence estimates for several cancer risk factors across Australia.</p>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="objective-1-4" class="slide level2 smaller">
+<h2>Objective 1</h2>
+<p><span class="blB">Small area estimation</span></p>
+<p>✅ <strong>1.1 Method:</strong></p>
+<p>✅ <strong>1.2 Application:</strong></p>
 <!-- ----------------------------------------------------------------- -->
 <!-- CHAPTER 5 -->
 <!-- ----------------------------------------------------------------- -->
 <!-- ----------------------------------------------------------------- -->
 </section></section>
 <section>
-<section id="chapter-5paper-3" class="title-slide slide level1 center">
+<section id="chapter-5paper-3" class="title-slide slide level1 center" data-background-color="#fff0a2">
 <h1>Chapter 5/Paper 3</h1>
 <p>Creating area level indices of behaviours impacting cancer in Australia with a Bayesian generalised shared component model <br> <img data-src="imgs/pillars_p3.png" style="width:80.0%"></p>
 <!-- ----------------------------------------------------------------- -->
@@ -1579,7 +1688,7 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-29" class="slide level2">
+<section id="section-34" class="slide level2">
 <h2></h2>
 <div class="r-fit-text">
 <p><strong>Indices</strong></p>
@@ -1615,14 +1724,14 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-30" class="slide level2" data-auto-animate="true">
+<section id="section-35" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 100px; font-size: 1em;">
 <p>Generalised shared component model</p>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-31" class="slide level2" data-auto-animate="true">
+<section id="section-36" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 100px; font-size: 1.5em; color: blue;">
 <p>Generalised shared component model</p>
@@ -1636,19 +1745,20 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 </ul>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-32" class="slide level2 center">
+<section id="section-37" class="slide level2 center">
 <h2></h2>
 
 <!-- ----------------------------------------------------------------- -->
 <img data-src="imgs/chp5/chp5_index_flowchart.png" class="r-stretch"></section>
-<section id="section-33" class="slide level2">
+<section id="section-38" class="slide level2">
 <h2></h2>
 <div class="r-fit-text">
 <p>Area Indices of <br> Behaviors Impacting <br> Cancer (<span class="blB">AIBIC</span>) product</p>
 </div>
+<!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-34" class="slide level2">
-<h2><!-- ----------------------------------------------------------------- --></h2>
+<section class="slide level2">
+
 <div class="quote-box">
 <p><strong>Contribution</strong> 🎉</p>
 <ul>
@@ -1662,7 +1772,7 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 <h2>Input data</h2>
 <div>
 <ul>
-<li class="fragment">Small area estimates of five features (cancer risk factor OR <strong>unhealthy behaviors</strong>) from <span class="blB">previous chapter</span>
+<li class="fragment">Small area estimates of five features (cancer risk factor OR <strong>unhealthy behaviors</strong>) from <strong>Chapter 4</strong>
 <ul>
 <li class="fragment">Current smokers, risky alcohol consumption, overweight/obese, inadequate diet and inadequate physical</li>
 </ul></li>
@@ -1677,7 +1787,7 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-35" class="slide level2 center">
+<section id="section-39" class="slide level2 center">
 <h2></h2>
 
 <!-- ----------------------------------------------------------------- -->
@@ -1695,18 +1805,18 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 <p>Where:</p>
 <div>
 <ul>
-<li class="fragment"><span class="math inline">\(\mathbf{Y}_{k}\)</span> is <span class="math inline">\(N\)</span>-dimensional vector of estimates for the <span class="math inline">\(k\)</span>th risk factor</li>
-<li class="fragment"><span class="math inline">\(\boldsymbol{\sigma}_k\)</span> is <span class="math inline">\(N\)</span>-dimensional vector of standard deviations for the <span class="math inline">\(k\)</span>th risk factor</li>
-<li class="fragment"><span class="math inline">\(\boldsymbol{\mu}_{k}\)</span> is <span class="math inline">\(N\)</span>-dimensional vectors of true values for the <span class="math inline">\(k\)</span>th risk factor</li>
-<li class="fragment"><span class="math inline">\(\mathbf{z}\)</span> is a <span class="math inline">\(N \times L\)</span> matrix of shared factor scores, with independent columns
+<li class="fragment"><span class="math inline">\(\mathbf{Y}_{k}\)</span> is <span class="math inline">\(N\)</span>-dimensional vector of <strong>estimates</strong> for the <span class="math inline">\(k\)</span>th risk factor</li>
+<li class="fragment"><span class="math inline">\(\boldsymbol{\sigma}_k\)</span> is <span class="math inline">\(N\)</span>-dimensional vector of <strong>standard deviations</strong> for the <span class="math inline">\(k\)</span>th risk factor</li>
+<li class="fragment"><span class="math inline">\(\boldsymbol{\mu}_{k}\)</span> is <span class="math inline">\(N\)</span>-dimensional vectors of <strong>true values</strong> for the <span class="math inline">\(k\)</span>th risk factor</li>
+<li class="fragment"><span class="math inline">\(\mathbf{z}\)</span> is a <span class="math inline">\(N \times L\)</span> matrix of <strong>shared factor scores</strong>, with independent columns
 <ul>
 <li class="fragment">Leroux CAR priors <span class="citation" data-cites="RN366">[<a href="#/references" role="doc-biblioref" onclick="">38</a>]</span></li>
 </ul></li>
-<li class="fragment"><span class="math inline">\(\boldsymbol{\epsilon}_{k}\)</span> a <span class="math inline">\(N\)</span>-dimensional vector of feature-specific residual errors for the <span class="math inline">\(k\)</span>th feature with associated variance <span class="math inline">\(\tau_k^2\)</span>
+<li class="fragment"><span class="math inline">\(\boldsymbol{\epsilon}_{k}\)</span> a <span class="math inline">\(N\)</span>-dimensional vector of <strong>feature-specific residual errors</strong> for the <span class="math inline">\(k\)</span>th feature with associated variance <span class="math inline">\(\tau_k^2\)</span>
 <ul>
 <li class="fragment">Leroux CAR priors</li>
 </ul></li>
-<li class="fragment"><span class="math inline">\(\boldsymbol{\Lambda}_k\)</span> is the <span class="math inline">\(k\)</span>th row of the <span class="math inline">\(K\)</span> by <span class="math inline">\(L\)</span> matrix of factor loadings</li>
+<li class="fragment"><span class="math inline">\(\boldsymbol{\Lambda}_k\)</span> is the <span class="math inline">\(k\)</span>th row of the <span class="math inline">\(K\)</span> by <span class="math inline">\(L\)</span> matrix of <strong>factor loadings</strong></li>
 </ul>
 </div>
 <p>Identifiability is enforced by:</p>
@@ -1734,32 +1844,42 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 
 <!-- ----------------------------------------------------------------- -->
 <img data-src="imgs/chp5/factor_loadings.png" class="r-stretch quarto-figure-center"><p class="caption">Posterior medians (and 95% highest posterior density intervals) of the factor loadings.</p></section>
-<section id="the-four-indices" class="slide level2 center">
+<section id="the-four-indices" class="slide level2">
 <h2>The four indices</h2>
+<p>Factor 1: <span class="math inline">\(z_{n1}\)</span></p>
+<p>Factor 2: <span class="math inline">\(z_{n2}\)</span></p>
+<p>Health Behavior Index (HBI): <span class="math inline">\(w_1 z_{n1} + w_2 z_{n2}\)</span></p>
+<p>Population Adjusted Health Behaviors Index (PAHBI): <span class="math inline">\(P_n \left(  w_1 z_{n1} + w_2 z_{n2}  \right)\)</span></p>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="interpretation" class="slide level2">
+<h2>Interpretation</h2>
+<p>Point estimates:</p>
 <ul>
-<li>Factor 1: <span class="math inline">\(z_{n1}\)</span></li>
-<li>Factor 2: <span class="math inline">\(z_{n2}\)</span></li>
-<li>Health Behavior Index (HBI): <span class="math inline">\(w_1 z_{n1} + w_2 z_{n2}\)</span></li>
-<li>Population Adjusted Health Behaviors Index (PAHBI): <span class="math inline">\(P_n \left(  w_1 z_{n1} + w_2 z_{n2}  \right)\)</span></li>
+<li><span class="blR">Higher</span> values of the index <span class="math inline">\(\approx\)</span> <span class="blR">higher</span> prevalence of <strong>unhealthy behaviours</strong></li>
+</ul>
+<p>Uncertainty:</p>
+<ul>
+<li>Probabilistic statements about the indices (e.g., <span class="blB">exceedance probabilities</span>)</li>
 </ul>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-36" class="slide level2 r-stretch">
+<section id="section-40" class="slide level2 r-stretch">
 <h2></h2>
 
 <!-- ----------------------------------------------------------------- -->
 <img data-src="imgs/chp5/map_perc_capital_Perth.png" class="r-stretch"></section>
-<section id="section-37" class="slide level2 r-stretch">
+<section id="section-41" class="slide level2 r-stretch">
 <h2></h2>
 
 <!-- ----------------------------------------------------------------- -->
 <img data-src="imgs/chp5/map_perc3.png" class="r-stretch"></section>
-<section id="section-38" class="slide level2 r-stretch">
+<section id="section-42" class="slide level2 r-stretch">
 <h2></h2>
 
 <!-- ----------------------------------------------------------------- -->
 <img data-src="imgs/chp5/map_perc4.png" class="r-stretch"></section>
-<section id="section-39" class="slide level2 center smaller">
+<section id="section-43" class="slide level2 center smaller">
 <h2></h2>
 <div class="finding-box">
 <p><strong>Key findings</strong> 📢</p>
@@ -1785,7 +1905,7 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-40" class="slide level2">
+<section id="section-44" class="slide level2">
 <h2></h2>
 <div class="r-fit-text">
 <p>Exciting…</p>
@@ -1801,16 +1921,30 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 <li><strong>Percentiles</strong> and <strong>ranks</strong> computed both <span class="blB">nationally</span> and for each of the eight <span class="blB">states and territories</span> of Australia.</li>
 </ul>
 </div><div class="column" style="width:58%;">
-<p><img data-src="imgs/chp5/github.png"></p>
+<p><img data-src="imgs/chp5/github.png" style="width:80.0%"></p>
 </div>
 </div>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="objective-2-1" class="slide level2 smaller">
+<h2>Objective 2</h2>
+<p><span class="blB">Index creation</span></p>
+<p>❕ <strong>2.1 Method:</strong> Develop a Bayesian model-based approach to index creation.</p>
+<p>❕ <strong>2.2 Application:</strong> Using cancer risk factor data, create the first area-level cancer risk factor indices for Australia.</p>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="objective-2-2" class="slide level2 smaller">
+<h2>Objective 2</h2>
+<p><span class="blB">Index creation</span></p>
+<p>✅ <strong>2.1 Method:</strong></p>
+<p>✅ <strong>2.2 Application:</strong></p>
 <!-- ----------------------------------------------------------------- -->
 <!-- Chapter 6 -->
 <!-- ----------------------------------------------------------------- -->
 <!-- ----------------------------------------------------------------- -->
 </section></section>
 <section>
-<section id="chapter-6paper-4" class="title-slide slide level1 center">
+<section id="chapter-6paper-4" class="title-slide slide level1 center" data-background-color="#fff0a2">
 <h1>Chapter 6/Paper 4</h1>
 <p>Improving the spatial and temporal resolution of burden of disease measures with Bayesian models <img data-src="imgs/pillars_p4.png" style="width:80.0%"></p>
 <!-- ----------------------------------------------------------------- -->
@@ -1844,7 +1978,7 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-41" class="slide level2 smaller">
+<section id="section-45" class="slide level2 smaller">
 <h2></h2>
 <h3 id="full-bod-studies">Full BOD studies</h3>
 <div>
@@ -1875,14 +2009,14 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
       }</style></aside>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-42" class="slide level2" data-auto-animate="true">
+<section id="section-46" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 100px;">
 <p><strong>No</strong> BOD studies</p>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-43" class="slide level2 smaller" data-auto-animate="true">
+<section id="section-47" class="slide level2 smaller" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 200px; font-size: 3em; color: red;">
 <p><strong>No</strong> BOD studies</p>
@@ -1900,7 +2034,7 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-44" class="slide level2 center">
+<section id="section-48" class="slide level2 center">
 <h2></h2>
 <div class="quote-box">
 <p><strong>Contribution</strong> 🎉</p>
@@ -1998,17 +2132,17 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-45" class="slide level2 center">
+<section id="section-49" class="slide level2 center">
 <h2></h2>
 
 <!-- ----------------------------------------------------------------- -->
 <img data-src="imgs/chp6/results.png" class="r-stretch quarto-figure-center"><p class="caption">Comparison of the 822 annual LGA point estimates and their reliability (% of RSEs less than 50%) for modeled and raw BOD measures by condition.</p></section>
-<section id="section-46" class="slide level2 center">
+<section id="section-50" class="slide level2 center">
 <h2></h2>
 
 <!-- ----------------------------------------------------------------- -->
 <img data-src="imgs/chp6/compraw_ALL.jpeg" class="r-stretch quarto-figure-center"><p class="caption">Comparison of the distribution of the point estimates from the Bayesian models and basic stratification (i.e., raw).</p></section>
-<section id="section-47" class="slide level2 center smaller">
+<section id="section-51" class="slide level2 center smaller">
 <h2></h2>
 <div class="finding-box">
 <p><strong>Key findings</strong> 📢</p>
@@ -2027,6 +2161,20 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 </ul>
 </div>
 </div>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="objective-3-1" class="slide level2 smaller">
+<h2>Objective 3</h2>
+<p><span class="blB">Burden of disease</span></p>
+<p>❕ <strong>3.1 Method:</strong> Explore and develop appropriate Bayesian spatiotemporal methods to model the wide range of health data used in full BOD studies.</p>
+<p>❕ <strong>3.2 Application:</strong> Using two very different diseases <sup>1</sup>, generate and map the first small area level BOD estimates in Australia.</p>
+<!-- ----------------------------------------------------------------- -->
+<aside><ol class="aside-footnotes"><li id="fn7"><p>Coronary heart disease (CHD) and asthma in Western Australia</p></li></ol></aside></section>
+<section id="objective-3-2" class="slide level2 smaller">
+<h2>Objective 3</h2>
+<p><span class="blB">Burden of disease</span></p>
+<p>✅ <strong>3.1 Method:</strong></p>
+<p>✅ <strong>3.2 Application:</strong></p>
 <!-- ----------------------------------------------------------------- 
 ## Discussion {.scrollable .smaller}
 
@@ -2055,7 +2203,7 @@ Figure&nbsp;1: Schematic illustrating the relationship between the two pillars, 
 <!-- ----------------------------------------------------------------- -->
 </section></section>
 <section>
-<section id="thesis-summary" class="title-slide slide level1 center">
+<section id="thesis-summary" class="title-slide slide level1 center" data-background-color="#fff0a2">
 <h1>Thesis summary</h1>
 <div class="small-text">
 We made <span class="blB">it</span>. 🎉 Take a breath.

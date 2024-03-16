@@ -1,5 +1,5 @@
 <!-- ----------------------------------------------------------------- -->
-# Chapter 6/Paper 4
+# Chapter 6/Paper 4 {background-color="#fff0a2"}
 Improving the spatial and temporal resolution of burden of disease measures with Bayesian models
 ![](imgs/pillars_p4.png){width=80%}
 
@@ -198,6 +198,24 @@ A principled and practical set of Bayesian spatiotemporal methods for modelling 
 :::
 
 ::::
+
+<!-- ----------------------------------------------------------------- -->
+## Objective 3 {.smaller}
+
+<span class="blB">Burden of disease</span>
+
+❕ **3.1 Method:** Explore and develop appropriate Bayesian spatiotemporal methods to model the wide range of health data used in full BOD studies.
+
+❕ **3.2 Application:** Using two very different diseases ^[Coronary heart disease (CHD) and asthma in Western Australia], generate and map the first small area level BOD estimates in Australia.
+
+<!-- ----------------------------------------------------------------- -->
+## Objective 3 {.smaller}
+
+<span class="blB">Burden of disease</span>
+
+✅ **3.1 Method:** 
+
+✅ **3.2 Application:**
 
 <!-- ----------------------------------------------------------------- 
 ## Discussion {.scrollable .smaller}

@@ -1,5 +1,5 @@
 <!-- ----------------------------------------------------------------- -->
-# Chapter 4/Paper 2
+# Chapter 4/Paper 2 {background-color="#fff0a2"}
 <br> 
 Mapping the prevalence of cancer risk factors at the small area level in Australia
 <br>
@@ -16,7 +16,7 @@ Mapping the prevalence of cancer risk factors at the small area level in Austral
 :::: {.columns}
 
 ::: {.column width="40%"}
-**Current**
+**Previously** (SHA)
 
 🛑 Population health areas (n = 1,165)
 
@@ -34,7 +34,7 @@ Mapping the prevalence of cancer risk factors at the small area level in Austral
 :::: {.columns}
 
 ::: {.column width="40%"}
-**Current**
+**Previously** (SHA)
 
 🛑 Population health areas (n = 1,165)
 
@@ -42,7 +42,7 @@ Mapping the prevalence of cancer risk factors at the small area level in Austral
 :::
 
 ::: {.column width="40%"}
-**This work**
+**Now** (this work!)
 
 ✅ Statistical areas level 2 (n = 2,221)
 
@@ -52,13 +52,31 @@ Mapping the prevalence of cancer risk factors at the small area level in Austral
 ::::
 
 <!-- ----------------------------------------------------------------- -->
----
+##
 
 <!-- presentation slides is 1050 x 700 -->
 
-![](imgs/chp4/phamu_obesity.png){.absolute bottom=182.5 left=0 height="335"}
+::::: {.columns}
 
-![](imgs/chp4/mu_obesity.png){.absolute bottom=182.5 right=0 height="335"}
+:::: {.column width="48%"}
+**Previously** (SHA)
+
+![](imgs/chp4/phamu_obesity.png)
+
+::::
+
+:::: {.column width="48%"}
+**Now** (this work!)
+
+![](imgs/chp4/mu_obesity.png)
+
+::::
+
+:::::
+
+<!-- ![](imgs/chp4/phamu_obesity.png){.absolute bottom=182.5 left=0 height="335"}
+
+![](imgs/chp4/mu_obesity.png){.absolute bottom=182.5 right=0 height="335"} -->
 
 <!-- ----------------------------------------------------------------- -->
 ## {.center}
@@ -67,7 +85,7 @@ Mapping the prevalence of cancer risk factors at the small area level in Austral
 **Contribution** 🎉
 <br>
 <br>
-The <span class="blB">first Australia-wide</span> prevalence estimates for **eight** <span class="blB">cancer risk factors</span> at the <span class="blB">statistical areas level 2 (SA2) level</span>.
+The <span class="blB">first Australia-wide</span> prevalence estimates for **eight** <span class="blB">cancer risk factors</span> at the statistical areas level 2 (<span class="blB">SA2</span>) level.
 :::
 
 
@@ -111,7 +129,7 @@ The <span class="blB">first Australia-wide</span> prevalence estimates for **eig
 - Index of Relative **Socio-Economic Disadvantage** (IRSD) from Socio-Economic Indexes for Areas by the ABS [@RN560]
 - **Remoteness** (ARIA+) [@RN348]
 	- Classed as major cities, inner regional and outer regional to very remote
-- **Social Health Atlas of Australia** estimates [@RN113] at Primary Health Network (n = 31) and Population Health Area level (n = 1165)
+- **Social Health Atlas** estimates [@RN113] at Primary Health Network (n = 31) and Population Health Area level (n = 1,165)
 :::
 ::::
 
@@ -123,9 +141,10 @@ The <span class="blB">first Australia-wide</span> prevalence estimates for **eig
 :::::
 
 <!-- ----------------------------------------------------------------- -->
-## Models
+## Model
 
 ::: {.incremental}
+- TSLN approach <div class="small-text">(**Chapter 3** of this thesis)</div>
 - <span class="blB">Single TSLN</span> specification for <span class="blB">all</span> risk factors
 - Model selection was conducted using a variety of *frequentist* and *Bayesian* metrics
 	- **New** variable selection tools for two-stage approaches
@@ -148,10 +167,30 @@ How to <span class="blB">check</span> our estimates?
 :::
 
 ::: {.column width="48%"}
-![](imgs/chp4/scattersha_smokingobesity_pha.png)
+
 :::
 
 ::::
+
+<!-- ----------------------------------------------------------------- -->
+## Validation {.smaller}
+
+How to <span class="blB">check</span> our estimates?
+
+:::: {.columns}
+
+::: {.column width="42%"}
+- **Internal**: <span class="blB">Fully Bayesian benchmarking</span> [@RN30]
+	- State benchmark (n = 7)
+	- Major-by-state benchmark (n = 12)
+:::
+
+::: {.column width="48%"}
+
+:::
+
+::::
+
 
 <!-- ----------------------------------------------------------------- -->
 ## Validation {.smaller}
@@ -220,5 +259,24 @@ Exciting...
 These modelled estimates will be available in the **Australian Cancer Atlas 2.0**
 
 ![](imgs/ACA_oesophagealcancer.png){.r-stretch}
+
+
+<!-- ----------------------------------------------------------------- -->
+## Objective 1 {.smaller}
+
+<span class="blB">Small area estimation</span>
+
+✅ **1.1 Method:** 
+
+❕ **1.2 Application:** Generate small area level prevalence estimates for several cancer risk factors across Australia. 
+
+<!-- ----------------------------------------------------------------- -->
+## Objective 1 {.smaller}
+
+<span class="blB">Small area estimation</span>
+
+✅ **1.1 Method:** 
+
+✅ **1.2 Application:** 
 
 

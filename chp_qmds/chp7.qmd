@@ -1,5 +1,5 @@
 <!-- ----------------------------------------------------------------- -->
-# Thesis summary
+# Thesis summary {background-color="#fff0a2"}
 
 <div class="small-text">We made <span class="blB">it</span>. 🎉 Take a breath. </div>
 
