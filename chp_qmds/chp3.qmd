@@ -13,7 +13,7 @@ A two-stage Bayesian small area estimation approach for proportions
 <div class="small-text">**Status**: <span class="blB">Third</span> round of revisions</div>
 
 <!-- ----------------------------------------------------------------- -->
-## Tangent Alert
+## ⛔ Tangent Alert ⛔
 
 - Social Health Atlas reports age-standardised <span class="blR">rates</span>.
 - We will estimate prevalence using <span class="blR">proportions</span>.
@@ -56,7 +56,7 @@ Use **both?**
 
 :::{.incremental}
 - Two-stage approaches have <span class="blB">emerged</span> [@gao2023_sma;@Das2022]
-- Recent work hints at <span class="blB">benefits</span> $\to$ <span class="blR">no full</span> investigation
+	- Hints at <span class="blB">benefits</span> $\to$ <span class="blR">no full</span> investigation
 - <span class="blB">Mitigate</span> weakness of either model and <span class="blB">leverage</span> their strengths
 :::
 
@@ -68,7 +68,29 @@ Use **both?**
 **Contribution** 🎉
 <br>
 <br>
-A Bayesian two-stage method for proportions that tackles data sparsity challenges in small area estimation.
+A Bayesian two-stage method for proportions that tackles data sparsity challenges.
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## {.center background-color="#fff0a2"}
+
+::: {.center style="font-size: 0.7em"}
+*Thesis aim*
+:::
+
+::: {.center style="font-size: 1.5em"}
+Develop and apply Bayesian small area methods to health data in Australia
+:::
+
+<br>
+<br>
+
+::: {.center style="font-size: 0.7em"}
+👉 **Sparsity issues**
+
+👉 **Improve spatial resolution**
+
+Support informed decision making
 :::
 
 <!-- ----------------------------------------------------------------- -->
@@ -238,7 +260,7 @@ Area level
 :::
 
 <!-- ----------------------------------------------------------------- -->
-## {.center .smaller}
+## {.center .smaller background-color="#ffffff"}
 
 :::: {.finding-box}
 **Key findings** 📢

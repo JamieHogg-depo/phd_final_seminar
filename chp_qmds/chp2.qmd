@@ -11,7 +11,7 @@
 ::: {.column width="38%"}
 A single estimate representing all Australia ⛔
 
-<div class="small-text">Smoking prevalence</div>
+<div class="small-text">(e.g., Smoking prevalence)</div>
 
 :::
 
@@ -40,7 +40,7 @@ Many estimates representing all communities ✅
 ::::
 
 <!-- ----------------------------------------------------------------- -->
-## Motivation {.smaller}
+## Motivation
 
 :::{.incremental}
 - Small area estimates $\to$ more <span class="blB">effective health policy</span>
@@ -76,7 +76,11 @@ Many estimates representing all communities ✅
 ::: {.fragment .fade-in}
 - <span class="blB">Bayesian inference</span> is **ubiquitous** with both
 
+<div style="text-align: center;">
+
 ![](imgs/bayes.jfif)
+
+</div>
 
 :::
 
@@ -88,11 +92,11 @@ Increasingly <span class="blB">relevant</span>
 :::
 
 ::: {.fragment}
-Health outcomes exhibit <span class="blR">variations</span> based on geography (e.g., remoteness and socioeconomic status [@RN26; @RN113; @RN204; @RN338; @RN121])
+Health outcomes exhibit <span class="blR">variations</span> based on geography <span class="small-text">(e.g., remoteness and socioeconomic status [@RN26; @RN113; @RN204; @RN338; @RN121])</span>
 :::
 
 ::: {.fragment}
-![](imgs/aihw_remoteness.png){.r-stretch}
+![](imgs/aihw_remoteness.png){width="90%"}
 :::
 
 <!-- ----------------------------------------------------------------- -->
@@ -120,7 +124,7 @@ Modelling is tricky in Australia!
 Leads to ...
 
 :::{.incremental}
-- <span class="blB">Reliable estimates</span> in major cities
+- <span class="blB">Reliable estimates</span> **only** in major cities
 <!-- - Health disparities widen with increasing remoteness [@RN581;@RN338;@RN608]-->
 - Information only reliable or available $\to$ <span class="blR">large geographical regions</span> (e.g., states)
 :::
@@ -164,6 +168,10 @@ Leads to ...
 <!-- ----------------------------------------------------------------- -->
 ## {.center background-color="#fff0a2"}
 
+::: {.center style="font-size: 0.7em"}
+*Thesis aim*
+:::
+
 ::: {.center style="font-size: 1.5em"}
 <span class="blB">Develop</span> and <span class="blB">apply</span> **Bayesian small area methods** to health data in Australia
 :::
@@ -172,11 +180,11 @@ Leads to ...
 <br>
 
 ::: {.center style="font-size: 0.7em"}
-🏹 <span class="blR">sparsity issues</span>
-:::
+🏹 <span class="blR">Sparsity</span> issues
 
-::: {.center style="font-size: 0.7em"}
-📈 <span class="blB">improve</span> spatial resolution
+📈 Improve <span class="blB">spatial resolution</span> 
+
+🤔 Support informed <span class="blB">decision making</span>
 :::
 
 <!-- ----------------------------------------------------------------- -->

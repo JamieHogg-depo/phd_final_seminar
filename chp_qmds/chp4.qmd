@@ -88,6 +88,27 @@ Mapping the prevalence of cancer risk factors at the small area level in Austral
 The <span class="blB">first Australia-wide</span> prevalence estimates for **eight** <span class="blB">cancer risk factors</span> at the statistical areas level 2 (<span class="blB">SA2</span>) level.
 :::
 
+<!-- ----------------------------------------------------------------- -->
+## {.center background-color="#fff0a2"}
+
+::: {.center style="font-size: 0.7em"}
+*Thesis aim*
+:::
+
+::: {.center style="font-size: 1.5em"}
+Develop and apply Bayesian small area methods to health data in Australia
+:::
+
+<br>
+<br>
+
+::: {.center style="font-size: 0.7em"}
+Sparsity issues
+
+👉 **Improve spatial resolution**
+
+👉 **Support informed decision making**
+:::
 
 <!-- ----------------------------------------------------------------- -->
 ## Survey data {.smaller}
@@ -234,7 +255,7 @@ How to <span class="blB">check</span> our estimates?
 ![](imgs/chp4/lisa_s_alcohol.png)
 
 <!-- ----------------------------------------------------------------- -->
-## {.center}
+## {.center background-color="#ffffff"}
 
 :::: {.finding-box}
 **Key findings** 📢

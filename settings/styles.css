@@ -92,3 +92,7 @@
   border-radius: 15px; /* Adjust the px value to control the roundness */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); /* This adds a soft shadow around the image */
 }
+
+.column-border {
+  border-right: 2px solid #000; /* Adjust color (#000 is black) and thickness (2px) as needed */
+}

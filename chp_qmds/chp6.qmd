@@ -91,6 +91,38 @@ A principled and practical set of Bayesian spatiotemporal methods for modelling 
 :::
 
 <!-- ----------------------------------------------------------------- -->
+## {.center background-color="#fff0a2"}
+
+::: {.center style="font-size: 0.7em"}
+*Thesis aim*
+:::
+
+::: {.center style="font-size: 1.5em"}
+Develop and apply Bayesian small area methods to health data in Australia
+:::
+
+<br>
+<br>
+
+::: {.center style="font-size: 0.7em"}
+👉 **Sparsity issues**
+
+👉 **Improve spatial resolution**
+
+👉 **Support informed decision making**
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## ⛔ Tangent Alert ⛔ {.smaller}
+
+- Full BOD studies $\to$ conducted by **government agencies** in Australia
+- Models are **intentionally** simple $\to$ <span class="blB">accessible</span> and <span class="blB">practical</span> 
+	- Ensure applicability of models to future full BOD studies
+- **Novelty**
+	- Not in the <span class="blR">development</span> of new Bayesian models
+	- <span class="blB">Application</span> of existing models to the field of BOD
+
+<!-- ----------------------------------------------------------------- -->
 ## Methods {.smaller}
 
 <span class="blB">Standard age-year-time (SAYT) model</span> 
@@ -175,24 +207,24 @@ A principled and practical set of Bayesian spatiotemporal methods for modelling 
 <!-- ----------------------------------------------------------------- -->
 ## {.center}
 
-![Comparison of the 822 annual LGA point estimates and their reliability (% of RSEs less than 50%) for modeled and raw BOD measures by condition.](imgs/chp6/results.png){.r-stretch}
+![Comparison of the distribution of the point estimates from the Bayesian models and basic stratification (i.e., raw).](imgs/chp6/compraw_ALL.jpeg){.r-stretch}
 
 <!-- ----------------------------------------------------------------- -->
 ## {.center}
 
-![Comparison of the distribution of the point estimates from the Bayesian models and basic stratification (i.e., raw).](imgs/chp6/compraw_ALL.jpeg){.r-stretch}
+![Comparison of the 822 annual LGA point estimates and their reliability (% of RSEs less than 50%) for modeled and raw BOD measures by condition.](imgs/chp6/results.png){.r-stretch}
 
 <!-- ----------------------------------------------------------------- -->
-## {.center .smaller}
+## {.center .smaller background-color="#ffffff"}
 
 :::: {.finding-box}
 **Key findings** 📢
 
 ::: {.incremental}
 - <span class="blB">Bayesian models</span> $\to$ increased the *reliability, certainty and reportability* of estimates
-- Demonstrated **feasibility** of incorporating spatio-temporal models into <span class="blB">full BOD studies</span>
-  - Provide **ranks** for disease burden from **all** causes by **small areas**
-- Bayesian and basic stratification: 
+<!-- - Demonstrated **feasibility** of incorporating spatio-temporal models into <span class="blB">full BOD studies</span>
+  - Provide **ranks** for disease burden from **all** causes by **small areas** -->
+- Bayesian vs. raw: 
 	- <span class="blB">Agreed</span> (mostly!)
   - Discrepancies due to <span class="blB">age-standardisation</span> OR <span class="blB">paradigm differences</span>
 :::

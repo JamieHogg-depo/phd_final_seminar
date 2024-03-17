@@ -447,7 +447,7 @@
 <div class="column" style="width:38%;">
 <p>A single estimate representing all Australia ⛔</p>
 <div class="small-text">
-Smoking prevalence
+(e.g., Smoking prevalence)
 </div>
 </div><div class="column" style="width:58%;">
 <p><img data-src="imgs/allAUS.png" width="820"></p>
@@ -469,7 +469,7 @@ Smoking prevalence
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="motivation" class="slide level2 smaller">
+<section id="motivation" class="slide level2">
 <h2>Motivation</h2>
 <div>
 <ul>
@@ -526,7 +526,9 @@ Smoking prevalence
 <ul>
 <li><span class="blB">Bayesian inference</span> is <strong>ubiquitous</strong> with both</li>
 </ul>
+<div style="text-align: center;">
 <p><img data-src="imgs/bayes.jfif"></p>
+</div>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
@@ -536,10 +538,10 @@ Smoking prevalence
 <p>Increasingly <span class="blB">relevant</span></p>
 </div>
 <div class="fragment">
-<p>Health outcomes exhibit <span class="blR">variations</span> based on geography (e.g., remoteness and socioeconomic status <span class="citation" data-cites="RN26 RN113 RN204 RN338 RN121">[<a href="#/references" role="doc-biblioref" onclick="">3</a>–<a href="#/references" role="doc-biblioref" onclick="">7</a>]</span>)</p>
+<p>Health outcomes exhibit <span class="blR">variations</span> based on geography <span class="small-text">(e.g., remoteness and socioeconomic status <span class="citation" data-cites="RN26 RN113 RN204 RN338 RN121">[<a href="#/references" role="doc-biblioref" onclick="">3</a>–<a href="#/references" role="doc-biblioref" onclick="">7</a>]</span>)</span></p>
 </div>
 <div class="fragment">
-<img data-src="imgs/aihw_remoteness.png" class="r-stretch">
+<p><img data-src="imgs/aihw_remoteness.png" style="width:90.0%"></p>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
@@ -568,7 +570,7 @@ Smoking prevalence
 <p>Leads to …</p>
 <div>
 <ul>
-<li class="fragment"><span class="blB">Reliable estimates</span> in major cities <!-- - Health disparities widen with increasing remoteness [@RN581;@RN338;@RN608]--></li>
+<li class="fragment"><span class="blB">Reliable estimates</span> <strong>only</strong> in major cities <!-- - Health disparities widen with increasing remoteness [@RN581;@RN338;@RN608]--></li>
 <li class="fragment">Information only reliable or available <span class="math inline">\(\to\)</span> <span class="blR">large geographical regions</span> (e.g., states)</li>
 </ul>
 </div>
@@ -626,15 +628,17 @@ Smoking prevalence
 </section>
 <section id="section-5" class="slide level2 center" data-background-color="#fff0a2">
 <h2></h2>
+<div class="center" style="font-size: 0.7em">
+<p><em>Thesis aim</em></p>
+</div>
 <div class="center" style="font-size: 1.5em">
 <p><span class="blB">Develop</span> and <span class="blB">apply</span> <strong>Bayesian small area methods</strong> to health data in Australia</p>
 </div>
 <p><br> <br></p>
 <div class="center" style="font-size: 0.7em">
-<p>🏹 <span class="blR">sparsity issues</span></p>
-</div>
-<div class="center" style="font-size: 0.7em">
-<p>📈 <span class="blB">improve</span> spatial resolution</p>
+<p>🏹 <span class="blR">Sparsity</span> issues</p>
+<p>📈 Improve <span class="blB">spatial resolution</span></p>
+<p>🤔 Support informed <span class="blB">decision making</span></p>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
@@ -964,7 +968,7 @@ Thesis format: <span class="blB">Publication</span> 📃
 <!-- ----------------------------------------------------------------- -->
 </section>
 <section id="tangent-alert" class="slide level2">
-<h2>Tangent Alert</h2>
+<h2>⛔ Tangent Alert ⛔</h2>
 <ul>
 <li>Social Health Atlas reports age-standardised <span class="blR">rates</span>.</li>
 <li>We will estimate prevalence using <span class="blR">proportions</span>.
@@ -1008,8 +1012,10 @@ Thesis format: <span class="blB">Publication</span> 📃
 </div>
 <div>
 <ul>
-<li class="fragment">Two-stage approaches have <span class="blB">emerged</span> <span class="citation" data-cites="gao2023_sma Das2022">[<a href="#/references" role="doc-biblioref" onclick="">31</a>,<a href="#/references" role="doc-biblioref" onclick="">32</a>]</span></li>
-<li class="fragment">Recent work hints at <span class="blB">benefits</span> <span class="math inline">\(\to\)</span> <span class="blR">no full</span> investigation</li>
+<li class="fragment">Two-stage approaches have <span class="blB">emerged</span> <span class="citation" data-cites="gao2023_sma Das2022">[<a href="#/references" role="doc-biblioref" onclick="">31</a>,<a href="#/references" role="doc-biblioref" onclick="">32</a>]</span>
+<ul>
+<li class="fragment">Hints at <span class="blB">benefits</span> <span class="math inline">\(\to\)</span> <span class="blR">no full</span> investigation</li>
+</ul></li>
 <li class="fragment"><span class="blB">Mitigate</span> weakness of either model and <span class="blB">leverage</span> their strengths</li>
 </ul>
 </div>
@@ -1018,7 +1024,23 @@ Thesis format: <span class="blB">Publication</span> 📃
 <section id="section-19" class="slide level2 center">
 <h2></h2>
 <div class="quote-box">
-<p><strong>Contribution</strong> 🎉 <br> <br> A Bayesian two-stage method for proportions that tackles data sparsity challenges in small area estimation.</p>
+<p><strong>Contribution</strong> 🎉 <br> <br> A Bayesian two-stage method for proportions that tackles data sparsity challenges.</p>
+</div>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="section-20" class="slide level2 center" data-background-color="#fff0a2">
+<h2></h2>
+<div class="center" style="font-size: 0.7em">
+<p><em>Thesis aim</em></p>
+</div>
+<div class="center" style="font-size: 1.5em">
+<p>Develop and apply Bayesian small area methods to health data in Australia</p>
+</div>
+<p><br> <br></p>
+<div class="center" style="font-size: 0.7em">
+<p>👉 <strong>Sparsity issues</strong></p>
+<p>👉 <strong>Improve spatial resolution</strong></p>
+<p>Support informed decision making</p>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
@@ -1151,7 +1173,7 @@ Thesis format: <span class="blB">Publication</span> 📃
 <img data-src="imgs/chp3/sparse_MRRMSE.png" class="r-stretch">
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-20" class="slide level2 center">
+<section id="section-21" class="slide level2 center">
 <h2></h2>
 <div class="striped hover" style="font-size: 0.5em;">
 <table>
@@ -1379,7 +1401,7 @@ Thesis format: <span class="blB">Publication</span> 📃
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-21" class="slide level2 center smaller">
+<section id="section-22" class="slide level2 center smaller" data-background-color="#ffffff">
 <h2></h2>
 <div class="finding-box">
 <p><strong>Key findings</strong> 📢</p>
@@ -1426,7 +1448,7 @@ Thesis format: <span class="blB">Publication</span> 📃
 <p><br> <strong>James Hogg</strong>, Jessica Cameron, Susanna Cramb, Peter Baade, Kerrie Mengersen. Mapping the prevalence of cancer risk factors at the small area level in Australia. <em>International Journal of Health Geographics</em> 22, 37 (2023). https://doi.org/10.1186/s12942-023-00352-5</p>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-22" class="slide level2 center">
+<section id="section-23" class="slide level2 center">
 <h2></h2>
 <div class="columns">
 <div class="column" style="width:40%;">
@@ -1439,7 +1461,7 @@ Thesis format: <span class="blB">Publication</span> 📃
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-23" class="slide level2 center">
+<section id="section-24" class="slide level2 center">
 <h2></h2>
 <div class="columns">
 <div class="column" style="width:40%;">
@@ -1454,7 +1476,7 @@ Thesis format: <span class="blB">Publication</span> 📃
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-24" class="slide level2">
+<section id="section-25" class="slide level2">
 <h2></h2>
 <!-- presentation slides is 1050 x 700 -->
 <div class="columns">
@@ -1471,10 +1493,26 @@ Thesis format: <span class="blB">Publication</span> 📃
 ![](imgs/chp4/mu_obesity.png){.absolute bottom=182.5 right=0 height="335"} -->
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-25" class="slide level2 center">
+<section id="section-26" class="slide level2 center">
 <h2></h2>
 <div class="quote-box">
 <p><strong>Contribution</strong> 🎉 <br> <br> The <span class="blB">first Australia-wide</span> prevalence estimates for <strong>eight</strong> <span class="blB">cancer risk factors</span> at the statistical areas level 2 (<span class="blB">SA2</span>) level.</p>
+</div>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="section-27" class="slide level2 center" data-background-color="#fff0a2">
+<h2></h2>
+<div class="center" style="font-size: 0.7em">
+<p><em>Thesis aim</em></p>
+</div>
+<div class="center" style="font-size: 1.5em">
+<p>Develop and apply Bayesian small area methods to health data in Australia</p>
+</div>
+<p><br> <br></p>
+<div class="center" style="font-size: 0.7em">
+<p>Sparsity issues</p>
+<p>👉 <strong>Improve spatial resolution</strong></p>
+<p>👉 <strong>Support informed decision making</strong></p>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
@@ -1497,7 +1535,7 @@ Thesis format: <span class="blB">Publication</span> 📃
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-26" class="slide level2 center">
+<section id="section-28" class="slide level2 center">
 <h2></h2>
 
 <!-- ----------------------------------------------------------------- -->
@@ -1595,27 +1633,27 @@ Thesis format: <span class="blB">Publication</span> 📃
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-27" class="slide level2 center">
-<h2></h2>
-
-<!-- ----------------------------------------------------------------- -->
-<img data-src="imgs/chp4/rr_alcohol.png" class="r-stretch"></section>
-<section id="section-28" class="slide level2 center">
-<h2></h2>
-
-<!-- ----------------------------------------------------------------- -->
-<img data-src="imgs/chp4/rrcisize_alcohol.png" class="r-stretch"></section>
 <section id="section-29" class="slide level2 center">
 <h2></h2>
 
 <!-- ----------------------------------------------------------------- -->
-<img data-src="imgs/chp4/orep_alcohol.png" class="r-stretch"></section>
+<img data-src="imgs/chp4/rr_alcohol.png" class="r-stretch"></section>
 <section id="section-30" class="slide level2 center">
 <h2></h2>
 
 <!-- ----------------------------------------------------------------- -->
-<img data-src="imgs/chp4/lisa_s_alcohol.png" class="r-stretch"></section>
+<img data-src="imgs/chp4/rrcisize_alcohol.png" class="r-stretch"></section>
 <section id="section-31" class="slide level2 center">
+<h2></h2>
+
+<!-- ----------------------------------------------------------------- -->
+<img data-src="imgs/chp4/orep_alcohol.png" class="r-stretch"></section>
+<section id="section-32" class="slide level2 center">
+<h2></h2>
+
+<!-- ----------------------------------------------------------------- -->
+<img data-src="imgs/chp4/lisa_s_alcohol.png" class="r-stretch"></section>
+<section id="section-33" class="slide level2 center" data-background-color="#ffffff">
 <h2></h2>
 <div class="finding-box">
 <p><strong>Key findings</strong> 📢</p>
@@ -1628,14 +1666,14 @@ Thesis format: <span class="blB">Publication</span> 📃
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-32" class="slide level2">
+<section id="section-34" class="slide level2">
 <h2></h2>
 <div class="r-fit-text">
 <p>Exciting…</p>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-33" class="slide level2 center">
+<section id="section-35" class="slide level2 center">
 <h2></h2>
 <p>These modelled estimates will be available in the <strong>Australian Cancer Atlas 2.0</strong></p>
 <img data-src="imgs/ACA_oesophagealcancer.png" class="r-stretch">
@@ -1672,8 +1710,10 @@ Thesis format: <span class="blB">Publication</span> 📃
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="motivation-1" class="slide level2 smaller">
-<h2>Motivation</h2>
+<section id="background-3" class="slide level2 smaller">
+<h2>Background</h2>
+<div class="columns">
+<div class="column" style="width:58%;">
 <div>
 <ul>
 <li class="fragment">Resolution and accessibility of health data for small areas have <span class="blB">improved considerably</span></li>
@@ -1686,9 +1726,13 @@ Thesis format: <span class="blB">Publication</span> 📃
 </ul></li>
 </ul>
 </div>
+</div><div class="column" style="width:38%;">
+<p><img data-src="imgs/background.webp" class="center soft-edges"></p>
+</div>
+</div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-34" class="slide level2">
+<section id="section-36" class="slide level2">
 <h2></h2>
 <div class="r-fit-text">
 <p><strong>Indices</strong></p>
@@ -1702,7 +1746,7 @@ Thesis format: <span class="blB">Publication</span> 📃
 <li class="fragment">Measures a <strong>multifaceted concept</strong> that cannot be captured by a single feature.</li>
 <li class="fragment">Often can help:
 <ul>
-<li class="fragment">Determine <span class="blB">policy priorities</span></li>
+<li class="fragment">Determine priorities for future <span class="blB">policies</span></li>
 <li class="fragment">Benchmark or <span class="blB">monitor the performance</span> of current policies</li>
 </ul></li>
 </ul>
@@ -1724,14 +1768,14 @@ Thesis format: <span class="blB">Publication</span> 📃
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-35" class="slide level2" data-auto-animate="true">
+<section id="section-37" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 100px; font-size: 1em;">
 <p>Generalised shared component model</p>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-36" class="slide level2" data-auto-animate="true">
+<section id="section-38" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 100px; font-size: 1.5em; color: blue;">
 <p>Generalised shared component model</p>
@@ -1745,26 +1789,42 @@ Thesis format: <span class="blB">Publication</span> 📃
 </ul>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-37" class="slide level2 center">
+<section id="section-39" class="slide level2 center">
 <h2></h2>
 
 <!-- ----------------------------------------------------------------- -->
 <img data-src="imgs/chp5/chp5_index_flowchart.png" class="r-stretch"></section>
-<section id="section-38" class="slide level2">
+<section id="section-40" class="slide level2">
 <h2></h2>
 <div class="r-fit-text">
 <p>Area Indices of <br> Behaviors Impacting <br> Cancer (<span class="blB">AIBIC</span>) product</p>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section class="slide level2">
-
+<section id="section-41" class="slide level2 center">
+<h2></h2>
 <div class="quote-box">
 <p><strong>Contribution</strong> 🎉</p>
 <ul>
 <li>A Bayesian <span class="blB">model-based method</span> for <strong>index creation</strong> that can accommodate <span class="blB">spatial autocorrelation</span> and known heteroscedastic <span class="blB">measurement error</span>.</li>
 <li>The <span class="blB">first</span> Australia-wide <strong>area level</strong> <span class="blB">cancer risk factor indices</span>.</li>
 </ul>
+</div>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="section-42" class="slide level2 center" data-background-color="#fff0a2">
+<h2></h2>
+<div class="center" style="font-size: 0.7em">
+<p><em>Thesis aim</em></p>
+</div>
+<div class="center" style="font-size: 1.5em">
+<p>Develop and apply Bayesian small area methods to health data in Australia</p>
+</div>
+<p><br> <br></p>
+<div class="center" style="font-size: 0.7em">
+<p>Sparsity issues</p>
+<p>Improve spatial resolution</p>
+<p>👉 <strong>Support informed decision making</strong></p>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
@@ -1787,7 +1847,7 @@ Thesis format: <span class="blB">Publication</span> 📃
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-39" class="slide level2 center">
+<section id="section-43" class="slide level2 center">
 <h2></h2>
 
 <!-- ----------------------------------------------------------------- -->
@@ -1844,12 +1904,18 @@ Thesis format: <span class="blB">Publication</span> 📃
 
 <!-- ----------------------------------------------------------------- -->
 <img data-src="imgs/chp5/factor_loadings.png" class="r-stretch quarto-figure-center"><p class="caption">Posterior medians (and 95% highest posterior density intervals) of the factor loadings.</p></section>
-<section id="the-four-indices" class="slide level2">
+<section id="the-four-indices" class="slide level2 smaller">
 <h2>The four indices</h2>
+<div class="columns">
+<div class="column" style="width:58%;">
 <p>Factor 1: <span class="math inline">\(z_{n1}\)</span></p>
 <p>Factor 2: <span class="math inline">\(z_{n2}\)</span></p>
 <p>Health Behavior Index (HBI): <span class="math inline">\(w_1 z_{n1} + w_2 z_{n2}\)</span></p>
 <p>Population Adjusted Health Behaviors Index (PAHBI): <span class="math inline">\(P_n \left(  w_1 z_{n1} + w_2 z_{n2}  \right)\)</span></p>
+</div><div class="column" style="width:38%;">
+<p><img data-src="imgs/chp5/index_logo.png" class="center soft-edges"></p>
+</div>
+</div>
 <!-- ----------------------------------------------------------------- -->
 </section>
 <section id="interpretation" class="slide level2">
@@ -1864,48 +1930,74 @@ Thesis format: <span class="blB">Publication</span> 📃
 </ul>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-40" class="slide level2 r-stretch">
-<h2></h2>
+<section id="laurieton---bonny-hills-nsw" class="slide level2 smaller">
+<h2>Laurieton - Bonny Hills (NSW)</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="fragment column-border">
+<span class="blR">Modelled percentages</span> -
+<div class="small-text">
+10 numbers!
+</div>
+<p>Inadequate physical activity: 84% (2.8%)</p>
+<p>Risky alcohol consumption: 39% (4.1%)</p>
+<p>Inadequate diet: 50% (3.9%)</p>
+<p>Overweight/obese: 78% (2.9%)</p>
+<p>Current smoking: 22% (3.7%)</p>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="fragment">
+<span class="blB">Health Behaviors Index (HBI)</span> -
+<div class="small-text">
+2 numbers!
+</div>
+<p>Percentile: 98</p>
+<p>Probability that percentile above 80th: 0.99</p>
+</div>
+<div class="fragment">
+<p><span class="blB">Population Adjusted HBI</span></p>
+<p>Percentile: 100</p>
+<p>Probability that percentile above 80th: 1</p>
+</div>
+</div>
+</div>
+<img data-src="imgs/chp5/bonnyhills.webp" class="r-stretch soft-edges" style="display:block; margin:auto;">
+<!-- ----------------------------------------------------------------- 
+## {.r-stretch}
 
+![](imgs/chp5/map_perc_capital_Perth.png) -->
 <!-- ----------------------------------------------------------------- -->
-<img data-src="imgs/chp5/map_perc_capital_Perth.png" class="r-stretch"></section>
-<section id="section-41" class="slide level2 r-stretch">
+</section>
+<section id="section-44" class="slide level2 r-stretch">
 <h2></h2>
 
 <!-- ----------------------------------------------------------------- -->
 <img data-src="imgs/chp5/map_perc3.png" class="r-stretch"></section>
-<section id="section-42" class="slide level2 r-stretch">
+<section id="section-45" class="slide level2 r-stretch">
 <h2></h2>
 
 <!-- ----------------------------------------------------------------- -->
 <img data-src="imgs/chp5/map_perc4.png" class="r-stretch"></section>
-<section id="section-43" class="slide level2 center smaller">
+<section id="section-46" class="slide level2 center smaller" data-background-color="#ffffff">
 <h2></h2>
 <div class="finding-box">
 <p><strong>Key findings</strong> 📢</p>
 <div>
+<!-- - <span class="blR">Incomplete or inefficient</span> policy decisions <div class="small-text">(if using a single shared factor or simplified spatial structure)</div>
+    - <span class="blB">Motivates</span> use of GSCM -->
 <ul>
-<li class="fragment"><span class="blR">Incomplete or inefficient</span> policy decisions
-<div class="small-text">
-(if using a single shared factor or simplified spatial structure)
-</div>
-<ul>
-<li class="fragment"><span class="blB">Motivates</span> use of GSCM</li>
-</ul></li>
 <li class="fragment">The AIBIC reveals a <span class="blR">pronounced spatial autocorrelation</span> in unhealthy behaviors
 <ul>
 <li class="fragment">Patterns reflect <strong>remoteness</strong> and <strong>socioeconomic patterns</strong></li>
-</ul></li>
-<li class="fragment">Comparison empirical methods and the GSCM
-<ul>
-<li class="fragment"><span class="blR">Very different</span> policy decisions</li>
+<li class="fragment"><span class="blB">Easier to interpret</span> than raw data <!-- - Comparison empirical methods and the GSCM 
+  - <span class="blR">Very different</span> policy decisions --></li>
 </ul></li>
 </ul>
 </div>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-44" class="slide level2">
+<section id="section-47" class="slide level2">
 <h2></h2>
 <div class="r-fit-text">
 <p>Exciting…</p>
@@ -1956,7 +2048,7 @@ Thesis format: <span class="blB">Publication</span> 📃
 <strong>Status</strong>: <span class="blB">Second round</span> of revisions
 </div>
 </section>
-<section id="background-3" class="slide level2 smaller">
+<section id="background-4" class="slide level2 smaller">
 <h2>Background</h2>
 <h3 id="burden-of-disease-bod">Burden of disease (BOD)</h3>
 <div class="columns">
@@ -1978,7 +2070,7 @@ Thesis format: <span class="blB">Publication</span> 📃
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-45" class="slide level2 smaller">
+<section id="section-48" class="slide level2 smaller">
 <h2></h2>
 <h3 id="full-bod-studies">Full BOD studies</h3>
 <div>
@@ -2009,14 +2101,14 @@ Thesis format: <span class="blB">Publication</span> 📃
       }</style></aside>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-46" class="slide level2" data-auto-animate="true">
+<section id="section-49" class="slide level2" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 100px;">
 <p><strong>No</strong> BOD studies</p>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-47" class="slide level2 smaller" data-auto-animate="true">
+<section id="section-50" class="slide level2 smaller" data-auto-animate="true">
 <h2 data-id="quarto-animate-title"></h2>
 <div style="margin-top: 200px; font-size: 3em; color: red;">
 <p><strong>No</strong> BOD studies</p>
@@ -2034,12 +2126,44 @@ Thesis format: <span class="blB">Publication</span> 📃
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-48" class="slide level2 center">
+<section id="section-51" class="slide level2 center">
 <h2></h2>
 <div class="quote-box">
 <p><strong>Contribution</strong> 🎉</p>
 <p>A principled and practical set of Bayesian spatiotemporal methods for modelling the wide range of mortality and prevalence data necessary for full BOD studies.</p>
 </div>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="section-52" class="slide level2 center" data-background-color="#fff0a2">
+<h2></h2>
+<div class="center" style="font-size: 0.7em">
+<p><em>Thesis aim</em></p>
+</div>
+<div class="center" style="font-size: 1.5em">
+<p>Develop and apply Bayesian small area methods to health data in Australia</p>
+</div>
+<p><br> <br></p>
+<div class="center" style="font-size: 0.7em">
+<p>👉 <strong>Sparsity issues</strong></p>
+<p>👉 <strong>Improve spatial resolution</strong></p>
+<p>👉 <strong>Support informed decision making</strong></p>
+</div>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="tangent-alert-1" class="slide level2 smaller">
+<h2>⛔ Tangent Alert ⛔</h2>
+<ul>
+<li>Full BOD studies <span class="math inline">\(\to\)</span> conducted by <strong>government agencies</strong> in Australia</li>
+<li>Models are <strong>intentionally</strong> simple <span class="math inline">\(\to\)</span> <span class="blB">accessible</span> and <span class="blB">practical</span>
+<ul>
+<li>Ensure applicability of models to future full BOD studies</li>
+</ul></li>
+<li><strong>Novelty</strong>
+<ul>
+<li>Not in the <span class="blR">development</span> of new Bayesian models</li>
+<li><span class="blB">Application</span> of existing models to the field of BOD</li>
+</ul></li>
+</ul>
 <!-- ----------------------------------------------------------------- -->
 </section>
 <section id="methods" class="slide level2 smaller">
@@ -2132,28 +2256,25 @@ Thesis format: <span class="blB">Publication</span> 📃
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="section-49" class="slide level2 center">
-<h2></h2>
-
-<!-- ----------------------------------------------------------------- -->
-<img data-src="imgs/chp6/results.png" class="r-stretch quarto-figure-center"><p class="caption">Comparison of the 822 annual LGA point estimates and their reliability (% of RSEs less than 50%) for modeled and raw BOD measures by condition.</p></section>
-<section id="section-50" class="slide level2 center">
+<section id="section-53" class="slide level2 center">
 <h2></h2>
 
 <!-- ----------------------------------------------------------------- -->
 <img data-src="imgs/chp6/compraw_ALL.jpeg" class="r-stretch quarto-figure-center"><p class="caption">Comparison of the distribution of the point estimates from the Bayesian models and basic stratification (i.e., raw).</p></section>
-<section id="section-51" class="slide level2 center smaller">
+<section id="section-54" class="slide level2 center">
+<h2></h2>
+
+<!-- ----------------------------------------------------------------- -->
+<img data-src="imgs/chp6/results.png" class="r-stretch quarto-figure-center"><p class="caption">Comparison of the 822 annual LGA point estimates and their reliability (% of RSEs less than 50%) for modeled and raw BOD measures by condition.</p></section>
+<section id="section-55" class="slide level2 center smaller" data-background-color="#ffffff">
 <h2></h2>
 <div class="finding-box">
 <p><strong>Key findings</strong> 📢</p>
 <div>
 <ul>
-<li class="fragment"><span class="blB">Bayesian models</span> <span class="math inline">\(\to\)</span> increased the <em>reliability, certainty and reportability</em> of estimates</li>
-<li class="fragment">Demonstrated <strong>feasibility</strong> of incorporating spatio-temporal models into <span class="blB">full BOD studies</span>
-<ul>
-<li class="fragment">Provide <strong>ranks</strong> for disease burden from <strong>all</strong> causes by <strong>small areas</strong></li>
-</ul></li>
-<li class="fragment">Bayesian and basic stratification:
+<li class="fragment"><span class="blB">Bayesian models</span> <span class="math inline">\(\to\)</span> increased the <em>reliability, certainty and reportability</em> of estimates <!-- - Demonstrated **feasibility** of incorporating spatio-temporal models into <span class="blB">full BOD studies</span>
+  - Provide **ranks** for disease burden from **all** causes by **small areas** --></li>
+<li class="fragment">Bayesian vs.&nbsp;raw:
 <ul>
 <li class="fragment"><span class="blB">Agreed</span> (mostly!)</li>
 <li class="fragment">Discrepancies due to <span class="blB">age-standardisation</span> OR <span class="blB">paradigm differences</span></li>
@@ -2216,11 +2337,11 @@ We made <span class="blB">it</span>. 🎉 Take a breath.
 <div class="column" style="width:68%;">
 <div>
 <ul>
-<li class="fragment">Fully Bayesian TSLN approach for proportions was developed (<strong>Chapter 3</strong>)</li>
-<li class="fragment">Enhance both the reach and resolution of cancer risk factor estimates for the 2221 small areas across Australia (<strong>Chapter 4</strong>)</li>
-<li class="fragment">Generalises the shared component model by accommodating known model-based area-specific error, multiple shared factors, and spatial dependence (<strong>Chapter 5</strong>)</li>
-<li class="fragment">Area Indices of Behaviors Impacting Cancer (AIBIC) product (<strong>Chapter 5</strong>)</li>
-<li class="fragment">Bayesian spatiotemporal models from disease mapping and SAE are integrated to augment the resolution of reportable estimates in Australia (<strong>Chapter 6</strong>)</li>
+<li class="fragment">Bayesian two-stage logistic normal (TSLN) approach for proportions <span class="small-text">(<strong>Chapter 3</strong>)</span></li>
+<li class="fragment">Cancer risk factor estimates for the 2221 small areas across Australia <span class="small-text">(<strong>Chapter 4</strong>)</span></li>
+<li class="fragment">Generalised shared component model (GSCM) <span class="small-text">(<strong>Chapter 5</strong>)</span></li>
+<li class="fragment">Area Indices of Behaviors Impacting Cancer (AIBIC) product <span class="small-text">(<strong>Chapter 5</strong>)</span></li>
+<li class="fragment">Principled and practical set of Bayesian spatiotemporal methods for BOD in Australia <span class="small-text">(<strong>Chapter 6</strong>)</span></li>
 </ul>
 </div>
 </div><div class="column" style="width:28%;">
@@ -2232,75 +2353,29 @@ We made <span class="blB">it</span>. 🎉 Take a breath.
 <section id="impact" class="slide level2 smaller">
 <h2>Impact</h2>
 <div class="columns">
-<div class="column" style="width:68%;">
+<div class="column" style="width:72%;">
 <div>
 <ul>
-<li class="fragment">Modelled risk factors <span class="math inline">\(\to\)</span> <span class="blB">Australian Cancer Atlas</span> platform.</li>
-<li class="fragment">Epidemiologists from the <span class="blB">West Moreton Public Health Unit</span> <span class="math inline">\(\to\)</span> interest in utilising estimates for reporting.</li>
-<li class="fragment"><span class="blB">Department of Health Western Australia (DOHWA)</span> applied methods (<strong>Chapter 6</strong>) <span class="math inline">\(\to\)</span> generate new estimates for internal Public Health Atlas.</li>
-<li class="fragment">Interest in adopting Bayesian modelling
-<ul>
-<li class="fragment">The Burden of Disease and Mortality specialist group (<span class="blB">Australian Institute of Health and Welfare</span>)</li>
-</ul></li>
-<li class="fragment">Efficient <span class="citation" data-cites="RN452">[<a href="#/references" role="doc-biblioref" onclick="">47</a>]</span> implementation of the <span class="blB">Leroux prior</span> <span class="citation" data-cites="RN366">[<a href="#/references" role="doc-biblioref" onclick="">38</a>]</span>.</li>
-<li class="fragment">Novel Bayesian models <span class="blB">push boundary</span> of previously achievable <span class="math inline">\(\to\)</span> <em>spatial and temporal resolution and reach</em> in Australia</li>
+<li class="fragment">Modelled risk factors <span class="math inline">\(\to\)</span> <span class="blB">Australian Cancer Atlas</span> platform <span class="small-text">(<strong>Chapter 4</strong>)</span></li>
+<li class="fragment">Epidemiologists from the <span class="blB">West Moreton Public Health Unit</span> <span class="math inline">\(\to\)</span> interest in utilising estimates for reporting <span class="small-text">(<strong>Chapter 4</strong>)</span></li>
+<li class="fragment"><span class="blB">Department of Health Western Australia (DOHWA)</span> applied methods <span class="math inline">\(\to\)</span> generate new estimates for internal Public Health Atlas <span class="small-text">(<strong>Chapter 6</strong>)</span></li>
 </ul>
 </div>
-</div><div class="column" style="width:28%;">
+</div><div class="column" style="width:24%;">
 <p><img data-src="imgs/impact.webp" class="soft-edges" style="width:100.0%"></p>
 </div>
 </div>
-<!-- ----------------------------------------------------------------- -->
-</section>
-<section id="efficient-lcar" class="slide level2 scrollable smaller">
-<h2>Efficient LCAR</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="sc">/</span><span class="er">**</span></span>
-<span id="cb1-2"><a href=""></a><span class="er">*</span> Log probability density of the leroux conditional <span class="fu">autoregressive</span> (LCAR) model</span>
-<span id="cb1-3"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param x vector of random effects</span>
-<span id="cb1-4"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param rho spatial dependence parameter</span>
-<span id="cb1-5"><a href=""></a><span class="sc">*</span>           MUST be strictly smaller than <span class="dv">1</span>, use<span class="sc">:</span></span>
-<span id="cb1-6"><a href=""></a><span class="er">*</span>           <span class="st">`</span><span class="at">real&lt;lower=0,upper=0.99&gt; rho;</span><span class="st">`</span></span>
-<span id="cb1-7"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param sigma standard deviation <span class="sc">-</span> often set to <span class="dv">1</span></span>
-<span id="cb1-8"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param C_w Sparse representation of C</span>
-<span id="cb1-9"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param C_v Column indices <span class="cf">for</span> values <span class="cf">in</span> C</span>
-<span id="cb1-10"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param C_u Row starting indices <span class="cf">for</span> values <span class="cf">in</span> C</span>
-<span id="cb1-11"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param offD_id_C_w indices <span class="cf">for</span> off diagonal terms</span>
-<span id="cb1-12"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param D_id_C_w indices <span class="cf">for</span> diagonal terms <span class="sc">-</span> length M</span>
-<span id="cb1-13"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param C_eigenvalues eigenvalues <span class="cf">for</span> C</span>
-<span id="cb1-14"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param N number of areas</span>
-<span id="cb1-15"><a href=""></a><span class="sc">**</span></span>
-<span id="cb1-16"><a href=""></a><span class="er">@</span>return Log probability density</span>
-<span id="cb1-17"><a href=""></a><span class="sc">**</span></span>
-<span id="cb1-18"><a href=""></a>To use<span class="sc">:</span> <span class="fu">LCAR_lpdf</span>( x <span class="sc">|</span> rho, sigma, C_w, C_v, C_u, offD_id_C_w, D_id_C_w, C_eigenvalues, N );</span>
-<span id="cb1-19"><a href=""></a><span class="sc">*</span><span class="er">/</span></span>
-<span id="cb1-20"><a href=""></a>real <span class="fu">LCAR_lpdf</span>(</span>
-<span id="cb1-21"><a href=""></a>    vector x,               </span>
-<span id="cb1-22"><a href=""></a>    real rho,                   </span>
-<span id="cb1-23"><a href=""></a>    real sigma,              </span>
-<span id="cb1-24"><a href=""></a>    vector C_w , </span>
-<span id="cb1-25"><a href=""></a>    int [] C_v , </span>
-<span id="cb1-26"><a href=""></a>    int [] C_u , </span>
-<span id="cb1-27"><a href=""></a>    int [] offD_id_C_w ,        </span>
-<span id="cb1-28"><a href=""></a>    int [] D_id_C_w ,       </span>
-<span id="cb1-29"><a href=""></a>    vector C_eigenvalues,       </span>
-<span id="cb1-30"><a href=""></a>    int N                   </span>
-<span id="cb1-31"><a href=""></a>    ) {                 </span>
-<span id="cb1-32"><a href=""></a>        vector[N] ldet_C;</span>
-<span id="cb1-33"><a href=""></a>        vector [ <span class="fu">num_elements</span>(C_w) ] ImrhoC;</span>
-<span id="cb1-34"><a href=""></a>        vector[N] A_S;</span>
-<span id="cb1-35"><a href=""></a>        <span class="sc">/</span><span class="er">/</span> Multiple off<span class="sc">-</span>diagonal elements by rho</span>
-<span id="cb1-36"><a href=""></a>        ImrhoC [ offD_id_C_w ] <span class="ot">=</span> <span class="sc">-</span> rho <span class="sc">*</span> C_w[ offD_id_C_w ];</span>
-<span id="cb1-37"><a href=""></a>        <span class="sc">/</span><span class="er">/</span> Calculate diagonal elements of ImrhoC</span>
-<span id="cb1-38"><a href=""></a>        ImrhoC [ D_id_C_w ] <span class="ot">=</span> <span class="dv">1</span> <span class="sc">-</span> rho <span class="sc">*</span> C_w[ D_id_C_w ];</span>
-<span id="cb1-39"><a href=""></a>        A_S <span class="ot">=</span> <span class="fu">csr_matrix_times_vector</span>( N, N, ImrhoC, C_v, C_u, x );</span>
-<span id="cb1-40"><a href=""></a>        ldet_C <span class="ot">=</span> <span class="fu">log1m</span>( rho <span class="sc">*</span> C_eigenvalues );</span>
-<span id="cb1-41"><a href=""></a>        return <span class="sc">-</span><span class="fl">0.5</span> <span class="sc">*</span> ( </span>
-<span id="cb1-42"><a href=""></a>        N<span class="sc">*</span><span class="fu">log</span>( <span class="dv">2</span> <span class="sc">*</span> <span class="fu">pi</span>() ) </span>
-<span id="cb1-43"><a href=""></a>        <span class="sc">-</span> ( N <span class="sc">*</span> <span class="fu">log</span>(<span class="dv">1</span><span class="sc">/</span><span class="fu">square</span>(sigma)) <span class="sc">+</span> <span class="fu">sum</span>( ldet_C ) ) </span>
-<span id="cb1-44"><a href=""></a>        <span class="sc">+</span> <span class="dv">1</span><span class="sc">/</span><span class="fu">square</span>(sigma) <span class="sc">*</span> <span class="fu">dot_product</span>(x, A_S) </span>
-<span id="cb1-45"><a href=""></a>        );</span>
-<span id="cb1-46"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="fragment">
+<div>
+<ul>
+<li class="fragment">Interest in adopting Bayesian modelling <span class="small-text">(<strong>Chapter 6</strong>)</span>
+<ul>
+<li class="fragment">The Burden of Disease and Mortality specialist group (<span class="blB">Australian Institute of Health and Welfare</span>)</li>
+</ul></li>
+<li class="fragment">Efficient <span class="citation" data-cites="RN452">[<a href="#/references" role="doc-biblioref" onclick="">47</a>]</span> implementation of the <span class="blB">Leroux prior</span> <span class="citation" data-cites="RN366">[<a href="#/references" role="doc-biblioref" onclick="">38</a>]</span> <span class="small-text">(<strong>Chapter 5</strong>)</span></li>
+<li class="fragment">Novel Bayesian models <span class="blB">push boundary</span> of previously achievable <span class="math inline">\(\to\)</span> <em>spatial and temporal resolution and reach</em> in Australia <span class="small-text">(<strong>Chapters 3</strong> and <strong>6</strong>)</span></li>
+</ul>
+</div>
 </div>
 <!-- ----------------------------------------------------------------- -->
 </section>
@@ -2310,8 +2385,8 @@ We made <span class="blB">it</span>. 🎉 Take a breath.
 <div class="column" style="width:58%;">
 <div>
 <ul>
-<li class="fragment"><span class="blB">Improving</span> spatial resolution: <span class="blB">double edged sword</span></li>
-<li class="fragment"><strong>Reliability</strong> of small area level estimates <span class="math inline">\(\to\)</span> contingent on quality of validation data.</li>
+<li class="fragment"><span class="blB">Improving</span> spatial resolution: <span class="blR">double edged sword</span></li>
+<li class="fragment"><strong>Reliability</strong> of small area level estimates <span class="math inline">\(\to\)</span> <span class="blR">contingent</span> on quality of validation data.</li>
 </ul>
 </div>
 </div><div class="column" style="width:38%;">
@@ -2319,7 +2394,7 @@ We made <span class="blB">it</span>. 🎉 Take a breath.
 </div>
 </div>
 <aside class="notes">
-<p>Improving spatial resolution - better models <span class="math inline">\(=\)</span> more high-resolution estimates of health (atlas platforms). - introduces the challenge of navigating decision making with multidimensional health information (with uncertainty) - given that decision paralysis can impede effective policy, only present essential information in an easily understandable manner - Australian Cancer Atlas great example of this - Chapter 5 presents our solution. Reliability - health departments (report to policymakers) proving validity becomes increasingly important and complex; possibly made more difficult with the adoption of Bayesian models. - Chapter 6 compares estimates from Bayesian models with those from previous approaches: solid agreement. - Not always possible - survey data, for example, the ultimate, but impractical, validation dataset would be health data for the entire population. - indices</p>
+<p>Improving spatial resolution - better models <span class="math inline">\(=\)</span> more high-resolution estimates of health (atlas platforms). - introduces the challenge of navigating decision making with multidimensional health information (with uncertainty) - given that decision paralysis can impede effective policy, only present essential information in an easily understandable manner - Australian Cancer Atlas great example of this - Chapter 5 presents our solution. Reliability - health departments (report to policymakers) proving validity becomes increasingly important and complex; possibly made more difficult with the adoption of Bayesian models. - Chapter 6 compares estimates from Bayesian models with those from previous approaches: solid agreement. - Not always possible - survey data, for example, the ultimate, but impractical, validation dataset would be health data for the entire population.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -2339,14 +2414,17 @@ We made <span class="blB">it</span>. 🎉 Take a breath.
 <div class="column" style="width:58%;">
 <div>
 <ul>
-<li class="fragment">Theory/model expansion</li>
-<li class="fragment">Validation for SAE</li>
-<li class="fragment">Validation for burden of disease methods and models
+<li class="fragment"><strong>Theory</strong>/model expansion</li>
+<li class="fragment"><strong>Validation</strong>
+<ul>
+<li class="fragment">Small area estimation <span class="small-text">(<strong>Chapter 3</strong> and <strong>4</strong>)</span></li>
+<li class="fragment">Burden of disease methods and models <span class="small-text">(<strong>Chapter 6</strong>)</span>
 <ul>
 <li class="fragment">Accommodate unique types of measurement error</li>
 </ul></li>
-<li class="fragment">Consider temporal dimension into the TSLN approach (<strong>Chapters 3</strong> and <strong>4</strong>) and the GSCM (<strong>Chapter 5</strong>)</li>
-<li class="fragment">Indices
+</ul></li>
+<li class="fragment"><strong>Temporal dimension</strong> for the TSLN approach <span class="small-text">(<strong>Chapters 3</strong> and <strong>4</strong>)</span> and the GSCM <span class="small-text">(<strong>Chapter 5</strong>)</span></li>
+<li class="fragment"><strong>Indices</strong> <span class="small-text">(<strong>Chapter 5</strong>)</span>
 <ul>
 <li class="fragment">Temporal consistency</li>
 <li class="fragment">Robustness</li>
@@ -2402,21 +2480,53 @@ We made <span class="blB">it</span>. 🎉 Take a breath.
       }</style></aside>
 <!-- ----------------------------------------------------------------- -->
 </section>
-<section id="professional-engagements-activities-and-awards" class="slide level2 smaller">
-<h2>Professional engagements, activities and awards</h2>
+<section id="professional-engagementsactivities" class="slide level2 smaller">
+<h2>Professional engagements/activities</h2>
+<div>
 <ul>
-<li>Many conferences <span class="math inline">\(+\)</span> posters (including 2x <strong>international conferences</strong>)</li>
-<li>Internship and statistical consulting for <span class="blB">Department of Health Western Australia (DOHWA)</span></li>
-<li>Casual statistical consulting for <span class="blB">Environmental Protection Authority (EPA) Victoria</span></li>
-<li>Co-chair of the <span class="blB">Bayesian Research and Applications Group (BRAG)</span></li>
-<li>Organised and hosted virtual <span class="blB"><em>StanConnect</em> conference</span></li>
-<li>Worked with BioGro as part of <span class="blB">Good Data Institute</span> hackathon
+<li class="fragment">Many conferences <span class="math inline">\(+\)</span> posters (including 2x <strong>international conferences</strong>)</li>
+<li class="fragment">Internship and statistical consulting for <span class="blB">Department of Health Western Australia (DOHWA)</span></li>
+<li class="fragment">Casual statistical consulting for <span class="blB">Environmental Protection Authority (EPA) Victoria</span></li>
+<li class="fragment">Co-chair of the <span class="blB">Bayesian Research and Applications Group (BRAG)</span></li>
+<li class="fragment">Organised and hosted virtual <span class="blB"><em>StanConnect</em> conference</span></li>
+<li class="fragment">Worked with BioGro as part of <span class="blB">Good Data Institute</span> hackathon
 <ul>
-<li>Team awarded <strong>first place</strong></li>
+<li class="fragment">Team awarded <strong>first place</strong></li>
 </ul></li>
-<li>Team award <strong>second place</strong> in <span class="blB">2023 United Nations Datathon</span></li>
+<li class="fragment">Team award <strong>second place</strong> in <span class="blB">2023 United Nations Datathon</span></li>
 </ul>
+</div>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="acknowledgments" class="slide level2 smaller">
+<h2>Acknowledgments</h2>
+<div class="columns">
+<div class="column" style="width:58%;">
+<ul>
+<li><strong>Supervisors</strong>: Kerrie Mengersen, Susanna Cramb, Peter Baade and Jessica Cameron</li>
+<li>Australian Cancer Atlas 2.0 <strong>project team</strong></li>
+<li><strong>Government collaborators</strong>: DOHWA and AIHW</li>
+<li>PhD stipend and travel funding: Kerrie, QUT, CDS</li>
+<li><strong>Others</strong>:
+<ul>
+<li>ABS</li>
+<li>My family (particularly my <span class="blB">Mum!</span>)</li>
+<li>My partner</li>
+<li>Friends</li>
+<li>ChatGPT</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:38%;">
+<p><img data-src="imgs/ack.webp" class="soft-edges" style="width:100.0%"></p>
+</div>
+</div>
+<!-- ----------------------------------------------------------------- -->
 </section></section>
+<section id="thank-you" class="title-slide slide level1 center" data-background-color="#fff0a2" style="text-align: center;">
+<h1>Thank you</h1>
+<p>and now for the encore/sleep</p>
+</section>
+
 <section id="references" class="title-slide slide level1 smaller scrollable">
 <h1>References</h1>
 <div id="refs" class="references csl-bib-body" role="list">
@@ -2561,11 +2671,20 @@ We made <span class="blB">it</span>. 🎉 Take a breath.
 <div id="ref-RN452" class="csl-entry" role="listitem">
 <div class="csl-left-margin">47. </div><div class="csl-right-inline">Stan Development Team. <span>Stan</span> [Internet]. 2023;Available from: <a href="https://mc-stan.org">https://mc-stan.org</a></div>
 </div>
+<div id="ref-RN516" class="csl-entry" role="listitem">
+<div class="csl-left-margin">48. </div><div class="csl-right-inline">National Health and Medical Research Council. <a href="https://doi.org/978-1-86496-071-6">Australian guidelines to reduce health risks from drinking alcohol</a>. National Health; Medical Research Council; 2020. </div>
+</div>
+<div id="ref-RN520" class="csl-entry" role="listitem">
+<div class="csl-left-margin">49. </div><div class="csl-right-inline">Health N, Council MR. Australian dietary guidelines. National Health; Medical Research Council; 2013. </div>
+</div>
+<div id="ref-RN517" class="csl-entry" role="listitem">
+<div class="csl-left-margin">50. </div><div class="csl-right-inline">Department of Health. Physical activity and exercise guidelines for all australians [Internet]. 2014;Available from: <a href="https://www.health.gov.au/resources/collections/collection-of-physical-activity-and-sedentary-behaviour-guidelines-for-all-ages">https://www.health.gov.au/resources/collections/collection-of-physical-activity-and-sedentary-behaviour-guidelines-for-all-ages</a></div>
+</div>
 <div id="ref-riebler2016bym2" class="csl-entry" role="listitem">
-<div class="csl-left-margin">48. </div><div class="csl-right-inline">Riebler A, Sørbye SH, Simpson D, Rue H. <a href="https://doi.org/10.1177/0962280216660421">An intuitive <span>B</span>ayesian spatial model for disease mapping that accounts for scaling</a>. Statistical Methods in Medical Research 2016;25:1145–65. </div>
+<div class="csl-left-margin">51. </div><div class="csl-right-inline">Riebler A, Sørbye SH, Simpson D, Rue H. <a href="https://doi.org/10.1177/0962280216660421">An intuitive <span>B</span>ayesian spatial model for disease mapping that accounts for scaling</a>. Statistical Methods in Medical Research 2016;25:1145–65. </div>
 </div>
 <div id="ref-RN365" class="csl-entry" role="listitem">
-<div class="csl-left-margin">49. </div><div class="csl-right-inline">Lee D. <a href="https://doi.org/10.1016/j.sste.2011.03.001">A comparison of conditional autoregressive models used in <span>B</span>ayesian disease mapping</a>. Spatial and spatio-temporal epidemiology 2011;2:79–89. </div>
+<div class="csl-left-margin">52. </div><div class="csl-right-inline">Lee D. <a href="https://doi.org/10.1016/j.sste.2011.03.001">A comparison of conditional autoregressive models used in <span>B</span>ayesian disease mapping</a>. Spatial and spatio-temporal epidemiology 2011;2:79–89. </div>
 </div>
 </div>
 <!-- ----------------------------------------------------------------- -->
@@ -2574,6 +2693,97 @@ We made <span class="blB">it</span>. 🎉 Take a breath.
 <!-- ----------------------------------------------------------------- -->
 </section>
 
+<section>
+<section id="chapter-4paper-2-1" class="title-slide slide level1 center">
+<h1>Chapter 4/Paper 2</h1>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="cancer-risk-factors" class="slide level2 smaller scrollable">
+<h2>Cancer Risk Factors</h2>
+<ul>
+<li><strong>Smoking</strong>
+<ul>
+<li>Current smoking: Individuals who identify as current smokers, whether they smoke daily, weekly, or less frequently, and have smoked at least 100 cigarettes in their lifetime.</li>
+</ul></li>
+<li><strong>Alcohol</strong>
+<ul>
+<li>Risky alcohol consumption: Individuals exceeding the 2020 National Health and Medical Research Council (NHMRC) guidelines <span class="citation" data-cites="RN516">[<a href="#/references" role="doc-biblioref" onclick="">48</a>]</span> of up to 10 standard drinks per week and no more than 4 standard drinks on any day, assessed via self-reported alcohol consumption over the last three drinking days from the preceding week.</li>
+</ul></li>
+<li><strong>Diet</strong>
+<ul>
+<li>Inadequate diet: Based on self-reported dietary intake, individuals failing to meet both the fruit (2 serves/day) and vegetable (5 serves/day) requirements as per the 2013 NHMRC Australian Dietary Guidelines <span class="citation" data-cites="RN520">[<a href="#/references" role="doc-biblioref" onclick="">49</a>]</span>.</li>
+</ul></li>
+<li><strong>Weight</strong>
+<ul>
+<li>Obese: Individuals with a Body Mass Index (BMI) of 30 or higher.</li>
+<li>Overweight/obese: Individuals with a BMI of 25 or higher.</li>
+<li>Risky waist circumference: Individuals with waist circumference measurements of ≥94cm (men) and ≥80cm (women), focusing on adults aged 18 years and older <span class="citation" data-cites="RN113">[<a href="#/references" role="doc-biblioref" onclick="">4</a>]</span>.</li>
+</ul></li>
+<li><strong>Physical Activity</strong>
+<ul>
+<li>Inadequate activity (leisure): Based on self-reported leisure physical activity, individuals who do not meet the 2014 Department of Health Physical Activity guidelines <span class="citation" data-cites="RN517">[<a href="#/references" role="doc-biblioref" onclick="">50</a>]</span>, which include a mix of moderate and vigorous-intensity physical activities, plus muscle-strengthening activities.</li>
+<li>Inadequate activity (all): Similar to inadequate activity (leisure) but includes both workplace and leisure self-reported physical activities.</li>
+</ul></li>
+</ul>
+<!-- ----------------------------------------------------------------- -->
+</section></section>
+<section>
+<section id="chapter-5paper-3-1" class="title-slide slide level1 center">
+<h1>Chapter 5/Paper 3</h1>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="efficient-lcar" class="slide level2 scrollable smaller">
+<h2>Efficient LCAR</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="sc">/</span><span class="er">**</span></span>
+<span id="cb1-2"><a href=""></a><span class="er">*</span> Log probability density of the leroux conditional <span class="fu">autoregressive</span> (LCAR) model</span>
+<span id="cb1-3"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param x vector of random effects</span>
+<span id="cb1-4"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param rho spatial dependence parameter</span>
+<span id="cb1-5"><a href=""></a><span class="sc">*</span>           MUST be strictly smaller than <span class="dv">1</span>, use<span class="sc">:</span></span>
+<span id="cb1-6"><a href=""></a><span class="er">*</span>           <span class="st">`</span><span class="at">real&lt;lower=0,upper=0.99&gt; rho;</span><span class="st">`</span></span>
+<span id="cb1-7"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param sigma standard deviation <span class="sc">-</span> often set to <span class="dv">1</span></span>
+<span id="cb1-8"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param C_w Sparse representation of C</span>
+<span id="cb1-9"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param C_v Column indices <span class="cf">for</span> values <span class="cf">in</span> C</span>
+<span id="cb1-10"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param C_u Row starting indices <span class="cf">for</span> values <span class="cf">in</span> C</span>
+<span id="cb1-11"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param offD_id_C_w indices <span class="cf">for</span> off diagonal terms</span>
+<span id="cb1-12"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param D_id_C_w indices <span class="cf">for</span> diagonal terms <span class="sc">-</span> length M</span>
+<span id="cb1-13"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param C_eigenvalues eigenvalues <span class="cf">for</span> C</span>
+<span id="cb1-14"><a href=""></a><span class="sc">*</span> <span class="er">@</span>param N number of areas</span>
+<span id="cb1-15"><a href=""></a><span class="sc">**</span></span>
+<span id="cb1-16"><a href=""></a><span class="er">@</span>return Log probability density</span>
+<span id="cb1-17"><a href=""></a><span class="sc">**</span></span>
+<span id="cb1-18"><a href=""></a>To use<span class="sc">:</span> <span class="fu">LCAR_lpdf</span>( x <span class="sc">|</span> rho, sigma, C_w, C_v, C_u, offD_id_C_w, D_id_C_w, C_eigenvalues, N );</span>
+<span id="cb1-19"><a href=""></a><span class="sc">*</span><span class="er">/</span></span>
+<span id="cb1-20"><a href=""></a>real <span class="fu">LCAR_lpdf</span>(</span>
+<span id="cb1-21"><a href=""></a>    vector x,               </span>
+<span id="cb1-22"><a href=""></a>    real rho,                   </span>
+<span id="cb1-23"><a href=""></a>    real sigma,              </span>
+<span id="cb1-24"><a href=""></a>    vector C_w , </span>
+<span id="cb1-25"><a href=""></a>    int [] C_v , </span>
+<span id="cb1-26"><a href=""></a>    int [] C_u , </span>
+<span id="cb1-27"><a href=""></a>    int [] offD_id_C_w ,        </span>
+<span id="cb1-28"><a href=""></a>    int [] D_id_C_w ,       </span>
+<span id="cb1-29"><a href=""></a>    vector C_eigenvalues,       </span>
+<span id="cb1-30"><a href=""></a>    int N                   </span>
+<span id="cb1-31"><a href=""></a>    ) {                 </span>
+<span id="cb1-32"><a href=""></a>        vector[N] ldet_C;</span>
+<span id="cb1-33"><a href=""></a>        vector [ <span class="fu">num_elements</span>(C_w) ] ImrhoC;</span>
+<span id="cb1-34"><a href=""></a>        vector[N] A_S;</span>
+<span id="cb1-35"><a href=""></a>        <span class="sc">/</span><span class="er">/</span> Multiple off<span class="sc">-</span>diagonal elements by rho</span>
+<span id="cb1-36"><a href=""></a>        ImrhoC [ offD_id_C_w ] <span class="ot">=</span> <span class="sc">-</span> rho <span class="sc">*</span> C_w[ offD_id_C_w ];</span>
+<span id="cb1-37"><a href=""></a>        <span class="sc">/</span><span class="er">/</span> Calculate diagonal elements of ImrhoC</span>
+<span id="cb1-38"><a href=""></a>        ImrhoC [ D_id_C_w ] <span class="ot">=</span> <span class="dv">1</span> <span class="sc">-</span> rho <span class="sc">*</span> C_w[ D_id_C_w ];</span>
+<span id="cb1-39"><a href=""></a>        A_S <span class="ot">=</span> <span class="fu">csr_matrix_times_vector</span>( N, N, ImrhoC, C_v, C_u, x );</span>
+<span id="cb1-40"><a href=""></a>        ldet_C <span class="ot">=</span> <span class="fu">log1m</span>( rho <span class="sc">*</span> C_eigenvalues );</span>
+<span id="cb1-41"><a href=""></a>        return <span class="sc">-</span><span class="fl">0.5</span> <span class="sc">*</span> ( </span>
+<span id="cb1-42"><a href=""></a>        N<span class="sc">*</span><span class="fu">log</span>( <span class="dv">2</span> <span class="sc">*</span> <span class="fu">pi</span>() ) </span>
+<span id="cb1-43"><a href=""></a>        <span class="sc">-</span> ( N <span class="sc">*</span> <span class="fu">log</span>(<span class="dv">1</span><span class="sc">/</span><span class="fu">square</span>(sigma)) <span class="sc">+</span> <span class="fu">sum</span>( ldet_C ) ) </span>
+<span id="cb1-44"><a href=""></a>        <span class="sc">+</span> <span class="dv">1</span><span class="sc">/</span><span class="fu">square</span>(sigma) <span class="sc">*</span> <span class="fu">dot_product</span>(x, A_S) </span>
+<span id="cb1-45"><a href=""></a>        );</span>
+<span id="cb1-46"><a href=""></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<!-- ----------------------------------------------------------------- -->
+</section></section>
 <section>
 <section id="chapter-6paper-4-1" class="title-slide slide level1 center">
 <h1>Chapter 6/Paper 4</h1>
@@ -2586,19 +2796,17 @@ We made <span class="blB">it</span>. 🎉 Take a breath.
 <section id="standard-age-year-time-sayt-model" class="slide level2 scrollable smaller">
 <h2>Standard age-year-time (SAYT) model</h2>
 <p>Let:</p>
-<div>
 <ul>
-<li class="fragment"><span class="math inline">\(y_{ita}\)</span> be the raw mortality counts in age group <span class="math inline">\(a = 1, \dots, A\)</span>, area <span class="math inline">\(i = 1, \dots, M\)</span> and time <span class="math inline">\(t = 1, \dots, T\)</span></li>
-<li class="fragment"><span class="math inline">\(\xi_{it}\)</span> be the random effect for the <span class="math inline">\(i\)</span>th area and <span class="math inline">\(t\)</span>th year
+<li><span class="math inline">\(y_{ita}\)</span> be the raw mortality counts in age group <span class="math inline">\(a = 1, \dots, A\)</span>, area <span class="math inline">\(i = 1, \dots, M\)</span> and time <span class="math inline">\(t = 1, \dots, T\)</span></li>
+<li><span class="math inline">\(\xi_{it}\)</span> be the random effect for the <span class="math inline">\(i\)</span>th area and <span class="math inline">\(t\)</span>th year
 <ul>
-<li class="fragment"><span class="math inline">\(\theta_i\)</span>, the spatial random effect, is modeled using a BYM2 spatial prior <span class="citation" data-cites="riebler2016bym2">[<a href="#/references" role="doc-biblioref" onclick="">48</a>]</span>;</li>
-<li class="fragment"><span class="math inline">\(\gamma_t\)</span>, the temporal random effect, is modeled using an intrinsic conditional autoregressive prior <span class="citation" data-cites="RN365">[<a href="#/references" role="doc-biblioref" onclick="">49</a>]</span>; and</li>
-<li class="fragment"><span class="math inline">\(\delta_{it}\)</span>, the space-time random effect, is modeled using a standard normal distribution (Type I interaction) which assumes independent variation</li>
+<li><span class="math inline">\(\theta_i\)</span>, the spatial random effect, is modeled using a BYM2 spatial prior <span class="citation" data-cites="riebler2016bym2">[<a href="#/references" role="doc-biblioref" onclick="">51</a>]</span>;</li>
+<li><span class="math inline">\(\gamma_t\)</span>, the temporal random effect, is modeled using an intrinsic conditional autoregressive prior <span class="citation" data-cites="RN365">[<a href="#/references" role="doc-biblioref" onclick="">52</a>]</span>; and</li>
+<li><span class="math inline">\(\delta_{it}\)</span>, the space-time random effect, is modeled using a standard normal distribution (Type I interaction) which assumes independent variation</li>
 </ul></li>
-<li class="fragment"><span class="math inline">\(\alpha\)</span> be an intercept</li>
-<li class="fragment"><span class="math inline">\(N_{ita}\)</span> be the population.</li>
+<li><span class="math inline">\(\alpha\)</span> be an intercept</li>
+<li><span class="math inline">\(N_{ita}\)</span> be the population.</li>
 </ul>
-</div>
 <p>Model <span class="math display">\[
 \begin{align}
 y_{ita} &amp; \sim \text{Poisson}\left( \mu_{ita} \right)

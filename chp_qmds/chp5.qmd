@@ -13,8 +13,11 @@ Creating area level indices of behaviours impacting cancer in Australia with a B
 <div class="small-text">**Status**: Submitted</div>
 
 <!-- ----------------------------------------------------------------- -->
-## Motivation {.smaller}
+## Background {.smaller}
 
+::::: {.columns}
+
+:::: {.column width="58%"}
 ::: {.incremental}
 - Resolution and accessibility of health data for small areas have <span class="blB">improved considerably</span>
 - <span class="blR">BUT</span>... 
@@ -23,6 +26,14 @@ Creating area level indices of behaviours impacting cancer in Australia with a B
 	- Draw meaningful conclusions
 	- Formulate effective policy decisions 
 :::
+::::
+
+:::: {.column width="38%"}
+![](imgs/background.webp){.center .soft-edges}
+
+::::
+
+:::::
 
 <!-- ----------------------------------------------------------------- -->
 ##
@@ -37,7 +48,7 @@ Creating area level indices of behaviours impacting cancer in Australia with a B
 ::: {.incremental}
 - Measures a **multifaceted concept** that cannot be captured by a single feature. 
 - Often can help:
-	- Determine <span class="blB">policy priorities</span>
+	- Determine priorities for future <span class="blB">policies</span>
 	- Benchmark or <span class="blB">monitor the performance</span> of current policies
 :::
 
@@ -91,13 +102,35 @@ Cancer (<span class="blB">AIBIC</span>) product
 :::
 
 <!-- ----------------------------------------------------------------- -->
----
+## {.center}
 
 ::: {.quote-box}
 **Contribution** 🎉
 
 - A Bayesian <span class="blB">model-based method</span> for **index creation** that can accommodate <span class="blB">spatial autocorrelation</span> and known heteroscedastic <span class="blB">measurement error</span>.
 - The <span class="blB">first</span> Australia-wide **area level** <span class="blB">cancer risk factor indices</span>.
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## {.center background-color="#fff0a2"}
+
+::: {.center style="font-size: 0.7em"}
+*Thesis aim*
+:::
+
+::: {.center style="font-size: 1.5em"}
+Develop and apply Bayesian small area methods to health data in Australia
+:::
+
+<br>
+<br>
+
+::: {.center style="font-size: 0.7em"}
+Sparsity issues
+
+Improve spatial resolution
+
+👉 **Support informed decision making**
 :::
 
 <!-- ----------------------------------------------------------------- -->
@@ -166,7 +199,11 @@ Special cases:
 ![Posterior medians (and 95% highest posterior density intervals) of the factor loadings.](imgs/chp5/factor_loadings.png)
 
 <!-- ----------------------------------------------------------------- -->
-## The four indices
+## The four indices {.smaller}
+
+::::: {.columns}
+
+:::: {.column width="58%"}
 
 Factor 1: $z_{n1}$
 
@@ -175,6 +212,14 @@ Factor 2: $z_{n2}$
 Health Behavior Index (HBI): $w_1 z_{n1} + w_2 z_{n2}$
 
 Population Adjusted Health Behaviors Index (PAHBI): $P_n \lb{ w_1 z_{n1} + w_2 z_{n2} }$
+::::
+
+:::: {.column width="38%"}
+![](imgs/chp5/index_logo.png){.center .soft-edges}
+
+::::
+
+:::::
 
 <!-- ----------------------------------------------------------------- -->
 ## Interpretation 
@@ -188,9 +233,57 @@ Uncertainty:
 - Probabilistic statements about the indices (e.g., <span class="blB">exceedance probabilities</span>)
 
 <!-- ----------------------------------------------------------------- -->
+## Laurieton - Bonny Hills (NSW) {.smaller}
+
+::::: {.columns}
+
+:::: {.column width="50%" }
+
+::: {.fragment .column-border}
+
+<span class="blR">Modelled percentages</span> - <div class="small-text">10 numbers!</div>
+
+Inadequate physical activity: 84% (2.8%)   
+
+Risky alcohol consumption: 39% (4.1%)
+
+Inadequate diet: 50% (3.9%)
+
+Overweight/obese: 78% (2.9%) 
+
+Current smoking: 22% (3.7%)
+::: 
+
+::::
+
+:::: {.column width="50%"}
+
+::: {.fragment}
+<span class="blB">Health Behaviors Index (HBI)</span> - <div class="small-text">2 numbers!</div>
+
+Percentile: 98
+
+Probability that percentile above 80th: 0.99
+:::
+
+::: {.fragment}
+<span class="blB">Population Adjusted HBI</span>
+
+Percentile: 100
+
+Probability that percentile above 80th: 1
+:::
+
+::::
+
+:::::
+
+![](imgs/chp5/bonnyhills.webp){.r-stretch .soft-edges style="display:block; margin:auto;"}
+
+<!-- ----------------------------------------------------------------- 
 ## {.r-stretch}
 
-![](imgs/chp5/map_perc_capital_Perth.png)
+![](imgs/chp5/map_perc_capital_Perth.png) -->
 
 <!-- ----------------------------------------------------------------- -->
 ## {.r-stretch}
@@ -203,18 +296,19 @@ Uncertainty:
 ![](imgs/chp5/map_perc4.png)
 
 <!-- ----------------------------------------------------------------- -->
-## {.center .smaller}
+## {.center .smaller background-color="#ffffff"}
 
 :::: {.finding-box}
 **Key findings** 📢
 
 ::: {.incremental}
-- <span class="blR">Incomplete or inefficient</span> policy decisions <div class="small-text">(if using a single shared factor or simplified spatial structure)</div>
-	- <span class="blB">Motivates</span> use of GSCM
+<!-- - <span class="blR">Incomplete or inefficient</span> policy decisions <div class="small-text">(if using a single shared factor or simplified spatial structure)</div>
+	- <span class="blB">Motivates</span> use of GSCM -->
 - The AIBIC reveals a <span class="blR">pronounced spatial autocorrelation</span> in unhealthy behaviors
-	- Patterns reflect **remoteness** and **socioeconomic patterns** 
-- Comparison empirical methods and the GSCM 
-	- <span class="blR">Very different</span> policy decisions
+	- Patterns reflect **remoteness** and **socioeconomic patterns**
+	- <span class="blB">Easier to interpret</span> than raw data
+<!-- - Comparison empirical methods and the GSCM 
+	- <span class="blR">Very different</span> policy decisions -->
 :::
 
 ::::

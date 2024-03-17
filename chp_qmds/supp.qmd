@@ -1,4 +1,82 @@
 <!-- ----------------------------------------------------------------- -->
+# Chapter 4/Paper 2
+
+<!-- ----------------------------------------------------------------- -->
+## Cancer Risk Factors {.smaller .scrollable}
+
+- **Smoking**
+  - Current smoking: Individuals who identify as current smokers, whether they smoke daily, weekly, or less frequently, and have smoked at least 100 cigarettes in their lifetime.
+- **Alcohol**
+  - Risky alcohol consumption: Individuals exceeding the 2020 National Health and Medical Research Council (NHMRC) guidelines [@RN516] of up to 10 standard drinks per week and no more than 4 standard drinks on any day, assessed via self-reported alcohol consumption over the last three drinking days from the preceding week.
+- **Diet**
+  - Inadequate diet: Based on self-reported dietary intake, individuals failing to meet both the fruit (2 serves/day) and vegetable (5 serves/day) requirements as per the 2013 NHMRC Australian Dietary Guidelines [@RN520].
+- **Weight**
+  - Obese: Individuals with a Body Mass Index (BMI) of 30 or higher.
+  - Overweight/obese: Individuals with a BMI of 25 or higher.
+  - Risky waist circumference: Individuals with waist circumference measurements of ≥94cm (men) and ≥80cm (women), focusing on adults aged 18 years and older [@RN113].
+- **Physical Activity**
+  - Inadequate activity (leisure): Based on self-reported leisure physical activity, individuals who do not meet the 2014 Department of Health Physical Activity guidelines [@RN517], which include a mix of moderate and vigorous-intensity physical activities, plus muscle-strengthening activities.
+  - Inadequate activity (all): Similar to inadequate activity (leisure) but includes both workplace and leisure self-reported physical activities. 
+
+<!-- ----------------------------------------------------------------- -->
+# Chapter 5/Paper 3
+ 
+<!-- ----------------------------------------------------------------- -->
+## Efficient LCAR {.scrollable .smaller}
+
+```{r}
+#| eval: false
+#| echo: true
+
+/**
+* Log probability density of the leroux conditional autoregressive (LCAR) model
+* @param x vector of random effects
+* @param rho spatial dependence parameter
+*           MUST be strictly smaller than 1, use:
+*           `real<lower=0,upper=0.99> rho;`
+* @param sigma standard deviation - often set to 1
+* @param C_w Sparse representation of C
+* @param C_v Column indices for values in C
+* @param C_u Row starting indices for values in C
+* @param offD_id_C_w indices for off diagonal terms
+* @param D_id_C_w indices for diagonal terms - length M
+* @param C_eigenvalues eigenvalues for C
+* @param N number of areas
+**
+@return Log probability density
+**
+To use: LCAR_lpdf( x | rho, sigma, C_w, C_v, C_u, offD_id_C_w, D_id_C_w, C_eigenvalues, N );
+*/
+real LCAR_lpdf(
+    vector x,               
+    real rho,                   
+    real sigma,              
+    vector C_w , 
+    int [] C_v , 
+    int [] C_u , 
+    int [] offD_id_C_w ,        
+    int [] D_id_C_w ,       
+    vector C_eigenvalues,       
+    int N                   
+    ) {                 
+        vector[N] ldet_C;
+        vector [ num_elements(C_w) ] ImrhoC;
+        vector[N] A_S;
+        // Multiple off-diagonal elements by rho
+        ImrhoC [ offD_id_C_w ] = - rho * C_w[ offD_id_C_w ];
+        // Calculate diagonal elements of ImrhoC
+        ImrhoC [ D_id_C_w ] = 1 - rho * C_w[ D_id_C_w ];
+        A_S = csr_matrix_times_vector( N, N, ImrhoC, C_v, C_u, x );
+        ldet_C = log1m( rho * C_eigenvalues );
+        return -0.5 * ( 
+        N*log( 2 * pi() ) 
+        - ( N * log(1/square(sigma)) + sum( ldet_C ) ) 
+        + 1/square(sigma) * dot_product(x, A_S) 
+        );
+}
+```
+
+<!-- ----------------------------------------------------------------- -->
 # Chapter 6/Paper 4
 
 <!-- ----------------------------------------------------------------- -->
@@ -9,7 +87,7 @@
 
 Let:
 
-:::{.incremental}
+
 - $y_{ita}$ be the raw mortality counts in age group $a = 1, \dots, A$, area $i = 1, \dots, M$ and time $t = 1, \dots, T$
 - $\xi_{it}$ be the random effect for the $i$th area and $t$th year
   - $\theta_i$, the spatial random effect, is modeled using a BYM2 spatial prior [@riebler2016bym2];
@@ -17,7 +95,7 @@ Let:
   - $\delta_{it}$, the space-time random effect, is modeled using a standard normal distribution (Type I interaction) which assumes independent variation 
 - $\alpha$ be an intercept
 - $N_{ita}$ be the population.
-:::
+
 
 Model
 $$
