@@ -74,8 +74,8 @@ Too complex (i.e., not practical)
 :::
 
 ::: {.incremental}
-- Use SAE models for survey microdata
-- Consider models applicable to the full scope of data in full BOD studies
+- Use small area estimation models
+- Consider full scope of data in full BOD studies
 - **Australia**
 	- <span class="blR">Use</span> fully Bayesian models
 	- <span class="blR">No</span> small area estimates
