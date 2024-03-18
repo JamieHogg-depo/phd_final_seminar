@@ -49,12 +49,12 @@
 ::: {.incremental}
 - Interest in adopting Bayesian modelling <span class="small-text">(**Chapter 6**)</span>
 	- The Burden of Disease and Mortality specialist group (<span class="blB">Australian Institute of Health and Welfare</span>)
-- Efficient \texttt{stan} [@RN452] implementation of the <span class="blB">Leroux prior</span> [@RN366] <span class="small-text">(**Chapter 5**)</span>
+- Efficient \texttt{stan} [@RN452] implementation of the <span class="blB">Leroux prior</span> [@RN366] in $\texttt{stan}$ <span class="small-text">(**Chapter 5**)</span>
 - Novel Bayesian models <span class="blB">push boundary</span> of previously achievable $\to$ *spatial and temporal resolution and reach* in Australia <span class="small-text">(**Chapters 3** and **6**)</span>
 :::
 ::::
 
-<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- 
 ## Limitations/reflection {.smaller}
 
 ::::: {.columns}
@@ -85,25 +85,48 @@ Reliability
 - Chapter 6 compares estimates from Bayesian models with those from previous approaches: solid agreement. 
 - Not always possible
 - survey data, for example, the ultimate, but impractical, validation dataset would be health data for the entire population.  
-:::
+::: -->
 
 <!-- ----------------------------------------------------------------- -->
-## Future directions {.smaller}
+## Reflections/future directions {.smaller}
 
 ::::: {.columns}
 
 :::: {.column width="58%"}
 ::: {.incremental}
- - **Theory**/model expansion
- - **Validation**
-	- Small area estimation <span class="small-text">(**Chapter 3** and **4**)</span>
-	- Burden of disease methods and models <span class="small-text">(**Chapter 6**)</span>
-		- Accommodate unique types of measurement error
- - **Temporal dimension** for the TSLN approach <span class="small-text">(**Chapters 3** and **4**)</span> and the GSCM <span class="small-text">(**Chapter 5**)</span>
- - **Indices** <span class="small-text">(**Chapter 5**)</span>
+- **Theory**/model expansion
+	- Multivariate variations
+- **Validate** small area estimation <span class="small-text">(**Chapter 3** and **4**)</span>
+	1. Expansion of NHS
+	2. Linkage of state surveys
+	3. $+$ Health behaviours $\to$ the census
+- **Validate** BOD methods and models <span class="small-text">(**Chapter 6**)</span>
+	- Disease states assumed *constant* and *discrete*
+	- Many types of measurement error
+:::
+::::
+
+:::: {.column width="38%"}
+![](imgs/future_directions.webp){width=100% .soft-edges}
+
+::::
+
+:::::
+
+<!-- ----------------------------------------------------------------- -->
+## Reflections/future directions {.smaller}
+
+::::: {.columns}
+
+:::: {.column width="58%"}
+::: {.incremental}
+- **Temporal dimension** for the:
+	- TSLN approach <span class="small-text">(**Chapters 3** and **4**)</span>
+	- GSCM <span class="small-text">(**Chapter 5**)</span>
+- **Indices** <span class="small-text">(**Chapter 5**)</span>
 	- Temporal consistency
 	- Robustness
-	- Aggregation
+	- Aggregation <span class="small-text">(Modifiable areal unit problem (MAUP) [@RN490])</span>
 :::
 ::::
 
@@ -115,25 +138,6 @@ Reliability
 :::::
 
 ::: {.notes}
-Theory/model
-
- - more rigorous theoretical foundation for two-stage approaches
- - include multivariate variations or including non-linear components such as splines and Gaussian processes. 
- 
-Validation for SAE
-
- - although new methodologies improve the reliability of small area estimates best approach - acquiring more survey data.
- - Three ways
-	- expand the nationwide surveys conducted by the ABS. 
-	- leveraging the existing health information collected annually and independently by each state and territory of Australia.
-	- include questions about health behaviours in the census
-	
-Validation for burden of disease methods and models
-
- - the prevalence of disease states is simplistically assumed to be constant across time, areas, age, and sex
- - the definition of disease states in discrete terms fails to capture the nuanced dynamics of disease progression or regression.
- - accommodate the unique types of measurement error.
- 
 Indices
 
  - particularly if the modelled estimates or indices are intended to track the impact of health interventions. 
@@ -154,8 +158,8 @@ Indices
  - Co-chair of the <span class="blB">Bayesian Research and Applications Group (BRAG)</span>
  - Organised and hosted virtual <span class="blB">*StanConnect* conference</span>
  - Worked with BioGro as part of <span class="blB">Good Data Institute</span> hackathon
-	- Team awarded **first place**
- - Team award **second place** in <span class="blB">2023 United Nations Datathon</span>
+	- Team awarded **1st place**
+ - Team award **2nd place** in <span class="blB">2023 United Nations Datathon</span>
 :::
  
 <!-- ----------------------------------------------------------------- -->
@@ -163,7 +167,7 @@ Indices
 
 ::::: {.columns}
 
-:::: {.column width="58%"}
+:::: {.column width="68%"}
 - **Supervisors**: Kerrie Mengersen, Susanna Cramb, Peter Baade and Jessica Cameron
 - Australian Cancer Atlas 2.0 **project team**
 - **Government collaborators**: DOHWA and AIHW
@@ -173,10 +177,9 @@ Indices
 	- My family (particularly my <span class="blB">Mum!</span>)
 	- My partner
 	- Friends
-	- ChatGPT
 ::::
 
-:::: {.column width="38%"}
+:::: {.column width="28%"}
 ![](imgs/ack.webp){width=100% .soft-edges}
 
 ::::
@@ -186,4 +189,4 @@ Indices
 <!-- ----------------------------------------------------------------- -->
 # Thank you {background-color="#fff0a2" style="text-align: center;"}
 
-and now for the encore/sleep
+and good day 🎤📉

@@ -28,13 +28,12 @@ A two-stage Bayesian small area estimation approach for proportions
 ::: {.incremental}
 - Increasing demand $\to$ *robust* small area estimates from <span class="blB">smaller</span> surveys
 - **Sparsity** is key <span class="blR">challenge</span> when working with **proportions**
-  - Model-based SAE methods pushed to <span class="blR">extent</span>
-  -  Individual level or area level models <span class="blR">cannot address</span>
+- Individual level and area level models pushed to <span class="blR">extent</span> and <span class="blR">cannot</span> address challenges
 :::
 ::::
 
 :::: {.column width="38%"}
-![](imgs/background.webp){.center}
+![](imgs/background.webp){.center .soft-edges}
 
 ::::
 

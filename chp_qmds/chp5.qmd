@@ -305,8 +305,8 @@ Probability that percentile above 80th: 1
 <!-- - <span class="blR">Incomplete or inefficient</span> policy decisions <div class="small-text">(if using a single shared factor or simplified spatial structure)</div>
 	- <span class="blB">Motivates</span> use of GSCM -->
 - The AIBIC reveals a <span class="blR">pronounced spatial autocorrelation</span> in unhealthy behaviors
-	- Patterns reflect **remoteness** and **socioeconomic patterns**
-	- <span class="blB">Easier to interpret</span> than raw data
+	- Patterns reflect **remoteness** and **socioeconomic** categories
+	- <span class="blB">Easier to interpret</span> than modelled data
 <!-- - Comparison empirical methods and the GSCM 
 	- <span class="blR">Very different</span> policy decisions -->
 :::
