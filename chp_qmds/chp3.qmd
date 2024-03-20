@@ -87,7 +87,7 @@ Develop and apply Bayesian small area methods to health data in Australia
 ::: {.center style="font-size: 0.7em"}
 👉 **Sparsity issues**
 
-👉 **Improve spatial resolution**
+Improve spatial resolution
 
 Support informed decision making
 :::

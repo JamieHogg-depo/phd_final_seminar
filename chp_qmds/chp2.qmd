@@ -45,8 +45,7 @@ Many estimates representing all communities
 :::{.incremental}
 - Small area estimates $\to$ more <span class="blB">effective health policy</span>
 - **Small area analysis**
-  - Analyses of individual level data that have been aggregated into meaningful groups
-  - Often involves <span class="blB">modelling</span>.
+  - <span class="blB">Reporting</span>/analyses of individual level data by aggregating into meaningful <span class="blB">groups</span>
 :::
 
 ::: {.notes}
@@ -55,67 +54,22 @@ Many estimates representing all communities
 :::
 
 <!-- ----------------------------------------------------------------- -->
-## {.smaller}
-
-::: {.fragment .fade-in-then-semi-out}
-<span class="blB">Small area modelling</span>
-:::
-
-::: {.fragment .fade-in-then-semi-out}
-- **Disease mapping** [@RN8]
-	- Registry or administrative data
-	- Generates smoothed maps of risk for diseases
-:::
-
-::: {.fragment .fade-in-then-semi-out}
-- **Small area estimation** (SAE) [@RN28]
-	- Survey data
-	- Produce reliable estimates when sample sizes are small
-:::
-
-::: {.fragment .fade-in}
-- <span class="blB">Bayesian inference</span> is **ubiquitous** with both
-
-<div style="text-align: center;">
-
-![](imgs/bayes.jfif)
-
-</div>
-
-:::
-
-<!-- ----------------------------------------------------------------- -->
-## Small area modelling in Australia {.smaller}
-
-::: {.fragment}
-Increasingly <span class="blB">relevant</span>
-:::
-
-::: {.fragment}
-Health outcomes exhibit <span class="blR">variations</span> based on geography <span class="small-text">(e.g., remoteness and socioeconomic status [@RN26; @RN113; @RN204; @RN338; @RN121])</span>
-:::
-
-::: {.fragment}
-![](imgs/aihw_remoteness.png){width="90%" .soft-edges}
-:::
-
-<!-- ----------------------------------------------------------------- -->
 ## {auto-animate=true}
 
 ::: {style="margin-top: 100px; font-size: 1em;"}
-Modelling is tricky in Australia!
+Tricky in Australia!
 :::
 
 <!-- ----------------------------------------------------------------- -->
 ## {auto-animate=true}
 
 ::: {style="margin-top: 200px; font-size: 1.6em; color: red;"}
-Modelling is tricky in Australia! 
+Tricky in Australia! 
 :::
 
 :::{.incremental}
 - Highly **decentralised population** distribution
-- **Sparsity**: very small samples sizes or disease counts
+- **Sparsity** $\to$ Very small samples sizes or disease counts
 :::
 
 <!-- ----------------------------------------------------------------- -->
@@ -185,6 +139,51 @@ Refers to the number of the small areas for which estimates are available
 ::::
 
 <!-- ----------------------------------------------------------------- -->
+## Small area modelling {.smaller}
+
+::: {.fragment .fade-in-then-semi-out}
+- **Disease mapping** [@RN8]
+	- Registry or administrative data
+	- Generates smoothed maps of risk for diseases
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+- **Small area estimation** (SAE) [@RN28]
+	- Survey data
+	- Produce reliable estimates when sample sizes are small
+:::
+
+::: {.fragment .fade-in}
+- <span class="blB">Bayesian inference</span> is **ubiquitous** with both
+
+<div style="text-align: center;">
+
+![](imgs/bayes.jfif)
+
+</div>
+
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## Small area modelling in Australia {.smaller}
+
+::: {.fragment}
+Increasingly <span class="blB">relevant</span>
+:::
+
+::: {.fragment}
+Health outcomes exhibit <span class="blR">variations</span> based on geography <span class="small-text">(e.g., remoteness and socioeconomic status [@RN26; @RN113; @RN204; @RN338; @RN121])</span>
+:::
+
+::: {.fragment style="font-size: 0.8em;"}
+*Remember*: Small area estimates support informed <span class="blB">decision making</span>
+:::
+
+::: {.fragment}
+![](imgs/aihw_remoteness.png){width="90%" .soft-edges}
+:::
+
+<!-- ----------------------------------------------------------------- -->
 <!-- ## Despite these challenges... {.smaller}
 
 ... large number of interactive platforms (e.g., Atlases) that display health information for small areas
@@ -202,14 +201,14 @@ Refers to the number of the small areas for which estimates are available
 *Thesis aim*
 :::
 
-::: {.center style="font-size: 1.5em"}
+::: {.fragment .center style="font-size: 1.5em"}
 <span class="blB">Develop</span> and <span class="blB">apply</span> **Bayesian small area methods** to health data in Australia
 :::
 
 <br>
 <br>
 
-::: {.center style="font-size: 0.7em"}
+::: {.fragment .center style="font-size: 0.7em;"}
 🏹 <span class="blR">Sparsity</span> issues
 
 📈 Improve <span class="blB">spatial resolution</span> 
@@ -322,7 +321,7 @@ Burden of disease (Pillar II)
 ## {.center}
 
 ::: {.rp-box}
-⛔**Research Problem**⛔
+**Research Problem**
 <br>
 <br>
 The need to improve the spatial resolution and reach of small area level cancer risk factor estimates in Australia to enable more targeted cancer prevention strategies. 

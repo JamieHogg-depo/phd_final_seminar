@@ -52,20 +52,20 @@ Mapping the prevalence of cancer risk factors at the small area level in Austral
 ::::
 
 <!-- ----------------------------------------------------------------- -->
-##
+## {.center}
 
 <!-- presentation slides is 1050 x 700 -->
 
 ::::: {.columns}
 
-:::: {.column width="48%"}
+:::: {.column width="50%"}
 **Previously** (SHA)
 
 ![](imgs/chp4/phamu_obesity.png)
 
 ::::
 
-:::: {.column width="48%"}
+:::: {.column width="50%"}
 **Now** (this work!)
 
 ![](imgs/chp4/mu_obesity.png)
@@ -121,8 +121,8 @@ Sparsity issues
 ::: {.incremental}
 - Conducted by the Australian Bureau of Statistics (ABS)
 - Sample size <span class="blB">17,248</span> persons 15 years and older
-- <span class="blR">1,694 (76%)</span> of SA2s had survey data
 - Median SA2 sample size: <span class="blR">8</span>
+- <span class="blR">1,694 (76%)</span> of SA2s had survey data
 :::
 ::::
 

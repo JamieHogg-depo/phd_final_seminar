@@ -14,8 +14,6 @@ Improving the spatial and temporal resolution of burden of disease measures with
 <!-- ----------------------------------------------------------------- -->
 ## Background {.smaller}
 
-### Burden of disease (BOD)
-
 ::::: {.columns}
 
 :::: {.column width="68%"}
@@ -37,48 +35,36 @@ Improving the spatial and temporal resolution of burden of disease measures with
 :::::
 
 <!-- ----------------------------------------------------------------- -->
-## {.smaller}
-
-### Full BOD studies
+## Full BOD studies
 
 ::: {.incremental}
 - Aim to calculate DALYs for <span class="blB">all</span> causes (typically over 200)
+	- **Wide range** of data sources (e.g., registry, administrative, survey or epidemiological)
 - Prioritise healthcare resources by <span class="blB">ranking diseases</span>
 ![](imgs/chp6/gbd.png){width=100% .soft-edges}
-:::
-
-### Bayesian modelling
-
-::: {.incremental}
-- <span class="blB">Countless</span> studies use Bayesian models in **disease mapping**
-- <span class="blR">Few</span>       studies use Bayesian models in **BOD studies** [@Steel2018; @GBD2015; @CODEm; @RN652; @RN653]
-:::
-
-::: {.notes}
-not fully Bayesian, fail to acknowledge relevant applied literature or enforce strict data requirements
-Too complex (i.e., not practical)
 :::
 
 <!-- ----------------------------------------------------------------- -->
 ## {auto-animate=true}
 
 ::: {style="margin-top: 100px;"}
-**No** BOD studies
+**Gaps**
 :::
 
 <!-- ----------------------------------------------------------------- -->
 ## {.smaller auto-animate=true}
 
 ::: {style="margin-top: 200px; font-size: 3em; color: red;"}
-**No** BOD studies 
+**Gaps**
 :::
 
 ::: {.incremental}
-- Use small area estimation models
-- Consider full scope of data in full BOD studies
-- **Australia**
-	- <span class="blR">Use</span> fully Bayesian models
-	- <span class="blR">No</span> small area estimates
+- <span class="blR">Few</span> studies use Bayesian models [@Steel2018; @GBD2015; @CODEm; @RN652; @RN653]
+	- <span class="blR">Not</span> applicable to full scope of data
+	- <span class="blR">No</span> use of small area estimation methods
+	- <span class="blR">Too complex</span> (i.e., not practical)
+- **Australian** full BOD studies
+	- <span class="blR">No use</span> of Bayesian models and <span class="blR">no</span> small area estimates
 :::
 
 <!-- ----------------------------------------------------------------- -->
@@ -87,7 +73,7 @@ Too complex (i.e., not practical)
 ::: {.quote-box}
 **Contribution** 🎉
 
-A principled and practical set of Bayesian spatiotemporal methods for modelling the wide range of mortality and prevalence data necessary for full BOD studies.
+A principled and practical set of Bayesian spatiotemporal methods for modelling the wide range of data in full BOD studies.
 :::
 
 <!-- ----------------------------------------------------------------- -->
@@ -137,14 +123,15 @@ Develop and apply Bayesian small area methods to health data in Australia
 :::: {.column width="68%"}
 
 ::: {.incremental}
-- Input data: 
-	- **Aggregated counts** by area, year, age, and sex
-- Output data: 
-	- **Smoothed counts** for each area, year, age, and sex
 - Model details:
 	- **Poisson model**
 	- Population as offset
 	- Spatial, temporal and space-time **random effects**
+- Input data: 
+	- **Aggregated counts** by area, year, age, and sex
+- Output data: 
+	- **Smoothed counts** for each area, year, age, and sex
+
 - Applicable to:
 	- **Mortality** or **prevalence** counts
 :::
@@ -169,14 +156,14 @@ Develop and apply Bayesian small area methods to health data in Australia
 :::: {.column width="68%"}
 
 ::: {.incremental}
-- Input data: 
-	- **Individual level data**
-- Output data: 
-	- **Probabilities** for all combinations of area, year, age, and sex
 - Model details:
 	- **Logistic model** with poststratification step [@Park2004]
 	- Likelihood is weighted using **pseudo-likelihood** [@Savitsky2016]
 	- Spatial and temporal **random effects**
+- Input data: 
+	- **Individual level data**
+- Output data: 
+	- **Probabilities** for all combinations of area, year, age, and sex
 - Applicable to:
 	- **Survey microdata**
 :::

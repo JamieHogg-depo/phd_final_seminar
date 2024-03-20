@@ -58,9 +58,9 @@ Creating area level indices of behaviours impacting cancer in Australia with a B
 ::: {.incremental}
 - Increasingly <span class="blB">popular</span> [@RN674; @RN671; @RN670; @RN687]
 - **Shared component models (SCM)**
-	- Linear combination of a shared factor (the INDEX) $+$ residual errors
-	- <span class="blR">No</span> measurement errors
+	- Identify *underlying factor* shared between features (e.g., **Index**)
 	- <span class="blR">Single</span> shared factor
+	- <span class="blR">No</span> heteroscedastic error
 :::
 
 
@@ -81,7 +81,7 @@ Generalised shared component model
 Accommodates:
 
 - **Multiple** shared factors
-- Heteroscedastic **measurement error**
+- Heteroscedastic **error**
 - Provides indices with **uncertainty measures**
 - Represents several generic Bayesian factor models as **special cases**
 
