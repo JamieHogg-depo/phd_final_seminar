@@ -5,12 +5,9 @@ A two-stage Bayesian small area estimation approach for proportions
 ![](imgs/pillars_p1.png){width=80%}
 
 <!-- ----------------------------------------------------------------- -->
-## Paper submitted to *International Statistical Review*
+## Accepted for publication in the *International Statistical Review*
 <br>
 **James Hogg**, Jessica Cameron, Susanna Cramb, Peter Baade, Kerrie Mengersen. A two-stage Bayesian small area estimation approach for proportions. 
-<br>
-<br>
-<div class="small-text">**Status**: <span class="blB">Third</span> round of revisions</div>
 
 <!-- ----------------------------------------------------------------- -->
 ## ⛔ Tangent Alert ⛔
