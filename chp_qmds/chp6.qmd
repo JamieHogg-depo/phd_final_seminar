@@ -10,6 +10,9 @@ Improving the spatial and temporal resolution of burden of disease measures with
 <br>
 <br>
 <div class="small-text">**Status**: <span class="blB">Second round</span> of revisions</div
+<br>
+<br>
+<div class="small-text">Partnership with the **Department of Health Western Australia** and the **Australian Institute of Health and Welfare**</span> of revisions</div
 
 <!-- ----------------------------------------------------------------- -->
 ## Background {.smaller}
@@ -40,6 +43,7 @@ Improving the spatial and temporal resolution of burden of disease measures with
 ::: {.incremental}
 - Aim to calculate DALYs for <span class="blB">all</span> causes (typically over 200)
 	- **Wide range** of data sources (e.g., registry, administrative, survey or epidemiological)
+	- Conducted by **government agencies** in Australia
 - Prioritise healthcare resources by <span class="blB">ranking diseases</span>
 ![](imgs/chp6/gbd.png){width=100% .soft-edges}
 :::
@@ -62,7 +66,7 @@ Improving the spatial and temporal resolution of burden of disease measures with
 - <span class="blR">Few</span> studies use Bayesian models [@Steel2018; @GBD2015; @CODEm; @RN652; @RN653]
 	- <span class="blR">Not</span> applicable to full scope of data
 	- <span class="blR">No</span> use of small area estimation methods
-	- <span class="blR">Too complex</span> (i.e., not practical)
+	- <span class="blR">Not practical</span> for many users (e.g., government)
 - **Australian** full BOD studies
 	- <span class="blR">No use</span> of Bayesian models and <span class="blR">no</span> small area estimates
 :::
@@ -73,7 +77,7 @@ Improving the spatial and temporal resolution of burden of disease measures with
 ::: {.quote-box}
 **Contribution** 🎉
 
-A principled and practical set of Bayesian spatiotemporal methods for modelling the wide range of data in full BOD studies.
+A principled and practical set of <span class="blB">Bayesian spatiotemporal methods</span> for modelling the wide range of data in **full BOD studies**.
 :::
 
 <!-- ----------------------------------------------------------------- -->
@@ -99,17 +103,21 @@ Develop and apply Bayesian small area methods to health data in Australia
 :::
 
 <!-- ----------------------------------------------------------------- -->
-## ⛔ Tangent Alert ⛔ {.smaller}
+## Models
+<!-- ⛔ Tangent Alert ⛔ {.smaller} -->
 
-- Full BOD studies $\to$ conducted by **government agencies** in Australia
-- Models are **intentionally** simple $\to$ <span class="blB">accessible</span> and <span class="blB">practical</span> 
-	- Ensure applicability of models to future full BOD studies
+::: {.fragment}
+- **Intentionally** simple $\to$ <span class="blB">accessible</span> and <span class="blB">practical</span> 
+:::
+
+::: {.fragment}
 - **Novelty**
 	- Not in the <span class="blR">development</span> of new Bayesian models
 	- <span class="blB">Application</span> of existing models to the field of BOD
+:::
 
 <!-- ----------------------------------------------------------------- -->
-## Methods {.smaller}
+## Models {.smaller}
 
 <span class="blB">Standard age-year-time (SAYT) model</span> 
 
@@ -140,7 +148,7 @@ Develop and apply Bayesian small area methods to health data in Australia
 :::::
 
 <!-- ----------------------------------------------------------------- -->
-## Methods {.smaller}
+## Models {.smaller}
 
 <span class="blB">Weighted multilevel regression and poststratification (MrP)</span>
 <br>
@@ -171,6 +179,10 @@ Develop and apply Bayesian small area methods to health data in Australia
 
 :::::
 
+::: {.notes}
+"Pseudo likelihood was used in our small area modelling in Chapter 3."
+:::
+
 <!-- ----------------------------------------------------------------- -->
 ## Case study {.smaller}
 
@@ -179,15 +191,15 @@ Develop and apply Bayesian small area methods to health data in Australia
 - Two conditions: <span class="blB">Asthma</span> and coronary heart disease (<span class="blB">CHD</span>)
 - Geographic: <span class="blB">Local Government Areas</span> (n = 137) in Western Australia
 - Time: <span class="blB">2015 to 2020</span> inclusive
-- Used <span class="blB">fully Bayesian methods</span> with $\texttt{nimble}$
+- Used <span class="blB">fully Bayesian methods</span> with the statistical software package, $\texttt{nimble}$
 :::
 
 ### Objective
 
 ::: {.incremental}
 1. Produce <span class="blB">modelled estimates</span> of:
-	i) Mortality and age-standardised YLLs (ASYLLs)
-	ii) Prevalence/proportions and ASYLDs
+	i) Mortality and age-standardised 'years of life lost’ (ASYLLs)
+	ii) Prevalence/proportions and age-standardised ‘years lived with disability’ (ASYLDs)
 2. <span class="blB">Compare</span> to raw results (i.e., no modelling)
 :::
 

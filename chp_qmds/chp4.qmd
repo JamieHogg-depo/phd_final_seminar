@@ -168,7 +168,6 @@ Sparsity issues
 - TSLN approach <div class="small-text">(**Chapter 3** of this thesis)</div>
 - <span class="blB">Single TSLN</span> specification for <span class="blB">all</span> risk factors
 - Model selection was conducted using a variety of *frequentist* and *Bayesian* metrics
-	- **New** variable selection tools for two-stage approaches
 :::
 
 <!-- ----------------------------------------------------------------- -->
@@ -212,7 +211,6 @@ How to <span class="blB">check</span> our estimates?
 
 ::::
 
-
 <!-- ----------------------------------------------------------------- -->
 ## Validation {.smaller}
 
@@ -238,6 +236,10 @@ How to <span class="blB">check</span> our estimates?
 
 ![](imgs/chp4/rr_alcohol.png)
 
+::: {.notes}
+"I have also provided insets for each of the 8 capital cities"
+:::
+
 <!-- ----------------------------------------------------------------- -->
 ## {.center}
 
@@ -253,6 +255,12 @@ How to <span class="blB">check</span> our estimates?
 ## {.center}
 
 ![](imgs/chp4/lisa_s_alcohol.png)
+
+::: {.notes}
+1. "We can see pockets of areas that are significantly higher and lower than the national average"
+2. "Zooming into Brisbane now, we can see a large patch of areas in the south side where the prevalence of risky alcohol consumption is low."
+3. "Finally note how areas in the Northern Territory are grey here. This means either the estimates are very uncertainty or that the estimates are close to the national averagae."
+:::
 
 <!-- ----------------------------------------------------------------- -->
 ## {.center background-color="#ffffff"}

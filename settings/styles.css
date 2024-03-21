@@ -38,6 +38,22 @@
   font-size: 0.7em; /* Adjust the size as desired */
 }
 
+/* Custom function to make text smaller*/
+.tiny-text {
+  font-size: 0.4em; /* Adjust the size as desired */
+}
+
+.bbox {
+  padding: 20px;
+  border: 2px solid blue; /* Black border added */
+  border-radius: 8px;
+  margin-top: 10px; /* Large top margin */
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block; /* Make the box as wide as its content */
+  font-size: 0.4em;
+}
+
 /* Custom function to add a colored box environment */
 .quote-box {
   padding: 20px;

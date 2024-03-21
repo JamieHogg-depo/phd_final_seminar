@@ -22,8 +22,8 @@ logo: imgs/qutlogo.png
 #smaller: true
 progress: true
 bibliography: settings/bib.bib
-csl: settings/vancouver.csl
-#csl: apa.csl
+#csl: settings/vancouver.csl
+csl: settings/apa.csl
 ---
 
 \newcommand{\lb}[1]{\left( #1 \right)}
@@ -67,10 +67,13 @@ QUT acknowledges the important role Aboriginal and Torres Strait Islander people
 <!-- ----------------------------------------------------------------- -->
 {{< include chp_qmds/chp7.qmd >}}
 
-# References
+## {.smaller}
 
+**References**
+<div class="tiny-text">
 ::: {#refs}
 :::
+</div>
 
 <!-- ----------------------------------------------------------------- -->
 <!-- Supplementary -->

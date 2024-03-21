@@ -57,10 +57,14 @@ Creating area level indices of behaviours impacting cancer in Australia with a B
 
 ::: {.incremental}
 - Increasingly <span class="blB">popular</span> [@RN674; @RN671; @RN670; @RN687]
-- **Shared component models (SCM)**
+- **Shared component models (SCM)** [@RN611]
 	- Identify *underlying factor* shared between features (e.g., **Index**)
 	- <span class="blR">Single</span> shared factor
 	- <span class="blR">No</span> heteroscedastic error
+:::
+
+::: {.notes}
+"As mentioned previously, the use of models to create indices is increasingly popular. One such approach is the... "
 :::
 
 
@@ -107,7 +111,7 @@ Cancer (<span class="blB">AIBIC</span>) product
 ::: {.quote-box}
 **Contribution** 🎉
 
-- A Bayesian <span class="blB">model-based method</span> for **index creation** that can accommodate <span class="blB">spatial autocorrelation</span> and known heteroscedastic <span class="blB">measurement error</span>.
+- A Bayesian <span class="blB">model-based method</span> for **index creation**.
 - The <span class="blB">first</span> Australia-wide **area level** <span class="blB">cancer risk factor indices</span>.
 :::
 
@@ -147,9 +151,9 @@ Improve spatial resolution
 :::
 
 <!-- ----------------------------------------------------------------- -->
-## {.center}
+## Input data
 
-![](imgs/chp5/cor_observed.png)
+![](imgs/chp5/cor_observed.png){.r-stretch}
 
 <!-- ----------------------------------------------------------------- -->
 ## Generalised Shared Component Model (GSCM) {.scrollable .smaller}

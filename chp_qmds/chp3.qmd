@@ -9,12 +9,12 @@ A two-stage Bayesian small area estimation approach for proportions
 <br>
 **James Hogg**, Jessica Cameron, Susanna Cramb, Peter Baade, Kerrie Mengersen. A two-stage Bayesian small area estimation approach for proportions. 
 
-<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- 
 ## ⛔ Tangent Alert ⛔
 
 - Social Health Atlas reports age-standardised <span class="blR">rates</span>.
 - We will estimate prevalence using <span class="blR">proportions</span>.
-	- Proportions are more common and intuitive [@RN28;@RN625;@RN607;@RN426].
+	- Proportions are more common and intuitive [@RN28;@RN625;@RN607;@RN426]. -->
 
 <!-- ----------------------------------------------------------------- -->
 ## Background {.smaller}
@@ -101,7 +101,7 @@ Support informed decision making
 - Stage 1 (S1) estimates
   - Using fitted values calculate area-level <span class="blB">S1 estimates</span> and sampling variances
 - Stage 2 (TSLN-S2)
-  - **Smooth** <span class="blB">S1 estimates</span> and **impute** estimates for non-sampled areas using an **area-level** <span class="blB">Fay-Herriot [@RN54] model</span>
+  - **Smooth** <span class="blB">S1 estimates</span> and **impute** estimates for non-sampled areas using an **area-level** <span class="blB">Fay-Herriot</span> [-@RN54] model
 :::
 ::::
 
@@ -183,7 +183,7 @@ $$
 \end{eqnarray}
 $$
 
-The parameter of interest (i.e. proportion) is the posterior distribution of $\hat{\mu}_i = \text{logit}^{-1}( \hat{\theta}_i)$.
+The parameter of interest (i.e. proportion) is the posterior distribution of $\text{logit}^{-1}( \hat{\theta}_i)$.
 <br>
 
 :::
@@ -195,6 +195,10 @@ The parameter of interest (i.e. proportion) is the posterior distribution of $\h
 - Stability gained from smoothing (at individual level) balanced with aggreement with the direct estimates
 - Generalized variance functions (GVF) for some of $\gamma_i^{\text{S1}}$
 
+:::
+
+::: {.notes}
+1. "in our case, y may be whether the sampled individual smoked or not, where a one means that the person is a smoker."
 :::
 
 <!-- ----------------------------------------------------------------- -->

@@ -32,6 +32,7 @@
 
 :::: {.column width="72%"}
 ::: {.incremental}
+- Novel Bayesian models <span class="blB">push boundary</span> of previously achievable $\to$ *spatial and temporal resolution and reach* in Australia <span class="small-text">(**Chapters 3** and **6**)</span>
 - Modelled risk factors $\to$ <span class="blB">Australian Cancer Atlas</span> platform <span class="small-text">(**Chapter 4**)</span>
 - Epidemiologists from the <span class="blB">West Moreton Public Health Unit</span> $\to$ interest in utilising estimates for reporting <span class="small-text">(**Chapter 4**)</span>
 - <span class="blB">Department of Health Western Australia (DOHWA)</span> applied methods $\to$ generate new estimates for internal Public Health Atlas <span class="small-text">(**Chapter 6**)</span>
@@ -49,8 +50,7 @@
 ::: {.incremental}
 - Interest in adopting Bayesian modelling <span class="small-text">(**Chapter 6**)</span>
 	- The Burden of Disease and Mortality specialist group (<span class="blB">Australian Institute of Health and Welfare</span>)
-- Efficient \texttt{stan} [@RN452] implementation of the <span class="blB">Leroux prior</span> [@RN366] in $\texttt{stan}$ <span class="small-text">(**Chapter 5**)</span>
-- Novel Bayesian models <span class="blB">push boundary</span> of previously achievable $\to$ *spatial and temporal resolution and reach* in Australia <span class="small-text">(**Chapters 3** and **6**)</span>
+- Efficient implementation of the <span class="blB">Leroux prior</span> [@RN366] in the statistical software package, $\texttt{stan}$ [@RN452] <span class="small-text">(**Chapter 5**)</span>
 :::
 ::::
 
@@ -152,14 +152,15 @@ Indices
 ## Professional engagements/activities {.smaller}
 
 ::: {.incremental}
- - Many conferences $+$ posters (including 2x **international conferences**)
+ - 11 conferences (including 2$\times$ **international conferences**): 8 talks $+$ 3 posters
  - Internship and statistical consulting for <span class="blB">Department of Health Western Australia (DOHWA)</span>
  - Casual statistical consulting for <span class="blB">Environmental Protection Authority (EPA) Victoria</span>
  - Co-chair of the <span class="blB">Bayesian Research and Applications Group (BRAG)</span>
  - Organised and hosted virtual <span class="blB">*StanConnect* conference</span>
  - Worked with BioGro as part of <span class="blB">Good Data Institute</span> hackathon
 	- Team awarded **1st place**
- - Team award **2nd place** in <span class="blB">2023 United Nations Datathon</span>
+ - <span class="blB">2023 United Nations Datathon</span>
+	- Team awarded **2nd place** globally out of over 200 teams
 :::
  
 <!-- ----------------------------------------------------------------- -->
@@ -172,7 +173,7 @@ Indices
 - Australian Cancer Atlas 2.0 **project team**
 - **Government collaborators**: DOHWA and AIHW
 - **PhD stipend**: Cancer Council Queensland, QUT
-- **Travel funding**: Kerrie, QUT, CDS
+- **Travel funding**: QUT, CDS
 - **Others**:
 	- ABS
 	- My family (particularly my <span class="blB">Mum!</span>)
@@ -186,8 +187,3 @@ Indices
 ::::
 
 :::::
-
-<!-- ----------------------------------------------------------------- -->
-# Thank you {background-color="#fff0a2" style="text-align: center;"}
-
-and good day 🎤📉

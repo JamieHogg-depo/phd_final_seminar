@@ -1,7 +1,4 @@
 <!-- ----------------------------------------------------------------- -->
-# Introduction
-
-<!-- ----------------------------------------------------------------- -->
 ## ⛔
 
 <!-- presentation slides is 1050 x 700 -->
@@ -11,7 +8,7 @@
 ::: {.column width="38%"}
 A single estimate representing all Australia 
 
-<div class="small-text">(e.g., Smoking prevalence)</div>
+<div class="small-text">(e.g., rate of cancer)</div>
 
 :::
 
@@ -20,6 +17,12 @@ A single estimate representing all Australia
 :::
 
 ::::
+
+::: {.notes}
+Here is a map of Australia, colored to represent a single estimate. In this instance, think of it as representing the national rate of cancer. This single estimate is quite useful because it enables us to draw comparisons with data from previous years and even with similar data from other countries. Through such estimates and comparisons, we can develop policies to reduce the national rate of cancer.
+
+However, it would be more helpful to have the rate of cancer at the community level. This shift from a single estimate to
+:::
 
 <!-- ----------------------------------------------------------------- -->
 ## ✅
@@ -39,11 +42,19 @@ Many estimates representing all communities
 
 ::::
 
+::: {.notes}
+many estimates allows us to conduct more effective comparisons, particularly now between communities. 
+
+community level are called small area estimates
+
+Such detailed data, which allows us to understanding the spatial variation of cancer, is invaluable for supporting more informed decision-making. 
+:::
+
 <!-- ----------------------------------------------------------------- -->
 ## Motivation
 
 :::{.incremental}
-- Small area estimates $\to$ more <span class="blB">effective health policy</span>
+- Small area estimates $\to$ more <span class="blB">effective comparisons</span>
 - **Small area analysis**
   - <span class="blB">Reporting</span>/analyses of individual level data by aggregating into meaningful <span class="blB">groups</span>
 :::
@@ -68,8 +79,12 @@ Tricky in Australia!
 :::
 
 :::{.incremental}
-- Highly **decentralised population** distribution
-- **Sparsity** $\to$ Very small samples sizes or disease counts
+- Highly **heterogeneous population**
+- **Sparsity** $\to$ Very little data
+:::
+
+::: {.notes}
+"This can be very small sample sizes, small populations, or even small counts of a health outcome. 
 :::
 
 <!-- ----------------------------------------------------------------- -->
@@ -108,12 +123,17 @@ Reach
 ::: {style="margin-top: 100px; font-size: 1.5em; color: blue;"}
 Resolution 
 :::
-Refers to the geographical and population size of the small areas
+Geographical and population size of the areas
 
 ::: {style="margin-top: 150px; font-size: 1.5em; color: blue;"}
 Reach 
 :::
-Refers to the number of the small areas for which estimates are available
+Proportion of areas with estimates
+
+<!-- ----------------------------------------------------------------- -->
+##
+
+![](imgs/ScalesSeminar.png){.r-stretch}
 
 <!-- ----------------------------------------------------------------- -->
 ## Sparsity
@@ -124,9 +144,9 @@ Refers to the number of the small areas for which estimates are available
 
 :::{.incremental}
 - International studies:
-	- Area sample sizes <span class="blB">greater than 50</span> [@RN147, @RN44]
+	- Small area sample sizes <span class="blB">greater than 50</span> [@RN147;@RN44]
 - Current Australian surveys:
-	- Area sample sizes <span class="blR">5 to 13</span>
+	- Small area sample sizes <span class="blR">5 to 13</span>
 :::
 :::: 
 
@@ -144,7 +164,7 @@ Refers to the number of the small areas for which estimates are available
 ::: {.fragment .fade-in-then-semi-out}
 - **Disease mapping** [@RN8]
 	- Registry or administrative data
-	- Generates smoothed maps of risk for diseases
+	- Generates maps of risk for diseases
 :::
 
 ::: {.fragment .fade-in-then-semi-out}
@@ -155,12 +175,6 @@ Refers to the number of the small areas for which estimates are available
 
 ::: {.fragment .fade-in}
 - <span class="blB">Bayesian inference</span> is **ubiquitous** with both
-
-<div style="text-align: center;">
-
-![](imgs/bayes.jfif)
-
-</div>
 
 :::
 
@@ -181,6 +195,10 @@ Health outcomes exhibit <span class="blR">variations</span> based on geography <
 
 ::: {.fragment}
 ![](imgs/aihw_remoteness.png){width="90%" .soft-edges}
+:::
+
+::: {.notes}
+"We also know that when the Australian Institute of Health and Welfare, the premier federal health agency, writes about something..."
 :::
 
 <!-- ----------------------------------------------------------------- -->
@@ -245,7 +263,7 @@ Burden of disease (Pillar II)
 - Prevention strategy
 	- <span class="blB">Reduce prevalence</span> of behaviours known to increase the risk of cancer (i.e., **cancer risk factors**).
 		- <div class="small-text">Smoking, obesity, poor diet, insufficient physical activity, excessive sun exposure, alcohol, etc</div>
-- Prevalence of cancer risk factors <span class="blR">varies geographically</span> [@RN423;@RN426;@RN113;@RN1;@RN395; @RN2,@RN338]
+- Prevalence of cancer risk factors <span class="blR">varies geographically</span> [@RN423;@RN426;@RN113;@RN1;@RN395;@RN2;@RN338]
 :::
 ::::
 
@@ -340,7 +358,17 @@ But wait...
 - The Social Health Atlas estimates from...
 	- Most appropriate survey data available at the time: **2017-2018 National Health Survey (NHS)**
 - For small area modelling $\to$ NHS is <span class="blR">highly sparse</span> survey data
-- Modelling **proportions** ^[We will return to proportions soon!] with such sparse data gives rise to unique <span class="blR">methodological challenges</span>
+- Modelling **proportions** with such sparse data gives rise to unique <span class="blR">methodological challenges</span>
+:::
+
+::: {.fragment}
+<div class="bbox">
+**NOTE**:
+<br>
+Proportion $=$ number of health outcomes / population
+<br>
+Proportion $=$ prevalence
+</div>
 :::
 
 <!-- ----------------------------------------------------------------- --> 
@@ -361,8 +389,8 @@ Lack of small area estimation methods for sparse survey data.
 <span class="blB">Small area estimation</span>
 
 ::: {.column width="70%"}
-- **1.1 Method:** Develop a Bayesian SAE method for proportions, which specifically tackles data sparsity.
-- **1.2 Application:** Generate small area level prevalence estimates for several cancer risk factors across Australia. 
+- **1.1 Method:** Develop a Bayesian SAE method for *proportions*, which specifically tackles data sparsity.
+- **1.2 Application:** Generate small area level proportion estimates for several cancer risk factors across Australia. 
 :::
 
 ::: {.column width="30%"}
@@ -376,7 +404,7 @@ Lack of small area estimation methods for sparse survey data.
 ##
 
 ::: {.incremental}
-- Imagine we have <span class="blB">high-resolution</span> estimates for <span class="blB">many</span> cancer risk factors and <span class="blB">many</span> areas (with **uncertainty**)
+- Imagine we have <span class="blB">high-resolution</span> estimates for <span class="blB">many</span> cancer risk factors and <span class="blB">many</span> areas
 - <span class="blR">Challenge</span> in decision making
 	- Striking the right balance between <span class="blR">insufficient</span> or <span class="blR">overwhelming</span> quantities of data.
 :::
@@ -386,16 +414,20 @@ Lack of small area estimation methods for sparse survey data.
 
 ::: {.incremental}
 - Interest in <span class="blB">indices</span> [@RN359; @RN671; @RN687; @RN360; @RN674; @RN670]
-	- Reduce the **dimensionality** and **complexity** of *multivariate data*
+	- Single **interpretable metric** that describes a complex phenomenon
+	- Reduce the **dimensionality** of *multivariate data*
 - Current empirical methods ⛔
-	- <span class="blR">Not</span> flexible
+	- <span class="blR">Restrictive</span>
 - Model-based methods ✅
 	- <span class="blB">Complex</span> data characteristics
-<!-- <span class="blB">Develop</span> model-based methods that:
-	- Numerous cancer risk factors $\to$ Index -->
 :::
 
-![](imgs/seifa.png){.soft-edges}
+![](imgs/seifa.png){.soft-edges .absolute bottom=0 left=0}
+![](imgs/fdi.png){.soft-edges width=30% .absolute bottom=200 right=0}
+
+::: {.notes}
+"Some examples include socioeconomic status, IQ, Forest Fire Danger Index
+:::
 
 <!-- ----------------------------------------------------------------- 
 ##
@@ -419,6 +451,7 @@ Lack of small area estimation methods for sparse survey data.
 ::: {.column width="70%"}
 - **2.1 Method:** Develop a Bayesian model-based approach to index creation.
 - **2.2 Application:** Using cancer risk factor data, create the first area-level cancer risk factor indices for Australia.
+	<div class="small-text"> - *High* resolution and *complete* reach</div>
 :::
 
 ::: {.column width="30%"}
