@@ -153,7 +153,7 @@ Proportion of areas with estimates
 :::: {.fragment}
 <div style="text-align: center;">
 
-![](imgs/sideways_look.png){width=30% .soft-edges}
+![](imgs/sideways_look.png){width=20% .soft-edges}
 
 </div>
 ::::
@@ -189,9 +189,9 @@ Increasingly <span class="blB">relevant</span>
 Health outcomes exhibit <span class="blR">variations</span> based on geography <span class="small-text">(e.g., remoteness and socioeconomic status [@RN26; @RN113; @RN204; @RN338; @RN121])</span>
 :::
 
-::: {.fragment style="font-size: 0.8em;"}
+<!-- ::: {.fragment style="font-size: 0.8em;"}
 *Remember*: Small area estimates support informed <span class="blB">decision making</span>
-:::
+::: -->
 
 ::: {.fragment}
 ![](imgs/aihw_remoteness.png){width="90%" .soft-edges}
@@ -263,7 +263,7 @@ Burden of disease (Pillar II)
 - Prevention strategy
 	- <span class="blB">Reduce prevalence</span> of behaviours known to increase the risk of cancer (i.e., **cancer risk factors**).
 		- <div class="small-text">Smoking, obesity, poor diet, insufficient physical activity, excessive sun exposure, alcohol, etc</div>
-- Prevalence of cancer risk factors <span class="blR">varies geographically</span> [@RN423;@RN426;@RN113;@RN1;@RN395;@RN2;@RN338]
+- Prevalence of cancer risk factors <span class="blR">varies geographically</span> <span class="small-text">[@RN423;@RN426;@RN113;@RN1;@RN395;@RN2;@RN338]</span>
 :::
 ::::
 
@@ -488,7 +488,7 @@ Burden of disease (Pillar II)
 ::: {.incremental}
 - Burden of disease (BOD) estimates inform health policy
 - Fully Bayesian models are underused in *full BOD studies* ^[Calculate burden from all disease (n > 200).]
-	- Existing research has <span class="blR">limitations</span> [@RN653; @RN652; @Steel2018; @GBD2015; @CODEm; @Marlena2019]
+	- Existing research has <span class="blR">limitations</span> <span class="small-text">[@RN653; @RN652; @Steel2018; @GBD2015; @CODEm; @Marlena2019]</span>
 - Full BOD studies in Australia [@bodaihw; @wabod2015]
 	- <span class="blR">No</span> Bayesian and <span class="blR">no</span> small area estimates
 :::

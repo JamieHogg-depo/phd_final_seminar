@@ -56,7 +56,7 @@ Creating area level indices of behaviours impacting cancer in Australia with a B
 ## Creating indices with models
 
 ::: {.incremental}
-- Increasingly <span class="blB">popular</span> [@RN674; @RN671; @RN670; @RN687]
+- Increasingly <span class="blB">popular</span> <span class="small-text">[@RN674; @RN671; @RN670; @RN687]</span>
 - **Shared component models (SCM)** [@RN611]
 	- Identify *underlying factor* shared between features (e.g., **Index**)
 	- <span class="blR">Single</span> shared factor
@@ -138,24 +138,6 @@ Improve spatial resolution
 :::
 
 <!-- ----------------------------------------------------------------- -->
-## Input data {.smaller}
-
-::: {.incremental}
-- Small area estimates of five features (cancer risk factor OR **unhealthy behaviors**) from **Chapter 4**
-	- Current smokers, risky alcohol consumption, overweight/obese, inadequate diet and inadequate physical
-- Available as **point estimates** and **standard deviations** of proportions (inverse logit transformed)
-- Details
-	- Number of features **$K = 5$**
-	- Number of small areas $N = 2221$
-	- Number of shared factors $L = 2$
-:::
-
-<!-- ----------------------------------------------------------------- -->
-## Input data
-
-![](imgs/chp5/cor_observed.png){.r-stretch}
-
-<!-- ----------------------------------------------------------------- -->
 ## Generalised Shared Component Model (GSCM) {.scrollable .smaller}
 
 $N$-dimensional multivariate normal distribution for the $k$th feature
@@ -171,9 +153,9 @@ $$
 Where:
 
 :::{.incremental}
-- $\mathbf{Y}_{k}$ is $N$-dimensional vector of **estimates** for the $k$th risk factor
-- $\boldsymbol{\sigma}_k$ is $N$-dimensional vector of **standard deviations** for the $k$th risk factor
-- $\boldsymbol{\mu}_{k}$ is $N$-dimensional vectors of **true values** for the $k$th risk factor
+- $\mathbf{Y}_{k}$ is $N$-dimensional vector of **estimates** for the $k$th feature
+- $\boldsymbol{\sigma}_k$ is $N$-dimensional vector of **standard deviations** for the $k$th feature
+- $\boldsymbol{\mu}_{k}$ is $N$-dimensional vectors of **true values** for the $k$th feature
 - $\mathbf{z}$ is a $N \times L$ matrix of **shared factor scores**, with independent columns
 	- Leroux CAR priors [@RN366]
 - $\boldsymbol{\epsilon}_{k}$ a $N$-dimensional vector of **feature-specific residual errors** for the $k$th feature with associated variance $\tau_k^2$
@@ -196,6 +178,24 @@ Special cases:
 - Bayesian spatial factor models of [@RN674; @RN564]
 - Generic Bayesian factor model
 :::
+
+<!-- ----------------------------------------------------------------- -->
+## Input data {.smaller}
+
+::: {.incremental}
+- Small area estimates of five features (cancer risk factor OR **unhealthy behaviors**) from **Chapter 4**
+	- Current smokers, risky alcohol consumption, overweight/obese, inadequate diet and inadequate physical
+- Available as **point estimates** and **standard deviations** of proportions (inverse logit transformed)
+- Details
+	- Number of features **$K = 5$**
+	- Number of small areas $N = 2221$
+	- Number of shared factors $L = 2$
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## Input data
+
+![](imgs/chp5/cor_observed.png){.r-stretch}
 
 <!-- ----------------------------------------------------------------- -->
 ## Results {.center}

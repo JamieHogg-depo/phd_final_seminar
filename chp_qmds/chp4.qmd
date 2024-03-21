@@ -165,15 +165,15 @@ Sparsity issues
 ## Model
 
 ::: {.incremental}
-- TSLN approach <div class="small-text">(**Chapter 3** of this thesis)</div>
+- TSLN approach <span class="small-text">(**Chapter 3** of this thesis)</span>
 - <span class="blB">Single TSLN</span> specification for <span class="blB">all</span> risk factors
 - Model selection was conducted using a variety of *frequentist* and *Bayesian* metrics
 :::
 
 <!-- ----------------------------------------------------------------- -->
-## Results {.center}
+## {.center}
 
-![](imgs/chp4/summary_violin.png)
+![](imgs/chp4/summary_violin.png){.r-stretch}
 
 <!-- ----------------------------------------------------------------- -->
 ## Validation {.smaller}
