@@ -55,7 +55,7 @@
 ::: {.incremental}
 - Interest in adopting Bayesian modelling <span class="small-text">(**Chapter 6**)</span>
 	- The Burden of Disease and Mortality specialist group (<span class="blB">Australian Institute of Health and Welfare</span>)
-- Efficient implementation of the <span class="blB">[-@RN366] prior</span> in the statistical software package, $\texttt{stan}$ [@RN452] <span class="small-text">(**Chapter 5**)</span>
+- Efficient implementation of the <span class="blB">Leroux prior</span> [-@RN366] in the statistical software package, $\texttt{stan}$ [@RN452] <span class="small-text">(**Chapter 5**)</span>
 :::
 ::::
 
