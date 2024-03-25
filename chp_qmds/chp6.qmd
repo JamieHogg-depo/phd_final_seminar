@@ -192,7 +192,8 @@ Develop and apply Bayesian small area methods to health data in Australia
 - Used <span class="blB">fully Bayesian methods</span> with the statistical software package, $\texttt{nimble}$ [@RN626]
 :::
 
-### Objective
+<!-- ----------------------------------------------------------------- -->
+## Objective
 
 ::: {.incremental}
 1. Produce <span class="blB">modelled estimates</span> of:

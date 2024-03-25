@@ -188,15 +188,6 @@ The parameter of interest (i.e. proportion) is the posterior distribution of $\t
 
 :::
 
-::: {.fragment}
-
-### Other considerations and additions
-
-- Stability gained from smoothing (at individual level) balanced with aggreement with the direct estimates
-- Generalized variance functions (GVF) for some of $\gamma_i^{\text{S1}}$
-
-:::
-
 ::: {.notes}
 1. "in our case, y may be whether the sampled individual smoked or not, where a one means that the person is a smoker."
 :::
@@ -218,8 +209,6 @@ Area level
 - **BETA**: Beta model
 - **ELN**: Empirical-logistic normal model
 	- Similar to <span class="blB">stage 2</span> of the TSLN approach
-- **BIN**: Binomial model
-	- <span class="blR">Ignores</span> sample design
 	
 ::::
 
