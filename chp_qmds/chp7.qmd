@@ -110,7 +110,7 @@ Reliability
 	- Multivariate variations
 - **Validate** small area estimation <span class="small-text">(**Chapter 3** and **4**)</span>
 	1. Expansion of NHS
-	2. Linkage of state surveys
+	2. Appending state surveys
 	3. $+$ Health behaviours $\to$ the census
 - **Validate** BOD methods and models <span class="small-text">(**Chapter 6**)</span>
 	- Disease states assumed *constant* and *discrete*

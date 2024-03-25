@@ -82,8 +82,6 @@ Generalised shared component model
 Generalised shared component model
 :::
 
-Accommodates:
-
 - **Multiple** shared factors
 - Heteroscedastic **error**
 - Provides indices with **uncertainty measures**
@@ -186,16 +184,23 @@ Special cases:
 - Small area estimates of five features (cancer risk factor OR **unhealthy behaviors**) from **Chapter 4**
 	- Current smokers, risky alcohol consumption, overweight/obese, inadequate diet and inadequate physical
 - Available as **point estimates** and **standard deviations** of proportions (inverse logit transformed)
-- Details
-	- Number of features **$K = 5$**
-	- Number of small areas $N = 2221$
-	- Number of shared factors $L = 2$
 :::
 
 <!-- ----------------------------------------------------------------- -->
 ## Input data
 
 ![](imgs/chp5/cor_observed.png){.r-stretch}
+
+<!-- ----------------------------------------------------------------- -->
+## Input data {.smaller}
+
+- Small area estimates of five features (cancer risk factor OR **unhealthy behaviors**) from **Chapter 4**
+	- Current smokers, risky alcohol consumption, overweight/obese, inadequate diet and inadequate physical
+- Available as **point estimates** and **standard deviations** of proportions (inverse logit transformed)
+- Details
+	- Number of features **$K = 5$**
+	- Number of small areas $N = 2221$
+	- Number of shared factors $L = 2$
 
 <!-- ----------------------------------------------------------------- -->
 ## Results {.center}
@@ -247,7 +252,7 @@ Uncertainty:
 
 <span class="blR">Modelled percentages</span> - <div class="small-text">10 numbers!</div>
 
-Inadequate physical activity: 84% (2.8%)   
+Inadequate physical activity: 84% (2.8%) ^[Estimate (standard error)]  
 
 Risky alcohol consumption: 39% (4.1%)
 
@@ -275,7 +280,7 @@ Probability that percentile above 80th: 0.99
 
 Percentile: 100
 
-Probability that percentile above 80th: 1
+Probability that percentile above 80th: 1.00
 :::
 
 ::::
@@ -306,16 +311,19 @@ Probability that percentile above 80th: 1
 **Key findings** 📢
 
 ::: {.incremental}
-<!-- - <span class="blR">Incomplete or inefficient</span> policy decisions <div class="small-text">(if using a single shared factor or simplified spatial structure)</div>
-	- <span class="blB">Motivates</span> use of GSCM -->
 - The AIBIC reveals a <span class="blR">pronounced spatial autocorrelation</span> in unhealthy behaviors
 	- Patterns reflect **remoteness** and **socioeconomic** categories
-	- <span class="blB">Easier to interpret</span> than modelled data
-<!-- - Comparison empirical methods and the GSCM 
-	- <span class="blR">Very different</span> policy decisions -->
+	- <span class="blB">Faster to interpret</span> than individual prevalence estimates
+	- <span class="blB">Optimal</span> for broad policies
 :::
 
 ::::
+
+::: {.notes}
+Indeed, indices inherently involve a loss of information, rendering them less suitable for decisions
+relating to a single feature (e.g., current smoking only). In such cases, a direct examination of the specific feature is
+always preferable
+:::
 
 <!-- ----------------------------------------------------------------- -->
 ##

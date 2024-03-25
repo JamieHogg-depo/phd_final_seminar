@@ -44,6 +44,31 @@
 - **Physical Activity**
   - Inadequate activity (leisure): Based on self-reported leisure physical activity, individuals who do not meet the 2014 Department of Health Physical Activity guidelines [@RN517], which include a mix of moderate and vigorous-intensity physical activities, plus muscle-strengthening activities.
   - Inadequate activity (all): Similar to inadequate activity (leisure) but includes both workplace and leisure self-reported physical activities. 
+  
+<!-- ----------------------------------------------------------------- -->
+## {.center}
+
+![](imgs/chp4/sampled.png)
+
+<!-- ----------------------------------------------------------------- -->
+## Validating non-sampled SA2s and those in very remote areas {.smaller}
+
+- Warning from the ABS [@RN508]
+<br>
+`*. . . the estimates from the survey, do not (and are not intended to) match estimates of the total Australian estimated resident population (which include persons living in Very Remote areas of Australia and persons in non-private dwellings, such as hotels) obtained from other sources*'
+<br>
+	- Not included in internal benchmarking
+- Warning that direct estimates for the Northern Territory (NT) could be inaccurate
+	- Not included in internal benchmarking
+	
+	<!-- ----------------------------------------------------------------- -->
+## Validating non-sampled SA2s and those in very remote areas {.smaller}
+
+- These excluded regions $\approx$ 1.5% of the population
+	- Validated using the external methods
+	- Exhibit much greater uncertainty (as expected)
+- Future work
+	- Utilise smaller surveys taken in these areas as validation datasests
 
 <!-- ----------------------------------------------------------------- -->
 # Chapter 5/Paper 3

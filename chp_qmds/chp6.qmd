@@ -38,14 +38,18 @@ Improving the spatial and temporal resolution of burden of disease measures with
 :::::
 
 <!-- ----------------------------------------------------------------- -->
-## Full BOD studies
+## Full BOD studies {.smaller}
 
 ::: {.incremental}
 - Aim to calculate DALYs for <span class="blB">all</span> causes (typically over 200)
-	- **Wide range** of data sources (e.g., registry, administrative, survey or epidemiological)
-	- Conducted by **government agencies** in Australia
 - Prioritise healthcare resources by <span class="blB">ranking diseases</span>
 ![](imgs/chp6/gbd.png){width=100% .soft-edges}
+- **Wide range** of data sources (e.g., registry, administrative, survey or epidemiological)
+- Conducted by **government agencies** in Australia
+:::
+
+::: {.notes}
+Limitation of these data for small area estimates is small counts or gaps (poor reach). SAE can help in this case. 
 :::
 
 <!-- ----------------------------------------------------------------- -->
@@ -69,6 +73,13 @@ Improving the spatial and temporal resolution of burden of disease measures with
 	- <span class="blR">Not practical</span> for many users (e.g., government)
 - **Australian** full BOD studies
 	- <span class="blR">No use</span> of Bayesian models and <span class="blR">no</span> small area estimates
+:::
+
+::: {.notes}
+Not practical both in terms of applying the methods and interpretation/reconcilling the output.
+Once these hurdles have been cleared, Bayesian models, of course, offer considerable advantages. 
+
+The reason for a lack of small area estimates is, in some cases, related to data not being specific enough. In this case, no amount of modelling can help. When survey data has poor reach, Bayesian models can help to fill in the gaps.  
 :::
 
 <!-- ----------------------------------------------------------------- -->
@@ -104,7 +115,6 @@ Develop and apply Bayesian small area methods to health data in Australia
 
 <!-- ----------------------------------------------------------------- -->
 ## Models
-<!-- ⛔ Tangent Alert ⛔ {.smaller} -->
 
 ::: {.fragment}
 - **Intentionally** simple $\to$ <span class="blB">accessible</span> and <span class="blB">practical</span> 
@@ -179,6 +189,8 @@ Develop and apply Bayesian small area methods to health data in Australia
 
 ::: {.notes}
 "Pseudo likelihood was used in our small area modelling in Chapter 3."
+
+"By modelling microdata, we can improve the reach of estimates from survey data, which tackles a core data limitation in full BOD studies."
 :::
 
 <!-- ----------------------------------------------------------------- -->
@@ -213,7 +225,7 @@ Develop and apply Bayesian small area methods to health data in Australia
 ![Comparison of the 822 annual LGA point estimates and their reliability (% of RSEs less than 50%) for modeled and raw BOD measures by condition.](imgs/chp6/results.png){.r-stretch}
 
 <!-- ----------------------------------------------------------------- -->
-## {.center .smaller background-color="#ffffff"}
+## {.smaller background-color="#ffffff"}
 
 :::: {.finding-box}
 **Key findings** 📢
@@ -224,7 +236,7 @@ Develop and apply Bayesian small area methods to health data in Australia
   - Provide **ranks** for disease burden from **all** causes by **small areas** -->
 - Bayesian vs. raw: 
 	- <span class="blB">Agreed</span> (mostly!)
-  - Discrepancies due to <span class="blB">age-standardisation</span> OR <span class="blB">paradigm differences</span>
+  - Discrepancies due to <span class="blB">age-standardisation</span> OR <span class="blB">paradigm differences</span> ^[Raw estimates: unstable observed data. Bayesian estimates: smoothed version of the underlying risk.]
 :::
 
 ::::
@@ -246,26 +258,3 @@ Develop and apply Bayesian small area methods to health data in Australia
 ✅ **3.1 Method:** 
 
 ✅ **3.2 Application:**
-
-<!-- ----------------------------------------------------------------- 
-## Discussion {.scrollable .smaller}
-
-### Limitations 
-
-::: {.incremental}
-
-- Relative simplicity of models
-- Validation
-:::
-
-### Future work
-
-::: {.incremental}
-
-- Computation time
-  - Explore faster alternatives to Bayesian inference such as integrated nested Laplace approximation (INLA) [@Rue2009] or variational inference [@fox_2012].
-- Model complexity
-  - Deeper interactions
-  - More individual level covariates
-
-:::-->
