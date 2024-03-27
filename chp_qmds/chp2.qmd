@@ -95,7 +95,6 @@ Leads to ...
 :::{.incremental}
 - Information only reliable or available $\to$ <span class="blR">large geographical regions</span> (e.g., states)
 - <span class="blB">Reliable estimates</span> **mostly** in major cities
-<!-- - Health disparities widen with increasing remoteness [@RN581;@RN338;@RN608]-->
 :::
 
 <!-- ----------------------------------------------------------------- -->
@@ -130,10 +129,40 @@ Reach
 :::
 Proportion of areas with estimates
 
+::: {.notes}
+1. "Low resolution may be estimates for states, while high would be postcodes"
+2. "Low reach would be having estimates for 10% of areas, while high reach would be estimates for all regions"
+:::
+
 <!-- ----------------------------------------------------------------- -->
 ##
 
 ![](imgs/ScalesSeminar.png){.r-stretch}
+
+::: {.notes}
+Like the variance bias tradeoff, we can trade high reach for low resolution and vice versa. But ideally we want both. 
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## 
+
+Why we do need high <span class="blB">resolution</span> **and** <span class="blB">reach</span>?
+
+::: {.incremental}
+- Reduces **biases** <span class="small-text">(e.g., Modifiable areal unit problem (MAUP) [@RN490], ecological bias, etc)</span>
+- Allows for more **detailed investigation** of spatial patterns
+- Supports **equity**
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## 
+
+::: {style="margin-top: 200px; font-size: 1.6em; color: red;"}
+Tricky in Australia! 
+:::
+
+- Highly **heterogeneous population**
+- **Sparsity** $\to$ Very little data
 
 <!-- ----------------------------------------------------------------- -->
 ## Sparsity
@@ -157,6 +186,10 @@ Proportion of areas with estimates
 
 </div>
 ::::
+
+::: {.notes}
+"To obtain high resolution with these small counts, we need to use more fancy methods, specifically models..."
+:::
 
 <!-- ----------------------------------------------------------------- -->
 ## Small area modelling {.smaller}
@@ -198,19 +231,9 @@ Health outcomes exhibit <span class="blR">variations</span> based on geography <
 :::
 
 ::: {.notes}
-"We also know that when the Australian Institute of Health and Welfare, the premier federal health agency, writes about something..."
+1. "Despite the difficulties we already mentioned, small area modelling is increasingly relevant."
+2. "We also know that when the Australian Institute of Health and Welfare, the premier federal health agency, writes about something..."
 :::
-
-<!-- ----------------------------------------------------------------- -->
-<!-- ## Despite these challenges... {.smaller}
-
-... large number of interactive platforms (e.g., Atlases) that display health information for small areas
-
-- Examples: Australian Cancer Atlas [@RN26], the Social Health Atlas of Australia (SHAA) [@RN113], the Queensland Injury Atlas [@RN619], the Injury Atlas of Victoria [@RN620] and the AusEnHealth platform [@RN621].
-
-![](imgs/ACA_oesophagealcancer.png){.absolute bottom=0 left=0 height="275"}
-
-![](imgs/SHA.png){.absolute bottom=0 right=0 height="275"} -->
 
 <!-- ----------------------------------------------------------------- -->
 ## {.center background-color="#fff0a2"}

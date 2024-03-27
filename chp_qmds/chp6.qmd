@@ -77,9 +77,7 @@ Limitation of these data for small area estimates is small counts or gaps (poor 
 
 ::: {.notes}
 Not practical both in terms of applying the methods and interpretation/reconcilling the output.
-Once these hurdles have been cleared, Bayesian models, of course, offer considerable advantages. 
-
-The reason for a lack of small area estimates is, in some cases, related to data not being specific enough. In this case, no amount of modelling can help. When survey data has poor reach, Bayesian models can help to fill in the gaps.  
+Once these hurdles have been cleared, Bayesian models, of course, offer considerable advantages.  
 :::
 
 <!-- ----------------------------------------------------------------- -->
@@ -320,7 +318,7 @@ Develop and apply Bayesian small area methods to health data in Australia
 
 ❕ **3.1 Method:** Explore and develop appropriate Bayesian spatiotemporal methods to model the wide range of health data used in full BOD studies.
 
-❕ **3.2 Application:** Using two very different diseases ^[Coronary heart disease (CHD) and asthma in Western Australia], generate and map the first small area level BOD estimates in Australia.
+❕ **3.2 Application:** Using two very different diseases, generate and map the first small area level BOD estimates in Australia.
 
 <!-- ----------------------------------------------------------------- -->
 ## Objective 3 {.smaller}

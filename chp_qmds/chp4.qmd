@@ -245,6 +245,8 @@ Areas with no survey data were included in the validation where available. This 
 "I have also provided insets for each of the 8 capital cities"
 
 The results suggest that less disadvantaged areas have higher proportions of risky alcohol consumption, which generally manifests in higher prevalence in major cities. This is supported by other Australian surveys \cite{RN631, RN514} and previous research \cite{RN677, RN113}
+
+Note that the regions in NT are disadvantaged areas, so have been predicted to have lower rates. We'll see in a second that these areas have high uncertainty though. 
 :::
 
 <!-- ----------------------------------------------------------------- -->
@@ -283,7 +285,7 @@ The results suggest that less disadvantaged areas have higher proportions of ris
 
 ::: {.notes}
 2. "Zooming into Brisbane now, we can see a large patch of areas in the south side where the prevalence of risky alcohol consumption is low."
-3. "Finally note how areas in the Northern Territory are grey here. Note that the survey did not cover these areas, so they are predicted from the model. This results in the estimates being uncertainty."
+3. "Finally note how areas in the Northern Territory are grey here. Note that the survey did not cover these areas, so they are predicted from the model. These estimates are very uncertainty."
 :::
 
 <!-- ----------------------------------------------------------------- -->
