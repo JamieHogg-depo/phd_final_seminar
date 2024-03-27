@@ -222,7 +222,23 @@ Area level
 <!-- ----------------------------------------------------------------- -->
 ## Results
 
-![](imgs/chp3/sparse_MRRMSE.png){.r-stretch}
+<figure style="position: relative; display: block; margin-left: auto; margin-right: auto; text-align: center;">
+	![](imgs/chp3/sparse_MRRMSE.png){width='850px'}
+</figure>
+
+<!-- ----------------------------------------------------------------- -->
+## Results
+
+<figure style="position: relative; display: block; margin-left: auto; margin-right: auto; text-align: center;">
+	![](imgs/chp3/sparse_MRRMSE.png){width='850px'}
+	<div class="highlight2-box" style="position: absolute; top: 90px; left: 349px; width: 48px; height: 454px;"></div>
+	<div class="highlight2-box" style="position: absolute; top: 90px; left: 598px; width: 48px; height: 454px;"></div>
+	<div class="highlight2-box" style="position: absolute; top: 90px; left: 848px; width: 48px; height: 454px;"></div>
+</figure>
+
+::: {.notes}
+"Our TSLN approach provides superior estimates"
+:::
 
 <!-- ----------------------------------------------------------------- -->
 ## {.center .smaller background-color="#ffffff"}
@@ -231,14 +247,16 @@ Area level
 **Key findings** 📢
 
 ::: {.incremental}
-- TSLN approach provides <span class="blB">superior</span> proportion estimates.
+- TSLN approach provides <span class="blB">superior</span> proportion estimates in the **sparse setting**
 	- Similar bias but much <span class="blB">smaller variance</span>.
 	- Consistently <span class="blB">smaller MSEs</span> and credible intervals.
 	- Interval <span class="blB">coverage more stable</span>.
-- <span class="blB">Best option</span> in sparse settings (**NHS in Australia**)
 :::
 
 ::::
+::: {.notes}
+"As you can see in our paper, the interval coverage provided by our TSLN approach is more stable."
+:::
 
 <!-- ----------------------------------------------------------------- -->
 ## Objective 1 {.smaller}

@@ -7,7 +7,7 @@ from: markdown+emoji
 format:
   revealjs: 
     theme: [simple, settings/custom.scss]
-    slide-number: false
+    slide-number: true
     chalkboard: 
       buttons: false
     preview-links: auto
@@ -67,6 +67,7 @@ QUT acknowledges the important role Aboriginal and Torres Strait Islander people
 <!-- ----------------------------------------------------------------- -->
 {{< include chp_qmds/chp7.qmd >}}
 
+<!-- ----------------------------------------------------------------- -->
 ## {.smaller}
 
 **References**
@@ -74,6 +75,10 @@ QUT acknowledges the important role Aboriginal and Torres Strait Islander people
 ::: {#refs}
 :::
 </div>
+
+::: {.notes}
+Scroll down
+:::
 
 <!-- ----------------------------------------------------------------- -->
 <!-- Supplementary -->

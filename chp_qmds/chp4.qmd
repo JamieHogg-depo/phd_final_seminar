@@ -194,20 +194,20 @@ How to <span class="blB">check</span> our estimates?
 
 :::: {.columns}
 
-::: {.column width="42%"}
+::: {.column width="57%"}
 - **Internal**: <span class="blB">Fully Bayesian benchmarking</span> [@RN30]
 	- State benchmark (n = 7)
-	- Major-by-state benchmark (n = 12)
+	- Major cities-by-state benchmark (n = 12)
 :::
 
-::: {.column width="48%"}
+::: {.column width="43%"}
 
 :::
 
 ::::
 
 ::: {.notes}
-Benchmarking validates non-sampled areas
+"Benchmarking validates non-sampled areas"
 :::
 
 <!-- ----------------------------------------------------------------- -->
@@ -217,14 +217,14 @@ How to <span class="blB">check</span> our estimates?
 
 :::: {.columns}
 
-::: {.column width="42%"}
+::: {.column width="57%"}
 - **Internal**: <span class="blB">Fully Bayesian benchmarking</span> [@RN30]
 	- State benchmark (n = 7)
-	- Major-by-state benchmark (n = 12)
+	- Major cities-by-state benchmark (n = 12)
 - **External**: Comparing our broad results to <span class="blB">other Australian surveys</span> and the <span class="blB">Social Health Atlas</span>
 :::
 
-::: {.column width="48%"}
+::: {.column width="43%"}
 ![](imgs/chp4/scattersha_smokingobesity_pha.png)
 :::
 
@@ -255,18 +255,35 @@ The results suggest that less disadvantaged areas have higher proportions of ris
 <!-- ----------------------------------------------------------------- -->
 ## {.center}
 
-![](imgs/chp4/orep_alcohol.png)
-
+<figure style="position: relative; display: inline-block;">
+  ![](imgs/chp4/orep_alcohol.png){width='920px'}
+</figure>
 
 <!-- ----------------------------------------------------------------- -->
 ## {.center}
 
-![](imgs/chp4/lisa_s_alcohol.png)
+<figure style="position: relative; display: inline-block;">
+  ![](imgs/chp4/lisa_s_alcohol.png){width='920px'}
+</figure>
 
 ::: {.notes}
 1. "We can see pockets of areas that are significantly higher and lower than the national average"
+:::
+
+<!-- ----------------------------------------------------------------- -->
+## {.center}
+
+<figure style="position: relative; display: inline-block;">
+  ![](imgs/chp4/lisa_s_alcohol.png){width='920px'}
+  <!-- <div class="highlight-box" style="position: absolute; top: 0px; left: 0px; width: 10px; height: 10px;"></div>
+  <div class="highlight-box" style="position: absolute; top: 0px; left: 0px; width: 50px; height: 50px;"></div>
+  <div class="highlight-box" style="position: absolute; top: 0px; left: 0px; width: 100px; height: 100px;"></div> -->
+  <div class="highlight-box" style="position: absolute; top: 30px; left: 730px; width: 125px; height: 150px;"></div>
+</figure>
+
+::: {.notes}
 2. "Zooming into Brisbane now, we can see a large patch of areas in the south side where the prevalence of risky alcohol consumption is low."
-3. "Finally note how areas in the Northern Territory are grey here. This means either the estimates are very uncertainty or that the estimates are close to the national averagae."
+3. "Finally note how areas in the Northern Territory are grey here. Note that the survey did not cover these areas, so they are predicted from the model. This results in the estimates being uncertainty."
 :::
 
 <!-- ----------------------------------------------------------------- -->
@@ -292,9 +309,13 @@ Exciting...
 <!-- ----------------------------------------------------------------- -->
 ## {.center}
 
-These modelled estimates will be available in the **Australian Cancer Atlas 2.0**
+These modelled estimates will be available in the **Australian Cancer Atlas 2.0** <span class="tiny-text">(<https://atlas.cancer.org.au/>)</span>
 
-![](imgs/ACA_oesophagealcancer.png){.r-stretch}
+![](imgs/chp4/aca_grab.png){.r-stretch}
+
+::: {.notes}
+"The official launch is scheduled for the 28th of May!"
+:::
 
 
 <!-- ----------------------------------------------------------------- -->

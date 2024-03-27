@@ -35,7 +35,7 @@
 - Novel Bayesian models <span class="blB">push boundary</span> of previously achievable $\to$ *spatial and temporal resolution and reach* in Australia <span class="small-text">(**Chapters 3** and **6**)</span>
 - Modelled risk factors $\to$ <span class="blB">Australian Cancer Atlas</span> platform <span class="small-text">(**Chapter 4**)</span>
 - Epidemiologists from the <span class="blB">West Moreton Public Health Unit</span> $\to$ interest in utilising estimates for reporting <span class="small-text">(**Chapter 4**)</span>
-- <span class="blB">Department of Health Western Australia (DOHWA)</span> applied methods $\to$ generate new estimates for internal Public Health Atlas <span class="small-text">(**Chapter 6**)</span>
+- <span class="blB">Department of Health Western Australia (DOHWA)</span> applied methods $\to$ generate new estimates for their *Public Health Atlas* <span class="small-text">(**Chapter 6**)</span>
 :::
 ::::
 
@@ -65,39 +65,6 @@
 ::::
 
 :::::
-
-<!-- ----------------------------------------------------------------- 
-## Limitations/reflection {.smaller}
-
-::::: {.columns}
-
-:::: {.column width="58%"}
-::: {.incremental}
- - <span class="blB">Improving</span> spatial resolution: <span class="blR">double edged sword</span>
- - **Reliability** of small area level estimates $\to$ <span class="blR">contingent</span> on quality of validation data.
-:::
-::::
-
-:::: {.column width="38%"}
-![](imgs/limitations.webp){width=100% .soft-edges}
-
-::::
-
-:::::
-
-::: {.notes}
-Improving spatial resolution
- - better models $=$ more high-resolution estimates of health (atlas platforms).
- - introduces the challenge of navigating decision making with multidimensional health information (with uncertainty)
- - given that decision paralysis can impede effective policy, only present essential information in an easily understandable manner
- - Australian Cancer Atlas great example of this
- - Chapter 5 presents our solution. 
-Reliability
-- health departments (report to policymakers) proving validity becomes increasingly important and complex; possibly made more difficult with the adoption of Bayesian models. 
-- Chapter 6 compares estimates from Bayesian models with those from previous approaches: solid agreement. 
-- Not always possible
-- survey data, for example, the ultimate, but impractical, validation dataset would be health data for the entire population.  
-::: -->
 
 <!-- ----------------------------------------------------------------- -->
 ## Reflections/future directions {.smaller}

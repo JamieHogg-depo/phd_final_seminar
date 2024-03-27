@@ -217,12 +217,84 @@ Develop and apply Bayesian small area methods to health data in Australia
 <!-- ----------------------------------------------------------------- -->
 ## {.center}
 
-![Comparison of the distribution of the point estimates from the Bayesian models and basic stratification (i.e., raw).](imgs/chp6/compraw_ALL.jpeg){.r-stretch}
+<figure style="position: relative; display: block; margin-left: auto; margin-right: auto; text-align: center;">
+  ![](imgs/chp6/compraw_ALL_justMeasures.jpeg){height='500px'}
+  <figcaption style="text-align: center;">Comparison of the distribution of the point estimates from the Bayesian models and basic stratification (i.e., raw).</figcaption>
+</figure>
 
 <!-- ----------------------------------------------------------------- -->
 ## {.center}
 
-![Comparison of the 822 annual LGA point estimates and their reliability (% of RSEs less than 50%) for modeled and raw BOD measures by condition.](imgs/chp6/results.png){.r-stretch}
+<figure style="position: relative; display: block; margin-left: auto; margin-right: auto; text-align: center;">
+  ![](imgs/chp6/compraw_ALL_justMeasures.jpeg){height='500px'}
+   <div class="highlight-box" style="position: absolute; top: 0px; left: 288px; width: 245px; height: 240px;"></div>
+  <figcaption style="text-align: center;">Comparison of the distribution of the point estimates from the Bayesian models and basic stratification (i.e., raw).</figcaption>
+</figure>
+
+<!-- ----------------------------------------------------------------- -->
+## {.center}
+
+<figure style="position: relative; display: block; margin-left: auto; margin-right: auto; text-align: center;">
+  ![](imgs/chp6/compraw_ALL_justBOD.jpeg){height='500px'}
+  <figcaption style="text-align: center;">Comparison of the distribution of the point estimates from the Bayesian models and basic stratification (i.e., raw).</figcaption>
+</figure>
+
+<!-- ----------------------------------------------------------------- -->
+## {.center}
+
+<figure style="position: relative; display: block; margin-left: auto; margin-right: auto; text-align: center;">
+  ![](imgs/chp6/compraw_ALL_justBOD.jpeg){height='500px'}
+  <div class="highlight-box" style="position: absolute; top: 0px; right: 275px; width: 228px; height: 245px;"></div>
+  <figcaption style="text-align: center;">Comparison of the distribution of the point estimates from the Bayesian models and basic stratification (i.e., raw).</figcaption>
+</figure>
+
+<!-- ----------------------------------------------------------------- -->
+## {.center}
+
+<figure style="position: relative; display: inline-block;">
+  ![](imgs/chp6/results.png){width='880px'}
+  <div class="cover-box" style="position: absolute; top: 318px; left: 0px; width: 880px; height: 232px;"></div>
+  <figcaption>Comparison of the 822 annual LGA point estimates and their reliability (% of RSEs less than 50%) for modeled and raw BOD measures by condition.</figcaption>
+</figure>
+
+<!-- ----------------------------------------------------------------- -->
+## {.center}
+
+<figure style="position: relative; display: inline-block;">
+  ![](imgs/chp6/results.png){width='880px'}
+  <div class="cover-box" style="position: absolute; top: 318px; left: 0px; width: 880px; height: 232px;"></div>
+  <div class="highlight-box" style="position: absolute; top: 190px; left: 110px; width: 750px; height: 48px;"></div>
+  <figcaption>Comparison of the 822 annual LGA point estimates and their reliability (% of RSEs less than 50%) for modeled and raw BOD measures by condition.</figcaption>
+</figure>
+
+<!-- ----------------------------------------------------------------- -->
+## {.center}
+
+<figure style="position: relative; display: inline-block;">
+  ![](imgs/chp6/results.png){width='880px'}
+  <figcaption>Comparison of the 822 annual LGA point estimates and their reliability (% of RSEs less than 50%) for modeled and raw BOD measures by condition.</figcaption>
+</figure>
+
+<!-- ----------------------------------------------------------------- -->
+## {.center}
+
+<figure style="position: relative; display: inline-block;">
+  ![](imgs/chp6/results.png){width='880px'}
+  <!-- <div class="highlight-box" style="position: absolute; top: 0px; left: 0px; width: 10px; height: 10px;"></div>
+  <div class="highlight-box" style="position: absolute; top: 0px; left: 0px; width: 50px; height: 50px;"></div>
+  <div class="highlight-box" style="position: absolute; top: 0px; left: 0px; width: 100px; height: 100px;"></div> -->
+  <div class="highlight-box" style="position: absolute; top: 350px; left: 110px; width: 750px; height: 48px;"></div>
+  <figcaption>Comparison of the 822 annual LGA point estimates and their reliability (% of RSEs less than 50%) for modeled and raw BOD measures by condition.</figcaption>
+</figure>
+
+<!-- ----------------------------------------------------------------- -->
+## {.center}
+
+<figure style="position: relative; display: inline-block;">
+  ![](imgs/chp6/results.png){width='880px'}
+  <div class="highlight-box" style="position: absolute; top: 440px; left: 110px; width: 750px; height: 70px;"></div>
+  <figcaption>Comparison of the 822 annual LGA point estimates and their reliability (% of RSEs less than 50%) for modeled and raw BOD measures by condition.</figcaption>
+</figure>
 
 <!-- ----------------------------------------------------------------- -->
 ## {.smaller background-color="#ffffff"}

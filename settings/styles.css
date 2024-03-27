@@ -54,6 +54,26 @@
   font-size: 0.4em;
 }
 
+.highlight-box {
+  padding: 0px;
+  border: 10px solid blue; /* Black border added */
+  border-radius: 10px;
+  display: block; /* Make the box as wide as its content */
+}
+
+.highlight2-box {
+  padding: 0px;
+  border: 5px solid blue; /* Black border added */
+  border-radius: 5px;
+  display: block; /* Make the box as wide as its content */
+}
+
+.cover-box {
+	padding: 0px;
+	display: block; /* Make the box as wide as its content */
+	background-color: white;
+}
+
 /* Custom function to add a colored box environment */
 .quote-box {
   padding: 20px;
