@@ -76,8 +76,7 @@ Limitation of these data for small area estimates is small counts or gaps (poor 
 :::
 
 ::: {.notes}
-Not practical both in terms of applying the methods and interpretation/reconcilling the output.
-Once these hurdles have been cleared, Bayesian models, of course, offer considerable advantages.  
+Not practical both in terms of applying the methods and interpretation/reconcilling the output.  
 :::
 
 <!-- ----------------------------------------------------------------- -->

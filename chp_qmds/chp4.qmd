@@ -230,10 +230,6 @@ How to <span class="blB">check</span> our estimates?
 
 ::::
 
-::: {.notes}
-Areas with no survey data were included in the validation where available. This is how estimates for non-sampled areas were validated
-:::
-
 <!-- ----------------------------------------------------------------- -->
 ## {.center}
 
@@ -285,7 +281,7 @@ Note that the regions in NT are disadvantaged areas, so have been predicted to h
 
 ::: {.notes}
 2. "Zooming into Brisbane now, we can see a large patch of areas in the south side where the prevalence of risky alcohol consumption is low."
-3. "Finally note how areas in the Northern Territory are grey here. Note that the survey did not cover these areas, so they are predicted from the model. These estimates are very uncertainty."
+3. "Finally note how areas in the Northern Territory are grey here. As we saw before, these estimates are very uncertainty."
 :::
 
 <!-- ----------------------------------------------------------------- -->
