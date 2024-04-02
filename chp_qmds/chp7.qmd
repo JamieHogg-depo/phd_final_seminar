@@ -151,10 +151,10 @@ Indices
 - **Supervisors**: Kerrie Mengersen, Susanna Cramb, Peter Baade and Jessica Cameron
 - Australian Cancer Atlas 2.0 **project team**
 - **Government collaborators**: DOHWA and AIHW
-- **PhD stipend**: Cancer Council Queensland, QUT
-- **Travel funding**: QUT, CDS
+- **PhD stipend** and **travel funding**: Cancer Council Queensland, QUT
 - **Others**:
 	- ABS
+	- Colleagues (you rock 🎸)
 	- My family (particularly my <span class="blB">Mum!</span>)
 	- My partner
 	- Friends
