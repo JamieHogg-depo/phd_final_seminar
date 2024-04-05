@@ -61,7 +61,7 @@
 - Warning that direct estimates for the Northern Territory (NT) could be inaccurate
 	- Not included in internal benchmarking
 	
-	<!-- ----------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------- -->
 ## Validating non-sampled SA2s and those in very remote areas {.smaller}
 
 - These excluded regions $\approx$ 1.5% of the population
@@ -130,9 +130,6 @@ real LCAR_lpdf(
 
 <!-- ----------------------------------------------------------------- -->
 # Chapter 6/Paper 4
-
-<!-- ----------------------------------------------------------------- -->
-## Methods
 
 <!-- ----------------------------------------------------------------- -->
 ## Standard age-year-time (SAYT) model {.scrollable .smaller}

@@ -144,7 +144,6 @@ Sparsity issues
 - Average Estimated Resident **Population** between 2017 and 2018
 - Index of Relative **Socio-Economic Disadvantage** (IRSD) from Socio-Economic Indexes for Areas by the ABS [@RN560]
 - **Remoteness** (ARIA+)
-	- Classed as major cities, inner regional and outer regional to very remote
 - **Social Health Atlas** estimates [@RN113] at Primary Health Network (n = 31) and Population Health Area level (n = 1,165)
 :::
 ::::
@@ -162,7 +161,6 @@ Sparsity issues
 ::: {.incremental}
 - TSLN approach <span class="small-text">(**Chapter 3** of this thesis)</span>
 - <span class="blB">Single TSLN</span> specification for <span class="blB">all</span> risk factors
-- Model selection was conducted using a variety of *frequentist* and *Bayesian* metrics
 :::
 
 <!-- ----------------------------------------------------------------- -->

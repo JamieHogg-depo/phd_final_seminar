@@ -59,11 +59,6 @@ Such detailed data, which allows us to understanding the spatial variation of ca
   - <span class="blB">Reporting</span>/analyses of individual level data by aggregating into meaningful <span class="blB">groups</span>
 :::
 
-::: {.notes}
-- Without such estimates, community health interventions may lack the necessary evidence to effectively target their efforts. 
-- aggregated into meaningful groups such as age, sex, or most commonly, geographic area
-:::
-
 <!-- ----------------------------------------------------------------- -->
 ## {auto-animate=true}
 
@@ -221,10 +216,6 @@ Increasingly <span class="blB">relevant</span>
 ::: {.fragment}
 Health outcomes exhibit <span class="blR">variations</span> based on geography <span class="small-text">(e.g., remoteness and socioeconomic status [@RN26; @RN113; @RN204; @RN338; @RN121])</span>
 :::
-
-<!-- ::: {.fragment style="font-size: 0.8em;"}
-*Remember*: Small area estimates support informed <span class="blB">decision making</span>
-::: -->
 
 ::: {.fragment}
 ![](imgs/aihw_remoteness.png){width="90%" .soft-edges}

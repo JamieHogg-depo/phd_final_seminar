@@ -505,22 +505,6 @@
 </ul></li>
 </ul>
 </div>
-<aside class="notes">
-<ul>
-<li>Without such estimates, community health interventions may lack the necessary evidence to effectively target their efforts.</li>
-<li>aggregated into meaningful groups such as age, sex, or most commonly, geographic area</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 <!-- ----------------------------------------------------------------- -->
 </section>
 <section id="section-2" class="slide level2" data-auto-animate="true">
@@ -727,9 +711,6 @@
 <div class="fragment">
 <p>Health outcomes exhibit <span class="blR">variations</span> based on geography <span class="small-text">(e.g., remoteness and socioeconomic status <span class="citation" data-cites="RN26 RN113 RN204 RN338 RN121">(<a href="#/section-63" role="doc-biblioref" onclick="">AIHW, 2018</a>, <a href="#/section-63" role="doc-biblioref" onclick="">2019</a>; <a href="#/section-63" role="doc-biblioref" onclick="">Duncan et al., 2019</a>; <a href="#/section-63" role="doc-biblioref" onclick="">Patterson et al., 2014</a>; <a href="#/section-63" role="doc-biblioref" onclick="">PHIDU, 2018</a>)</span>)</span></p>
 </div>
-<!-- ::: {.fragment style="font-size: 0.8em;"}
-*Remember*: Small area estimates support informed <span class="blB">decision making</span>
-::: -->
 <div class="fragment">
 <p><img data-src="imgs/aihw_remoteness.png" class="soft-edges" style="width:90.0%"></p>
 </div>
@@ -1476,10 +1457,7 @@ Thesis format: <span class="blB">Publication</span> 📃
 <li class="fragment">2016 Australian <strong>census</strong> data — collapsed to six principal components for analysis <span class="citation" data-cites="RN618">(<a href="#/section-63" role="doc-biblioref" onclick="">Chidumwa et al., 2021</a>)</span></li>
 <li class="fragment">Average Estimated Resident <strong>Population</strong> between 2017 and 2018</li>
 <li class="fragment">Index of Relative <strong>Socio-Economic Disadvantage</strong> (IRSD) from Socio-Economic Indexes for Areas by the ABS <span class="citation" data-cites="RN560">(<a href="#/section-63" role="doc-biblioref" onclick="">ABS, 2016</a>)</span></li>
-<li class="fragment"><strong>Remoteness</strong> (ARIA+)
-<ul>
-<li class="fragment">Classed as major cities, inner regional and outer regional to very remote</li>
-</ul></li>
+<li class="fragment"><strong>Remoteness</strong> (ARIA+)</li>
 <li class="fragment"><strong>Social Health Atlas</strong> estimates <span class="citation" data-cites="RN113">(<a href="#/section-63" role="doc-biblioref" onclick="">PHIDU, 2018</a>)</span> at Primary Health Network (n = 31) and Population Health Area level (n = 1,165)</li>
 </ul>
 </div>
@@ -1495,7 +1473,6 @@ Thesis format: <span class="blB">Publication</span> 📃
 <ul>
 <li class="fragment">TSLN approach <span class="small-text">(<strong>Chapter 3</strong> of this thesis)</span></li>
 <li class="fragment"><span class="blB">Single TSLN</span> specification for <span class="blB">all</span> risk factors</li>
-<li class="fragment">Model selection was conducted using a variety of <em>frequentist</em> and <em>Bayesian</em> metrics</li>
 </ul>
 </div>
 <!-- ----------------------------------------------------------------- -->
@@ -3127,21 +3104,26 @@ Zhang, J. L., &amp; Bryant, J. (2020). Fully <span>B</span>ayesian benchmarking 
 <section id="validating-non-sampled-sa2s-and-those-in-very-remote-areas" class="slide level2 smaller">
 <h2>Validating non-sampled SA2s and those in very remote areas</h2>
 <ul>
-<li><p>Warning from the ABS <span class="citation" data-cites="RN508">(<a href="#/section-63" role="doc-biblioref" onclick="">Australian Bureau of Statistics, 2017</a>)</span> <br> `<em>. . . the estimates from the survey, do not (and are not intended to) match estimates of the total Australian estimated resident population (which include persons living in Very Remote areas of Australia and persons in non-private dwellings, such as hotels) obtained from other sources</em>’ <br></p>
+<li>Warning from the ABS <span class="citation" data-cites="RN508">(<a href="#/section-63" role="doc-biblioref" onclick="">Australian Bureau of Statistics, 2017</a>)</span> <br> `<em>. . . the estimates from the survey, do not (and are not intended to) match estimates of the total Australian estimated resident population (which include persons living in Very Remote areas of Australia and persons in non-private dwellings, such as hotels) obtained from other sources</em>’ <br>
 <ul>
 <li>Not included in internal benchmarking</li>
 </ul></li>
-<li><p>Warning that direct estimates for the Northern Territory (NT) could be inaccurate</p>
+<li>Warning that direct estimates for the Northern Territory (NT) could be inaccurate
 <ul>
 <li>Not included in internal benchmarking</li>
+</ul></li>
 </ul>
-<p><!-- ----------------------------------------------------------------- --> ## Validating non-sampled SA2s and those in very remote areas {.smaller}</p></li>
-<li><p>These excluded regions <span class="math inline">\(\approx\)</span> 1.5% of the population</p>
+<!-- ----------------------------------------------------------------- -->
+</section>
+<section id="validating-non-sampled-sa2s-and-those-in-very-remote-areas-1" class="slide level2 smaller">
+<h2>Validating non-sampled SA2s and those in very remote areas</h2>
+<ul>
+<li>These excluded regions <span class="math inline">\(\approx\)</span> 1.5% of the population
 <ul>
 <li>Validated using the external methods</li>
 <li>Exhibit much greater uncertainty (as expected)</li>
 </ul></li>
-<li><p>Future work</p>
+<li>Future work
 <ul>
 <li>Utilise smaller surveys taken in these areas as validation datasests</li>
 </ul></li>
@@ -3208,10 +3190,6 @@ Zhang, J. L., &amp; Bryant, J. (2020). Fully <span>B</span>ayesian benchmarking 
 <section>
 <section id="chapter-6paper-4-1" class="title-slide slide level1 center">
 <h1>Chapter 6/Paper 4</h1>
-<!-- ----------------------------------------------------------------- -->
-</section>
-<section id="methods" class="slide level2">
-<h2>Methods</h2>
 <!-- ----------------------------------------------------------------- -->
 </section>
 <section id="standard-age-year-time-sayt-model" class="slide level2 scrollable smaller">
