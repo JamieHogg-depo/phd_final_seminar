@@ -1,0 +1,134 @@
+.border {
+  border: 1px solid #dee2e6;
+}
+
+.border-thick {
+  border-width: 3px;
+}
+
+.title {
+  color: black;
+  font-family: 'Open Sans';
+}
+
+.supervisors, .date_field {
+  font-size: 0.75em; /* Adjust the size as needed */
+  font-family: 'Open Sans', ans-serif, Arial;
+}
+
+.subtitle {
+  font-size: 0.75em;
+  color: blue; /* You can use a hex code or RGB value for a specific shade of blue */
+}
+
+/* Custom function to make text blue and bolded*/
+.blB { 
+	font-weight: bold; 
+	color: blue; 
+}
+
+/* Custom function to make text red and bolded*/
+.blR { 
+	font-weight: bold; 
+	color: red; 
+}
+
+/* Custom function to make text smaller*/
+.small-text {
+  font-size: 0.7em; /* Adjust the size as desired */
+}
+
+/* Custom function to make text smaller*/
+.tiny-text {
+  font-size: 0.4em; /* Adjust the size as desired */
+}
+
+.bbox {
+  padding: 20px;
+  border: 2px solid blue; /* Black border added */
+  border-radius: 8px;
+  margin-top: 10px; /* Large top margin */
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block; /* Make the box as wide as its content */
+  font-size: 0.4em;
+}
+
+.highlight-box {
+  padding: 0px;
+  border: 10px solid blue; /* Black border added */
+  border-radius: 10px;
+  display: block; /* Make the box as wide as its content */
+}
+
+.highlight2-box {
+  padding: 0px;
+  border: 5px solid blue; /* Black border added */
+  border-radius: 5px;
+  display: block; /* Make the box as wide as its content */
+}
+
+.cover-box {
+	padding: 0px;
+	display: block; /* Make the box as wide as its content */
+	background-color: white;
+}
+
+/* Custom function to add a colored box environment */
+.quote-box {
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 10px; /* Large top margin */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f0f8ff; /* Light blue background, change as desired */
+  border-left: 5px solid #0096db; /* Dark blue border, change as desired */
+  max-width: 80%;
+  /*font-style: italic;*/
+  /*text-align: center;*/
+}
+
+/* Custom function to add a colored box environment for research problems (rp) */
+.rp-box {
+  padding: 20px;
+  border-radius: 0px;
+  margin-top: 10px; /* Large top margin */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F47273; /* Light red*/
+  border-left: 5px solid #F47273; /* Light red border, change as desired */
+  max-width: 80%;
+  font-style: italic;
+  color: white;
+  text-align: center;
+}
+
+/* Custom function to add a colored box environment for findings (rp) */
+.finding-box {
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 10px; /* Large top margin */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #adadad; /* dark grey*/
+  border-left: 5px solid #adadad; /* dark grey border, change as desired */
+  max-width: 80%;
+}
+
+/* Add QUT logo to bottom of all slides*/
+/* .reveal .slides {
+  background-image: url('imgs/qutlogo.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 50px 50px; 
+} */
+
+/* Custom function to make images have soft edges*/
+.soft-edges {
+  border-radius: 15px; /* Adjust the px value to control the roundness */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); /* This adds a soft shadow around the image */
+}
+
+.column-border {
+  border-right: 2px solid #000; /* Adjust color (#000 is black) and thickness (2px) as needed */
+}
